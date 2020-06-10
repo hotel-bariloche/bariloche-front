@@ -7,7 +7,6 @@ class App extends React.Component {
   render() {
     return(
       <div>
-      
         <Switch>
           <Route path="/"/>
           <Route path="/habitaciones"/>
