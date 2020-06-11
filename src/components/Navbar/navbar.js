@@ -2,28 +2,35 @@ import React, {Link, Fragment} from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Container, Row, Col } from 'reactstrap';
 import './header.scss';
+import Logo from '../img/Logo.png';
+import { FaPhoneVolume, FaRegEnvelope } from "react-icons/fa";
+
 
 const NavHome = () => {
 
   return(
 <div>
-	<Container className="header_area">
+  <div className="header_area">
     <Row className="header-top">
       <div className="container">
         <div className="d-flex align-items-center">
           <div id="logo">
-            <a href="index.html"><img src="img/Logo.png" alt="" title="" /></a>
+            <a href="index.html"><img src={Logo} alt="" title="" /></a>
           </div>
           <div className="ml-auto d-none d-md-block d-md-flex">
             <div className="media header-top-info">
-              <span className="header-top-info__icon"><i className="fas fa-phone-volume"></i></span>
+              <span className="header-top-info__icon">
+                <FaPhoneVolume/>
+              </span>
               <div className="media-body">
                 <p>Have any question?</p>
                 <p>Free: <a href="tel:+12 365 5233">+12 365 5233</a></p>
               </div>
             </div>
             <div className="media header-top-info">
-              <span className="header-top-info__icon"><i className="ti-email"></i></span>
+              <span className="header-top-info__icon">
+                  <FaRegEnvelope/>
+              </span>
               <div className="media-body">
                 <p>Have any question?</p>
                 <p>Free: <a href="tel:+12 365 5233">+12 365 5233</a></p>
@@ -73,7 +80,7 @@ const NavHome = () => {
         </div>
       </nav>
       </div>
-      </Container>
+      </div>
 
       </div>
   )
