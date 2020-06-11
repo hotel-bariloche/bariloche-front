@@ -36,7 +36,7 @@ const NavHome = () => {
 
     <div class="main_menu">
       <nav class="navbar navbar-expand-lg navbar-light">
-        <div class="container">
+        <Container>
 
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
           aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -69,7 +69,7 @@ const NavHome = () => {
             <li><a href="#"><i class="fab fa-google-plus-g"></i></a></li>
             <li><a href="#"><i class="fas fa-rss"></i></a></li>
           </ul>
-        </div>
+        </Container>
       </nav>
       </div>
       </header>
