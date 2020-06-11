@@ -1,6 +1,5 @@
 import React from 'react';
-import '../css/style.css'
-import Sunset from './img/gallery/sunset.png'
+import '../css/style.css';
 
 const Banner = () => {
   return(
