@@ -1,13 +1,13 @@
-import React from 'react';
+import React, { Component } from 'react';
 import './App.css';
 import { Switch, Route } from 'react-router-dom';
-import Navbar from './components/Navbar/Navbar';
+import NavHome from './components/Navbar/navbar';
 
 class App extends React.Component {
   render() {
     return(
       <div>
-        <Navbar/>
+        <NavHome/>
         <Switch>
           <Route path="/"/>
           <Route path="/habitaciones"/>
