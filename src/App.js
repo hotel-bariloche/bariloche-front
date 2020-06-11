@@ -2,7 +2,7 @@ import React from 'react';
 import './App.css';
 import { Switch, Route } from 'react-router-dom';
 import NavHome from './components/Navbar/navbar';
-
+import Home from './components/Home'
 
 
 class App extends React.Component {
@@ -11,7 +11,7 @@ class App extends React.Component {
       <div>
         <NavHome/>
         <Switch>
-          <Route path="/"/>
+          <Route path="/" component= {Home}/>
           <Route path="/habitaciones"/>
           <Route path="/blog"/>
         </Switch>
