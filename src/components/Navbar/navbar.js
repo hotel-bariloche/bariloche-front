@@ -5,6 +5,27 @@ import './header.scss';
 import Logo from '../img/Logo.png';
 import { FaPhoneVolume, FaRegEnvelope } from "react-icons/fa";
 
+/*var window_width = $(window).width(),
+window_height = window.innerHeight,
+header_height = $('.default-header').height(),
+header_height_static = $('.site-header.static').outerHeight(),
+fitscreen = window_height - header_height;
+
+$('.fullscreen').css('height', window_height);
+$('.fitscreen').css('height', fitscreen);
+var nav_offset_top = $('header').height() + 50;
+function navbarFixed() {
+if ($('.header_area').length) {
+  $(window).scroll(function() {
+    var scroll = $(window).scrollTop();
+    if (scroll >= nav_offset_top) {
+      $('.header_area').addClass('navbar_fixed');
+    } else {
+      $('.header_area').removeClass('navbar_fixed');
+    }
+  });
+}
+}*/
 
 const NavHome = () => {
 
@@ -55,9 +76,9 @@ const NavHome = () => {
               <div className="collapse navbar-collapse offset" id="navbarSupportedContent">
                 <ul className="nav navbar-nav menu_nav">
                   <li className="nav-item active"><a className="nav-link" href="index.html">Home</a></li>
-                  <li className="nav-item"><a className="nav-link" href="about.html">About</a></li>
-                  <li className="nav-item"><a className="nav-link" href="properties.html">Properties</a></li>
-                  <li className="nav-item"><a className="nav-link" href="gallery.html">Gallery</a></li>
+                  <li className="nav-item"><a className="nav-link" href="about.html">Conócenos</a></li>
+                  <li className="nav-item"><a className="nav-link" href="properties.html">Habitaciones</a></li>
+                  <li className="nav-item"><a className="nav-link" href="gallery.html">Galería</a></li>
                   <li className="nav-item submenu dropdown">
                     <a href="#" className="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
                     aria-expanded="false">Blog</a>
