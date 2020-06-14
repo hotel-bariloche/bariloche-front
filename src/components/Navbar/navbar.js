@@ -17,7 +17,7 @@ const NavHome = () => {
           <div className="container">
             <div className="d-flex align-items-center">
               <div className="logo">
-                <a href="index.html"><img src={Logo} alt="" title="" /></a>
+                <a href="/"><img src={Logo} alt="" title="" /></a>
               </div>
               <div className="ml-auto d-none d-md-block d-md-flex">
                 <div className="media header-top-info">
@@ -56,7 +56,7 @@ const NavHome = () => {
               </button>
               <div className="collapse navbar-collapse offset" id="navbarSupportedContent">
                 <ul className="nav navbar-nav menu_nav">
-                  <li className="nav-item active"><a className="nav-link" href="index.html">Home</a></li>
+                  <li className="nav-item active"><a className="nav-link" href="/">Home</a></li>
                   <li className="nav-item"><a className="nav-link" href="about.html">Conócenos</a></li>
                   <li className="nav-item"><a className="nav-link" href="properties.html">Habitaciones</a></li>
                   <li className="nav-item"><a className="nav-link" href="gallery.html">Galería</a></li>
@@ -64,8 +64,8 @@ const NavHome = () => {
                     <a href="#" className="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
                     aria-expanded="false">Blog</a>
                     <ul className="dropdown-menu">
-                      <li className="nav-item"><a className="nav-link">Blog</a></li>
-                      <li className="nav-item"><a className="nav-link" href="/blog">Blog Details</a></li>
+                      <li className="nav-item"><a className="nav-link" href="/blog">Blog</a></li>
+                      <li className="nav-item"><a className="nav-link" >Blog Details</a></li>
                     </ul>
                   </li>
                   <li className="nav-item"><a className="nav-link" href="contact.html">Contact</a></li>
