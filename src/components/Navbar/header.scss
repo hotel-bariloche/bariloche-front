@@ -1,6 +1,7 @@
 //header_area css
 @import "./src/scss/main.scss";
 
+
 .header_area {
 	position: absolute;
 	width: 100%;
@@ -18,7 +19,6 @@
 		.nav {
 			.nav-item {
 				margin-right: 45px;
-				.nav-link {
                     // font: 600 12px/80px $primary-font;
                     font-family: $title-font;
                     text-transform: uppercase;
@@ -32,11 +32,11 @@
 					@media (max-width: 991px) {
 						color: $title-color;
 						padding: 12px 4px 12px 0;
+					
 					}
-				}
 				// &:hover,
 				&.active {
-					.nav-link {
+					.nav-item {
 						color: $primary-color;
 					}
 				}
@@ -86,11 +86,11 @@
 							transition: all 0.4s linear;
 							&.active {
 								// background: $primary-color;
-								.nav-link {
+								.nav-item {
 									color: $primary-color;
 								}
 							}
-							.nav-link {
+							.nav-item {
 								line-height: 45px;
 								// color: $title-color;
 								padding: 0px 30px;
@@ -174,9 +174,8 @@
 			.navbar {
 				.nav {
 					.nav-item {
-						.nav-link {
-							line-height: 30px;
-						}
+						line-height: 30px;
+						
 					}
 				}
 				.primary-btn {
@@ -303,7 +302,7 @@
 		max-height: 340px;
 		overflow-y: scroll;
 	}
-	.header_area .navbar .nav .nav-item.submenu ul .nav-item .nav-link {
+	.header_area .navbar .nav .nav-item.submenu ul .nav-item {
 		padding: 0px 15px;
 	}
 	.header_area .navbar .nav .nav-item {
@@ -314,7 +313,7 @@
 	.header_area + div {
 		margin-top: 0;
 	}
-	.header_area.navbar_fixed .main_menu .navbar .nav .nav-item .nav-link {
+	.header_area.navbar_fixed .main_menu .navbar .nav .nav-item {
 		line-height: 40px;
 	}
 	/* End Main Menu Area css*/
@@ -372,6 +371,13 @@
     }
   }
 }
+
+.header-top-info__icon {
+	margin-right: 12px;
+	font-size: 25px;
+	color: #cca772; 
+}
+	
 
 
 
