@@ -49,33 +49,33 @@ const NavHome = () => {
     <Container className="main_menu" >
         <Row> 
           <Col style={{ border: 'none'}}>
-          <Navbar fixed className="navbar" expand="lg"  style={{ boxShadow: 'none'}}>
+          <Navbar fixed className="navbar navbar_bi" expand="lg"  style={{ boxShadow: 'none'}} fixedTop>
             <Navbar.Toggle className="navbar-toggler" aria-controls="basic-navbar-nav">
               <span className="icon-bar"></span>
               <span className="icon-bar"></span>
               <span className="icon-bar"></span>
             </Navbar.Toggle>
             <Navbar.Collapse id="basic-navbar-nav">
-              <Nav className="mr-auto nav" defaultActiveKey="/home">
-                <Nav.Item className="nav-item" >
-                  <Nav.Link className="nav-link" href="/home">Home</Nav.Link>
+              <Nav className="mr-auto nav" activeKey="/home" as="ul">
+                <Nav.Item as="li" className="nav-item active" >
+                  <Nav.Link eventKey="active" className="nav-link" href="/home">Home</Nav.Link>
                 </Nav.Item>
-                <Nav.Item className="nav-item" >
+                <Nav.Item as="li" className="nav-item" >
                   <Nav.Link className="nav-link" href="/">About</Nav.Link>
                 </Nav.Item>
-                <Nav.Item className="nav-item" >
+                <Nav.Item as="li" className="nav-item" >
                   <Nav.Link className="nav-link" href="/">Properties</Nav.Link>
                 </Nav.Item>
-                <Nav.Item className="nav-item" >
+                <Nav.Item as="li" className="nav-item" >
                   <Nav.Link className="nav-link" href="/">Gallery</Nav.Link>
                 </Nav.Item>
-                <Nav.Item className="nav-item" >
+                <Nav.Item as="li" className="nav-item" >
                   <Nav.Link className="nav-link" href="/">Blog</Nav.Link>
                 </Nav.Item>
-                <Nav.Item className="nav-item" >
+                <Nav.Item as="li" className="nav-item" >
                   <Nav.Link className="nav-link"href="/">Blog</Nav.Link>
                 </Nav.Item>
-                <Nav.Item className="nav-item" >
+                <Nav.Item as="li" className="nav-item" >
                   <Nav.Link className="nav-link" href="/">Contact</Nav.Link>
                 </Nav.Item>
               </Nav>
