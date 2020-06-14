@@ -6,7 +6,8 @@ import './header.scss';
 import Logo from '../img/Logo.png';
 import { FaPhoneVolume, FaRegEnvelope, FaFacebookF, FaTwitter, FaLinkedinIn, FaGooglePlusG, FaRss } from "react-icons/fa";
 import { Navbar } from 'react-bootstrap';
-import { Nav, NavDropdown } from 'react-bootstrap';
+import { NavDropdown } from 'react-bootstrap';
+import Nav from 'react-bootstrap/Nav'
  
 
 
@@ -45,30 +46,40 @@ const NavHome = () => {
         </div>
       </Container>
     </Row>
-    <div className="main_menu">
-    <Container fluid>
+    <Container className="main_menu" >
         <Row> 
-          <Col md={8}>
-          <Navbar className="navbar" expand="lg">
+          <Col style={{ border: 'none'}}>
+          <Navbar fixed className="navbar" expand="lg"  style={{ boxShadow: 'none'}}>
             <Navbar.Toggle className="navbar-toggler" aria-controls="basic-navbar-nav">
               <span className="icon-bar"></span>
               <span className="icon-bar"></span>
               <span className="icon-bar"></span>
             </Navbar.Toggle>
             <Navbar.Collapse id="basic-navbar-nav">
-              <Nav className="mr-auto nav">
-                <Nav.Link className="nav-item active" href="/">Home</Nav.Link>
-                <Nav.Link className="nav-item">About</Nav.Link>
-                <Nav.Link className="nav-item">Properties</Nav.Link>
-                <Nav.Link className="nav-item">Gallery</Nav.Link>
-                <Nav.Link className="nav-item">Blog</Nav.Link>
-                <Nav.Link className="nav-item">Contact</Nav.Link>
+              <Nav className="mr-auto nav" defaultActiveKey="/home">
+                <Nav.Item className="nav-item" >
+                  <Nav.Link className="nav-link" href="/home">Home</Nav.Link>
+                </Nav.Item>
+                <Nav.Item className="nav-item" >
+                  <Nav.Link className="nav-link" href="/">About</Nav.Link>
+                </Nav.Item>
+                <Nav.Item className="nav-item" >
+                  <Nav.Link className="nav-link" href="/">Properties</Nav.Link>
+                </Nav.Item>
+                <Nav.Item className="nav-item" >
+                  <Nav.Link className="nav-link" href="/">Gallery</Nav.Link>
+                </Nav.Item>
+                <Nav.Item className="nav-item" >
+                  <Nav.Link className="nav-link" href="/">Blog</Nav.Link>
+                </Nav.Item>
+                <Nav.Item className="nav-item" >
+                  <Nav.Link className="nav-link"href="/">Blog</Nav.Link>
+                </Nav.Item>
+                <Nav.Item className="nav-item" >
+                  <Nav.Link className="nav-link" href="/">Contact</Nav.Link>
+                </Nav.Item>
               </Nav>
             </Navbar.Collapse>
-           
-          </Navbar>
-          </Col>
-          <Col md={2}> 
             <div>
               <ul className="social-icons ml-auto">
                   <li><a href="#"><FaFacebookF /></a></li>
@@ -78,10 +89,11 @@ const NavHome = () => {
                   <li><a href="#"><FaRss/></a></li>
                 </ul>
             </div>
+           
+          </Navbar>
           </Col>
     </Row>
-</Container>
-    </div>
+    </Container>
   </div>
     
 
