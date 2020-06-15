@@ -5,6 +5,8 @@ import NavHome from './components/Navbar/navbar';
 import Home from './components/Home';
 import Blog from './components/Blog/Blog';
 import Rooms from './components/Rooms/Rooms';
+import Footer from './components/Footer/footer';
+
 import { FaBlog } from 'react-icons/fa';
 
 
@@ -23,6 +25,7 @@ class App extends React.Component {
               <Rooms/>
             </Route>
           </Switch>
+        <Footer/>
       </div>
     )
   }
