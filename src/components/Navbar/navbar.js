@@ -59,7 +59,7 @@ const NavHome = () => {
       </Container>
     </Row>
     <Container fluid className="main_menu">
-        <Row style={{ position: "fixed", background: "white", width: "100vw", padding: '0px 52px 0px 52px' }}> 
+        <Row style={{ position: "fixed", background: "white", width: "100vw", padding: '0px 52px 0px 52px', animation: "fadeIn" }}> 
           <Col style={{ border: 'none'}}>
           <Navbar className="navbar navbar_bi" expand="lg"  style={{ boxShadow: 'none'}} fixedTop>
             <Navbar.Toggle className="navbar-toggler" aria-controls="basic-navbar-nav">
@@ -73,7 +73,7 @@ const NavHome = () => {
                   <Nav.Link eventKey="active" className="nav-link" href="/">Home</Nav.Link>
                 </Nav.Item>
                 <Nav.Item as="li" className="nav-item" >
-                  <Nav.Link className="nav-link" href="/">About</Nav.Link>
+                  <Nav.Link className="nav-link" href="#about">About</Nav.Link>
                 </Nav.Item>
                 <Nav.Item as="li" className="nav-item" >
                   <Nav.Link className="nav-link" href="/">Properties</Nav.Link>

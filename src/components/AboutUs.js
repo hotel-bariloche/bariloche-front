@@ -7,7 +7,7 @@ import welcomeBanner3 from './img/home/welcomeBanner3.png';
 
 const AboutUs = () => {
     return(
-        <div>
+        <div id="about">
           <section className="welcome">
             <div className="container">
                 <Row className="row align-items-center">
