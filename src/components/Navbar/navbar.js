@@ -7,7 +7,8 @@ import Logo from '../img/Logo.png';
 import { FaPhoneVolume, FaRegEnvelope, FaFacebookF, FaTwitter, FaLinkedinIn, FaGooglePlusG, FaRss } from "react-icons/fa";
 import { Navbar } from 'react-bootstrap';
 import { NavDropdown } from 'react-bootstrap';
-import Nav from 'react-bootstrap/Nav'
+import Nav from 'react-bootstrap/Nav';
+import Image from 'react-bootstrap/Image'
  
 
 
@@ -21,8 +22,8 @@ const NavHome = () => {
     <Row className="header-top">
       <Container>
         <div className="d-flex align-items-center">
-          <div id="logo">
-              <a href="index.html"><img src={Logo} alt="" title="" /></a>
+          <div id="logo" >
+              <a href="index.html"><Image style={{ height: '130px', width: "150px", padding: "25px", backgroundColor: "#cca772"}} src="https://grandhotelbariloche.com/wp-content/uploads/2019/01/LOGO_original-300x300.png" alt="" title="" /></a>
           </div>
           <div className="ml-auto d-none d-md-block d-md-flex">
             <div className="media header-top-info">
@@ -59,7 +60,7 @@ const NavHome = () => {
       </Container>
     </Row>
     <Container fluid className="main_menu">
-        <Row style={{ position: "fixed", background: "white", width: "100vw", padding: '0px 52px 0px 52px' }}> 
+        <Row style={{ position: "fixed", background: "white", width: "100vw", padding: '0px 52px 0px 52px', animation: "fadeIn" }}> 
           <Col style={{ border: 'none'}}>
           <Navbar className="navbar navbar_bi" expand="lg"  style={{ boxShadow: 'none'}} fixedTop>
             <Navbar.Toggle className="navbar-toggler" aria-controls="basic-navbar-nav">
@@ -73,7 +74,7 @@ const NavHome = () => {
                   <Nav.Link eventKey="active" className="nav-link" href="/">Home</Nav.Link>
                 </Nav.Item>
                 <Nav.Item as="li" className="nav-item" >
-                  <Nav.Link className="nav-link" href="/">About</Nav.Link>
+                  <Nav.Link className="nav-link" href="#about">About</Nav.Link>
                 </Nav.Item>
                 <Nav.Item as="li" className="nav-item" >
                   <Nav.Link className="nav-link" href="/">Properties</Nav.Link>
