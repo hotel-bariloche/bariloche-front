@@ -23,7 +23,7 @@ const NavHome = () => {
         <Container>
           <div className="d-flex align-items-center">
             <div id="logo">
-                <a href="index.html">< Image style={{height: '140px', width: '150px', backgroundColor: '#cca772', padding: '30px'}}src="https://grandhotelbariloche.com/wp-content/uploads/2019/01/LOGO_original-300x300.png" alt="" title="" /></a>
+                <a href="/">< Image style={{height: '140px', width: '150px', backgroundColor: '#cca772', padding: '30px'}}src="https://grandhotelbariloche.com/wp-content/uploads/2019/01/LOGO_original-300x300.png" alt="" title="" /></a>
             </div>
             <div className="ml-auto d-none d-md-block d-md-flex">
               <div className="media header-top-info">
