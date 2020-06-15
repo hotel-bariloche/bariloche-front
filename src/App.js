@@ -4,6 +4,7 @@ import { Switch, Route, Router } from 'react-router-dom';
 import NavHome from './components/Navbar/navbar';
 import Home from './components/Home';
 import Blog from './components/Blog/Blog';
+import Rooms from './components/Rooms/Rooms';
 import { FaBlog } from 'react-icons/fa';
 
 
@@ -17,6 +18,9 @@ class App extends React.Component {
             <Route path="/habitaciones"/>
             <Route path="/blog" component= {Blog}>
               <Blog/>
+            </Route>
+            <Route path="/rooms" component= {Rooms}>
+              <Rooms/>
             </Route>
           </Switch>
       </div>

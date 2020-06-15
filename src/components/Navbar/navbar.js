@@ -1,6 +1,6 @@
 import React, {Link} from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { Container, Row, Col, NavItem } from 'reactstrap';
+import { Container, Row, Col } from 'reactstrap';
 import Button from 'react-bootstrap/Button'
 import './header.scss';
 import Logo from '../img/Logo.png';
@@ -86,7 +86,7 @@ const NavHome = () => {
                     <Nav.Link className="nav-link" href="/blog">Blog</Nav.Link>
                   </Nav.Item>
                   <Nav.Item as="li" className="nav-item" >
-                    <Nav.Link className="nav-link"href="/">Blog</Nav.Link>
+                    <Nav.Link className="nav-link"href="/rooms">Habitaciones</Nav.Link>
                   </Nav.Item>
                   <Nav.Item as="li" className="nav-item" >
                     <Nav.Link className="nav-link" href="/">Contact</Nav.Link>
