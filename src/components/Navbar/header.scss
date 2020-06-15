@@ -275,15 +275,16 @@
 		transition: all 400ms linear;
 		cursor: pointer;
 	}
-	.navbar .container {
+	.container {
 		padding-left: 15px;
 		padding-right: 15px;
+		max-width: 960px;
 	}
 	.nav {
 		padding: 0px 0px;
 	}
 	.header_area + section,
-	.header_area + row,
+	.header_area + Row,
 	.header_area + div {
 		margin-top: 117px;
 	}
@@ -331,7 +332,8 @@
   }
 
   .logo{
-    display: inline-block;
+	display: inline-block;
+	width: 500px;
   }
 
   &-info{
