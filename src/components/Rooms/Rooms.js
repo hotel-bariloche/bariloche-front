@@ -3,6 +3,11 @@ import Image from 'react-bootstrap/Image'
 import { Container, Row, Col } from 'reactstrap';
 import Card from 'react-bootstrap/Card'
 import room1 from '../img/home/explore1.png';
+import room2 from '../img/home/explore2.png';
+import room3 from '../img/home/explore3.png';
+import room4 from '../img/home/explore4.png';
+import room5 from '../img/home/explore5.png';
+import room6 from '../img/home/explore6.png';
 
 
 const Rooms = () => {
@@ -41,7 +46,7 @@ const Rooms = () => {
                 <Col md={6} xl={4} mb={5}>
                     <Card class="card card-explore" style={{ marginTop: '40px'}}>
                         <div class="card-explore__img">
-                        <Card.Img class="card-img" src={room1} alt=""/>
+                        <Card.Img class="card-img" src={room2} alt=""/>
                         </div>
                         <Card.Body class="card-body">
                         <h3 class="card-explore__price">$150.00 <sub>/ Per Night</sub></h3>
@@ -54,7 +59,7 @@ const Rooms = () => {
                 <Col md={6} xl={4} mb={5}>
                     <Card class="card card-explore" style={{ marginTop: '40px'}}>
                         <div class="card-explore__img">
-                        <Card.Img class="card-img" src={room1} alt=""/>
+                        <Card.Img class="card-img" src={room3} alt=""/>
                         </div>
                         <Card.Body class="card-body">
                         <h3 class="card-explore__price">$150.00 <sub>/ Per Night</sub></h3>
@@ -67,7 +72,7 @@ const Rooms = () => {
                 <Col md={6} xl={4} mb={5}>
                     <Card class="card card-explore" style={{ marginTop: '40px'}}>
                         <div class="card-explore__img">
-                        <Card.Img class="card-img" src={room1} alt=""/>
+                        <Card.Img class="card-img" src={room4} alt=""/>
                         </div>
                         <Card.Body class="card-body">
                         <h3 class="card-explore__price">$150.00 <sub>/ Per Night</sub></h3>
@@ -80,7 +85,7 @@ const Rooms = () => {
                 <Col md={6} xl={4} mb={5}>
                     <Card class="card card-explore" style={{ marginTop: '40px'}}>
                         <div class="card-explore__img">
-                        <Card.Img class="card-img" src={room1} alt=""/>
+                        <Card.Img class="card-img" src={room5} alt=""/>
                         </div>
                         <Card.Body class="card-body">
                         <h3 class="card-explore__price">$150.00 <sub>/ Per Night</sub></h3>
@@ -93,7 +98,7 @@ const Rooms = () => {
                 <Col md={6} xl={4} mb={5}>
                     <Card class="card card-explore" style={{ marginTop: '40px'}}>
                         <div class="card-explore__img">
-                        <Card.Img class="card-img" src={room1} alt=""/>
+                        <Card.Img class="card-img" src={room6} alt=""/>
                         </div>
                         <Card.Body class="card-body">
                         <h3 class="card-explore__price">$150.00 <sub>/ Per Night</sub></h3>
