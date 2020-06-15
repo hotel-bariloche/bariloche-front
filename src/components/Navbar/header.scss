@@ -1,7 +1,5 @@
-//header_area css
 @import "./src/scss/main.scss";
 
-//header_area css
 .header_area {
 	position: absolute;
 	width: 100%;
@@ -275,16 +273,15 @@
 		transition: all 400ms linear;
 		cursor: pointer;
 	}
-	.container {
+	.navbar .container {
 		padding-left: 15px;
 		padding-right: 15px;
-		max-width: 960px;
 	}
 	.nav {
 		padding: 0px 0px;
 	}
 	.header_area + section,
-	.header_area + Row,
+	.header_area + row,
 	.header_area + div {
 		margin-top: 117px;
 	}
@@ -332,8 +329,7 @@
   }
 
   .logo{
-	display: inline-block;
-	width: 300px;
+    display: inline-block;
   }
 
   &-info{
@@ -376,6 +372,12 @@
   }
 }
 
+.header-top-info__icon {
+	margin-right: 12px;
+	font-size: 25px;
+	color: #cca772; 
+}
+	
 
 
 

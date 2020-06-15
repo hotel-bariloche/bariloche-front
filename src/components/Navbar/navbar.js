@@ -3,7 +3,6 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import { Container, Row, Col } from 'reactstrap';
 import Button from 'react-bootstrap/Button'
 import './header.scss';
-import Logo from '../img/Logo.png';
 import { FaPhoneVolume, FaRegEnvelope, FaFacebookF, FaTwitter, FaLinkedinIn, FaGooglePlusG, FaRss } from "react-icons/fa";
 import { Navbar } from 'react-bootstrap';
 import { NavDropdown } from 'react-bootstrap';
@@ -27,13 +26,6 @@ const NavHome = () => {
             </div>
             <div className="ml-auto d-none d-md-block d-md-flex">
               <div className="media header-top-info">
-                <span className="header-top-info__icon">
-                  <FaPhoneVolume/>
-                </span>
-                <div className="media-body">
-                  <p>Have any question?</p>
-                  <p>Free: <a href="tel:+12 365 5233">+12 365 5233</a></p>
-                </div>
                 <div className="ml-auto d-none d-md-block d-md-flex">
                   <div className="media header-top-info">
                     <span className="header-top-info__icon">
@@ -89,7 +81,7 @@ const NavHome = () => {
                     <Nav.Link className="nav-link"href="/rooms">Habitaciones</Nav.Link>
                   </Nav.Item>
                   <Nav.Item as="li" className="nav-item" >
-                    <Nav.Link className="nav-link" href="/">Contact</Nav.Link>
+                    <Nav.Link className="nav-link" href="/contacto">Contacto</Nav.Link>
                   </Nav.Item>
                 </Nav>
               </Navbar.Collapse>
