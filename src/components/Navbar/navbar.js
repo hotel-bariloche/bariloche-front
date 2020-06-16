@@ -63,7 +63,7 @@ const NavHome = () => {
       <Container fluid className="main_menu">
           <Row style={{ position: "fixed", background: "white", width: "100vw", padding: '0px 52px 0px 52px', animation: "fadeIn", marginLeft: '-30px' }}> 
             <Col style={{ border: 'none'}}>
-            <Navbar className="navbar navbar_bi" expand="lg"  style={{ boxShadow: 'none'}} fixedTop>
+            <Navbar fixed="top" sticky="top" className="navbar navbar_bi" expand="lg"  style={{ boxShadow: 'none'}} fixedTop>
               <Navbar.Toggle className="navbar-toggler" aria-controls="basic-navbar-nav">
                 <span className="icon-bar"></span>
                 <span className="icon-bar"></span>
