@@ -7,13 +7,18 @@ import { FaPhoneVolume, FaRegEnvelope, FaFacebookF, FaTwitter, FaLinkedinIn, FaG
 import { Navbar } from 'react-bootstrap';
 import { NavDropdown } from 'react-bootstrap';
 import Nav from 'react-bootstrap/Nav';
-import Image from 'react-bootstrap/Image'
- 
+import Image from 'react-bootstrap/Image';
+import spainFlag from './spainFlag.svg';
+import englishFlag from './englishFlag.svg';
+import { Context } from '../../Context/Provider';
+
 
 
 
 
 const NavHome = () => {
+  const { state, changeLanguage } = React.useContext(Context);
+
 
   return(
 
@@ -43,6 +48,10 @@ const NavHome = () => {
                     <div className="media-body">
                       <p>Have any question?</p>
                       <p>Free: <a href="tel:+12 365 5233">+12 365 5233</a></p>
+                    </div>
+                    <div className="countryContact">
+                      <img onClick={() => changeLanguage('english')} alt="English" src={englishFlag} className={state.language === 'english' ? 'countryFlag borderFlag' : 'countryFlag'} />
+                      <img onClick={() => changeLanguage('spanish')} alt="Spain" src={spainFlag} className={state.language === 'spanish' ? 'countryFlag borderFlag' : 'countryFlag'} />
                     </div>
                   </div>
                 </div>
