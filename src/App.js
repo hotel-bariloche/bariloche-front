@@ -8,6 +8,8 @@ import Rooms from './components/Rooms/Rooms';
 import Contact from './components/Contact/Contact';
 import Footer from './components/Footer/footer';
 import AppContext from './Context/Provider';
+import Gallery from './components/Gallery/gallery';
+
 
 
 import { FaBlog } from 'react-icons/fa';
@@ -28,6 +30,9 @@ class App extends React.Component {
             </Route>
             <Route path="/contacto" component= {Contact}>
               <Contact/>
+            </Route>
+            <Route path="/gallery" component= {Gallery}>
+              <Gallery/>
             </Route>
           </Switch>
         <Footer/>

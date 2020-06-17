@@ -18,7 +18,7 @@ import { Context } from '../../Context/Provider';
 
 const NavHome = () => {
   const { state, changeLanguage } = React.useContext(Context);
-
+  
 
   return(
 
@@ -61,9 +61,9 @@ const NavHome = () => {
         </Container>
       </Row>
       <Container fluid className="main_menu">
-          <Row style={{ position: "fixed", background: "white", width: "100vw", padding: '0px 52px 0px 52px', animation: "fadeIn", marginLeft: '-30px' }}> 
+          <Row data-spy="scroll" data-target=".navbar" data-offset="50" style={{ position: "fixed", background: "white", width: "100vw", padding: '0px 52px 0px 52px', animation: "fadeIn", marginLeft: '-30px' }}> 
             <Col style={{ border: 'none'}}>
-            <Navbar fixed="top" sticky="top" className="navbar navbar_bi" expand="lg"  style={{ boxShadow: 'none'}} fixedTop>
+            <Navbar sticky="top" className="navbar navbar_bi" expand="lg"  style={{ boxShadow: 'none'}} fixedTop>
               <Navbar.Toggle className="navbar-toggler" aria-controls="basic-navbar-nav">
                 <span className="icon-bar"></span>
                 <span className="icon-bar"></span>
@@ -81,7 +81,7 @@ const NavHome = () => {
                     <Nav.Link className="nav-link" href="/">Properties</Nav.Link>
                   </Nav.Item>
                   <Nav.Item as="li" className="nav-item" >
-                    <Nav.Link className="nav-link" href="/">Gallery</Nav.Link>
+                    <Nav.Link className="nav-link" href="/gallery">Gallery</Nav.Link>
                   </Nav.Item>
                   <Nav.Item as="li" className="nav-item" >
                     <Nav.Link className="nav-link" href="/blog">Blog</Nav.Link>
