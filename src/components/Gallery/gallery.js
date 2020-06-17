@@ -9,7 +9,6 @@ import gallery4 from '../img/gallery/g4.png';
 import gallery5 from '../img/gallery/g5.png';
 import gallery6 from '../img/gallery/g6.png';
 import gallery7 from '../img/gallery/g7.png';
-import { CloseButton } from 'react-bootstrap';
 
 
 

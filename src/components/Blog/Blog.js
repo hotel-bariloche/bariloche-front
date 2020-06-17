@@ -2,6 +2,13 @@ import React from 'react';
 import social from "../img/blog/cat-post/social.jpg";
 import food from "../img/blog/cat-post/food.jpg";
 import politics from "../img/blog/cat-post/politics.jpg";
+import blog4 from "../img/blog/main-blog/m-blog-4.jpg";
+import blog5 from "../img/blog/main-blog/m-blog-5.jpg";
+import blog3 from "../img/blog/main-blog/m-blog-3.jpg";
+import blog2 from "../img/blog/main-blog/m-blog-2.jpg";
+import blog1 from "../img/blog/main-blog/m-blog-1.jpg";
+
+
 import '../../css/style.css';
 
 
@@ -114,7 +121,7 @@ const Blog = () => {
                           </div>
                           <div className="col-md-9">
                               <div className="blog_post">
-                                  <img src="img/blog/main-blog/m-blog-1.jpg" alt=""/>
+                                  <img src={blog1} alt=""/>
                                   <div className="blog_details">
                                       <a href="blog-single.html">
                                           <h2>Astronomy Binoculars A Great Alternative</h2>
@@ -162,7 +169,7 @@ const Blog = () => {
                           </div>
                           <div className="col-md-9">
                               <div className="blog_post">
-                                  <img src="img/blog/main-blog/m-blog-2.jpg" alt=""/>
+                                  <img src={blog2} alt=""/>
                                   <div className="blog_details">
                                       <a href="blog-single.html">
                                           <h2>The Basics Of Buying A Telescope</h2>
@@ -210,7 +217,7 @@ const Blog = () => {
                           </div>
                           <div className="col-md-9">
                               <div className="blog_post">
-                                  <img src="img/blog/main-blog/m-blog-3.jpg" alt=""/>
+                                  <img src={blog3} alt=""/>
                                   <div className="blog_details">
                                       <a href="blog-single.html">
                                           <h2>The Glossary Of Telescopes</h2>
@@ -258,7 +265,7 @@ const Blog = () => {
                           </div>
                           <div className="col-md-9">
                               <div className="blog_post">
-                                  <img src="img/blog/main-blog/m-blog-4.jpg" alt=""/>
+                                  <img src={blog4} alt=""/>
                                   <div className="blog_details">
                                       <a href="blog-single.html">
                                           <h2>The Night Sky</h2>
@@ -306,7 +313,7 @@ const Blog = () => {
                           </div>
                           <div className="col-md-9">
                               <div className="blog_post">
-                                  <img src="img/blog/main-blog/m-blog-5.jpg" alt=""/>
+                                  <img src={blog5} alt=""/>
                                   <div className="blog_details">
                                       <a href="blog-single.html">
                                           <h2>Telescopes 101</h2>
