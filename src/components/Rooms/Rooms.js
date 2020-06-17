@@ -8,6 +8,8 @@ import room3 from '../img/home/explore3.png';
 import room4 from '../img/home/explore4.png';
 import room5 from '../img/home/explore5.png';
 import room6 from '../img/home/explore6.png';
+import bed1 from '../img/home/bed-icon.png';
+
 
 
 const Rooms = () => {

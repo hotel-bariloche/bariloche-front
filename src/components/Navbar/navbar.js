@@ -18,7 +18,8 @@ import { Context } from '../../Context/Provider';
 
 const NavHome = () => {
   const { state, changeLanguage } = React.useContext(Context);
-  
+
+
 
   return(
 
@@ -61,9 +62,9 @@ const NavHome = () => {
         </Container>
       </Row>
       <Container fluid className="main_menu">
-          <Row data-spy="scroll" data-target=".navbar" data-offset="50" style={{ position: "fixed", background: "white", width: "100vw", padding: '0px 52px 0px 52px', animation: "fadeIn", marginLeft: '-30px' }}> 
+          <Row style={{ position: "fixed", background: "white", width: "100vw", padding: '0px 52px 0px 52px', marginLeft: '-30px' }}> 
             <Col style={{ border: 'none'}}>
-            <Navbar sticky="top" className="navbar navbar_bi" expand="lg"  style={{ boxShadow: 'none'}} fixedTop>
+            <Navbar id="navbar" className="navbar navbar_bi" expand="lg"  style={{ boxShadow: 'none'}} fixedTop>
               <Navbar.Toggle className="navbar-toggler" aria-controls="basic-navbar-nav">
                 <span className="icon-bar"></span>
                 <span className="icon-bar"></span>
