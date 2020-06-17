@@ -518,47 +518,50 @@ button {
 
 /*=================== section-intro end ====================*/
 /*=================== home banner start ====================*/
-.home-banner {
+.carousel-slide {
   position: relative; }
-  .home-banner h4, .home-banner h1, .home-banner a {
+  .carousel-caption h4, .carousel-caption h1, .carousel-caption a {
     text-transform: uppercase;
     color: #fff; }
-  .home-banner h4 {
+  .carousel-caption h4 {
     font-size: 18px;
     margin-bottom: 15px; }
-  .home-banner h1 {
+  .carousel-slide-btn {
+    margin-bottom: 25vw;
+  }
+  .carousel-caption h1 {
     font-size: 27px;
-    margin-bottom: 35px; }
+    margin-bottom: 10px; }
     @media (min-width: 600px) {
-      .home-banner h1 {
+      .carousel-caption h1 {
         font-size: 37px; } }
     @media (min-width: 992px) {
-      .home-banner h1 {
+      .carousel-caption h1 {
         font-size: 70px;
-        margin-bottom: 45px; } }
-  .home-banner-area {
+        margin-bottom: 20px; } }
+  .carousel-slide {
     height: 500px;
     background: url("../components/img/gallery/sunset.png") center center no-repeat;
     background-size: cover;
     position: relative;
     z-index: 1; }
     @media (min-width: 992px) {
-      .home-banner-area {
+      .carousel-slide {
         height: 600px; } }
     @media (min-width: 1200px) {
-      .home-banner-area {
+      .carousel-slide {
         height: 970px; } }
-    .home-banner-area .home-banner {
+    .carousel-slide .carousel-slide {
       position: absolute;
       top: 50%;
       left: 50%;
       width: 100%;
       transform: translateX(-50%); }
       @media (min-width: 992px) {
-        .home-banner-area .home-banner {
+        .carousel-slide-area .carousel-slide {
           top: 44%;
           transform: translateX(-50%); } }
-    .home-banner-area::after {
+    .carousel-slide-area::after {
       content: "";
       display: block;
       position: absolute;
@@ -568,12 +571,20 @@ button {
       height: 100%;
       background: rgba(1, 2, 11, 0.7);
       z-index: -1; }
-  .home-banner-btn {
+  .carousel-slide-btn {
     border: 2px solid #cca772;
     padding: 10px 45px; }
-    .home-banner-btn:hover {
+    .carousel-slide-btn:hover {
       background: #cca772;
       color: #fff; }
+  
+.carousel-control-prev {
+  display: none;
+}
+
+.carousel-control-next {
+  display: none;
+}
 
 /*=================== home banner end ====================*/
 /*=================== home search form start ====================*/
