@@ -11,7 +11,6 @@ import AppContext from './Context/Provider';
 import Gallery from './components/Gallery/gallery';
 
 
-
 import { FaBlog } from 'react-icons/fa';
 
 

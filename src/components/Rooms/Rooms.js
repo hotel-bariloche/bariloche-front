@@ -39,7 +39,7 @@ const Rooms = () => {
                         </div>
                         <Card.Body class="card-body">
                         <h3 class="card-explore__price">$150.00 <sub>/ Per Night</sub></h3>
-                        <h4 class="card-explore__title"><a href="#">Classic Bed Room</a></h4>
+                        <h4 class="card-explore__title"><a href="#">Economic Room</a></h4>
                         <p>Beginning fourth dominion creeping god was. Beginning, which fly yieldi dry beast moved blessed </p>
                         <a class="card-explore__link" href="#">Book Now <i class="ti-arrow-right"></i></a>
                         </Card.Body>
@@ -52,7 +52,7 @@ const Rooms = () => {
                         </div>
                         <Card.Body class="card-body">
                         <h3 class="card-explore__price">$150.00 <sub>/ Per Night</sub></h3>
-                        <h4 class="card-explore__title"><a href="#">Classic Bed Room</a></h4>
+                        <h4 class="card-explore__title"><a href="#">Standard Room</a></h4>
                         <p>Beginning fourth dominion creeping god was. Beginning, which fly yieldi dry beast moved blessed </p>
                         <a class="card-explore__link" href="#">Book Now <i class="ti-arrow-right"></i></a>
                         </Card.Body>
@@ -65,7 +65,7 @@ const Rooms = () => {
                         </div>
                         <Card.Body class="card-body">
                         <h3 class="card-explore__price">$150.00 <sub>/ Per Night</sub></h3>
-                        <h4 class="card-explore__title"><a href="#">Classic Bed Room</a></h4>
+                        <h4 class="card-explore__title"><a href="#">Doble Room</a></h4>
                         <p>Beginning fourth dominion creeping god was. Beginning, which fly yieldi dry beast moved blessed </p>
                         <a class="card-explore__link" href="#">Book Now <i class="ti-arrow-right"></i></a>
                         </Card.Body>
@@ -78,7 +78,7 @@ const Rooms = () => {
                         </div>
                         <Card.Body class="card-body">
                         <h3 class="card-explore__price">$150.00 <sub>/ Per Night</sub></h3>
-                        <h4 class="card-explore__title"><a href="#">Classic Bed Room</a></h4>
+                        <h4 class="card-explore__title"><a href="#">Triple Room</a></h4>
                         <p>Beginning fourth dominion creeping god was. Beginning, which fly yieldi dry beast moved blessed </p>
                         <a class="card-explore__link" href="#">Book Now <i class="ti-arrow-right"></i></a>
                         </Card.Body>
@@ -91,7 +91,7 @@ const Rooms = () => {
                         </div>
                         <Card.Body class="card-body">
                         <h3 class="card-explore__price">$150.00 <sub>/ Per Night</sub></h3>
-                        <h4 class="card-explore__title"><a href="#">Classic Bed Room</a></h4>
+                        <h4 class="card-explore__title"><a href="#">Cuádruple Room</a></h4>
                         <p>Beginning fourth dominion creeping god was. Beginning, which fly yieldi dry beast moved blessed </p>
                         <a class="card-explore__link" href="#">Book Now <i class="ti-arrow-right"></i></a>
                         </Card.Body>
