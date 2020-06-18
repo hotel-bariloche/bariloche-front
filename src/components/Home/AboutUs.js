@@ -1,9 +1,9 @@
 import React from 'react';
-import '../css/style.css'
+import '../../css/style.css'
 import { Row ,Col, Container} from 'reactstrap';
-import welcomeBanner1 from './img/home/welcomeBanner1.png';
-import welcomeBanner2 from './img/home/welcomeBanner2.png';
-import welcomeBanner3 from './img/home/welcomeBanner3.png';
+import welcomeBanner1 from '../img/home/welcomeBanner1.png';
+import welcomeBanner2 from '../img/home/welcomeBanner2.png';
+import welcomeBanner3 from '../img/home/welcomeBanner3.png';
 
 const AboutUs = () => {
     return(

@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
-import '../css/style.css';
+import '../../css/style.css';
 import Carousel from 'react-bootstrap/Carousel';
-import Sunset from './img/gallery/sunset.png';
-import Card1 from './img/home/card-blog1.png';
-import Card2 from './img/home/card-blog2.png';
-import { Context } from '../Context/Provider';
+import Sunset from '../img/gallery/sunset.png';
+import Card1 from '../img/home/card-blog1.png';
+import Card2 from '../img/home/card-blog2.png';
+import { Context } from '../../Context/Provider';
 
 
 const BannerHome = () => {
