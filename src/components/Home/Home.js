@@ -6,6 +6,7 @@ import Video from './Video';
 import Servicios from './Servicios';
 import ExploreRooms from '../exploreRooms';
 import Reviews from './Reviews';
+import ContactHome from './Contact.js';
 
 import '../../css/style.css';
 
@@ -19,6 +20,7 @@ const Home = () => {
             <Servicios/>
             <ExploreRooms/>
             <Reviews/>
+            <ContactHome/>
         </div>
     )
 }
