@@ -32,7 +32,7 @@ const Reviews = () => {
   
     return (
   
-  <div id="testiframe">
+  <Container id="reviews">
   
     <Carousel showDots autoPlay dotListClass infinite
       autoPlaySpeed={10000}
@@ -51,7 +51,7 @@ const Reviews = () => {
           <p className="media-body">El mítico juego de Nokia vuelve para engancharte de nuevo</p>
         </div >
         <div  style={{width: '18rem'}} className="owl-carousel owl-theme testi-carousel testi-carousel__item">
-          <a href='' className='media'>
+          <a href='' style={{ width: '100px', marginRight: '0'}} className='media'>
             <img
               style={{ float: 'left'}}  
               className="testi-carousel__img"
@@ -86,7 +86,7 @@ const Reviews = () => {
         
     </Carousel>
   
-  </div>
+  </Container>
   
   )
   

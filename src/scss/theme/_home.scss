@@ -296,7 +296,8 @@
 
 /*=================== testimonial section start ====================*/
 .testi-carousel{
-
+    display: flex;
+    
   .owl-stage-outer{
     padding: 50px 0;
   }
@@ -356,20 +357,25 @@
     }
   }
 
-  .owl-dots{
+  .react-multi-carousel-dot-list{
+    border-width: 0px !important;
+    border-color: none !important;
+    background:#e6e6e6 !important;
+    margin-right: 12px !important;
+    height: 10px !important;
+    width: 10px !important;
 
-    .owl-dot{
-
-      span{
-        background: #cacccf;
+    .react-multi-carousel-dot {
+      button{
+        background: #cacccf !important;
       }
     }
 
-    .owl-dot.active{
-      span{
+    .react-multi-carousel-dot--active {
+      button{
         width: 12px;
         height: 12px;
-        background: $primary-color;
+        background: #cca772 !important;
       }
     }
   }
