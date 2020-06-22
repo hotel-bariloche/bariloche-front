@@ -5,6 +5,8 @@ import DestinoBariloche from './DestinoBariloche';
 import Video from './Video';
 import Servicios from './Servicios';
 import ExploreRooms from '../exploreRooms';
+import Reviews from './Reviews';
+
 import '../../css/style.css';
 
 const Home = () => {
@@ -16,6 +18,7 @@ const Home = () => {
             <Video/>
             <Servicios/>
             <ExploreRooms/>
+            <Reviews/>
         </div>
     )
 }
