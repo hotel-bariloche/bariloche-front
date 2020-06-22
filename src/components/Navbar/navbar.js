@@ -73,10 +73,10 @@ const NavHome = () => {
               <Navbar.Collapse id="basic-navbar-nav" sticky="top">
                 <Nav className="mr-auto nav" activeKey="/" as="ul">
                   <Nav.Item as="li" className="nav-item active" >
-                    <Nav.Link eventKey="active" className="nav-link" href="/">Home</Nav.Link>
+                    <Nav.Link eventKey="active" className="nav-link" href="/">{state.texts[state.language].home.navbar.home}</Nav.Link>
                   </Nav.Item>
                   <Nav.Item as="li" className="nav-item" >
-                    <Nav.Link className="nav-link" href="#about">About</Nav.Link>
+                    <Nav.Link className="nav-link" href="#about">{state.texts[state.language].home.navbar.about}</Nav.Link>
                   </Nav.Item>
                   <Nav.Item as="li" className="nav-item" >
                     <Nav.Link className="nav-link" href="/">Properties</Nav.Link>
