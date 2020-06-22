@@ -82,7 +82,7 @@ const NavHome = () => {
                     <Nav.Link className="nav-link" href="/">Properties</Nav.Link>
                   </Nav.Item>
                   <Nav.Item as="li" className="nav-item" >
-                    <Nav.Link className="nav-link" href="/gallery">Gallery</Nav.Link>
+                    <Nav.Link className="nav-link" href="/gallery">{state.texts[state.language].home.navbar.gallery}</Nav.Link>
                   </Nav.Item>
                   <Nav.Item as="li" className="nav-item" >
                     <Nav.Link className="nav-link" href="/blog">Blog</Nav.Link>

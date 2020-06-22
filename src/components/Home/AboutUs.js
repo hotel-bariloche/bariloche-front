@@ -4,8 +4,10 @@ import { Row ,Col, Container} from 'reactstrap';
 import welcomeBanner1 from '../img/home/welcomeBanner1.png';
 import welcomeBanner2 from '../img/home/welcomeBanner2.png';
 import welcomeBanner3 from '../img/home/welcomeBanner3.png';
+import { Context } from '../../Context/Provider';
 
 const AboutUs = () => {
+    const { state } = React.useContext(Context);
     return(
         <div id="about">
           <section className="welcome">
@@ -13,9 +15,8 @@ const AboutUs = () => {
                 <Row className="row align-items-center">
                         <Col lg="7" className="col-lg-7">
                             <div className="welcome-content">
-                                <h2 className="mb-4"><span className="d-block">Welcome</span> to our residence</h2>
-                                <p>Beginning blessed second a creepeth. Darkness wherein fish years good air whose after seed appear midst evenin, appear void give third bearing divide one so blessed moved firmament gathered </p>
-                                <p>Beginning blessed second a creepeth. Darkness wherein fish years good air whose after seed appear midst evenin, appear void give third bearing divide one so blessed</p>
+                                <h2 className="mb-4"><span className="d-block">{state.texts[state.language].home.about.titleHotel}</span> {state.texts[state.language].home.about.titleHotel2}</h2>
+                                <p>{state.texts[state.language].home.about.hotel}</p>
                                 <a className="button button--active home-banner-btn mt-4" href="#">Learn More</a>
                             </div>
                         </Col>
