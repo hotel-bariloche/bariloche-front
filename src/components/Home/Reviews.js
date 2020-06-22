@@ -33,12 +33,21 @@ const Reviews = () => {
     return (
   
   <Container id="reviews">
+      <div class="section-intro text-center pb-20px">
+            <div class="section-intro__style">
+                <img src={bed1} alt=""></img>
+            </div>
+            <h2>Our Guest Love Us</h2>
+        </div>
   
     <Carousel showDots autoPlay dotListClass infinite
       autoPlaySpeed={10000}
       responsive={responsive}
       removeArrowOnDeviceType={["tablet", "mobile", "desktop", "superLargeDesktop"]}
       className="section-margin">
+          
+          
+         
         <div style={{width: '18rem'}} className="owl-carousel owl-theme testi-carousel testi-carousel__item">
           <a href='' className='media'>
             <img
