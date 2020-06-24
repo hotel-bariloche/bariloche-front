@@ -33,27 +33,29 @@ const Rooms = () => {
             </div>
         </section>
 
-        <Accordion defaultActiveKey="0">
+        <Accordion>
             <Card>
                 <Accordion.Toggle as={Card.Header} eventKey="0">
                     <Row className="row align-items-center">
-                        <div id="about">
-                            <section className="welcome">
-                                <div className="container">
-                                    <div className="room">
-                                        <img src={room3} 
-                                        alt="Card image cap"
-                                        className="room-img" 
-                                        />
+                        <div className="roomcard-container">
+                            <div id="about">
+                                <section className="welcome">
+                                    <div className="container">
+                                        <div className="room">
+                                            <img src={room3} 
+                                            alt="Card image cap"
+                                            className="room-img" 
+                                            />
+                                        </div>
                                     </div>
-                                </div>
-                            </section>
+                                </section>
+                            </div>
                         </div>
                         <Col lg="7" className="col-lg-7">
                             <div className="welcome-content">
                                 <h2 className="mb-4">Economy Room</h2>
                                 <p>aqui iria la descripcion mas algunos iconos con los servicios</p>
-                                <a className="button button--active home-banner-btn mt-4" href="#">Learn More</a>
+                                <a className="button button--active home-banner-btn mt-4" href="">More Options</a>
                             </div>
                         </Col>
                     </Row>
@@ -107,24 +109,26 @@ const Rooms = () => {
             {/*seccion standard rooms*/}
             <Card>
                 <Accordion.Toggle as={Card.Header} eventKey="1">
-                    <Row>
-                        <div id="about">
-                            <section className="welcome">
-                                <div className="container">
-                                    <div className="room">
-                                        <img src={room2} 
-                                        alt="Card image cap"
-                                        className="room-img" 
-                                        />
+                    <Row className="row align-items-center">
+                        <div className="roomcard-container">
+                            <div id="about">
+                                <section className="welcome">
+                                    <div className="container">
+                                        <div className="room">
+                                            <img src={room2} 
+                                            alt="Card image cap"
+                                            className="room-img" 
+                                            />
+                                        </div>
                                     </div>
-                                </div>
-                            </section>
+                                </section>
+                            </div>
                         </div>
                         <Col lg="7" className="col-lg-7">
                             <div className="welcome-content">
                                 <h2 className="mb-4">Standard Room</h2>
                                 <p>aqui iria la descripcion mas algunos iconos con los servicios</p>
-                                <a className="button button--active home-banner-btn mt-4" href="#">Learn More</a>
+                                <a className="button button--active home-banner-btn mt-4" href="">Learn More</a>
                             </div>
                         </Col>
                     </Row>
