@@ -18,12 +18,23 @@ import { Context } from '../../Context/Provider';
 
 const NavHome = () => {
   const { state, changeLanguage } = React.useContext(Context);
+  
+  window.onscroll = function() {scrollFunction()};
 
+  const scrollFunction= () => {
+    let headerEl = document.getElementById("header_area") 
+
+    if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+      headerEl.classList.add("my-class");
+    } else {
+      headerEl.classList.remove("my-class");
+    }
+  }
 
 
   return(
 
-    <Container fluid className="header_area">
+    <Container fluid id="header_area">
       <Row className="header-top">
         <Container>
           <div className="d-flex align-items-center">
