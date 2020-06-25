@@ -51,6 +51,21 @@ export const Texts = {
             }
         },
      },
+     rooms: {
+        banner: 'nuestras habitaciones',
+        moreOptions: 'más opciones',
+        room: {
+            economy: {
+                title: 'Habitación Económica',
+                description: ''
+
+            },
+            standard: {
+                title: 'Habitación Standard',
+                description: ''
+            }
+        }
+     }
     },
 
     english: {
@@ -105,7 +120,21 @@ export const Texts = {
                 }
             },
         },
-
+        rooms: {
+            banner: 'our rooms',
+            moreOptions: 'more options',
+            room: {
+                economy: {
+                    title: 'Economy Room',
+                    description: ''
+    
+                },
+                standard: {
+                    title: 'Standard Room',
+                    description: ''
+                }
+            }
+         }
     
 
     },

@@ -11,17 +11,19 @@ import room5 from '../img/home/explore5.png';
 import room6 from '../img/home/explore6.png';
 import bed1 from '../img/home/bed-icon.png';
 import './Rooms.css';
+import { Context } from '../../Context/Provider';
 
 
 
 const Rooms = () => {
+    const { state } = React.useContext(Context);
     return(
     <div> 
         <section className="blog-banner-area" id="blog">
             <div className="container h-100">
                 <div className="blog-banner">
                     <div className="text-center">
-                        <h1>Nuestras Habitaciones</h1>
+                        <h1>{state.texts[state.language].rooms.banner}</h1>
                     <nav aria-label="breadcrumb" className="banner-breadcrumb">
                         <ol className="breadcrumb">
                             <li className="breadcrumb-item"><a href="/">Home</a></li>
@@ -36,28 +38,25 @@ const Rooms = () => {
         <Accordion>
             <Card>
                 <Accordion.Toggle as={Card.Header} eventKey="0">
-                    <Row className="row align-items-center">
-                        <div className="roomcard-container">
-                            <div id="about">
-                                <section className="welcome">
-                                    <div className="container">
+                    <Row className="room-container">
+                        <div className="">
+                            <div id="about">            
                                         <div className="room">
                                             <img src={room3} 
                                             alt="Card image cap"
                                             className="room-img" 
                                             />
                                         </div>
-                                    </div>
-                                </section>
                             </div>
                         </div>
-                        <Col lg="7" className="col-lg-7">
-                            <div className="welcome-content">
-                                <h2 className="mb-4">Economy Room</h2>
-                                <p>aqui iria la descripcion mas algunos iconos con los servicios</p>
-                                <a className="button button--active home-banner-btn mt-4" href="">More Options</a>
+                        <div className="room-article-container">
+                            <div className="room-title">
+                                <h2>{state.texts[state.language].rooms.room.economy.title}</h2>
                             </div>
-                        </Col>
+                            <hr/>
+                                <p>aqui iria la descripcion mas algunos iconos con los servicios</p>
+                                <a className="button button--active home-banner-btn mt-4" href="">{state.texts[state.language].rooms.moreOptions}</a>
+                        </div>
                     </Row>
                 </Accordion.Toggle>
                 <Accordion.Collapse eventKey="0">
@@ -109,28 +108,25 @@ const Rooms = () => {
             {/*seccion standard rooms*/}
             <Card>
                 <Accordion.Toggle as={Card.Header} eventKey="1">
-                    <Row className="row align-items-center">
-                        <div className="roomcard-container">
-                            <div id="about">
-                                <section className="welcome">
-                                    <div className="container">
+                <Row className="room-container">
+                        <div className="">
+                            <div id="about">            
                                         <div className="room">
-                                            <img src={room2} 
+                                            <img src={room3} 
                                             alt="Card image cap"
                                             className="room-img" 
                                             />
                                         </div>
-                                    </div>
-                                </section>
                             </div>
                         </div>
-                        <Col lg="7" className="col-lg-7">
-                            <div className="welcome-content">
-                                <h2 className="mb-4">Standard Room</h2>
-                                <p>aqui iria la descripcion mas algunos iconos con los servicios</p>
-                                <a className="button button--active home-banner-btn mt-4" href="">Learn More</a>
+                        <div className="room-article-container">
+                            <div className="room-title">
+                                <h2>{state.texts[state.language].rooms.room.standard.title}</h2>
                             </div>
-                        </Col>
+                            <hr/>
+                                <p>aqui iria la descripcion mas algunos iconos con los servicios</p>
+                                <a className="button button--active home-banner-btn mt-4" href="">{state.texts[state.language].rooms.moreOptions}</a>
+                        </div>
                     </Row>
                 </Accordion.Toggle>
                 <Accordion.Collapse eventKey="1">

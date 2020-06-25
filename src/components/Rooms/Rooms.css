@@ -1,3 +1,23 @@
-.welcome-content {
-    background-color: white;
+
+@media (min-width: 801px) {
+    .room-container {
+        max-width: 1010px;
+        margin: 15px auto;
+        padding: 20px 30px;
+        background-color: white;
+    }
+    .room-article-container {
+        padding-left: 20px;
+        box-sizing: border-box;
+        width: 60%;
+        vertical-align: top;
+    }
+    .room-title {
+        padding: 0 0 10px;
+        font-size: 40px;
+    }
+    .room-title h2 {
+        font-size: inherit;
+        font-weight: inherit;
+    }
 }
