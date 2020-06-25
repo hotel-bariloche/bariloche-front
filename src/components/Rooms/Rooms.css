@@ -1,7 +1,14 @@
+@font-face {
+    font-family: 'Mandali';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Mandali'), url(https://fonts.gstatic.com/s/mandali/v8/LhWlMVbYOfASNfNUZF4_ZQ.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
 
 @media (min-width: 801px) {
     .room-container {
-        max-width: 1010px;
+        max-width: 1170px;
         margin: 15px auto;
         padding: 20px 30px;
         background-color: white;
@@ -9,7 +16,7 @@
     .room-article-container {
         padding-left: 20px;
         box-sizing: border-box;
-        width: 60%;
+        width: 65%;
         vertical-align: top;
     }
     .room-title {
@@ -19,5 +26,11 @@
     .room-title h2 {
         font-size: inherit;
         font-weight: inherit;
+    }
+    .room-description {
+        border-bottom: none;
+        padding: 15px 0px 0px;
+        font-size: 20px;
+        font-family: 'Mandali';
     }
 }

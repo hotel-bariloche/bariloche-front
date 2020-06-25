@@ -54,7 +54,7 @@ const Rooms = () => {
                                 <h2>{state.texts[state.language].rooms.room.economy.title}</h2>
                             </div>
                             <hr/>
-                                <p>aqui iria la descripcion mas algunos iconos con los servicios</p>
+                                <p className="room-description">{state.texts[state.language].rooms.room.economy.description}</p>
                                 <a className="button button--active home-banner-btn mt-4" href="">{state.texts[state.language].rooms.moreOptions}</a>
                         </div>
                     </Row>
@@ -124,7 +124,7 @@ const Rooms = () => {
                                 <h2>{state.texts[state.language].rooms.room.standard.title}</h2>
                             </div>
                             <hr/>
-                                <p>aqui iria la descripcion mas algunos iconos con los servicios</p>
+                                <p className="room-description">{state.texts[state.language].rooms.room.standard.description}</p>
                                 <a className="button button--active home-banner-btn mt-4" href="">{state.texts[state.language].rooms.moreOptions}</a>
                         </div>
                     </Row>

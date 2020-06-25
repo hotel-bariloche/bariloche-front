@@ -57,12 +57,12 @@ export const Texts = {
         room: {
             economy: {
                 title: 'Habitación Económica',
-                description: ''
+                description: 'Nuestra economy room cuenta con todo lo necesario para que puedas disfrutar a gusto en nuestro hotel. Descansa en nuestras comodísimas camas, seguro querrás dormir 5 minutos más!'
 
             },
             standard: {
                 title: 'Habitación Standard',
-                description: ''
+                description: 'Habitaciones impregnadas de los tres valores más característicos del hotel: tradición, cercanía y compromiso, que hacen que alojarse en una de estas habitaciones suponga sentir la calidez del hogar, pero fuera de casa. '
             }
         }
      }
@@ -126,12 +126,12 @@ export const Texts = {
             room: {
                 economy: {
                     title: 'Economy Room',
-                    description: ''
+                    description: 'Our economy room has everything you need so you can enjoy your stay at our hotel. Rest in our comfortable beds, you will surely want to sleep 5 more minutes.'
     
                 },
                 standard: {
                     title: 'Standard Room',
-                    description: ''
+                    description: 'Rooms imbued with the three most characteristic values of the hotel: tradition, closeness and commitment, which make staying in one of these rooms mean feeling the warmth of home but away from home.'
                 }
             }
          }
