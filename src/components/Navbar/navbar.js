@@ -90,19 +90,16 @@ const NavHome = () => {
                     <Nav.Link className="nav-link" href="#about">{state.texts[state.language].home.navbar.about}</Nav.Link>
                   </Nav.Item>
                   <Nav.Item as="li" className="nav-item" >
-                    <Nav.Link className="nav-link" href="/">Properties</Nav.Link>
-                  </Nav.Item>
-                  <Nav.Item as="li" className="nav-item" >
                     <Nav.Link className="nav-link" href="/gallery">{state.texts[state.language].home.navbar.gallery}</Nav.Link>
                   </Nav.Item>
                   <Nav.Item as="li" className="nav-item" >
-                    <Nav.Link className="nav-link" href="/blog">Blog</Nav.Link>
+                    <Nav.Link className="nav-link" href="/blog">{state.texts[state.language].home.navbar.location}</Nav.Link>
                   </Nav.Item>
                   <Nav.Item as="li" className="nav-item" >
-                    <Nav.Link className="nav-link"href="/rooms">Habitaciones</Nav.Link>
+                    <Nav.Link className="nav-link"href="/rooms">{state.texts[state.language].home.navbar.rooms}</Nav.Link>
                   </Nav.Item>
                   <Nav.Item as="li" className="nav-item" >
-                    <Nav.Link className="nav-link" href="/contacto">Contacto</Nav.Link>
+                    <Nav.Link className="nav-link" href="/contacto">{state.texts[state.language].home.navbar.contact}</Nav.Link>
                   </Nav.Item>
                 </Nav>
               </Navbar.Collapse>
