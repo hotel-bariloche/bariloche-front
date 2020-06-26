@@ -13,12 +13,7 @@ const AboutUs = () => {
           <section className="welcome">
             <div className="container">
                 <Row className="row align-items-center">
-                        <Col lg="7" className="col-lg-7">
-                            <div className="welcome-content">
-                                <h2 className="mb-4"><span className="d-block">{state.texts[state.language].home.about.titleHotel}</span> {state.texts[state.language].home.about.titleHotel2}</h2>
-                                <p>{state.texts[state.language].home.about.hotel}</p>
-                            </div>
-                        </Col>
+                        
                     <Col  lg="5" className="col-lg-5 mb-4 mb-lg-0">
                         <Row className="row no-gutters welcome-images">
                             <Col sm="7" className="col-sm-7">
@@ -38,7 +33,12 @@ const AboutUs = () => {
                             </Col>
                         </Row>
                     </Col>    
-                       
+                    <Col lg="7" className="col-lg-7">
+                        <div className="welcome-content">
+                            <h2 className="mb-4"><span className="d-block">{state.texts[state.language].home.about.titleHotel}</span> {state.texts[state.language].home.about.titleHotel2}</h2>
+                            <p>{state.texts[state.language].home.about.hotel}</p>
+                        </div>
+                    </Col>
                 </Row>
                     </div>
         </section>

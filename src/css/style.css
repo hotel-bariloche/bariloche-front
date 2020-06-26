@@ -667,10 +667,10 @@ button {
         width: 100%; } }
   @media (min-width: 991px) {
     .welcome-content {
-      padding-left: 10px;
-      text-align: right; }
-      .welcome-content-bariloche {
-        padding-left: 30px; } }
+      padding-left: 10px; }
+      .welcome-content-destino {
+        padding-left: 10px;
+        text-align: right;  } }
 
 /*=================== welcome section end ====================*/
 /*=================== explore section start ====================*/
