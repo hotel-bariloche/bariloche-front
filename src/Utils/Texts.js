@@ -70,7 +70,7 @@ export const Texts = {
 
     english: {
         home: {
-            book: 'Book a room',
+            book: 'Book now',
             navbar: {
                 home: 'Home',
                 about: 'about',

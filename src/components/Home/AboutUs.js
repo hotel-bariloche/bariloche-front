@@ -17,7 +17,6 @@ const AboutUs = () => {
                             <div className="welcome-content">
                                 <h2 className="mb-4"><span className="d-block">{state.texts[state.language].home.about.titleHotel}</span> {state.texts[state.language].home.about.titleHotel2}</h2>
                                 <p>{state.texts[state.language].home.about.hotel}</p>
-                                <a className="button button--active home-banner-btn mt-4" href="#">Learn More</a>
                             </div>
                         </Col>
                     <Col  lg="5" className="col-lg-5 mb-4 mb-lg-0">

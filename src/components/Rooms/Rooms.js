@@ -69,7 +69,7 @@ const Rooms = () => {
                 </Accordion.Toggle>
                 <Accordion.Collapse eventKey="0">
                     <Card.Body>
-                    <Row pb={4} mt={5}>   
+                    <Row pb={3} mt={4}>   
                         <Col md={6} xl={4} mb={5}>
                             <Card class="card card-explore" style={{ marginTop: '40px'}}>
                                 <div class="card-explore__img">
@@ -79,7 +79,7 @@ const Rooms = () => {
                                     <h3 class="card-explore__price">$150.00 <sub>/ Per Night</sub></h3>
                                     <h4 class="card-explore__title"><a href="#">Economic Room</a></h4>
                                     <p>Beginning fourth dominion creeping god was. Beginning, which fly yieldi dry beast moved blessed </p>
-                                    <a class="card-explore__link" href="#">Book Now <i class="ti-arrow-right"></i></a>
+                                    <a class="card-explore__link" target="_blank" href="https://reservations.travelclick.com/106660?languageid=2%20#/guestsandrooms">{state.texts[state.language].home.book} <i class="ti-arrow-right"></i></a>
                                 </Card.Body>
                             </Card>
                         </Col>
@@ -92,7 +92,7 @@ const Rooms = () => {
                                     <h3 class="card-explore__price">$150.00 <sub>/ Per Night</sub></h3>
                                     <h4 class="card-explore__title"><a href="#">Standard Room</a></h4>
                                     <p>Beginning fourth dominion creeping god was. Beginning, which fly yieldi dry beast moved blessed </p>
-                                    <a class="card-explore__link" href="#">Book Now <i class="ti-arrow-right"></i></a>
+                                    <a class="card-explore__link" target="_blank" href="https://reservations.travelclick.com/106660?languageid=2%20#/guestsandrooms">{state.texts[state.language].home.book} <i class="ti-arrow-right"></i></a>
                                 </Card.Body>
                             </Card>
                         </Col>
@@ -105,7 +105,7 @@ const Rooms = () => {
                                     <h3 class="card-explore__price">$150.00 <sub>/ Per Night</sub></h3>
                                     <h4 class="card-explore__title"><a href="#">Doble Room</a></h4>
                                     <p>Beginning fourth dominion creeping god was. Beginning, which fly yieldi dry beast moved blessed </p>
-                                    <a class="card-explore__link" href="#">Book Now <i class="ti-arrow-right"></i></a>
+                                    <a class="card-explore__link" target="_blank" href="https://reservations.travelclick.com/106660?languageid=2%20#/guestsandrooms">{state.texts[state.language].home.book} <i class="ti-arrow-right"></i></a>
                                 </Card.Body>
                             </Card>
                         </Col>
@@ -146,7 +146,7 @@ const Rooms = () => {
                 </Accordion.Toggle>
                 <Accordion.Collapse eventKey="1">
                     <Card.Body>
-                        <Row pb={4} mt={5}>
+                        <Row pb={3} mt={4}>
                                 <Col md={6} xl={4} mb={5}>
                                     <Card class="card card-explore" style={{ marginTop: '40px'}}>
                                         <div class="card-explore__img">
@@ -156,7 +156,7 @@ const Rooms = () => {
                                             <h3 class="card-explore__price">$150.00 <sub>/ Per Night</sub></h3>
                                             <h4 class="card-explore__title"><a href="#">Triple Room</a></h4>
                                             <p>Beginning fourth dominion creeping god was. Beginning, which fly yieldi dry beast moved blessed </p>
-                                            <a class="card-explore__link" href="#">Book Now <i class="ti-arrow-right"></i></a>
+                                            <a class="card-explore__link" target="_blank" href="https://reservations.travelclick.com/106660?languageid=2%20#/guestsandrooms">{state.texts[state.language].home.book} <i class="ti-arrow-right"></i></a>
                                         </Card.Body>
                                     </Card>
                                 </Col>
@@ -169,7 +169,7 @@ const Rooms = () => {
                                             <h3 class="card-explore__price">$150.00 <sub>/ Per Night</sub></h3>
                                             <h4 class="card-explore__title"><a href="#">Cuádruple Room</a></h4>
                                             <p>Beginning fourth dominion creeping god was. Beginning, which fly yieldi dry beast moved blessed </p>
-                                            <a class="card-explore__link" href="#">Book Now <i class="ti-arrow-right"></i></a>
+                                            <a class="card-explore__link" target="_blank" href="https://reservations.travelclick.com/106660?languageid=2%20#/guestsandrooms">{state.texts[state.language].home.book} <i class="ti-arrow-right"></i></a>
                                         </Card.Body>
                                     </Card>
                                 </Col>
@@ -182,7 +182,7 @@ const Rooms = () => {
                                             <h3 class="card-explore__price">$150.00 <sub>/ Per Night</sub></h3>
                                             <h4 class="card-explore__title"><a href="#">Classic Bed Room</a></h4>
                                             <p>Beginning fourth dominion creeping god was. Beginning, which fly yieldi dry beast moved blessed </p>
-                                            <a class="card-explore__link" href="#">Book Now <i class="ti-arrow-right"></i></a>
+                                            <a class="card-explore__link" target="_blank" href="https://reservations.travelclick.com/106660?languageid=2%20#/guestsandrooms">{state.texts[state.language].home.book} <i class="ti-arrow-right"></i></a>
                                         </Card.Body>
                                     </Card>
                                 </Col>
