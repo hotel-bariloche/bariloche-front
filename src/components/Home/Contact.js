@@ -6,7 +6,7 @@ import bed1 from '../img/home/bed-icon.png';
 
 const ContactHome = () => {
     return(
-        <div>
+        <div style={{ backgroundColor: 'grey', padding: '20px'}}>
             <div class="section-intro text-center pb-20px">
             <div class="section-intro__style">
                 <img src={bed1} alt=""></img>

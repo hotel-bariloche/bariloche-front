@@ -7,12 +7,16 @@ import blog5 from "../img/blog/main-blog/m-blog-5.jpg";
 import blog3 from "../img/blog/main-blog/m-blog-3.jpg";
 import blog2 from "../img/blog/main-blog/m-blog-2.jpg";
 import blog1 from "../img/blog/main-blog/m-blog-1.jpg";
+import { Context } from '../../Context/Provider';
+
 
 
 import '../../css/style.css';
 
 
 const Blog = () => {
+    const { state } = React.useContext(Context);
+
     return(
     <div>
         {/*banner section*/}
@@ -20,7 +24,7 @@ const Blog = () => {
             <div className="container h-100">
                 <div className="blog-banner">
                     <div className="text-center">
-                        <h1>Our Blog</h1>
+                        <h1>{state.texts[state.language].location.banner}</h1>
                     <nav aria-label="breadcrumb" className="banner-breadcrumb">
                         <ol className="breadcrumb">
                         <li className="breadcrumb-item"><a href="#">Home</a></li>
@@ -34,6 +38,9 @@ const Blog = () => {
         {/*categories section*/}
         <section className="blog_categorie_area">
             <div className="container">
+                <div className="row">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3005.024140148418!2d-71.30608378458201!3d-41.13399897928826!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x961a7b71e69754f9%3A0xfa24b97df0020edd!2sGrand%20Hotel%20Bariloche!5e0!3m2!1ses!2ses!4v1592911354589!5m2!1ses!2ses" width="100%" height="450" frameborder="2px" style={{border:'2px', padding: '20px'}} allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                </div>
                 <div className="row">
                     <div className="col-sm-6 col-lg-4 mb-4 mb-lg-0">
                         <div className="categories_post">

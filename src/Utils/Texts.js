@@ -65,6 +65,10 @@ export const Texts = {
                 description: 'Habitaciones impregnadas de los tres valores más característicos del hotel: tradición, cercanía y compromiso, que hacen que alojarse en una de estas habitaciones suponga sentir la calidez del hogar, pero fuera de casa. '
             }
         }
+     },
+     location: {
+         banner: 'ubicación'
+
      }
     },
 
@@ -134,7 +138,11 @@ export const Texts = {
                     description: 'Rooms imbued with the three most characteristic values of the hotel: tradition, closeness and commitment, which make staying in one of these rooms mean feeling the warmth of home but away from home.'
                 }
             }
-         }
+         },
+         location: {
+            banner: 'location'
+   
+        }
     
 
     },
