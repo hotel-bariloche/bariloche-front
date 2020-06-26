@@ -1,5 +1,4 @@
 import React from 'react';
-import Image from 'react-bootstrap/Image'
 import Accordion from 'react-bootstrap/Accordion';
 import { Container, Row, Col } from 'reactstrap';
 import Card from 'react-bootstrap/Card'
@@ -10,6 +9,8 @@ import room4 from '../img/home/explore4.png';
 import room5 from '../img/home/explore5.png';
 import room6 from '../img/home/explore6.png';
 import bed1 from '../img/home/bed-icon.png';
+import { FaWifi, FaRegSnowflake } from 'react-icons/fa';
+import { GiWineBottle } from "react-icons/gi";
 import './Rooms.css';
 import { Context } from '../../Context/Provider';
 
@@ -55,7 +56,14 @@ const Rooms = () => {
                             </div>
                             <hr/>
                                 <p className="room-description">{state.texts[state.language].rooms.room.economy.description}</p>
-                                <a className="button button--active home-banner-btn mt-4" href="">{state.texts[state.language].rooms.moreOptions}</a>
+                                <div>
+                                   <ul className="services-room">
+                                       <li><p><FaWifi/>Free Wifi</p></li>
+                                       <li><p><FaRegSnowflake/>Aire acondicionado</p></li>
+                                       <li><p><GiWineBottle/>Minibar</p></li>
+                                    </ul> 
+                                </div>
+                                <a className="button button--active home-banner-btn more-options" href="">{state.texts[state.language].rooms.moreOptions}</a>
                         </div>
                     </Row>
                 </Accordion.Toggle>
@@ -125,7 +133,14 @@ const Rooms = () => {
                             </div>
                             <hr/>
                                 <p className="room-description">{state.texts[state.language].rooms.room.standard.description}</p>
-                                <a className="button button--active home-banner-btn mt-4" href="">{state.texts[state.language].rooms.moreOptions}</a>
+                                <div className="services-room">
+                                   <ul>
+                                       <li></li>
+                                       <li></li>
+                                       <li></li>
+                                    </ul> 
+                                </div>
+                                <a className="button button--active home-banner-btn more-options" href="">{state.texts[state.language].rooms.moreOptions}</a>
                         </div>
                     </Row>
                 </Accordion.Toggle>
