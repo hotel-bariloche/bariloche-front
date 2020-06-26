@@ -16,8 +16,8 @@
     .room-article-container {
         padding-left: 20px;
         box-sizing: border-box;
-        width: 65%;
         vertical-align: top;
+        text-align: center;
     }
     .room-title {
         padding: 0 0 10px;
@@ -54,6 +54,8 @@
         position: absolute;
         right: 180px;
     }
-
+    .room-img {
+        max-width: 125px;
+    }
     
 }
