@@ -56,45 +56,73 @@ const Reviews = () => {
             <img
               style={{ float: 'left'}}  
               className="testi-carousel__img"
-              src={testimonial1}
-              alt="Snake"
+              src="https://media-cdn.tripadvisor.com/media/photo-t/1a/f6/f0/48/default-avatar-2020-15.jpg"
+              alt="Pablo Gomez Sanchez"
             />
           </a>
-          <p className="media-body">{state.texts[state.language].home.guests.cards.four.review}</p>
-        </div >
+          <div class="media-body">
+               <p className="media-body">{state.texts[state.language].home.guests.cards.first.review}</p>
+                  <div class="testi-carousel__intro">
+                    <h3>{state.texts[state.language].home.guests.cards.first.name}</h3>
+                    <p>{state.texts[state.language].home.guests.cards.first.country}</p>
+                  </div>
+                </div>
+           </div >
+      
         <div  style={{width: '18rem'}} className="owl-carousel owl-theme testi-carousel testi-carousel__item">
           <a href='' style={{ width: '100px', marginRight: '0'}} className='media'>
             <img
               style={{ float: 'left'}}  
               className="testi-carousel__img"
-              src={testimonial1}
-              alt="Snake"
+              src="https://media-cdn.tripadvisor.com/media/photo-l/1a/f6/e8/ea/default-avatar-2020-63.jpg"
+              alt="Luciana C"
             />
           </a>
-          <p className="media-body">{state.texts[state.language].home.guests.cards.first.review}</p>
-        </div >
+          <div class="media-body">
+              <p className="media-body">{state.texts[state.language].home.guests.cards.second.review}</p>
+                  <div class="testi-carousel__intro">
+                  <h3>{state.texts[state.language].home.guests.cards.second.name}</h3>
+                   <p>{state.texts[state.language].home.guests.cards.second.country}</p>
+                  </div>
+                </div>
+           </div >
         <div style={{width: '18rem'}} className="owl-carousel owl-theme testi-carousel testi-carousel__item">
           <a href='' className='media'>
             <img
               style={{ float: 'left'}}  
               className="testi-carousel__img"
-              src={testimonial1}
-              alt="Snake"
+              src="https://media-cdn.tripadvisor.com/media/photo-l/1a/f6/ea/2e/default-avatar-2020-67.jpg"
+              alt="Ernesto"
             />
           </a>
-          <p className="media-body">{state.texts[state.language].home.guests.cards.second.review}</p>
-        </div >
+          <div class="media-body">
+             <p className="media-body">{state.texts[state.language].home.guests.cards.third.review}</p>
+                  <div class="testi-carousel__intro">
+                  <h3>{state.texts[state.language].home.guests.cards.third.name}</h3>
+                  <p>{state.texts[state.language].home.guests.cards.third.country}</p>
+
+                  </div>
+                </div>
+           </div >
+          
         <div style={{width: '18rem'}}  className="owl-carousel owl-theme testi-carousel testi-carousel__item">
           <a href='' className='media'>
             <img
               style={{ float: 'left'}}  
               className="testi-carousel__img"
-              src={testimonial1}
-              alt="Snake"
+              src="https://media-cdn.tripadvisor.com/media/photo-t/1a/f6/ec/a2/default-avatar-2020-3.jpg"
+              alt="Lautaro Rosso"
             />
           </a>
-          <p className="media-body">{state.texts[state.language].home.guests.cards.third.review}</p>
-        </div >
+          <div class="media-body">
+             <p className="media-body">{state.texts[state.language].home.guests.cards.four.review}</p>
+                  <div class="testi-carousel__intro">
+                  <h3>{state.texts[state.language].home.guests.cards.four.name}</h3>
+                  <p>{state.texts[state.language].home.guests.cards.four.country}</p>
+
+                  </div>
+                </div>
+           </div >
         
     </Carousel>
   

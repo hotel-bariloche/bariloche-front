@@ -24,24 +24,24 @@ export const Texts = {
             title: 'Nuestros clientes nos quieren',
             cards: {
                 first: {
-                    review: 'reseña primero',
-                    name: 'nombre del cliente',
-                    country: 'país'
+                    review: 'Estuvimos 3 noches alojados en pareja la pasamos muy bien. La atención del personal del comedor excelente. Habitaciones bien calefaccionadas, la y desayuno muy bueno y variado. Lo recomiendo en un 100%',
+                    name: 'Pablo Gomez Sanchez',
+                    country: 'Medellín, Colombia'
                 },
                 second: {
-                    review: 'reseña primero',
-                    name: 'nombre del cliente',
-                    country: 'país'
+                    review: 'El hotel está súper bien ubicado, el desayuno súper completo y la gente muy amable. Los chicos de la recepción todos muy amables ,unos genios , Matias en particular nos ayudo con todo ! Volvemos seguro!',
+                    name: 'Luciana Carpi',
+                    country: 'Buenos Aires, Argentina'
                 },
                 third: {
-                    review: 'reseña primero',
-                    name: 'nombre del cliente',
-                    country: 'país'
+                    review: 'Pasamos diez días maravillosos, recomendado bajo todo punto de vista, atención esmerada, y nuestra habitación (705) con dos ventanales y una terraza que permitía ver los amaneceres y atardeceres en todo su esplendor, vista al lago, la Cordillera y el Centro de la Ciudad.',
+                    name: 'Ernesto Oscar W',
+                    country: 'Rosario, Argentina'
                 },
                 four: {
-                    review: 'reseña primero',
-                    name: 'nombre del cliente',
-                    country: 'país'
+                    review: 'Hotel amplio en sus habitaciones cuadruples, con frigobar y television LED.... el desayuno es muy abundante y rico, la atencion es buena y amable y el precio es acorde...... es limpio y estan refaccionandolo para que este moderno',
+                    name: 'Lautaro Rosso',
+                    country: 'Mar de Plata, Argentina'
                 },
                 five: {
                     review: 'reseña primero',
@@ -124,24 +124,24 @@ export const Texts = {
                 title: 'Our guests love us',
                 cards: {
                     first: {
-                        review: 'review from the guest',
-                        name: 'name of the guest',
-                        country: 'country'
+                        review: 'Estuvimos 3 noches alojados en pareja la pasamos muy bien. La atención del personal del comedor excelente. Habitaciones bien calefaccionadas, la y desayuno muy bueno y variado. Lo recomiendo en un 100%',
+                        name: 'Pablo Gomez Sanchez',
+                        country: 'Medellín, Colombia'
                     },
                     second: {
-                        review: 'review from the guest',
-                        name: 'name of the guest',
-                        country: 'country'
+                        review: 'El hotel está súper bien ubicado, el desayuno súper completo y la gente muy amable. Los chicos de la recepción todos muy amables ,unos genios , Matias en particular nos ayudo con todo ! Volvemos seguro!',
+                        name: 'Luciana Capri',
+                        country: 'Buenos Aires, Argentina'
                     },
                     third: {
-                        review: 'review from the guest',
-                        name: 'name of the guest',
-                        country: 'country'
+                        review: 'Pasamos diez días maravillosos, recomendado bajo todo punto de vista, atención esmerada, y nuestra habitación (705) con dos ventanales y una terraza que permitía ver los amaneceres y atardeceres en todo su esplendor, vista al lago, la Cordillera y el Centro de la Ciudad.',
+                        name: 'Ernesto Ocar W',
+                        country: 'Rosario, Argentina'
                     },
                     four: {
-                        review: 'review from the guest',
-                        name: 'name of the guest',
-                        country: 'country'
+                        review: 'Hotel amplio en sus habitaciones cuadruples, con frigobar y television LED.... el desayuno es muy abundante y rico, la atencion es buena y amable y el precio es acorde...... es limpio y estan refaccionandolo para que este moderno',
+                        name: 'Lautaro Rosso',
+                        country: 'Mar de Plata, Argentina'
                     },
                     five: {
                         review: 'review from the guest',
