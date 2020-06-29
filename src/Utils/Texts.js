@@ -57,7 +57,8 @@ export const Texts = {
                 name: 'Introduce tu nombre',
                 email: 'Introduce tu dirección de email',
                 subject: 'Introduce asunto',
-                message: 'Introduce tu mensaje'
+                message: 'Introduce tu mensaje',
+                button: 'Enviar tu mensaje'
             }
         },
      },
@@ -156,7 +157,9 @@ export const Texts = {
                     name: 'Enter your name',
                     email: 'Enter email address',
                     subject: 'Enter Subject',
-                    message: 'Enter Message'
+                    message: 'Enter Message',
+                    button: 'Send message'
+
                 }
 
                 

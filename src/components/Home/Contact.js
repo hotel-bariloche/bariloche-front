@@ -64,7 +64,7 @@ const ContactHome = () => {
                         </div>
                     </div>
                     <div className="col-md-12 text-right">
-                        <button type="submit" value="submit" className="button-contact"><span>Send Message</span></button>
+                        <button type="submit" value="submit" className="button-contact"><span>{state.texts[state.language].home.contact.placeholder.button}</span></button>
                     </div>
                 </form>
                         </div>
