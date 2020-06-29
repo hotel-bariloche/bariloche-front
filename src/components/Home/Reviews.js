@@ -36,8 +36,8 @@ const Reviews = () => {
     return (
   
   <Container id="reviews" style={{ padding: '30px'}}>
-      <div class="section-intro text-center pb-20px">
-            <div class="section-intro__style">
+      <div className="section-intro text-center pb-20px">
+            <div className="section-intro__style">
                 <img src={bed1} alt=""></img>
             </div>
             <h2>{state.texts[state.language].home.guests.title}</h2>
@@ -60,9 +60,9 @@ const Reviews = () => {
               alt="Pablo Gomez Sanchez"
             />
           </a>
-          <div class="media-body">
+          <div className="media-body">
                <p className="media-body">{state.texts[state.language].home.guests.cards.first.review}</p>
-                  <div class="testi-carousel__intro">
+                  <div className="testi-carousel__intro">
                     <h3>{state.texts[state.language].home.guests.cards.first.name}</h3>
                     <p>{state.texts[state.language].home.guests.cards.first.country}</p>
                   </div>
@@ -78,9 +78,9 @@ const Reviews = () => {
               alt="Luciana C"
             />
           </a>
-          <div class="media-body">
+          <div className="media-body">
               <p className="media-body">{state.texts[state.language].home.guests.cards.second.review}</p>
-                  <div class="testi-carousel__intro">
+                  <div className="testi-carousel__intro">
                   <h3>{state.texts[state.language].home.guests.cards.second.name}</h3>
                    <p>{state.texts[state.language].home.guests.cards.second.country}</p>
                   </div>
@@ -95,9 +95,9 @@ const Reviews = () => {
               alt="Ernesto"
             />
           </a>
-          <div class="media-body">
+          <div className="media-body">
              <p className="media-body">{state.texts[state.language].home.guests.cards.third.review}</p>
-                  <div class="testi-carousel__intro">
+                  <div className="testi-carousel__intro">
                   <h3>{state.texts[state.language].home.guests.cards.third.name}</h3>
                   <p>{state.texts[state.language].home.guests.cards.third.country}</p>
 
@@ -114,9 +114,9 @@ const Reviews = () => {
               alt="Lautaro Rosso"
             />
           </a>
-          <div class="media-body">
+          <div className="media-body">
              <p className="media-body">{state.texts[state.language].home.guests.cards.four.review}</p>
-                  <div class="testi-carousel__intro">
+                  <div className="testi-carousel__intro">
                   <h3>{state.texts[state.language].home.guests.cards.four.name}</h3>
                   <p>{state.texts[state.language].home.guests.cards.four.country}</p>
 

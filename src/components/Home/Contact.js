@@ -11,8 +11,8 @@ const ContactHome = () => {
 
     return(
         <div style={{ backgroundColor: '#f7f9f9', padding: '20px'}}>
-            <div class="section-intro text-center pb-20px">
-            <div class="section-intro__style">
+            <div className="section-intro text-center pb-20px">
+            <div className="section-intro__style">
                 <img src={bed1} alt=""></img>
             </div>
             <h2>{state.texts[state.language].home.contact.title}</h2>
@@ -32,7 +32,7 @@ const ContactHome = () => {
                 <div className="media contact-info">
                     <span className="contact-info__icon"><i className="ti-headphone"><FaPhoneVolume/></i></span>
                     <div className="media-body">
-                    <h3><a href="tel:454545654"></a>{state.texts[state.language].home.contact.phone}</h3>
+                    <h3><a href="tel:454545654">{state.texts[state.language].home.contact.phone}</a></h3>
                     <p>+54 294 4430622</p>
                     </div>
                 </div>
@@ -45,8 +45,8 @@ const ContactHome = () => {
                 </div>
                 </div>
                 <div className="col-md-8 col-lg-9">
-                <form className="row contact_form" action="mailto:mireiapgomariz@gmail.com" method="post" id="contactForm" enctype="multipart/form-data"
-                    novalidate="novalidate" name="EmailTestForm">
+                <form className="row contact_form" action="mailto:mireiapgomariz@gmail.com" method="post" id="contactForm" encType="multipart/form-data"
+                    noValidate="novalidate" name="EmailTestForm">
                     <div className="col-md-6">
                         <div className="form-group">
                             <input type="text" className="form-control" id="name" name="name" placeholder={state.texts[state.language].home.contact.placeholder.name}/>

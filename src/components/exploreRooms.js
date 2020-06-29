@@ -9,54 +9,54 @@ import bed1 from './img/home/bed-icon.png';
 const ExploreRooms = () => {
     return(
         <div>
-            <section class="section-margin">
-      <div class="container">
-        <div class="section-intro text-center pb-80px">
-          <div class="section-intro__style">
+            <section className="section-margin">
+      <div className="container">
+        <div className="section-intro text-center pb-80px">
+          <div className="section-intro__style">
             <Image src={bed1} alt=""></Image>
           </div>
           <h2>Explore Our Rooms</h2>
         </div>
 
-        <div class="row">
-          <div class="col-md-6 col-lg-4 mb-4 mb-lg-0">
-            <div class="card card-explore">
-              <div class="card-explore__img">
-                <Image class="card-img" src={room1} alt=""></Image>
+        <div className="row">
+          <div className="col-md-6 col-lg-4 mb-4 mb-lg-0">
+            <div className="card card-explore">
+              <div className="card-explore__img">
+                <Image className="card-img" src={room1} alt=""></Image>
               </div>
-              <div class="card-body">
-                <h3 class="card-explore__price">$150.00 <sub>/ Per Night</sub></h3>
-                <h4 class="card-explore__title"><a href="#">Classic Bed Room</a></h4>
+              <div className="card-body">
+                <h3 className="card-explore__price">$150.00 <sub>/ Per Night</sub></h3>
+                <h4 className="card-explore__title"><a href="#">Classic Bed Room</a></h4>
                 <p>Beginning fourth dominion creeping god was. Beginning, which fly yieldi dry beast moved blessed </p>
-                <a class="card-explore__link" href="#">Book Now <i class="ti-arrow-right"></i></a>
+                <a className="card-explore__link" href="#">Book Now <i class="ti-arrow-right"></i></a>
               </div>
             </div>
           </div>
 
-          <div class="col-md-6 col-lg-4 mb-4 mb-lg-0">
-            <div class="card card-explore">
-              <div class="card-explore__img">
-                <Image class="card-img" src={room2} alt=""></Image>
+          <div className="col-md-6 col-lg-4 mb-4 mb-lg-0">
+            <div className="card card-explore">
+              <div className="card-explore__img">
+                <Image className="card-img" src={room2} alt=""></Image>
               </div>
-              <div class="card-body">
-                <h3 class="card-explore__price">$170.00 <sub>/ Per Night</sub></h3>
-                <h4 class="card-explore__title"><a href="#">Premium Room</a></h4>
+              <div className="card-body">
+                <h3 className="card-explore__price">$170.00 <sub>/ Per Night</sub></h3>
+                <h4 className="card-explore__title"><a href="#">Premium Room</a></h4>
                 <p>Beginning fourth dominion creeping god was. Beginning, which fly yieldi dry beast moved blessed </p>
-                <a class="card-explore__link" href="#">Book Now <i class="ti-arrow-right"></i></a>
+                <a className="card-explore__link" href="#">Book Now <i className="ti-arrow-right"></i></a>
               </div>
             </div>
           </div>
 
-          <div class="col-md-6 col-lg-4 mb-4 mb-lg-0">
-            <div class="card card-explore">
-              <div class="card-explore__img">
-                <Image class="card-img" src={room3} alt=""></Image>
+          <div className="col-md-6 col-lg-4 mb-4 mb-lg-0">
+            <div className="card card-explore">
+              <div className="card-explore__img">
+                <Image className="card-img" src={room3} alt=""></Image>
               </div>
-              <div class="card-body">
-                <h3 class="card-explore__price">$190.00 <sub>/ Per Night</sub></h3>
-                <h4 class="card-explore__title"><a href="#">Family Room</a></h4>
+              <div className="card-body">
+                <h3 className="card-explore__price">$190.00 <sub>/ Per Night</sub></h3>
+                <h4 className="card-explore__title"><a href="#">Family Room</a></h4>
                 <p>Beginning fourth dominion creeping god was. Beginning, which fly yieldi dry beast moved blessed </p>
-                <a class="card-explore__link" href="#">Book Now <i class="ti-arrow-right"></i></a>
+                <a className="card-explore__link" href="#">Book Now <i className="ti-arrow-right"></i></a>
               </div>
             </div>
           </div>

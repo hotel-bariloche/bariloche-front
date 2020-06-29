@@ -1,7 +1,6 @@
 import React, {Link} from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Container, Row, Col } from 'reactstrap';
-import Button from 'react-bootstrap/Button'
 import './header.scss';
 import { FaPhoneVolume, FaRegEnvelope, FaFacebookF, FaTripadvisor, FaInstagram } from "react-icons/fa";
 import { Navbar } from 'react-bootstrap';
@@ -75,7 +74,7 @@ const NavHome = () => {
       <Container fluid className="main_menu">
           <Row style={{ background: "white", width: "100vw", padding: '0px 52px 0px 52px', marginLeft: '-30px' }}> 
             <Col style={{ border: 'none'}}>
-            <Navbar id="navbar" className="navbar navbar_bi" expand="lg"  style={{ boxShadow: 'none'}} fixedTop>
+            <Navbar id="navbar" className="navbar navbar_bi" expand="lg"  style={{ boxShadow: 'none'}}>
               <Navbar.Toggle className="navbar-toggler" aria-controls="basic-navbar-nav">
                 <span className="icon-bar"></span>
                 <span className="icon-bar"></span>
@@ -105,9 +104,9 @@ const NavHome = () => {
               </Navbar.Collapse>
               <div>
                 <ul className="social-icons ml-auto">
-                    <li><a href="https://www.facebook.com/GrandHotelBariloche/" target="_blank"><FaFacebookF /></a></li>
-                    <li><a href="https://www.tripadvisor.es/Hotel_Review-g312848-d1177779-Reviews-Grand_Hotel_Bariloche-San_Carlos_de_Bariloche_Province_of_Rio_Negro_Patagonia.html" target="_blank"><FaTripadvisor /></a></li>
-                    <li><a href="https://www.instagram.com/grandhotelbariloche/" target="_blank"><FaInstagram/></a></li>
+                    <li><a href="https://www.facebook.com/GrandHotelBariloche/" rel="noopener noreferrer" target="_blank"><FaFacebookF /></a></li>
+                    <li><a href="https://www.tripadvisor.es/Hotel_Review-g312848-d1177779-Reviews-Grand_Hotel_Bariloche-San_Carlos_de_Bariloche_Province_of_Rio_Negro_Patagonia.html" rel="noopener noreferrer" target="_blank"><FaTripadvisor /></a></li>
+                    <li><a href="https://www.instagram.com/grandhotelbariloche/" rel="noopener noreferrer" target="_blank"><FaInstagram/></a></li>
                   </ul>
               </div>
             
