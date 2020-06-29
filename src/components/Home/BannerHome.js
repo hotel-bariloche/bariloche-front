@@ -17,6 +17,7 @@ const BannerHome = () => {
           <Carousel interval={3000}>
                 <Carousel.Item>
                     <img
+                    height="850px"
                     className="d-block w-100"
                     src={landing1}
                     alt="First slide"
@@ -28,6 +29,7 @@ const BannerHome = () => {
                 </Carousel.Item>
                 <Carousel.Item>
                     <img
+                    height="850px"
                     className="d-block w-100"
                     src={Sunset}
                     alt="Third slide"
@@ -40,6 +42,7 @@ const BannerHome = () => {
                 </Carousel.Item>
                 <Carousel.Item>
                     <img
+                    height="850px"
                     className="d-block w-100"
                     src={Sunset}
                     alt="Third slide"
