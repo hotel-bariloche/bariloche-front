@@ -2,7 +2,7 @@ import React from 'react';
 import '../../css/style.css'
 import { Row ,Col} from 'reactstrap';
 import Carousel from 'react-bootstrap/Carousel';
-import welcomeBanner1 from '../img/home/welcomeBanner1.png';
+import welcomeBanner1 from '../img/home/lavanda.jpg';
 import welcomeBanner2 from '../img/home/welcomeBanner2.png';
 import welcomeBanner3 from '../img/home/welcomeBanner3.png';
 import { Context } from '../../Context/Provider';
@@ -24,7 +24,7 @@ const DestinoBariloche = () => {
                         <Row className="row no-gutters welcome-images">
                             <Col sm="7" className="col-sm-7">
                                 <div className="card">
-                                    <img className="" src={welcomeBanner1} alt="Card image cap"/>
+                                    <img style={{ height: '318px'}} className="" src={welcomeBanner1} alt="Card image cap"/>
                                 </div>
                             </Col>
                             <Col sm="5" className="col-sm-5">
