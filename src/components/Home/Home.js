@@ -3,7 +3,6 @@ import BannerHome from './BannerHome';
 import AboutUs from './AboutUs';
 import DestinoBariloche from './DestinoBariloche';
 import Video from './Video';
-import ExploreRooms from '../exploreRooms';
 import Reviews from './Reviews';
 import ContactHome from './Contact.js';
 
@@ -16,7 +15,6 @@ const Home = () => {
             <AboutUs/>
             <DestinoBariloche/>
             <Video/>
-            <ExploreRooms/>
             <Reviews/>
             <ContactHome/>
         </div>
