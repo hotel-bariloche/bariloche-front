@@ -5,11 +5,14 @@ import bed1 from '../img/home/bed-icon.png';
 import testimonial1 from '../img/home/testimonial1.png';
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
-import Card from 'react-bootstrap/Card'
+import { Context } from '../../Context/Provider';
+
 
 
 
 const Reviews = () => {
+  const { state, changeLanguage } = React.useContext(Context);
+
     const responsive = {
     superLargeDesktop: {
       // the naming can be any, depends on you.
@@ -37,7 +40,7 @@ const Reviews = () => {
             <div class="section-intro__style">
                 <img src={bed1} alt=""></img>
             </div>
-            <h2>Our Guest Love Us</h2>
+            <h2>{state.texts[state.language].home.guests.title}</h2>
         </div>
   
     <Carousel showDots autoPlay dotListClass infinite

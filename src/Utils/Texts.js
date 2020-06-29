@@ -50,6 +50,9 @@ export const Texts = {
                 }
             }
         },
+        contact: {
+            title: 'Contacta con nosotros'
+        },
      },
      rooms: {
         banner: 'nuestras habitaciones',
@@ -79,7 +82,8 @@ export const Texts = {
                 standard: 'Cuádruple Estándar',
                 description: 'Todos los miembros de la familia tienen derecho a descansar bien, y los amigos.. tambien! En esta habitación con cómodos espacios podrás encontrar tu lugar de relax. '
             }
-        }
+        },
+           
      },
      location: {
          banner: 'ubicación'
@@ -137,6 +141,9 @@ export const Texts = {
                         country: 'country'
                     }
                 }
+            },
+            contact: {
+                title: 'Contact us'
             },
         },
         rooms: {

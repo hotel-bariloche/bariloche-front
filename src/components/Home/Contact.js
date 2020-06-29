@@ -1,17 +1,21 @@
 import React from 'react';
 import { FaPhoneVolume, FaRegEnvelope, FaRegBuilding } from "react-icons/fa";
 import bed1 from '../img/home/bed-icon.png';
+import { Context } from '../../Context/Provider';
+
 
 
 
 const ContactHome = () => {
+    const { state, changeLanguage } = React.useContext(Context);
+
     return(
-        <div style={{ backgroundColor: 'grey', padding: '20px'}}>
+        <div style={{ backgroundColor: '#f7f9f9', padding: '20px'}}>
             <div class="section-intro text-center pb-20px">
             <div class="section-intro__style">
                 <img src={bed1} alt=""></img>
             </div>
-            <h2>Our Guest Love Us</h2>
+            <h2>{state.texts[state.language].home.contact.title}</h2>
             </div>
   
              <section className="section-margin">
