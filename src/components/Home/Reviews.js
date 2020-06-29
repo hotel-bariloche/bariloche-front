@@ -60,7 +60,7 @@ const Reviews = () => {
               alt="Snake"
             />
           </a>
-          <p className="media-body">El mítico juego de Nokia vuelve para engancharte de nuevo</p>
+          <p className="media-body">{state.texts[state.language].home.guests.cards.four.review}</p>
         </div >
         <div  style={{width: '18rem'}} className="owl-carousel owl-theme testi-carousel testi-carousel__item">
           <a href='' style={{ width: '100px', marginRight: '0'}} className='media'>
@@ -71,7 +71,7 @@ const Reviews = () => {
               alt="Snake"
             />
           </a>
-          <p className="media-body">El mítico juego de Nokia vuelve para engancharte de nuevo</p>
+          <p className="media-body">{state.texts[state.language].home.guests.cards.first.review}</p>
         </div >
         <div style={{width: '18rem'}} className="owl-carousel owl-theme testi-carousel testi-carousel__item">
           <a href='' className='media'>
@@ -82,7 +82,7 @@ const Reviews = () => {
               alt="Snake"
             />
           </a>
-          <p className="media-body">El mítico juego de Nokia vuelve para engancharte de nuevo</p>
+          <p className="media-body">{state.texts[state.language].home.guests.cards.second.review}</p>
         </div >
         <div style={{width: '18rem'}}  className="owl-carousel owl-theme testi-carousel testi-carousel__item">
           <a href='' className='media'>
@@ -93,7 +93,7 @@ const Reviews = () => {
               alt="Snake"
             />
           </a>
-          <p className="media-body">El mítico juego de Nokia vuelve para engancharte de nuevo</p>
+          <p className="media-body">{state.texts[state.language].home.guests.cards.third.review}</p>
         </div >
         
     </Carousel>

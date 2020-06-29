@@ -25,22 +25,22 @@ const ContactHome = () => {
                 <div className="media contact-info">
                     <span className="contact-info__icon"><i className="ti-home"><FaRegBuilding/></i></span>
                     <div className="media-body">
-                    <h3>California United States</h3>
-                    <p>Santa monica bullevard</p>
+                    <h3>Mitre 408</h3>
+                    <p>San Carlos de Bariloche Río Negro</p>
                 </div>
                 </div>
                 <div className="media contact-info">
                     <span className="contact-info__icon"><i className="ti-headphone"><FaPhoneVolume/></i></span>
                     <div className="media-body">
-                    <h3><a href="tel:454545654">00 (440) 9865 562</a></h3>
-                    <p>Mon to Fri 9am to 6pm</p>
+                    <h3><a href="tel:454545654"></a>{state.texts[state.language].home.contact.phone}</h3>
+                    <p>+54 294 4430622</p>
                     </div>
                 </div>
                 <div className="media contact-info">
                     <span className="contact-info__icon"><i className="ti-email"><FaRegEnvelope/></i></span>
                     <div className="media-body">
-                    <h3><a href="mailto:support@colorlib.com">support@colorlib.com</a></h3>
-                    <p>Send us your query anytime!</p>
+                    <h3><a href="mailto:support@colorlib.com">Email</a></h3>
+                    <p>reservas@grandhotelbariloche.com</p>
                     </div>
                 </div>
                 </div>
@@ -49,18 +49,18 @@ const ContactHome = () => {
                     novalidate="novalidate">
                     <div className="col-md-6">
                         <div className="form-group">
-                            <input type="text" className="form-control" id="name" name="name" placeholder="Enter your name"/>
+                            <input type="text" className="form-control" id="name" name="name" placeholder={state.texts[state.language].home.contact.placeholder.name}/>
                         </div>
                         <div className="form-group">
-                            <input type="email" className="form-control" id="email" name="email" placeholder="Enter email address"/>
+                            <input type="email" className="form-control" id="email" name="email" placeholder={state.texts[state.language].home.contact.placeholder.email}/>
                         </div>
                         <div className="form-group">
-                            <input type="text" className="form-control" id="subject" name="subject" placeholder="Enter Subject"/>
+                            <input type="text" className="form-control" id="subject" name="subject" placeholder={state.texts[state.language].home.contact.placeholder.subject}/>
                         </div>
                     </div>
                     <div className="col-md-6">
                         <div className="form-group">
-                            <textarea className="form-control different-control" name="message" id="message" rows="5" placeholder="Enter Message"></textarea>
+                            <textarea className="form-control different-control" name="message" id="message" rows="5" placeholder={state.texts[state.language].home.contact.placeholder.message}></textarea>
                         </div>
                     </div>
                     <div className="col-md-12 text-right">

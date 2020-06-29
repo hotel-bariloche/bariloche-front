@@ -51,7 +51,14 @@ export const Texts = {
             }
         },
         contact: {
-            title: 'Contacta con nosotros'
+            title: 'Contacta con nosotros',
+            phone: 'Teléfono',
+            placeholder: {
+                name: 'Introduce tu nombre',
+                email: 'Introduce tu dirección de email',
+                subject: 'Introduce asunto',
+                message: 'Introduce tu mensaje'
+            }
         },
      },
      rooms: {
@@ -143,7 +150,16 @@ export const Texts = {
                 }
             },
             contact: {
-                title: 'Contact us'
+                title: 'Contact us',
+                phone: 'Phone',
+                placeholder: {
+                    name: 'Enter your name',
+                    email: 'Enter email address',
+                    subject: 'Enter Subject',
+                    message: 'Enter Message'
+                }
+
+                
             },
         },
         rooms: {
