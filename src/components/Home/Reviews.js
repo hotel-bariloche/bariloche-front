@@ -35,7 +35,7 @@ const Reviews = () => {
   
     return (
   
-  <Container id="reviews">
+  <Container id="reviews" style={{ padding: '30px'}}>
       <div class="section-intro text-center pb-20px">
             <div class="section-intro__style">
                 <img src={bed1} alt=""></img>
