@@ -1,15 +1,12 @@
 import React from 'react';
-import Image from 'react-bootstrap/Image'
 import Accordion from 'react-bootstrap/Accordion';
 import { Container, Row, Col } from 'reactstrap';
 import Card from 'react-bootstrap/Card'
-import room1 from '../img/home/explore1.png';
-import room2 from '../img/home/explore2.png';
-import room3 from '../img/home/explore3.png';
-import room4 from '../img/home/explore4.png';
-import room5 from '../img/home/explore5.png';
-import room6 from '../img/home/explore6.png';
+import economyDoble from '../img/hotel/economy-doble.jpg';
+import standardDoble from '../img/hotel/standard-doble.jpg';
 import bed1 from '../img/home/bed-icon.png';
+import { FaWifi, FaRegSnowflake } from 'react-icons/fa';
+import { GiWineBottle } from "react-icons/gi";
 import './Rooms.css';
 import { Context } from '../../Context/Provider';
 
@@ -35,147 +32,125 @@ const Rooms = () => {
             </div>
         </section>
 
-        <Accordion>
             <Card>
-                <Accordion.Toggle as={Card.Header} eventKey="0">
                     <Row className="room-container">
-                        <div className="">
-                            <div id="about">            
-                                        <div className="room">
-                                            <img src={room3} 
-                                            alt="Card image cap"
-                                            className="room-img" 
-                                            />
-                                        </div>
-                            </div>
-                        </div>
                         <div className="room-article-container">
                             <div className="room-title">
                                 <h2>{state.texts[state.language].rooms.room.economy.title}</h2>
                             </div>
                             <hr/>
                                 <p className="room-description">{state.texts[state.language].rooms.room.economy.description}</p>
-                                <a className="button button--active home-banner-btn mt-4" href="">{state.texts[state.language].rooms.moreOptions}</a>
+                                <div>
+                                   <ul className="services-room">
+                                       <li><p><FaWifi/>Free Wifi</p></li>
+                                       <li><p><FaRegSnowflake/>Aire acondicionado</p></li>
+                                       <li><p><GiWineBottle/>Minibar</p></li>
+                                    </ul> 
+                                </div>
                         </div>
                     </Row>
-                </Accordion.Toggle>
-                <Accordion.Collapse eventKey="0">
+                <hr/>
                     <Card.Body>
-                    <Row pb={4} mt={5}>   
+                    <Row pb={3} mt={4}>   
                         <Col md={6} xl={4} mb={5}>
-                            <Card class="card card-explore" style={{ marginTop: '40px'}}>
-                                <div class="card-explore__img">
-                                    <Card.Img class="card-img" src={room1} alt=""/>
+                            <Card className="card card-explore" style={{ marginTop: '40px'}}>
+                                <div className="card-explore__img">
+                                    <Card.Img className="card-img" src={economyDoble} alt=""/>
                                 </div>
-                                <Card.Body class="card-body">
-                                    <h3 class="card-explore__price">$150.00 <sub>/ Per Night</sub></h3>
-                                    <h4 class="card-explore__title"><a href="#">Economic Room</a></h4>
-                                    <p>Beginning fourth dominion creeping god was. Beginning, which fly yieldi dry beast moved blessed </p>
-                                    <a class="card-explore__link" href="#">Book Now <i class="ti-arrow-right"></i></a>
+                                <Card.Body className="card-body">
+                                    <h3 className="card-explore__title"><a href="#">{state.texts[state.language].rooms.room.doble.economy}</a></h3>
+                                    <p>{state.texts[state.language].rooms.room.doble.description}</p>
+                                    <a className="card-explore__link" target="_blank" href="https://reservations.travelclick.com/106660?languageid=2%20#/guestsandrooms">{state.texts[state.language].home.book} <i className="ti-arrow-right"></i></a>
                                 </Card.Body>
                             </Card>
                         </Col>
                         <Col md={6} xl={4} mb={5}>
-                            <Card class="card card-explore" style={{ marginTop: '40px'}}>
-                                <div class="card-explore__img">
-                                    <Card.Img class="card-img" src={room2} alt=""/>
+                            <Card className="card card-explore" style={{ marginTop: '40px'}}>
+                                <div className="card-explore__img">
+                                    <Card.Img className="card-img" src="" alt=""/>
                                 </div>
-                                <Card.Body class="card-body">
-                                    <h3 class="card-explore__price">$150.00 <sub>/ Per Night</sub></h3>
-                                    <h4 class="card-explore__title"><a href="#">Standard Room</a></h4>
-                                    <p>Beginning fourth dominion creeping god was. Beginning, which fly yieldi dry beast moved blessed </p>
-                                    <a class="card-explore__link" href="#">Book Now <i class="ti-arrow-right"></i></a>
+                                <Card.Body className="card-body">
+                                    <h3 className="card-explore__title"><a href="#">{state.texts[state.language].rooms.room.triple.economy}</a></h3>
+                                    <p>{state.texts[state.language].rooms.room.triple.description}</p>
+                                    <a className="card-explore__link" target="_blank" href="https://reservations.travelclick.com/106660?languageid=2%20#/guestsandrooms">{state.texts[state.language].home.book} <i className="ti-arrow-right"></i></a>
                                 </Card.Body>
                             </Card>
                         </Col>
                         <Col md={6} xl={4} mb={5}>
-                            <Card class="card card-explore" style={{ marginTop: '40px'}}>
-                                <div class="card-explore__img">
-                                    <Card.Img class="card-img" src={room3} alt=""/>
+                            <Card className="card card-explore" style={{ marginTop: '40px'}}>
+                                <div className="card-explore__img">
+                                    <Card.Img className="card-img" src="" alt=""/>
                                 </div>
-                                <Card.Body class="card-body">
-                                    <h3 class="card-explore__price">$150.00 <sub>/ Per Night</sub></h3>
-                                    <h4 class="card-explore__title"><a href="#">Doble Room</a></h4>
-                                    <p>Beginning fourth dominion creeping god was. Beginning, which fly yieldi dry beast moved blessed </p>
-                                    <a class="card-explore__link" href="#">Book Now <i class="ti-arrow-right"></i></a>
+                                <Card.Body className="card-body">
+                                    <h3 className="card-explore__title"><a href="#">{state.texts[state.language].rooms.room.cuadruple.economy}</a></h3>
+                                    <p>{state.texts[state.language].rooms.room.cuadruple.description}</p>
+                                    <a className="card-explore__link" target="_blank" href="https://reservations.travelclick.com/106660?languageid=2%20#/guestsandrooms">{state.texts[state.language].home.book} <i class="ti-arrow-right"></i></a>
                                 </Card.Body>
                             </Card>
                         </Col>
                     </Row>
                 </Card.Body>
-                </Accordion.Collapse>
             </Card>
             {/*seccion standard rooms*/}
             <Card>
-                <Accordion.Toggle as={Card.Header} eventKey="1">
                 <Row className="room-container">
-                        <div className="">
-                            <div id="about">            
-                                        <div className="room">
-                                            <img src={room3} 
-                                            alt="Card image cap"
-                                            className="room-img" 
-                                            />
-                                        </div>
-                            </div>
-                        </div>
                         <div className="room-article-container">
                             <div className="room-title">
                                 <h2>{state.texts[state.language].rooms.room.standard.title}</h2>
                             </div>
                             <hr/>
                                 <p className="room-description">{state.texts[state.language].rooms.room.standard.description}</p>
-                                <a className="button button--active home-banner-btn mt-4" href="">{state.texts[state.language].rooms.moreOptions}</a>
+                                <div className="services-room">
+                                   <ul>
+                                       <li></li>
+                                       <li></li>
+                                       <li></li>
+                                    </ul> 
+                                </div>
                         </div>
                     </Row>
-                </Accordion.Toggle>
-                <Accordion.Collapse eventKey="1">
+                    <hr/>
                     <Card.Body>
-                        <Row pb={4} mt={5}>
+                        <Row pb={3} mt={4}>
                                 <Col md={6} xl={4} mb={5}>
-                                    <Card class="card card-explore" style={{ marginTop: '40px'}}>
-                                        <div class="card-explore__img">
-                                            <Card.Img class="card-img" src={room4} alt=""/>
+                                    <Card className="card card-explore" style={{ marginTop: '40px'}}>
+                                        <div className="card-explore__img">
+                                            <Card.Img className="card-img" src={standardDoble} alt=""/>
                                         </div>
-                                        <Card.Body class="card-body">
-                                            <h3 class="card-explore__price">$150.00 <sub>/ Per Night</sub></h3>
-                                            <h4 class="card-explore__title"><a href="#">Triple Room</a></h4>
-                                            <p>Beginning fourth dominion creeping god was. Beginning, which fly yieldi dry beast moved blessed </p>
-                                            <a class="card-explore__link" href="#">Book Now <i class="ti-arrow-right"></i></a>
+                                        <Card.Body className="card-body">
+                                            <h3 className="card-explore__title"><a href="#">{state.texts[state.language].rooms.room.doble.standard}</a></h3>
+                                            <p>{state.texts[state.language].rooms.room.doble.description}</p>
+                                            <a className="card-explore__link" target="_blank" href="https://reservations.travelclick.com/106660?languageid=2%20#/guestsandrooms">{state.texts[state.language].home.book} <i className="ti-arrow-right"></i></a>
                                         </Card.Body>
                                     </Card>
                                 </Col>
                                 <Col md={6} xl={4} mb={5}>
-                                    <Card class="card card-explore" style={{ marginTop: '40px'}}>
-                                        <div class="card-explore__img">
-                                            <Card.Img class="card-img" src={room5} alt=""/>
+                                    <Card className="card card-explore" style={{ marginTop: '40px'}}>
+                                        <div className="card-explore__img">
+                                            <Card.Img className="card-img" src="" alt=""/>
                                         </div>
-                                        <Card.Body class="card-body">
-                                            <h3 class="card-explore__price">$150.00 <sub>/ Per Night</sub></h3>
-                                            <h4 class="card-explore__title"><a href="#">Cuádruple Room</a></h4>
-                                            <p>Beginning fourth dominion creeping god was. Beginning, which fly yieldi dry beast moved blessed </p>
-                                            <a class="card-explore__link" href="#">Book Now <i class="ti-arrow-right"></i></a>
+                                        <Card.Body className="card-body">
+                                            <h3 className="card-explore__title"><a href="#">{state.texts[state.language].rooms.room.triple.standard}</a></h3>
+                                            <p>{state.texts[state.language].rooms.room.triple.description}</p>
+                                            <a className="card-explore__link" target="_blank" href="https://reservations.travelclick.com/106660?languageid=2%20#/guestsandrooms">{state.texts[state.language].home.book} <i className="ti-arrow-right"></i></a>
                                         </Card.Body>
                                     </Card>
                                 </Col>
                                 <Col md={6} xl={4} mb={5}>
-                                    <Card class="card card-explore" style={{ marginTop: '40px'}}>
-                                        <div class="card-explore__img">
-                                            <Card.Img class="card-img" src={room6} alt=""/>
+                                    <Card className="card card-explore" style={{ marginTop: '40px'}}>
+                                        <div className="card-explore__img">
+                                            <Card.Img className="card-img" src="" alt=""/>
                                         </div>
-                                        <Card.Body class="card-body">
-                                            <h3 class="card-explore__price">$150.00 <sub>/ Per Night</sub></h3>
-                                            <h4 class="card-explore__title"><a href="#">Classic Bed Room</a></h4>
-                                            <p>Beginning fourth dominion creeping god was. Beginning, which fly yieldi dry beast moved blessed </p>
-                                            <a class="card-explore__link" href="#">Book Now <i class="ti-arrow-right"></i></a>
+                                        <Card.Body className="card-body">
+                                            <h3 className="card-explore__title"><a href="#">{state.texts[state.language].rooms.room.cuadruple.standard}</a></h3>
+                                            <p>{state.texts[state.language].rooms.room.cuadruple.description}</p>
+                                            <a className="card-explore__link" target="_blank" href="https://reservations.travelclick.com/106660?languageid=2%20#/guestsandrooms">{state.texts[state.language].home.book} <i className="ti-arrow-right"></i></a>
                                         </Card.Body>
                                     </Card>
                                 </Col>
                             </Row>
                     </Card.Body>
-                </Accordion.Collapse>
-            </Card>
-        </Accordion>               
+            </Card>              
     </div>
     )
 }

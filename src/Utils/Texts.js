@@ -63,6 +63,21 @@ export const Texts = {
             standard: {
                 title: 'Habitación Standard',
                 description: 'Habitaciones impregnadas de los tres valores más característicos del hotel: tradición, cercanía y compromiso, que hacen que alojarse en una de estas habitaciones suponga sentir la calidez del hogar, pero fuera de casa. '
+            },
+            doble: {
+                economy: 'Doble Económica ',
+                standard: 'Doble Estándar',
+                description: 'Una opción tranquila para parejas que vienen a seguir enamorandose en nuestro destino o amigos que quieren disfrutar de Bariloche. En nuestras habitaciones dobles, podras descansar del movimiento de la ciudad, disfrutar de un sueño reparador que los prepararán para las aventuras que los esperan al día siguiente.'
+            },
+            triple: {
+                economy: 'Triple Económica ',
+                standard: 'Triple Estándar',
+                description: '¿Quién dijo que tres son multitud? En Grand Hotel Bariloche nos gustan los números impares y por eso ofrecemos una habitación para tres personas con vistas increibles. Sea para tus amigos, to tu pequeña familia, este es tu hogar en Bariloche. '
+            },
+            cuadruple: {
+                economy: 'Cuádruple Económica ',
+                standard: 'Cuádruple Estándar',
+                description: 'Todos los miembros de la familia tienen derecho a descansar bien, y los amigos.. tambien! En esta habitación con cómodos espacios podrás encontrar tu lugar de relax. '
             }
         }
      },
@@ -74,7 +89,7 @@ export const Texts = {
 
     english: {
         home: {
-            book: 'Book a room',
+            book: 'Book now',
             navbar: {
                 home: 'Home',
                 about: 'about',
@@ -136,6 +151,22 @@ export const Texts = {
                 standard: {
                     title: 'Standard Room',
                     description: 'Rooms imbued with the three most characteristic values of the hotel: tradition, closeness and commitment, which make staying in one of these rooms mean feeling the warmth of home but away from home.'
+                },
+
+                doble: {
+                    economy: 'Economy Double ',
+                    standard: 'Standard Double',
+                    description: 'A quiet option for couples who come to continue falling in love in our destination or friends who want to enjoy Bariloche. In our double rooms, you can rest from the movement of the city, enjoy a restful sleep that will prepare you for the adventures that await you the next day.'
+                },
+                triple: {
+                    economy: 'Economy Triple ',
+                    standard: 'Standard Double',
+                    description: 'Who said that three are crowd? At Grand Hotel Bariloche we like odd numbers and that is why we offer a room for three people with incredible views. Be it for your friends, for your little family, this is your home in Bariloche. '
+                },
+                cuadruple: {
+                    economy: 'Economy Quadruple ',
+                    standard: 'Standard Quadruple',
+                    description: 'All family members have the right to rest well, and friends ... too! In this room with comfortable spaces you can find your place of relaxation.'
                 }
             }
          },

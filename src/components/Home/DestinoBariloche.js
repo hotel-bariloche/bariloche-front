@@ -15,13 +15,12 @@ const DestinoBariloche = () => {
             <div className="container">
                 <Row className="row align-items-center">
                 <Col lg="7" className="col-lg-7">
-                            <div className="welcome-content">
+                            <div className="welcome-content-destino">
                                 <h2 className="mb-4">{state.texts[state.language].home.about.titlePlace}</h2>
-                                <p>{state.texts[state.language].home.about.place}</p>
-                                <a className="button button--active home-banner-btn mt-4" href="#">Learn More</a>
+                                <p>{state.texts[state.language].home.about.place}</p>s
                             </div>
                 </Col>
-                <Col  lg="5" className="col-lg-5 mb-4 mb-lg-0">
+                <Col  lg="5" className="col-lg-5">
                         <Row className="row no-gutters welcome-images">
                             <Col sm="7" className="col-sm-7">
                                 <div className="card">

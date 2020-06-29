@@ -518,6 +518,14 @@ button {
 
 /*=================== section-intro end ====================*/
 /*=================== home banner start ====================*/
+@font-face {
+  font-family: 'Mandali';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Mandali'), url(https://fonts.gstatic.com/s/mandali/v8/LhWlMVbYOfASNfNUZF4_ZQ.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
 .carousel-slide {
   position: relative; }
   .carousel-caption h4, .carousel-caption h1, .carousel-caption a {
@@ -525,6 +533,7 @@ button {
     color: #fff; }
   .carousel-caption h4 {
     font-size: 60px;
+    font-weight: lighter;
     margin-bottom: 15px; }
   .carousel-slide-btn {
     margin-bottom: 25vw;
@@ -658,7 +667,10 @@ button {
         width: 100%; } }
   @media (min-width: 991px) {
     .welcome-content {
-      padding-left: 60px; } }
+      padding-left: 10px; }
+      .welcome-content-destino {
+        padding-left: 10px;
+        text-align: right;  } }
 
 /*=================== welcome section end ====================*/
 /*=================== explore section start ====================*/

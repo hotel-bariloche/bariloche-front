@@ -16,8 +16,8 @@
     .room-article-container {
         padding-left: 20px;
         box-sizing: border-box;
-        width: 65%;
         vertical-align: top;
+        text-align: center;
     }
     .room-title {
         padding: 0 0 10px;
@@ -33,4 +33,29 @@
         font-size: 20px;
         font-family: 'Mandali';
     }
+    .services-room {
+        padding-bottom: 70px;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        display: inline-flex;
+    }
+    .services-room li {
+        margin-right: 50px;
+        font-family: 'Mandali';
+        font-size: 18px;
+    }
+    .services-room li svg {
+        font-size: 40px;
+        color: #cca772;
+        padding-right: 10px;
+    }
+    .more-options {
+        position: absolute;
+        right: 180px;
+    }
+    .room-img {
+        max-width: 125px;
+    }
+    
 }
