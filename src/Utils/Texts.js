@@ -120,7 +120,7 @@ export const Texts = {
             fith: {
                 art: 'adventure',
                 text: 'excursiones'
-            }
+            },
             six: {
                 center: 'Center bariloche',
                 text: 'centro civico'
@@ -142,6 +142,7 @@ export const Texts = {
          title: 'Galería',
          bannerTitle: 'Galería de imágenes'
      },
+    }
     },
 
     english: {
@@ -245,7 +246,7 @@ export const Texts = {
                 air: 'Air conditioner'
             }
          },
-         location: {
+        location: {
             banner: 'location',
             map: 'Find Us',
             attractions: 'Attractions',
@@ -269,7 +270,7 @@ export const Texts = {
                 fith: {
                     art: 'adventure',
                     text: 'excursiones'
-                }
+                },
                 six: {
                     center: 'Center bariloche',
                     text: 'centro civico'
@@ -294,4 +295,5 @@ export const Texts = {
         },
 
     },
+
 }
