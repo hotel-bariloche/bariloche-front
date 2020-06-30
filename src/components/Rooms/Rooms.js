@@ -43,8 +43,8 @@ const Rooms = () => {
                                 <p className="room-description">{state.texts[state.language].rooms.room.economy.description}</p>
                                 <div>
                                    <ul className="services-room">
-                                       <li><p><FaWifi/>{state.texts[state.language].rooms.room.services.wifi}</p></li>
-                                       <li><p><FaRegSnowflake/>{state.texts[state.language].rooms.room.services.air}</p></li>
+                                       <li><p><FaWifi/>{state.texts[state.language].rooms.services.wifi}</p></li>
+                                       <li><p><FaRegSnowflake/>{state.texts[state.language].rooms.services.air}</p></li>
                                        <li><p><GiWineBottle/>Minibar</p></li>
                                     </ul> 
                                 </div>
