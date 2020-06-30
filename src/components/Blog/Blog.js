@@ -116,7 +116,7 @@ const Blog = () => {
         </section>
         {/*blog area*/}
         <section className="blog_area">
-      <div className="container">
+      <div className="container" id="attractions">
           <div className="row">
               <div className="col-lg-8">
                   <div className="blog_left_sidebar">
