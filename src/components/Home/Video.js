@@ -2,7 +2,7 @@ import React from 'react';
 
 const Video = () => {
     return(
-        <section className="video-area">
+        <section className="video-area" id="#video">
         <div className="container">
           <div className="row justify-content-center align-items-center flex-column text-center">
             <a id="play-home-video" className="video-play-button" href="https://www.youtube.com/watch?v=WU_dWnyGZSo">
