@@ -96,7 +96,18 @@ export const Texts = {
      location: {
          banner: 'ubicación'
 
-     }
+     },
+     footer: {
+         titulo: 'Secciones',
+         about: 'Sobre nosotros',
+         video: 'Video',
+         gallery: 'Galería',
+         location: 'Mapa',
+         attractions: 'Lugares de interés',
+         room1: 'Standar room',
+         room2: 'Economy room',
+         contact: 'Contacto'
+     },
     },
 
     english: {
@@ -199,7 +210,18 @@ export const Texts = {
          location: {
             banner: 'location'
    
-        }
+        },
+        footer: {
+            titulo: 'Sections',
+            about: 'About Us',
+            video: 'Video',
+            gallery: 'Gallery',
+            location: 'Map',
+            attractions: 'Attractions',
+            room1: 'Standar room',
+            room2: 'Economy room',
+            contact: 'Contact'
+        },
     
 
     },
