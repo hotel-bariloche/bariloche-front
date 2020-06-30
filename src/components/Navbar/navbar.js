@@ -1,4 +1,5 @@
-import React, {Link} from 'react';
+import React from 'react';
+import {Link} from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Container, Row, Col } from 'reactstrap';
 import './header.scss';
@@ -83,22 +84,22 @@ const NavHome = () => {
               <Navbar.Collapse id="basic-navbar-nav" sticky="top">
                 <Nav className="mr-auto nav" activeKey="/" as="ul">
                   <Nav.Item as="li" className="nav-item active" >
-                    <Nav.Link eventKey="active" className="nav-link" href="/">{state.texts[state.language].home.navbar.home}</Nav.Link>
+                    <Link eventKey="active" className="nav-link" to="/">{state.texts[state.language].home.navbar.home}</Link>
                   </Nav.Item>
                   <Nav.Item as="li" className="nav-item" >
-                    <Nav.Link className="nav-link" href="#about">{state.texts[state.language].home.navbar.about}</Nav.Link>
+                    <Nav.Link className="nav-link" to="#about">{state.texts[state.language].home.navbar.about}</Nav.Link>
                   </Nav.Item>
                   <Nav.Item as="li" className="nav-item" >
-                    <Nav.Link className="nav-link" href="/gallery">{state.texts[state.language].home.navbar.gallery}</Nav.Link>
+                    <Link className="nav-link" to="/gallery">{state.texts[state.language].home.navbar.gallery}</Link>
                   </Nav.Item>
                   <Nav.Item as="li" className="nav-item" >
-                    <Nav.Link className="nav-link" href="/blog">{state.texts[state.language].home.navbar.location}</Nav.Link>
+                    <Link className="nav-link" to="/blog">{state.texts[state.language].home.navbar.location}</Link>
                   </Nav.Item>
                   <Nav.Item as="li" className="nav-item" >
-                    <Nav.Link className="nav-link"href="/rooms">{state.texts[state.language].home.navbar.rooms}</Nav.Link>
+                    <Link className="nav-link" to="/rooms">{state.texts[state.language].home.navbar.rooms}</Link>
                   </Nav.Item>
                   <Nav.Item as="li" className="nav-item" >
-                    <Nav.Link className="nav-link" href="/contacto">{state.texts[state.language].home.navbar.contact}</Nav.Link>
+                    <Link className="nav-link" to="/contacto">{state.texts[state.language].home.navbar.contact}</Link>
                   </Nav.Item>
                 </Nav>
               </Navbar.Collapse>

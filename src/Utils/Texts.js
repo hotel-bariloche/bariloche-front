@@ -222,7 +222,7 @@ export const Texts = {
    
         },
         footer: {
-            titulo: 'Sections',
+            title: 'Sections',
             about: 'About Us',
             video: 'Video',
             gallery: 'Gallery',
