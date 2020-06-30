@@ -1,12 +1,11 @@
 import React from 'react';
-import { Container, Row, Col } from 'reactstrap';
+import { Row, Col } from 'reactstrap';
 import Card from 'react-bootstrap/Card'
 import economyDoble from '../img/hotel/economy-doble.jpg';
 import standardDoble from '../img/hotel/standard-doble.jpg';
 import economyTriple from '../img/hotel/economy-triple.jpg';
 import standardTriple from '../img/hotel/standard-triple.jpg';
 import economyCuadruple from '../img/hotel/cuadruple-economy.jpg';
-import bed from '../img/hotel/bed.jpg';
 import { FaWifi, FaRegSnowflake } from 'react-icons/fa';
 import { GiWineBottle } from "react-icons/gi";
 import './Rooms.css';
