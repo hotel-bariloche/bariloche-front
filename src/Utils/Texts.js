@@ -63,7 +63,6 @@ export const Texts = {
         },
      },
      rooms: {
-        bannerText: 'Habitaciones',
         banner: 'nuestras habitaciones',
         moreOptions: 'más opciones',
         room: {
@@ -90,16 +89,14 @@ export const Texts = {
                 economy: 'Cuádruple Económica ',
                 standard: 'Cuádruple Estándar',
                 description: 'Todos los miembros de la familia tienen derecho a descansar bien, y los amigos.. tambien! En esta habitación con cómodos espacios podrás encontrar tu lugar de relax. '
-            },
-            services: {
-                wifi: 'Wifi Gratis',
-                air: 'Aire acondicionado'
             }
         },
            
      },
      location: {
-         banner: 'ubicación'
+         banner: 'ubicación',
+         map: 'Encuéntranos',
+         attractions: 'Lugares de interés'
 
      },
      footer: {
@@ -184,7 +181,6 @@ export const Texts = {
         rooms: {
             banner: 'our rooms',
             moreOptions: 'more options',
-            bannerText: 'Rooms',
             room: {
                 economy: {
                     title: 'Economy Room',
@@ -203,22 +199,20 @@ export const Texts = {
                 },
                 triple: {
                     economy: 'Economy Triple ',
-                    standard: 'Standard Triple',
+                    standard: 'Standard Double',
                     description: 'Who said that three are crowd? At Grand Hotel Bariloche we like odd numbers and that is why we offer a room for three people with incredible views. Be it for your friends, for your little family, this is your home in Bariloche. '
                 },
                 cuadruple: {
                     economy: 'Economy Quadruple ',
                     standard: 'Standard Quadruple',
                     description: 'All family members have the right to rest well, and friends ... too! In this room with comfortable spaces you can find your place of relaxation.'
-                },
-                services: {
-                    wifi: 'Free Wifi',
-                    air: 'Air conditioning'
                 }
             }
          },
          location: {
-            banner: 'location'
+            banner: 'location',
+            map: 'Find Us',
+            attractions: 'Attractions'
    
         },
         footer: {
