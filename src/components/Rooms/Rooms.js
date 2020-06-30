@@ -1,10 +1,12 @@
 import React from 'react';
-import Accordion from 'react-bootstrap/Accordion';
 import { Container, Row, Col } from 'reactstrap';
 import Card from 'react-bootstrap/Card'
 import economyDoble from '../img/hotel/economy-doble.jpg';
 import standardDoble from '../img/hotel/standard-doble.jpg';
-import bed1 from '../img/home/bed-icon.png';
+import economyTriple from '../img/hotel/economy-triple.jpg';
+import standardTriple from '../img/hotel/standard-triple.jpg';
+import economyCuadruple from '../img/hotel/cuadruple-economy.jpg';
+import bed from '../img/hotel/bed.jpg';
 import { FaWifi, FaRegSnowflake } from 'react-icons/fa';
 import { GiWineBottle } from "react-icons/gi";
 import './Rooms.css';
@@ -16,7 +18,7 @@ const Rooms = () => {
     const { state } = React.useContext(Context);
     return(
     <div> 
-        <section className="blog-banner-area" id="blog">
+        <section className="rooms-banner-area" id="blog">
             <div className="container h-100">
                 <div className="blog-banner">
                     <div className="text-center">
@@ -24,7 +26,7 @@ const Rooms = () => {
                     <nav aria-label="breadcrumb" className="banner-breadcrumb">
                         <ol className="breadcrumb">
                             <li className="breadcrumb-item"><a href="/">Home</a></li>
-                            <li className="breadcrumb-item active" aria-current="page">Habitaciones</li>
+                            <li className="breadcrumb-item active" aria-current="page">{state.texts[state.language].rooms.bannerText}</li>
                         </ol>
                     </nav>
                     </div>
@@ -42,8 +44,8 @@ const Rooms = () => {
                                 <p className="room-description">{state.texts[state.language].rooms.room.economy.description}</p>
                                 <div>
                                    <ul className="services-room">
-                                       <li><p><FaWifi/>Free Wifi</p></li>
-                                       <li><p><FaRegSnowflake/>Aire acondicionado</p></li>
+                                       <li><p><FaWifi/>{state.texts[state.language].rooms.room.services.wifi}</p></li>
+                                       <li><p><FaRegSnowflake/>{state.texts[state.language].rooms.room.services.air}</p></li>
                                        <li><p><GiWineBottle/>Minibar</p></li>
                                     </ul> 
                                 </div>
@@ -55,7 +57,7 @@ const Rooms = () => {
                         <Col md={6} xl={4} mb={5}>
                             <Card className="card card-explore" style={{ marginTop: '40px'}}>
                                 <div className="card-explore__img">
-                                    <Card.Img className="card-img" src={economyDoble} alt=""/>
+                                    <Card.Img className="card-img" src={economyDoble} alt="2 beds or 1 matrimonial bed"/>
                                 </div>
                                 <Card.Body className="card-body">
                                     <h3 className="card-explore__title"><a href="#">{state.texts[state.language].rooms.room.doble.economy}</a></h3>
@@ -67,7 +69,7 @@ const Rooms = () => {
                         <Col md={6} xl={4} mb={5}>
                             <Card className="card card-explore" style={{ marginTop: '40px'}}>
                                 <div className="card-explore__img">
-                                    <Card.Img className="card-img" src="" alt=""/>
+                                    <Card.Img className="card-img" src={economyTriple} alt="3 beds"/>
                                 </div>
                                 <Card.Body className="card-body">
                                     <h3 className="card-explore__title"><a href="#">{state.texts[state.language].rooms.room.triple.economy}</a></h3>
@@ -79,7 +81,7 @@ const Rooms = () => {
                         <Col md={6} xl={4} mb={5}>
                             <Card className="card card-explore" style={{ marginTop: '40px'}}>
                                 <div className="card-explore__img">
-                                    <Card.Img className="card-img" src="" alt=""/>
+                                    <Card.Img className="card-img" src={economyCuadruple} alt="4 beds"/>
                                 </div>
                                 <Card.Body className="card-body">
                                     <h3 className="card-explore__title"><a href="#">{state.texts[state.language].rooms.room.cuadruple.economy}</a></h3>
@@ -115,7 +117,7 @@ const Rooms = () => {
                                 <Col md={6} xl={4} mb={5}>
                                     <Card className="card card-explore" style={{ marginTop: '40px'}}>
                                         <div className="card-explore__img">
-                                            <Card.Img className="card-img" src={standardDoble} alt=""/>
+                                            <Card.Img className="card-img" src={standardDoble} alt="1 matrimonial bed or 2 beds"/>
                                         </div>
                                         <Card.Body className="card-body">
                                             <h3 className="card-explore__title"><a href="#">{state.texts[state.language].rooms.room.doble.standard}</a></h3>
@@ -127,7 +129,7 @@ const Rooms = () => {
                                 <Col md={6} xl={4} mb={5}>
                                     <Card className="card card-explore" style={{ marginTop: '40px'}}>
                                         <div className="card-explore__img">
-                                            <Card.Img className="card-img" src="" alt=""/>
+                                            <Card.Img className="card-img" src={standardTriple} alt="3 beds"/>
                                         </div>
                                         <Card.Body className="card-body">
                                             <h3 className="card-explore__title"><a href="#">{state.texts[state.language].rooms.room.triple.standard}</a></h3>
@@ -139,7 +141,7 @@ const Rooms = () => {
                                 <Col md={6} xl={4} mb={5}>
                                     <Card className="card card-explore" style={{ marginTop: '40px'}}>
                                         <div className="card-explore__img">
-                                            <Card.Img className="card-img" src="" alt=""/>
+                                            <Card.Img className="card-img" src={standardTriple} alt=""/>
                                         </div>
                                         <Card.Body className="card-body">
                                             <h3 className="card-explore__title"><a href="#">{state.texts[state.language].rooms.room.cuadruple.standard}</a></h3>
