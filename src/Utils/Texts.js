@@ -99,7 +99,32 @@ export const Texts = {
      location: {
          banner: 'ubicación',
          map: 'Encuéntranos',
-         attractions: 'Lugares de interés'
+         attractions: 'Lugares de interés',
+         cards: {
+            first: {
+                restaurant: 'restaurant',
+                text: 'texto restaurante'
+            },
+            second: {
+                night: 'night life',
+                text: 'casino y pubs'
+            },
+            third: {
+                art: 'art & culture',
+                text: 'museo'
+            },
+            fourd: {
+                gastonomy: 'gastronomy',
+                text: 'chocolateria'
+            },
+            fith: {
+                art: 'adventure',
+                text: 'excursiones'
+            }
+            six: {
+                center: 'Center bariloche',
+                text: 'centro civico'
+            }
 
      },
      footer: {
@@ -223,7 +248,33 @@ export const Texts = {
          location: {
             banner: 'location',
             map: 'Find Us',
-            attractions: 'Attractions'
+            attractions: 'Attractions',
+            cards: {
+                first: {
+                    restaurant: 'restaurant',
+                    text: 'texto restaurante'
+                },
+                second: {
+                    night: 'night life',
+                    text: 'casino y pubs'
+                },
+                third: {
+                    art: 'art & culture',
+                    text: 'museo'
+                },
+                fourd: {
+                    gastonomy: 'gastronomy',
+                    text: 'chocolateria'
+                },
+                fith: {
+                    art: 'adventure',
+                    text: 'excursiones'
+                }
+                six: {
+                    center: 'Center bariloche',
+                    text: 'centro civico'
+                }
+            }
    
         },
         footer: {
