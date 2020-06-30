@@ -8,6 +8,8 @@ import blog3 from "../img/blog/main-blog/m-blog-3.jpg";
 import blog2 from "../img/blog/main-blog/m-blog-2.jpg";
 import blog1 from "../img/blog/main-blog/m-blog-1.jpg";
 import { Context } from '../../Context/Provider';
+import { FaPhoneVolume, FaRegEnvelope, FaRegBuilding } from "react-icons/fa";
+
 
 
 
@@ -39,53 +41,78 @@ const Blog = () => {
         <section className="blog_categorie_area">
             <div className="container">
                 <div className="row">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3005.024140148418!2d-71.30608378458201!3d-41.13399897928826!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x961a7b71e69754f9%3A0xfa24b97df0020edd!2sGrand%20Hotel%20Bariloche!5e0!3m2!1ses!2ses!4v1592911354589!5m2!1ses!2ses" width="100%" height="450" frameborder="2px" style={{border:'2px', padding: '20px'}} allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                    <div className="col-md-4 col-lg-3 mb-4 mb-md-0">
+                    <div className="media contact-info">
+                        <span className="contact-info__icon"><i className="ti-home"><FaRegBuilding/></i></span>
+                        <div className="media-body">
+                        <h3>Mitre 408</h3>
+                        <p>San Carlos de Bariloche Río Negro</p>
+                    </div>
+                    </div>
+                    <div className="media contact-info">
+                        <span className="contact-info__icon"><i className="ti-headphone"><FaPhoneVolume/></i></span>
+                        <div className="media-body">
+                        <h3><a href="tel:454545654">{state.texts[state.language].home.contact.phone}</a></h3>
+                        <p>+54 294 4430622</p>
+                        </div>
+                    </div>
+                    <div className="media contact-info">
+                        <span className="contact-info__icon"><i className="ti-email"><FaRegEnvelope/></i></span>
+                        <div className="media-body">
+                        <h3><a href="mailto:support@colorlib.com">Email</a></h3>
+                        <p>reservas@grandhotelbariloche.com</p>
+                        </div>
+                    </div>
+                    </div>
+                    <div className="col-md-8">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3005.024140148418!2d-71.30608378458201!3d-41.13399897928826!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x961a7b71e69754f9%3A0xfa24b97df0020edd!2sGrand%20Hotel%20Bariloche!5e0!3m2!1ses!2ses!4v1592911354589!5m2!1ses!2ses" width="100%" height="450" frameborder="2px" style={{border:'2px', padding: '20px'}} allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                    </div>
+                    <div className="row">
+                        <div className="col-sm-6 col-lg-4 mb-4 mb-lg-0">
+                            <div className="categories_post">
+                                <img className="card-img rounded-0" src={social} alt="post"/>
+                                <div className="categories_details">
+                                    <div className="categories_text">
+                                        <a href="blog-single.html">
+                                            <h5>Social Life</h5>
+                                        </a>
+                                        <div className="border_line"></div>
+                                        <p>Enjoy your social life together</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="col-sm-6 col-lg-4 mb-4 mb-lg-0">
+                            <div className="categories_post">
+                                <img className="card-img rounded-0" src={politics} alt="post"/>
+                                <div className="categories_details">
+                                    <div className="categories_text">
+                                        <a href="blog-single.html">
+                                            <h5>Politics</h5>
+                                        </a>
+                                        <div className="border_line"></div>
+                                        <p>Be a part of politics</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="col-sm-6 col-lg-4 mb-4 mb-lg-0">
+                            <div className="categories_post">
+                                <img className="card-img rounded-0" src={food} alt="post"/>
+                                <div className="categories_details">
+                                    <div className="categories_text">
+                                        <a href="blog-single.html">
+                                            <h5>Food</h5>
+                                        </a>
+                                        <div className="border_line"></div>
+                                        <p>Let the food be finished</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
                 </div>
-                <div className="row">
-                    <div className="col-sm-6 col-lg-4 mb-4 mb-lg-0">
-                        <div className="categories_post">
-                            <img className="card-img rounded-0" src={social} alt="post"/>
-                            <div className="categories_details">
-                                <div className="categories_text">
-                                    <a href="blog-single.html">
-                                        <h5>Social Life</h5>
-                                    </a>
-                                    <div className="border_line"></div>
-                                    <p>Enjoy your social life together</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="col-sm-6 col-lg-4 mb-4 mb-lg-0">
-                        <div className="categories_post">
-                            <img className="card-img rounded-0" src={politics} alt="post"/>
-                            <div className="categories_details">
-                                <div className="categories_text">
-                                    <a href="blog-single.html">
-                                        <h5>Politics</h5>
-                                    </a>
-                                    <div className="border_line"></div>
-                                    <p>Be a part of politics</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="col-sm-6 col-lg-4 mb-4 mb-lg-0">
-                        <div className="categories_post">
-                            <img className="card-img rounded-0" src={food} alt="post"/>
-                            <div className="categories_details">
-                                <div className="categories_text">
-                                    <a href="blog-single.html">
-                                        <h5>Food</h5>
-                                    </a>
-                                    <div className="border_line"></div>
-                                    <p>Let the food be finished</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
         </section>
         {/*blog area*/}
         <section className="blog_area">
