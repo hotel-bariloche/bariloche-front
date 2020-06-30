@@ -110,6 +110,10 @@ export const Texts = {
          room2: 'Economy room',
          contact: 'Contacto'
      },
+     gallery : {
+         title: 'Galería',
+         bannerTitle: 'Galería de imágenes'
+     },
     },
 
     english: {
@@ -226,7 +230,10 @@ export const Texts = {
             room2: 'Economy room',
             contact: 'Contact'
         },
-    
+        gallery : {
+            title: 'Gallery',
+            bannerTitle: 'Image gallery'
+        },
 
     },
 }

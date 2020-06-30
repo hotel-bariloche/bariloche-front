@@ -19,20 +19,22 @@ import buffet6 from '../img/gallery/buffet6.jpg';
 import buffet7 from '../img/gallery/buffet7.jpg';
 import coffee from '../img/gallery/coffee.jpg';
 import coffee2 from '../img/gallery/coffee2.jpg';
+import { Context } from '../../Context/Provider';
 
 
 const Gallery = () => {
+	const { state, changeLanguage } = React.useContext(Context);
     return(
         <div>
             <section className="blog-banner-area" id="blog">
                 <Container className="container h-100">
                     <div className="blog-banner">
                         <div className="text-center">
-                            <h1>Galería de Imagenes</h1>
+                            <h1>{state.texts[state.language].gallery.bannerTitle}</h1>
                         <nav aria-label="breadcrumb" className="banner-breadcrumb">
                             <ol className="breadcrumb">
                                 <li className="breadcrumb-item"><a href="/">Home</a></li>
-                                <li className="breadcrumb-item active" aria-current="page">Galería</li>
+                                <li className="breadcrumb-item active" aria-current="page">{state.texts[state.language].gallery.title}</li>
                             </ol>
                         </nav>
                         </div>
