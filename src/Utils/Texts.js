@@ -91,7 +91,10 @@ export const Texts = {
                 description: 'Todos los miembros de la familia tienen derecho a descansar bien, y los amigos.. tambien! En esta habitación con cómodos espacios podrás encontrar tu lugar de relax. '
             }
         },
-           
+        services: {
+            wifi: 'Wifi Gratis',
+            air: 'Aire acondicionado'
+        }   
      },
      location: {
          banner: 'ubicación',
@@ -211,6 +214,10 @@ export const Texts = {
                     standard: 'Standard Quadruple',
                     description: 'All family members have the right to rest well, and friends ... too! In this room with comfortable spaces you can find your place of relaxation.'
                 }
+            },
+            services: {
+                wifi: 'Free Wifi',
+                air: 'Air conditioner'
             }
          },
          location: {
