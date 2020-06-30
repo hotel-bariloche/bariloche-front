@@ -3,10 +3,10 @@ import social from "../img/blog/cat-post/social.jpg";
 import food from "../img/blog/cat-post/food.jpg";
 import politics from "../img/blog/cat-post/politics.jpg";
 import '../../css/style.css';
-
 import { Context } from '../../Context/Provider';
 import { FaPhoneVolume, FaRegEnvelope, FaRegBuilding } from "react-icons/fa";
 import bed1 from '../img/home/bed-icon.png';
+import restaurant from '../img/blog/restaurant.jpg';
 import Image from 'react-bootstrap/Image'
 
 
@@ -77,7 +77,7 @@ const Blog = () => {
                      </div>
                                 <div className="col-sm-6 col-lg-5 mb-4 mt-5 mb-lg-0">
                             <div className="categories_post">
-                                <img className="card-img rounded-0" src={social} alt="post"/>
+                                <img className="card-img rounded-0" height="280px"src={restaurant} alt="post"/>
                                 <div className="categories_details">
                                     <div className="categories_text">
                                         <a href="blog-single.html">
