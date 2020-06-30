@@ -2,9 +2,12 @@ import React from 'react';
 import '../../css/style.css'
 import { Row ,Col} from 'reactstrap';
 import Carousel from 'react-bootstrap/Carousel';
-import welcomeBanner1 from '../img/home/lavanda.jpg';
+import lavanda from '../img/home/lavanda.jpg';
+import mountain from '../img/home/forest.jpg';
 import welcomeBanner2 from '../img/home/welcomeBanner2.png';
 import welcomeBanner3 from '../img/home/welcomeBanner3.png';
+import pier from '../img/home/pier.jpg';
+
 import { Context } from '../../Context/Provider';
 
 const DestinoBariloche = () => {
@@ -24,17 +27,17 @@ const DestinoBariloche = () => {
                         <Row className="row no-gutters welcome-images">
                             <Col sm="7" className="col-sm-7">
                                 <div className="card">
-                                    <img style={{ height: '290px'}} className="" src={welcomeBanner1} alt="Card image cap"/>
+                                    <img style={{ height: '290px'}} className="" src={lavanda} alt="Card image cap"/>
                                 </div>
                             </Col>
                             <Col sm="5" className="col-sm-5">
                                 <div className="card">
-                                    <img className="" src={welcomeBanner2} alt="Card image cap"/>
+                                    <img style={{ height: '290px'}} className="" src={mountain} alt="Card image cap"/>
                                 </div>
                             </Col>
                             <Col lg="12" className="col-lg-12">
                                 <div className="card">
-                                    <img className="" src={welcomeBanner3} alt="Card image cap"/>
+                                    <img style={{ height: '210px'}} className="" src={pier} alt="Card image cap"/>
                                 </div>
                             </Col>
                         </Row>
