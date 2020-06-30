@@ -2,21 +2,12 @@ import React from 'react';
 import social from "../img/blog/cat-post/social.jpg";
 import food from "../img/blog/cat-post/food.jpg";
 import politics from "../img/blog/cat-post/politics.jpg";
-import blog4 from "../img/blog/main-blog/m-blog-4.jpg";
-import blog5 from "../img/blog/main-blog/m-blog-5.jpg";
-import blog3 from "../img/blog/main-blog/m-blog-3.jpg";
-import blog2 from "../img/blog/main-blog/m-blog-2.jpg";
-import blog1 from "../img/blog/main-blog/m-blog-1.jpg";
+import '../../css/style.css';
+
 import { Context } from '../../Context/Provider';
 import { FaPhoneVolume, FaRegEnvelope, FaRegBuilding } from "react-icons/fa";
 import bed1 from '../img/home/bed-icon.png';
 import Image from 'react-bootstrap/Image'
-
-
-
-
-
-import '../../css/style.css';
 
 
 const Blog = () => {
