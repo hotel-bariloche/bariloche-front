@@ -6,6 +6,8 @@ import Card1 from '../img/home/card-blog1.png';
 import Card2 from '../img/home/card-blog2.png';
 import { Context } from '../../Context/Provider';
 import landing1 from '../img/home/lake.jpg';
+import landing2 from '../img/home/hall2.jpg';
+import landing3 from '../img/home/lake2.jpg';
 
 
 
@@ -31,26 +33,26 @@ const BannerHome = () => {
                     <img
                     height="850px"
                     className="d-block w-100"
-                    src={Sunset}
+                    src={landing2}
                     alt="Third slide"
                     />
 
                     <Carousel.Caption>
                     <h4>{state.texts[state.language].home.homeBanner}</h4>
-                    <a className="button carousel-slide-btn" target="_blank" href="https://reservations.travelclick.com/106660?languageid=2%20#/guestsandrooms">{state.texts[state.language].home.book}</a>
+                    <a className="button carousel-slide-btn" target="_blank" href={landing2}>{state.texts[state.language].home.book}</a>
                     </Carousel.Caption>
                 </Carousel.Item>
                 <Carousel.Item>
                     <img
                     height="850px"
                     className="d-block w-100"
-                    src={Sunset}
+                    src={landing3}
                     alt="Third slide"
                     />
 
                     <Carousel.Caption>
                     <h4>{state.texts[state.language].home.homeBanner}</h4>
-                    <a className="button carousel-slide-btn" target="_blank" href="https://reservations.travelclick.com/106660?languageid=2%20#/guestsandrooms">{state.texts[state.language].home.book}</a>
+                    <a className="button carousel-slide-btn" target="_blank" href={landing3}>{state.texts[state.language].home.book}</a>
                     </Carousel.Caption>
                 </Carousel.Item>
             </Carousel>

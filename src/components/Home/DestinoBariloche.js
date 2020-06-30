@@ -17,14 +17,14 @@ const DestinoBariloche = () => {
                 <Col lg="7" className="col-lg-7">
                             <div className="welcome-content-destino">
                                 <h2 className="mb-4">{state.texts[state.language].home.about.titlePlace}</h2>
-                                <p>{state.texts[state.language].home.about.place}</p>s
+                                <p>{state.texts[state.language].home.about.place}</p>
                             </div>
                 </Col>
                 <Col  lg="5" className="col-lg-5">
                         <Row className="row no-gutters welcome-images">
                             <Col sm="7" className="col-sm-7">
                                 <div className="card">
-                                    <img style={{ height: '318px'}} className="" src={welcomeBanner1} alt="Card image cap"/>
+                                    <img style={{ height: '290px'}} className="" src={welcomeBanner1} alt="Card image cap"/>
                                 </div>
                             </Col>
                             <Col sm="5" className="col-sm-5">
