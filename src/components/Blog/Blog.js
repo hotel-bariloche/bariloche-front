@@ -7,6 +7,11 @@ import { Context } from '../../Context/Provider';
 import { FaPhoneVolume, FaRegEnvelope, FaRegBuilding } from "react-icons/fa";
 import bed1 from '../img/home/bed-icon.png';
 import restaurant from '../img/blog/restaurant.jpg';
+import casino from '../img/blog/casino.jpg';
+import museo from '../img/blog/museo.jpg';
+import chocolate from '../img/blog/chocolate.jpg';
+import centroCivico from '../img/blog/centrocivico.jpg';
+import kayak from '../img/blog/kayak.jpg';
 import Image from 'react-bootstrap/Image'
 
 
@@ -81,80 +86,80 @@ const Blog = () => {
                                 <div className="categories_details">
                                     <div className="categories_text">
                                         <a href="blog-single.html">
-                                            <h5>Social Life</h5>
+                                            <h5>{state.texts[state.language].location.cards.first.restaurant}</h5>
                                         </a>
                                         <div className="border_line"></div>
-                                        <p>Enjoy your social life together</p>
+                                        <p>{state.texts[state.language].location.cards.first.text}</p>
                                     </div>
                                 </div>
                             </div>
                         </div>
                         <div className="col-sm-6 col-lg-5 mb-4 mt-5 mb-lg-0">
                             <div className="categories_post">
-                                <img className="card-img rounded-0" src={politics} alt="post"/>
+                                <img className="card-img rounded-0" height="280px" src={casino} alt="post"/>
                                 <div className="categories_details">
                                     <div className="categories_text">
                                         <a href="blog-single.html">
-                                            <h5>Politics</h5>
+                                        <h5>{state.texts[state.language].location.cards.second.night}</h5>
                                         </a>
                                         <div className="border_line"></div>
-                                        <p>Be a part of politics</p>
+                                        <p>{state.texts[state.language].location.cards.second.text}</p>
                                     </div>
                                 </div>
                             </div>
                         </div>
                         <div className="col-sm-6 col-lg-5 mb-4 mt-5 mb-lg-0">
                             <div className="categories_post">
-                                <img className="card-img rounded-0" src={food} alt="post"/>
+                                <img className="card-img rounded-0" height="280px" src={museo} alt="post"/>
                                 <div className="categories_details">
                                     <div className="categories_text">
                                         <a href="blog-single.html">
-                                            <h5>Food</h5>
+                                            <h5>{state.texts[state.language].location.cards.third.art}</h5>
                                         </a>
                                         <div className="border_line"></div>
-                                        <p>Let the food be finished</p>
+                                        <p>{state.texts[state.language].location.cards.third.text}</p>
                                     </div>
                                 </div>
                             </div>
                         </div>
                         <div className="col-sm-6 col-lg-5 mb-4 mt-5 mb-lg-0">
                             <div className="categories_post">
-                                <img className="card-img rounded-0" src={social} alt="post"/>
+                                <img className="card-img rounded-0" height="280px" src={chocolate} alt="post"/>
                                 <div className="categories_details">
                                     <div className="categories_text">
                                         <a href="blog-single.html">
-                                            <h5>Social Life</h5>
+                                            <h5>{state.texts[state.language].location.cards.four.gastronomy}</h5>
                                         </a>
                                         <div className="border_line"></div>
-                                        <p>Enjoy your social life together</p>
+                                        <p>{state.texts[state.language].location.cards.four.text}</p>
                                     </div>
                                 </div>
                             </div>
                         </div>
                         <div className="col-sm-6 col-lg-5 mb-4 mt-5 mb-lg-0">
                             <div className="categories_post">
-                                <img className="card-img rounded-0" src={social} alt="post"/>
+                                <img className="card-img rounded-0" height="280px" src={kayak} alt="post"/>
                                 <div className="categories_details">
                                     <div className="categories_text">
                                         <a href="blog-single.html">
-                                            <h5>Social Life</h5>
+                                            <h5>{state.texts[state.language].location.cards.fifth.adv}</h5>
                                         </a>
                                         <div className="border_line"></div>
-                                        <p>Enjoy your social life together</p>
+                                        <p>{state.texts[state.language].location.cards.fifth.adv}</p>
                                     </div>
                                 </div>
                             </div>
                         </div>
                         <div className="col-sm-6 col-lg-5 mb-4 mt-5 mb-lg-0">
                             <div className="categories_post">
-                                <img className="card-img rounded-0" src={social} alt="post"/>
+                                <img className="card-img rounded-0" height="280px" src={centroCivico} alt="post"/>
                                 <div className="categories_details">
                                     <div className="categories_text">
                                         <a href="blog-single.html">
-                                            <h5>Social Life</h5>
+                                            <h5>{state.texts[state.language].location.cards.six.center}</h5>
                                         </a>
                                         <div className="border_line"></div>
-                                        <p>Enjoy your social life together</p>
+                                        <p>{state.texts[state.language].location.cards.six.text}</p>
                                     </div>
                                 </div>
                             </div>

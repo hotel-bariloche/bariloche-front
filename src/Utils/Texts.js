@@ -113,12 +113,12 @@ export const Texts = {
                 art: 'art & culture',
                 text: 'museo'
             },
-            fourd: {
+            four: {
                 gastonomy: 'gastronomy',
                 text: 'chocolateria'
             },
-            fith: {
-                art: 'adventure',
+            fifth: {
+                adv: 'adventure',
                 text: 'excursiones'
             },
             six: {
@@ -263,12 +263,12 @@ export const Texts = {
                     art: 'art & culture',
                     text: 'museo'
                 },
-                fourd: {
-                    gastonomy: 'gastronomy',
+                four: {
+                    gastronomy: 'gastronomy',
                     text: 'chocolateria'
                 },
-                fith: {
-                    art: 'adventure',
+                fifth: {
+                    adv: 'adventure',
                     text: 'excursiones'
                 },
                 six: {
