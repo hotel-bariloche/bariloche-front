@@ -35,7 +35,7 @@ const Footer = () => {
                             <ul>
                                 <li><Link to="/blog/#attractions">{state.texts[state.language].footer.attractions}</Link></li>
                                 <li><Link to="/rooms/#standard">{state.texts[state.language].footer.room1}</Link></li>
-                                <li><Link to="7rooms/#economy">{state.texts[state.language].footer.room2}</Link></li>
+                                <li><Link to="/rooms/#economy">{state.texts[state.language].footer.room2}</Link></li>
                                 <li><Link to="/contacto">{state.texts[state.language].footer.contact}</Link></li>
                             </ul>
                         </div>

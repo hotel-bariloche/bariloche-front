@@ -1152,6 +1152,18 @@ button {
 .contact-info .media-body p {
   color: #999999; }
 
+.react-multi-carousel-dot button {
+  border: none !important;
+}
+
+.react-multi-carousel-dot--active button {
+  background-color: #cca772 !important;
+}
+
+
+.testi-carousel__item {
+  margin-bottom: 100px !important;
+}
 /*=================== contact banner end ====================*/
 /*=================== breadcrumb start ====================*/
 .banner-breadcrumb {
