@@ -5,7 +5,6 @@ export const Texts = {
             navbar: {
                 home: 'Home',
                 about: 'nosotros',
-                service: 'servicios',
                 gallery: 'galería',
                 rooms: 'habitaciones',
                 location: 'ubicación',
@@ -64,6 +63,7 @@ export const Texts = {
         },    
      
         rooms: {
+            service: 'servicios',
             banner: 'nuestras habitaciones',
             moreOptions: 'más opciones',
             destacada: 'También tenemos habitaciones conectadas.',
@@ -156,7 +156,6 @@ export const Texts = {
             navbar: {
                 home: 'Home',
                 about: 'about',
-                service: 'services',
                 gallery: 'gallery',
                 rooms: 'habitaciones',
                 location: 'location',
@@ -217,6 +216,7 @@ export const Texts = {
             },
         },
         rooms: {
+            service: 'services',
             banner: 'our rooms',
             moreOptions: 'more options',
             destacada: 'We also have connected rooms.',
