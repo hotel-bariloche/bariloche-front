@@ -25,9 +25,9 @@ const NavHome = () => {
     let headerEl = document.getElementById("header_area") 
 
     if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
-      headerEl.classList.add("my-class");
+      headerEl.classList.add("navbar_fixed");
     } else {
-      headerEl.classList.remove("my-class");
+      headerEl.classList.remove("navbar_fixed");
     }
   }
 
