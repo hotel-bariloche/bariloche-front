@@ -17,7 +17,7 @@ const Rooms = () => {
     const { state } = React.useContext(Context);
     return(
     <div> 
-        <section className="rooms-banner-area" id="blog">
+        <section className="rooms-banner-area">
             <div className="container h-100">
                 <div className="blog-banner">
                     <div className="text-center">
@@ -34,7 +34,7 @@ const Rooms = () => {
         </section>
 
             <Card>
-                    <Row className="room-container">
+                    <Row className="room-container" id="economy">
                         <div className="room-article-container">
                             <div className="room-title">
                                 <h2>{state.texts[state.language].rooms.room.economy.title}</h2>
@@ -94,7 +94,7 @@ const Rooms = () => {
             </Card>
             {/*seccion standard rooms*/}
             <Card>
-                <Row className="room-container">
+                <Row className="room-container" id="standard">
                         <div className="room-article-container">
                             <div className="room-title">
                                 <h2>{state.texts[state.language].rooms.room.standard.title}</h2>

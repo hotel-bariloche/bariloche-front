@@ -9,7 +9,7 @@ const Video = () => {
   const handleShow = () => setShow(true);
     return(
       <div>
-          <section className="video-area">
+          <section className="video-area" id="video">
             <div className="container">
               <div className="row justify-content-center align-items-center flex-column text-center">
                 <a onClick={handleShow} id="play-home-video" className="video-play-button">
