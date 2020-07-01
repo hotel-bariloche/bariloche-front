@@ -66,7 +66,8 @@ export const Texts = {
             service: 'servicios',
             banner: 'nuestras habitaciones',
             moreOptions: 'más opciones',
-            destacada: 'También tenemos habitaciones conectadas.',
+            destacada1: 'Mantenga a su familia unida..',
+            destacada2: 'Aproveche nuestras habitaciones conectadas!',
             room: {
                 economy: {
                     title: 'Habitación Económica',
@@ -219,7 +220,8 @@ export const Texts = {
             service: 'services',
             banner: 'our rooms',
             moreOptions: 'more options',
-            destacada: 'We also have connected rooms.',
+            destacada1: 'Keep your Family Toghether..',
+            destacada2: 'We have connected rooms!',
             room: {
                 economy: {
                     title: 'Economy Room',

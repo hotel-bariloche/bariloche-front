@@ -7,7 +7,7 @@ import economyTriple from '../img/hotel/economy-triple.jpg';
 import standardTriple from '../img/hotel/standard-triple.jpg';
 import economyCuadruple from '../img/hotel/cuadruple-economy.jpg';
 import { FaWifi, FaRegSnowflake, FaRegSmile } from 'react-icons/fa';
-import { GiWineBottle, GiTwirlyFlower } from "react-icons/gi";
+import { GiWineBottle, GiTwirlyFlower, GiExitDoor } from "react-icons/gi";
 import { AiOutlineCoffee, AiOutlineStar } from "react-icons/ai";
 import './Rooms.css';
 import { Context } from '../../Context/Provider';
@@ -50,9 +50,17 @@ const Rooms = () => {
                                        <li><p><GiWineBottle/>Minibar</p></li>
                                     </ul> 
                                 </div>
-                                <div className="box-destacada">
-                                    <div className="content-destacado">
-                                        <h5>{state.texts[state.language].rooms.destacada}</h5> 
+                                <div className="conected-rooms">
+                                    <div className="box-destacada">
+                                        <div className="content-destacado">
+                                            <h5>{state.texts[state.language].rooms.destacada1}</h5> 
+                                        </div>
+                                    </div>
+                                    <GiExitDoor/>
+                                    <div className="box-destacada">
+                                        <div className="content-destacado">
+                                            <h5>{state.texts[state.language].rooms.destacada2}</h5> 
+                                        </div>
                                     </div>
                                 </div>
                         </div>
@@ -117,11 +125,20 @@ const Rooms = () => {
                                        <li><p><GiTwirlyFlower/>{state.texts[state.language].rooms.services.decorated}</p></li>
                                     </ul> 
                                 </div>
-                                <div className="box-destacada">
-                                    <div className="content-destacado">
-                                        <h5>{state.texts[state.language].rooms.destacada}</h5> 
+                                <div className="conected-rooms">
+                                    <div className="box-destacada">
+                                        <div className="content-destacado">
+                                            <h5>{state.texts[state.language].rooms.destacada1}</h5> 
+                                        </div>
+                                    </div>
+                                    <GiExitDoor/>
+                                    <div className="box-destacada">
+                                        <div className="content-destacado">
+                                            <h5>{state.texts[state.language].rooms.destacada2}</h5> 
+                                        </div>
                                     </div>
                                 </div>
+                                
                         </div>
                     </Row>
                     <hr/>
