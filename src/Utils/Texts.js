@@ -115,7 +115,7 @@ export const Texts = {
                     text: 'museo'
                 },
                 four: {
-                    gastonomy: 'gastronomy',
+                    gastronomy: 'gastronomy',
                     text: 'chocolateria'
                 },
                 fifth: {
