@@ -1,9 +1,9 @@
 import React from 'react';
 import '../../css/style.css'
 import { Row ,Col, Container} from 'reactstrap';
-import welcomeBanner1 from '../img/home/welcomeBanner1.png';
-import welcomeBanner2 from '../img/home/welcomeBanner2.png';
-import welcomeBanner3 from '../img/home/welcomeBanner3.png';
+import reception from '../img/home/reception.jpg';
+import aboutBed from '../img/home/front3.jpg';
+import breakfast from '../img/home/breakfast.jpg';
 import { Context } from '../../Context/Provider';
 
 const AboutUs = () => {
@@ -18,17 +18,17 @@ const AboutUs = () => {
                         <Row className="row no-gutters welcome-images">
                             <Col sm="7" className="col-sm-7">
                                 <div className="card">
-                                    <img className="" src={welcomeBanner1} alt="Card image cap"/>
+                                    <img style={{ height: '290px'}} className="" src={aboutBed} alt="Card image cap"/>
                                 </div>
                             </Col>
                             <Col sm="5" className="col-sm-5">
                                 <div className="card">
-                                    <img className="" src={welcomeBanner2} alt="Card image cap"/>
+                                    <img style={{ height: '290px'}} className="" src={breakfast} alt="Card image cap"/>
                                 </div>
                             </Col>
                             <Col lg="12" className="col-lg-12">
                                 <div className="card">
-                                    <img className="" src={welcomeBanner3} alt="Card image cap"/>
+                                    <img style={{ height: '210px'}} className="" src={reception} alt="Card image cap"/>
                                 </div>
                             </Col>
                         </Row>

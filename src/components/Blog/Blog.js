@@ -72,7 +72,6 @@ const Blog = () => {
                     <div className="col-md-8 pb-80px">
                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3005.024140148418!2d-71.30608378458201!3d-41.13399897928826!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x961a7b71e69754f9%3A0xfa24b97df0020edd!2sGrand%20Hotel%20Bariloche!5e0!3m2!1ses!2ses!4v1592911354589!5m2!1ses!2ses" width="100%" height="450" frameborder="2px" style={{border:'2px', padding: '20px'}} allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
                     </div>
-                  
                     <div className="row justify-content-center" id="attractions">
                      <div className="col-12 text-center pb-80px">
                         <div className="section-intro__style">
