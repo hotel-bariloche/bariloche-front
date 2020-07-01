@@ -104,27 +104,27 @@ export const Texts = {
             cards: {
                 first: {
                     restaurant: 'restaurant',
-                    text: 'texto restaurante'
+                    text: 'El hotel tiene su restaurante en temporada, con platos típicos de la región y una excelente carta de vinos.'
                 },
                 second: {
                     night: 'night life',
-                    text: 'casino y pubs'
+                    text: 'El Hotel se encuentra a 2km del Casino de Bariloche y de la zona de Bares & Pubs.                    '
                 },
                 third: {
                     art: 'art & culture',
-                    text: 'museo'
+                    text: 'Bariloche cuenta con excelentes museos, el Hotel se encuentra a  600mts del Museo de la Patagonia.                    '
                 },
                 four: {
                     gastronomy: 'gastronomy',
-                    text: 'chocolateria'
+                    text: 'Al estar situado en el corazón de Bariloche, nos encontramos cerca de la zona gastronómica y chocolaterías típicas del lugar.                    '
                 },
                 fifth: {
                     adv: 'adventure',
-                    text: 'excursiones'
+                    text: 'El Hotel cuenta con los mejores paquetes y tours de excursiones para aprovechar al máximo la aventura que ofrece Bariloche.'
                 },
                 six: {
                     center: 'Center bariloche',
-                    text: 'centro civico'
+                    text: 'El Centro Cívico se encuentra a 400mts'
                 }
             },
         },
@@ -254,27 +254,27 @@ export const Texts = {
             cards: {
                 first: {
                     restaurant: 'restaurant',
-                    text: 'texto restaurante'
+                    text: 'The Hotel has its Restaurant in season, with typical dishes of the region and a great wine list.'
                 },
                 second: {
                     night: 'night life',
-                    text: 'casino y pubs'
+                    text: 'The Hotel is located 2 km from the Bariloche Casino and the Bars & Pubs area.'
                 },
                 third: {
                     art: 'art & culture',
-                    text: 'museo'
+                    text: 'Bariloche has excellent museums. The Hotel is 600mts from the Museum of Patagonia.'
                 },
                 four: {
                     gastronomy: 'gastronomy',
-                    text: 'chocolateria'
+                    text: 'Being located in the heart of Bariloche, we are close to the gastronomic area and typical chocolate shops of the place.'
                 },
                 fifth: {
                     adv: 'adventure',
-                    text: 'excursiones'
+                    text: 'The Hotel has the best packages and excursion tours to make the most of the adventure that Bariloche offers.'
                 },
                 six: {
                     center: 'Center bariloche',
-                    text: 'centro civico'
+                    text: 'The civic centre is 400m away'
                 }
             }
    

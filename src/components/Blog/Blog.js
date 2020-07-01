@@ -96,6 +96,20 @@ const Blog = () => {
                         </div>
                         <div className="col-sm-6 col-lg-5 mb-4 mt-5 mb-lg-0">
                             <div className="categories_post">
+                                <img className="card-img rounded-0" height="280px" src={kayak} alt="post"/>
+                                <div className="categories_details">
+                                    <div className="categories_text">
+                                        <a href="blog-single.html">
+                                            <h5>{state.texts[state.language].location.cards.fifth.adv}</h5>
+                                        </a>
+                                        <div className="border_line"></div>
+                                        <p>{state.texts[state.language].location.cards.fifth.text}</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="col-sm-6 col-lg-5 mb-4 mt-5 mb-lg-0">
+                            <div className="categories_post">
                                 <img className="card-img rounded-0" height="280px" src={casino} alt="post"/>
                                 <div className="categories_details">
                                     <div className="categories_text">
@@ -104,6 +118,20 @@ const Blog = () => {
                                         </a>
                                         <div className="border_line"></div>
                                         <p>{state.texts[state.language].location.cards.second.text}</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="col-sm-6 col-lg-5 mb-4 mt-5 mb-lg-0">
+                            <div className="categories_post">
+                                <img className="card-img rounded-0" height="280px" src={centroCivico} alt="post"/>
+                                <div className="categories_details">
+                                    <div className="categories_text">
+                                        <a href="blog-single.html">
+                                            <h5>{state.texts[state.language].location.cards.six.center}</h5>
+                                        </a>
+                                        <div className="border_line"></div>
+                                        <p>{state.texts[state.language].location.cards.six.text}</p>
                                     </div>
                                 </div>
                             </div>
@@ -132,34 +160,6 @@ const Blog = () => {
                                         </a>
                                         <div className="border_line"></div>
                                         <p>{state.texts[state.language].location.cards.four.text}</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="col-sm-6 col-lg-5 mb-4 mt-5 mb-lg-0">
-                            <div className="categories_post">
-                                <img className="card-img rounded-0" height="280px" src={kayak} alt="post"/>
-                                <div className="categories_details">
-                                    <div className="categories_text">
-                                        <a href="blog-single.html">
-                                            <h5>{state.texts[state.language].location.cards.fifth.adv}</h5>
-                                        </a>
-                                        <div className="border_line"></div>
-                                        <p>{state.texts[state.language].location.cards.fifth.adv}</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="col-sm-6 col-lg-5 mb-4 mt-5 mb-lg-0">
-                            <div className="categories_post">
-                                <img className="card-img rounded-0" height="280px" src={centroCivico} alt="post"/>
-                                <div className="categories_details">
-                                    <div className="categories_text">
-                                        <a href="blog-single.html">
-                                            <h5>{state.texts[state.language].location.cards.six.center}</h5>
-                                        </a>
-                                        <div className="border_line"></div>
-                                        <p>{state.texts[state.language].location.cards.six.text}</p>
                                     </div>
                                 </div>
                             </div>
