@@ -6,8 +6,9 @@ import standardDoble from '../img/hotel/standard-doble.jpg';
 import economyTriple from '../img/hotel/economy-triple.jpg';
 import standardTriple from '../img/hotel/standard-triple.jpg';
 import economyCuadruple from '../img/hotel/cuadruple-economy.jpg';
-import { FaWifi, FaRegSnowflake } from 'react-icons/fa';
-import { GiWineBottle } from "react-icons/gi";
+import { FaWifi, FaRegSnowflake, FaRegSmile } from 'react-icons/fa';
+import { GiWineBottle, GiTwirlyFlower } from "react-icons/gi";
+import { AiOutlineCoffee, AiOutlineStar } from "react-icons/ai";
 import './Rooms.css';
 import { Context } from '../../Context/Provider';
 
@@ -41,12 +42,18 @@ const Rooms = () => {
                             </div>
                             <hr/>
                                 <p className="room-description">{state.texts[state.language].rooms.room.economy.description}</p>
+                                <header>Servicios</header>
                                 <div>
                                    <ul className="services-room">
                                        <li><p><FaWifi/>{state.texts[state.language].rooms.services.wifi}</p></li>
                                        <li><p><FaRegSnowflake/>{state.texts[state.language].rooms.services.air}</p></li>
                                        <li><p><GiWineBottle/>Minibar</p></li>
                                     </ul> 
+                                </div>
+                                <div className="box-destacada">
+                                    <div className="content-destacado">
+                                        <h5>{state.texts[state.language].rooms.destacada}</h5> 
+                                    </div>
                                 </div>
                         </div>
                     </Row>
@@ -101,12 +108,19 @@ const Rooms = () => {
                             </div>
                             <hr/>
                                 <p className="room-description">{state.texts[state.language].rooms.room.standard.description}</p>
+                                <header>Servicios</header>
                                 <div className="services-room">
-                                   <ul>
-                                       <li></li>
-                                       <li></li>
-                                       <li></li>
+                                   <ul className="services-room">
+                                       <li><p><AiOutlineCoffee/>{state.texts[state.language].rooms.services.teaCoffee}</p></li>
+                                       <li><p><FaRegSmile/>{state.texts[state.language].rooms.services.space}</p></li>
+                                       <li><p><AiOutlineStar/>Amenities</p></li>
+                                       <li><p><GiTwirlyFlower/>{state.texts[state.language].rooms.services.decorated}</p></li>
                                     </ul> 
+                                </div>
+                                <div className="box-destacada">
+                                    <div className="content-destacado">
+                                        <h5>{state.texts[state.language].rooms.destacada}</h5> 
+                                    </div>
                                 </div>
                         </div>
                     </Row>

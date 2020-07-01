@@ -66,6 +66,7 @@ export const Texts = {
         rooms: {
             banner: 'nuestras habitaciones',
             moreOptions: 'más opciones',
+            destacada: 'También tenemos habitaciones conectadas.',
             room: {
                 economy: {
                     title: 'Habitación Económica',
@@ -94,7 +95,10 @@ export const Texts = {
             },
             services: {
                 wifi: 'Wifi Gratis',
-                air: 'Aire acondicionado'
+                air: 'Aire acondicionado',
+                teaCoffee: 'Juego de té y café',
+                space: 'Más espacio y confort',
+                decorated: 'Decoradas por nuestros dueños'
             }   
         },
         location: {
@@ -215,6 +219,7 @@ export const Texts = {
         rooms: {
             banner: 'our rooms',
             moreOptions: 'more options',
+            destacada: 'We also have connected rooms.',
             room: {
                 economy: {
                     title: 'Economy Room',
@@ -244,7 +249,10 @@ export const Texts = {
             },
             services: {
                 wifi: 'Free Wifi',
-                air: 'Air conditioner'
+                air: 'Air conditioner',
+                teaCoffee: 'Set of tea and coffee',
+                space: 'More space and comfort',
+                decorated: 'Decorated by our owners'
             }
          },
         location: {
