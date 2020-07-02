@@ -87,7 +87,7 @@ const NavHome = () => {
                     <Link eventKey="active" className="nav-link" to="/">{state.texts[state.language].home.navbar.home}</Link>
                   </Nav.Item>
                   <Nav.Item as="li" className="nav-item" >
-                    <Nav.Link className="nav-link" to="#about">{state.texts[state.language].home.navbar.about}</Nav.Link>
+                    <a className="nav-link" href="/#about">{state.texts[state.language].home.navbar.about}</a>
                   </Nav.Item>
                   <Nav.Item as="li" className="nav-item" >
                     <Link className="nav-link" to="/gallery">{state.texts[state.language].home.navbar.gallery}</Link>

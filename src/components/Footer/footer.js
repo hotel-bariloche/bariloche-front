@@ -25,17 +25,17 @@ const Footer = () => {
                         <div className="text-lg-right col-xl-2 col-sm-6 mb-4 mb-xl-0 single-footer-widget">
                             <h4>{state.texts[state.language].footer.title}</h4>
                             <ul>
-                                <li><Link to="/">{state.texts[state.language].footer.about}</Link></li>
-                                <li><Link to="/">{state.texts[state.language].footer.video}</Link></li>
+                                <li><a href="/#about">{state.texts[state.language].footer.about}</a></li>
+                                <li><a href="/#video">{state.texts[state.language].footer.video}</a></li>
                                 <li><Link to="/gallery">{state.texts[state.language].footer.gallery}</Link></li>
                                 <li><Link to="/blog">{state.texts[state.language].footer.location}</Link></li>
                             </ul>
                         </div>
                         <div className="col-xl-2 col-sm-6 mb-4 mt-5 mb-xl-0 single-footer-widget">
                             <ul>
-                                <li><Link to="/blog/#attractions">{state.texts[state.language].footer.attractions}</Link></li>
-                                <li><Link to="/rooms/#standard">{state.texts[state.language].footer.room1}</Link></li>
-                                <li><Link to="/rooms/#economy">{state.texts[state.language].footer.room2}</Link></li>
+                                <li><a href="/blog/#attractions">{state.texts[state.language].footer.attractions}</a></li>
+                                <li><a href="/rooms/#standard">{state.texts[state.language].footer.room1}</a></li>
+                                <li><a href="/rooms/#economy">{state.texts[state.language].footer.room2}</a></li>
                                 <li><Link to="/contacto">{state.texts[state.language].footer.contact}</Link></li>
                             </ul>
                         </div>
