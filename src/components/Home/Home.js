@@ -4,7 +4,7 @@ import AboutUs from './AboutUs';
 import DestinoBariloche from './DestinoBariloche';
 import Video from './Video';
 import Reviews from './Reviews';
-import ContactHome from './Contact.js';
+import SendEmail from './SendEmail.js';
 
 import '../../css/style.css';
 
@@ -16,7 +16,7 @@ const Home = () => {
             <DestinoBariloche/>
             <Video/>
             <Reviews/>
-            <ContactHome/>
+            <SendEmail/>
         </div>
     )
 }
