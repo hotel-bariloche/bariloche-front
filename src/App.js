@@ -9,12 +9,15 @@ import Contact from './components/Contact/Contact';
 import Footer from './components/Footer/footer';
 import AppContext from './Context/Provider';
 import Gallery from './components/Gallery/gallery';
+import ScrollTop from './Utils/ScrollTop';
+
 
 
 class App extends React.Component {
   render() {
     return(
       <AppContext>
+        <ScrollTop>
         <NavHome/>
           <Switch>
             <Route exact path="/" component= {Home}/>
@@ -32,6 +35,7 @@ class App extends React.Component {
             </Route>
           </Switch>
         <Footer/>
+        </ScrollTop>
       </AppContext>
     )
   }
