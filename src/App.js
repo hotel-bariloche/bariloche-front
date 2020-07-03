@@ -8,10 +8,8 @@ import Rooms from './components/Rooms/Rooms';
 import Contact from './components/Contact/Contact';
 import Footer from './components/Footer/footer';
 import AppContext from './Context/Provider';
-import Gallery from './components/Gallery/gallery';
+import Galeria from './components/Galeria/Galeria';
 import ScrollTop from './Utils/ScrollTop';
-
-
 
 class App extends React.Component {
   render() {
@@ -30,8 +28,8 @@ class App extends React.Component {
             <Route path="/contacto" component= {Contact}>
               <Contact/>
             </Route>
-            <Route path="/gallery" component= {Gallery}>
-              <Gallery/>
+            <Route path="/gallery" component= {Galeria}>
+              <Galeria/>
             </Route>
           </Switch>
         <Footer/>

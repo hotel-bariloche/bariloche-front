@@ -1,3 +1,4 @@
+  
 import React from 'react';
 import { FaPhoneVolume, FaRegEnvelope, FaRegBuilding } from "react-icons/fa";
 import '../../css/style.css';
