@@ -23,7 +23,7 @@ import buffet7 from '../img/gallery/buffet7.jpg';
 import coffee from '../img/gallery/coffee.jpg';
 import coffee2 from '../img/gallery/coffee2.jpg';
 import { Context } from '../../Context/Provider';
-
+import Booking from '../Booking/Booking';
 
 const Galeria = () => {
 	const { state, changeLanguage } = React.useContext(Context);
@@ -60,8 +60,8 @@ const Galeria = () => {
                                 <a href="" className="img-gal card-img">
                                     <div className="single-imgs relative">		
                                         <div className="overlay overlay-bg"></div>
-                                        <div className="relative">				
-                                            <Image className="card-img rounded-0" src={barilo} alt=""></Image>		
+                                        <div className="relative">		
+                                         <Image className="card-img rounded-0" src={barilo} alt=""></Image>		
                                         </div>
                                     </div>
                                 </a>
