@@ -47,22 +47,22 @@ const Blog = () => {
             <div className="container">
                 <div className="row">
                     <div className="col-md-4 col-lg-3 mb-4 mt-3 mb-md-0">
-                    <div className="media contact-info">
-                        <span className="contact-info__icon"><i className="ti-home"><FaRegBuilding/></i></span>
+                    <div className="media contact-find">
+                        <span className="contact-find__icon"><i className="ti-home"><FaRegBuilding/></i></span>
                         <div className="media-body">
                         <h3>Mitre 408</h3>
                         <p>San Carlos de Bariloche Río Negro</p>
                     </div>
                     </div>
-                    <div className="media contact-info">
-                        <span className="contact-info__icon"><i className="ti-headphone"><FaPhoneVolume/></i></span>
+                    <div className="media contact-find">
+                        <span className="contact-find__icon"><i className="ti-headphone"><FaPhoneVolume/></i></span>
                         <div className="media-body">
                         <h3><a href="tel:454545654">{state.texts[state.language].home.contact.phone}</a></h3>
                         <p>+54 294 4430622</p>
                         </div>
                     </div>
-                    <div className="media contact-info">
-                        <span className="contact-info__icon"><i className="ti-email"><FaRegEnvelope/></i></span>
+                    <div className="media contact-find">
+                        <span className="contact-find__icon"><i className="ti-email"><FaRegEnvelope/></i></span>
                         <div className="media-body">
                         <h3><a href="mailto:support@colorlib.com">Email</a></h3>
                         <p>reservas@grandhotelbariloche.com</p>

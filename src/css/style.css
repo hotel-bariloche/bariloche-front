@@ -1168,6 +1168,27 @@ button {
   font-size: 18px;
 }
 
+.contact-find__icon {
+  margin-right: 20px; }
+  .contact-find i, .contact-find__icon span {
+    color: #cca772;
+    font-size: 30px; }
+
+.contact-find .media-body h3 {
+  font-size: 20px;
+  margin-bottom: 0; }
+  .contact-find .media-body h3  {
+    color: black; }
+
+    .contact-find .media-body h3 a  {
+      color: black; }
+    
+.contact-find .media-body p {
+  color: grey; 
+  font-size: 15px;
+}
+
+
 .react-multi-carousel-dot button {
   border: none !important;
 }
