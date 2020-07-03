@@ -13,7 +13,7 @@ import chocolate from '../img/blog/chocolate.jpg';
 import centroCivico from '../img/blog/centrocivico.jpg';
 import kayak from '../img/blog/kayak.jpg';
 import Image from 'react-bootstrap/Image'
-
+import Booking from '../Booking/Booking';
 
 const Blog = () => {
     const { state } = React.useContext(Context);
@@ -35,9 +35,10 @@ const Blog = () => {
                     </div>
                 </div>
             </div>
-        </section>
+        </section>        
+        <Booking/>
         {/*categories section*/}
-        <section className="blog_categorie_area">
+        <section className="blog_categorie_area">        
         <div className="section-intro text-center pb-80px">
                     <div className="section-intro__style">
                     <Image src={bed1} alt=""></Image>

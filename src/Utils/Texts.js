@@ -148,6 +148,13 @@ export const Texts = {
             title: 'Galería',
             bannerTitle: 'Galería de imágenes'
         },
+        booking: {
+            date_label: 'Fecha',
+            nights_label: 'Noches',
+            adults_label: 'Adultos',
+            children_label: 'Chicos',
+            check_button: 'Ver disponibilidad',
+        }
         
     },
 
@@ -304,6 +311,13 @@ export const Texts = {
             title: 'Gallery',
             bannerTitle: 'Image gallery'
         },
+        booking: {
+            date_label: 'Date',
+            nights_label: 'Nights',
+            adults_label: 'Adults',
+            children_label: 'Children',
+            check_button: 'Check Availability',
+        }
 
     },
 

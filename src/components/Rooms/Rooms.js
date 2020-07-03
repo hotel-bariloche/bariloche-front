@@ -11,7 +11,7 @@ import { GiWineBottle, GiTwirlyFlower, GiExitDoor } from "react-icons/gi";
 import { AiOutlineCoffee, AiOutlineStar } from "react-icons/ai";
 import './Rooms.css';
 import { Context } from '../../Context/Provider';
-
+import Booking from '../Booking/Booking';
 
 
 const Rooms = () => {
@@ -33,6 +33,7 @@ const Rooms = () => {
                 </div>
             </div>
         </section>
+        <Booking/>
 
             <Card>
                     <Row className="room-container" id="economy">

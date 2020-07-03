@@ -1,9 +1,8 @@
-  
 import React from 'react';
 import { FaPhoneVolume, FaRegEnvelope, FaRegBuilding } from "react-icons/fa";
 import '../../css/style.css';
 import { Context } from '../../Context/Provider';
-
+import Booking from '../Booking/Booking';
 
 const Contact = () => {
     const { state, changeLanguage } = React.useContext(Context);
@@ -61,6 +60,7 @@ const Contact = () => {
                     </div>
                 </div>
 	        </section>
+            <Booking/>
         </div>
        
     )

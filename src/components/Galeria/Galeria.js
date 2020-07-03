@@ -22,6 +22,7 @@ import buffet7 from '../img/gallery/buffet7.jpg';
 import coffee from '../img/gallery/coffee.jpg';
 import coffee2 from '../img/gallery/coffee2.jpg';
 import { Context } from '../../Context/Provider';
+import Booking from '../Booking/Booking';
 var shuffle = require('shuffle-array');
 
 class Galeria extends React.Component {
@@ -52,6 +53,7 @@ class Galeria extends React.Component {
                             </div>
                         </Container>
                     </section>
+                    <Booking/>
                     <div style={{
                         display: "block",
                         minHeight: "10px",
