@@ -1924,3 +1924,7 @@ button {
     color: #777; }
 
 /*============ End Blog Single Styles  =============*/
+/*=================== Room Section ===============*/
+.card-img {
+  height: 100%;
+}
