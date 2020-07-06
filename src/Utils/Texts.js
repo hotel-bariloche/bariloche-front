@@ -165,7 +165,7 @@ export const Texts = {
                 home: 'Home',
                 about: 'about',
                 gallery: 'gallery',
-                rooms: 'habitaciones',
+                rooms: 'rooms',
                 location: 'location',
                 contact: 'contact'
             },

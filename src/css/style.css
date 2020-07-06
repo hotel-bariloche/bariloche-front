@@ -1461,7 +1461,8 @@ button {
 .categories_post {
   position: relative;
   text-align: center;
-  cursor: pointer; }
+  cursor: pointer; 
+  height: 280px;}
   .categories_post img {
     max-width: 100%; }
   .categories_post .categories_details {

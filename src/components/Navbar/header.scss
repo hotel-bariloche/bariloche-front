@@ -1,5 +1,16 @@
 @import "./src/scss/main.scss";
 
+.top-bar {
+	background-color: rgb(55, 58, 58);
+	height: 50px;
+	.contact-bar {
+		font-family: sans-serif;
+		color: #cca772;
+		padding-top: 12px;
+		padding-left: 5%;
+	}
+}
+
 #header_area {
 	width: 100%;
     z-index: 999999;
@@ -21,6 +32,7 @@
 		width: 5%;
 		justify-content: space-around;
 		margin-right: 30px;
+		
 	  }
 	  .countryFlag {
 		height: 15px;

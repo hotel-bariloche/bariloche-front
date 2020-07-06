@@ -47,7 +47,7 @@ const Blog = () => {
         </div>
             <div className="container">
                 <div className="row">
-                    <div className="col-md-4 col-lg-3 mb-4 mt-3 mb-md-0">
+                    <div className="col-md-4 col-lg-3 mb-4 mt-4 mb-md-0">
                     <div className="media contact-find">
                         <span className="contact-find__icon"><i className="ti-home"><FaRegBuilding/></i></span>
                         <div className="media-body">
@@ -82,7 +82,7 @@ const Blog = () => {
                      </div>
                                 <div className="col-sm-6 col-lg-5 mb-4 mt-5 mb-lg-0">
                             <div className="categories_post">
-                                <img className="card-img rounded-0" height="280px"src={restaurant} alt="post"/>
+                                <img className="card-img rounded-0" height="280px" src={restaurant} alt="post"/>
                                 <div className="categories_details">
                                     <div className="categories_text">
                                         <a href="blog-single.html">

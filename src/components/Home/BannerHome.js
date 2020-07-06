@@ -19,8 +19,7 @@ const BannerHome = () => {
           <Carousel interval={3000}>
                 <Carousel.Item>
                     <img
-                    height="850px"
-                    className="d-block w-100"
+                    className="d-block w-100 carousel-slide"
                     src={landing1}
                     alt="First slide"
                     />
@@ -31,8 +30,7 @@ const BannerHome = () => {
                 </Carousel.Item>
                 <Carousel.Item>
                     <img
-                    height="850px"
-                    className="d-block w-100"
+                    className="d-block w-100 carousel-slide"
                     src={landing2}
                     alt="Third slide"
                     />
@@ -44,8 +42,7 @@ const BannerHome = () => {
                 </Carousel.Item>
                 <Carousel.Item>
                     <img
-                    height="850px"
-                    className="d-block w-100"
+                    className="d-block w-100 carousel-slide"
                     src={landing3}
                     alt="Third slide"
                     />
