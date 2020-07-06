@@ -35,6 +35,21 @@ const NavHome = () => {
   return(
 
     <Container fluid id="header_area">
+      <Row className="top-bar">
+        <div className="col-5 contact-bar">
+          <p><FaRegEnvelope/> reservas@grandhotelbariloche.com</p>
+        </div>
+        <div className="col-5 contact-bar">
+          <p><FaPhoneVolume/> +54 294 4430622</p>
+        </div>
+        
+        <div className="col-1 countryContact">
+            <img onClick={() => changeLanguage('english')} alt="English" src={englishFlag} className={state.language === 'english' ? 'countryFlag borderFlag' : 'countryFlag'} />
+            <img onClick={() => changeLanguage('spanish')} alt="Spain" src={spainFlag} className={state.language === 'spanish' ? 'countryFlag borderFlag' : 'countryFlag'} />
+  
+        </div>
+
+      </Row>
       <Row className="header-top">
         <Container>
           <div className="d-flex align-items-center">
@@ -61,10 +76,6 @@ const NavHome = () => {
                       <p>Have any question?</p>
                       <p>Free: <a href="tel:+12 365 5233">+12 365 5233</a></p>
                     </div>
-                    <div className="countryContact">
-                      <img onClick={() => changeLanguage('english')} alt="English" src={englishFlag} className={state.language === 'english' ? 'countryFlag borderFlag' : 'countryFlag'} />
-                      <img onClick={() => changeLanguage('spanish')} alt="Spain" src={spainFlag} className={state.language === 'spanish' ? 'countryFlag borderFlag' : 'countryFlag'} />
-                    </div>
                   </div>
                 </div>
               </div>
@@ -85,9 +96,6 @@ const NavHome = () => {
                 <Nav className="mr-auto nav" activeKey="/" as="ul">
                   <Nav.Item as="li" className="nav-item active" >
                     <Link eventKey="active" className="nav-link" to="/">{state.texts[state.language].home.navbar.home}</Link>
-                  </Nav.Item>
-                  <Nav.Item as="li" className="nav-item" >
-                    <a className="nav-link" href="/#about">{state.texts[state.language].home.navbar.about}</a>
                   </Nav.Item>
                   <Nav.Item as="li" className="nav-item" >
                     <Link className="nav-link" to="/gallery">{state.texts[state.language].home.navbar.gallery}</Link>
