@@ -42,7 +42,7 @@
       background: rgba(1, 2, 11, 0.7);
       z-index: -1; }
 
-@media (min-width: 801px) {
+
     .room-container {
         max-width: 1170px;
         margin: 15px auto;
@@ -141,11 +141,27 @@
     }
     .conected-rooms {
         display: flex;
+        margin-top: 40px;
     }
     .conected-rooms svg {
         margin-top: 20px;
         font-size: 60px;
         color: #ac8d61;
+    }
+
+@media (max-width: 600px) {
+    .room-container {
+        width: 100%;
+        margin: 15px auto; 
+    }
+    .services-room {
+        display: inline-block;
+    }
+    .conected-rooms {
+        flex-wrap: wrap;
+    }
+    .conected-rooms svg {
+        margin: 0 auto;
     }
 
 }
