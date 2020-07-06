@@ -82,7 +82,7 @@ const Blog = () => {
                      </div>
                                 <div className="col-sm-6 col-lg-5 mb-4 mt-5 mb-lg-0">
                             <div className="categories_post">
-                                <img className="card-img rounded-0" height="280px"src={restaurant} alt="post"/>
+                                <img className="card-img rounded-0" height="280px" src={restaurant} alt="post"/>
                                 <div className="categories_details">
                                     <div className="categories_text">
                                         <a href="blog-single.html">
