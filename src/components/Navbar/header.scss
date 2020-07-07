@@ -9,6 +9,9 @@
 		padding-top: 12px;
 		padding-left: 5%;
 	}
+	@media(max-width: 800px) {
+		display: none;
+	}
 }
 
 #header_area {
