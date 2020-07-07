@@ -85,7 +85,7 @@ const NavHome = () => {
         </Container>
       </Row>
       <Container fluid className="main_menu">
-          <Row style={{ background: "white", width: "100vw", padding: '0px 52px 0px 52px', marginLeft: '-30px' }}> 
+          <Row style={{ background: "white", width: "90vw", padding: '0px 50px 0px 52px', marginLeft: '-30px' }}> 
             <Col style={{ border: 'none'}}>
             <Navbar id="navbar" className="navbar navbar_bi" expand="lg"  style={{ boxShadow: 'none'}}            
               onToggle={setNavExpanded}
