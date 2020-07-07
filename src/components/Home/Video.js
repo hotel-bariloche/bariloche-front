@@ -9,19 +9,13 @@ const Video = () => {
   const handleShow = () => setShow(true);
     return(
       <div>
-          <section className="video-area" id="video">
-            <div className="container">
-              <div className="row justify-content-center align-items-center flex-column text-center">
-                <a onClick={handleShow} id="play-home-video" className="video-play-button">
-                  <span></span>
-                </a>
-                <h3>Seaplace</h3>
-                <p>View four has said does men saw find dear shy talent</p>
-              </div>
-            </div>  
+          <section id="video">
+          <iframe 
+                  width="100%" height="700" src="https://www.youtube.com/embed/WU_dWnyGZSo?autoplay=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+          </iframe>
           </section>
 
-          <Modal  size="lg" show={show} onHide={handleClose}>
+         {/* <Modal  size="lg" show={show} onHide={handleClose}>
             <Modal.Header closeButton>
               <Modal.Title>Modal heading</Modal.Title>
             </Modal.Header>
@@ -35,7 +29,7 @@ const Video = () => {
                 Close
               </Button>
             </Modal.Footer>
-          </Modal>
+          </Modal>*/} 
         </div>
     )
 }
