@@ -134,7 +134,7 @@ export const Texts = {
             },
         },
         footer: {
-            titulo: 'Secciones',
+            title: 'Secciones',
             about: 'Sobre nosotros',
             video: 'Video',
             gallery: 'Galería',
