@@ -36,7 +36,7 @@ const Rooms = () => {
         <Booking/>
 
             <Card>
-                    <div className="room-container" id="economy">
+                    <Row className="room-container" id="economy">
                         <div className="room-article-container">
                             <div className="room-title">
                                 <h2>{state.texts[state.language].rooms.room.economy.title}</h2>
@@ -65,7 +65,7 @@ const Rooms = () => {
                                     </div>
                                 </div>
                         </div>
-                    </div>
+                    </Row>
                 <hr/>
                     <Card.Body>
                     <Row pb={3} mt={4}>   
@@ -110,7 +110,7 @@ const Rooms = () => {
             </Card>
             {/*seccion standard rooms*/}
             <Card>
-                <div className="room-container" id="standard">
+                <Row className="room-container" id="standard">
                         <div className="room-article-container">
                             <div className="room-title">
                                 <h2>{state.texts[state.language].rooms.room.standard.title}</h2>
@@ -141,7 +141,7 @@ const Rooms = () => {
                                 </div>
                                 
                         </div>
-                    </div>
+                    </Row>
                     <hr/>
                     <Card.Body>
                         <Row pb={3} mt={4}>
