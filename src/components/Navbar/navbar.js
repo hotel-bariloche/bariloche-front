@@ -18,7 +18,6 @@ import { Context } from '../../Context/Provider';
 
 const NavHome = () => {
   const { state, changeLanguage } = React.useContext(Context);
-  const [navExpanded, setNavExpanded] = React.useState(false);
   
   window.onscroll = function() {scrollFunction()};
 
@@ -57,40 +56,13 @@ const NavHome = () => {
             <div id="logo">
                 <a href="/">< Image style={{height: '140px', width: '150px', backgroundColor: '#cca772', padding: '30px'}}src="https://grandhotelbariloche.com/wp-content/uploads/2019/01/LOGO_original-300x300.png" alt="" title="" /></a>
             </div>
-            <div className="ml-auto d-none d-md-block d-md-flex">
-              <div className="media header-top-info">
-                <div className="ml-auto d-none d-md-block d-md-flex">
-                  <div className="media header-top-info">
-                    <span className="header-top-info__icon">
-                      <FaPhoneVolume/>
-                    </span>
-                    <div className="media-body">
-                      <p>Have any question?</p>
-                      <p>Free: <a href="tel:+12 365 5233">+12 365 5233</a></p>
-                    </div>
-                  </div>
-                  <div className="media header-top-info">
-                    <span className="header-top-info__icon">
-                        <FaRegEnvelope/>
-                    </span>
-                    <div className="media-body">
-                      <p>Have any question?</p>
-                      <p>Free: <a href="tel:+12 365 5233">+12 365 5233</a></p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
           </div>
         </Container>
       </Row>
       <Container fluid className="main_menu">
-          <Row style={{ background: "white", width: "90vw", padding: '0px 50px 0px 52px', marginLeft: '-30px' }}> 
+          <Row style={{ background: "white", width: "100vw", padding: '0px 52px 0px 52px', marginLeft: '-30px' }}> 
             <Col style={{ border: 'none'}}>
-            <Navbar id="navbar" className="navbar navbar_bi" expand="lg"  style={{ boxShadow: 'none'}}            
-              onToggle={setNavExpanded}
-              expanded={navExpanded}
-            >
+            <Navbar id="navbar" className="navbar navbar_bi" expand="lg"  style={{ boxShadow: 'none'}}>
               <Navbar.Toggle className="navbar-toggler" aria-controls="basic-navbar-nav">
                 <span className="icon-bar"></span>
                 <span className="icon-bar"></span>
@@ -99,19 +71,19 @@ const NavHome = () => {
               <Navbar.Collapse id="basic-navbar-nav" sticky="top">
                 <Nav className="mr-auto nav" activeKey="/" as="ul">
                   <Nav.Item as="li" className="nav-item active" >
-                    <Link eventKey="active" onClick={() => setNavExpanded(false)} className="nav-link" to="/">{state.texts[state.language].home.navbar.home}</Link>
+                    <Link eventKey="active" className="nav-link" to="/">{state.texts[state.language].home.navbar.home}</Link>
                   </Nav.Item>
                   <Nav.Item as="li" className="nav-item" >
-                    <Link className="nav-link" onClick={() => setNavExpanded(false)} to="/gallery">{state.texts[state.language].home.navbar.gallery}</Link>
+                    <Link className="nav-link" to="/gallery">{state.texts[state.language].home.navbar.gallery}</Link>
                   </Nav.Item>
                   <Nav.Item as="li" className="nav-item" >
-                    <Link className="nav-link" onClick={() => setNavExpanded(false)} to="/blog">{state.texts[state.language].home.navbar.location}</Link>
+                    <Link className="nav-link" to="/blog">{state.texts[state.language].home.navbar.location}</Link>
                   </Nav.Item>
                   <Nav.Item as="li" className="nav-item" >
-                    <Link className="nav-link" onClick={() => setNavExpanded(false)} to="/rooms">{state.texts[state.language].home.navbar.rooms}</Link>
+                    <Link className="nav-link" to="/rooms">{state.texts[state.language].home.navbar.rooms}</Link>
                   </Nav.Item>
                   <Nav.Item as="li" className="nav-item" >
-                    <Link className="nav-link" onClick={() => setNavExpanded(false)} to="/contacto">{state.texts[state.language].home.navbar.contact}</Link>
+                    <Link className="nav-link" to="/contacto">{state.texts[state.language].home.navbar.contact}</Link>
                   </Nav.Item>
                 </Nav>
               </Navbar.Collapse>
