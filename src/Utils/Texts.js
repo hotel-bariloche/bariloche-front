@@ -146,7 +146,7 @@ export const Texts = {
         },
         gallery : {
             title: 'Galería',
-            bannerTitle: 'Galería de imágenes'
+            ourGallery: 'Nuestra galería'
         },
         booking: {
             date_label: 'Fecha',
@@ -309,7 +309,7 @@ export const Texts = {
         },
         gallery : {
             title: 'Gallery',
-            bannerTitle: 'Image gallery'
+            ourGallery: 'Our gallery'
         },
         booking: {
             date_label: 'Date',

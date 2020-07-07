@@ -33,7 +33,7 @@ const Galeria = () => {
         <Container className="container h-100">
           <div className="blog-banner">
             <div className="text-center">
-              <h1>{state.texts[state.language].gallery.bannerTitle}</h1>
+              <h1>{state.texts[state.language].gallery.title}</h1>
               <nav aria-label="breadcrumb" className="banner-breadcrumb">
                 <ol className="breadcrumb">
                   <li className="breadcrumb-item">
@@ -55,7 +55,7 @@ const Galeria = () => {
             <div className="section-intro__style">
               <Image src={bed1} alt=""></Image>
             </div>
-            <h2>Nuestra Galería</h2>
+            <h2>{state.texts[state.language].gallery.ourGallery}</h2>
           </div>
 
           <Row className="row">
