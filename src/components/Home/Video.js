@@ -11,7 +11,7 @@ const Video = () => {
       <div>
           <section id="video">
           <iframe 
-                  width="100%" height="700" src="https://www.youtube.com/embed/WU_dWnyGZSo?autoplay=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+                  width="100%" height="700" src="https://www.youtube.com/embed/WU_dWnyGZSo?autoplay=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
           </iframe>
           </section>
 
