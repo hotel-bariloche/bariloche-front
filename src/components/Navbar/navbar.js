@@ -46,7 +46,6 @@ const NavHome = () => {
         <div className="col-1 countryContact">
             <img onClick={() => changeLanguage('english')} alt="English" src={englishFlag} className={state.language === 'english' ? 'countryFlag borderFlag' : 'countryFlag'} />
             <img onClick={() => changeLanguage('spanish')} alt="Spain" src={spainFlag} className={state.language === 'spanish' ? 'countryFlag borderFlag' : 'countryFlag'} />
-  
         </div>
 
       </Row>
@@ -94,7 +93,10 @@ const NavHome = () => {
                     <li><a href="https://www.instagram.com/grandhotelbariloche/" rel="noopener noreferrer" target="_blank"><FaInstagram/></a></li>
                   </ul>
               </div>
-            
+              <div className="col-1 countryContactResponsive">
+                <img onClick={() => changeLanguage('english')} alt="English" src={englishFlag} className={state.language === 'english' ? 'countryFlagRes borderFlagRes' : 'countryFlagRes'} />
+                <img onClick={() => changeLanguage('spanish')} alt="Spain" src={spainFlag} className={state.language === 'spanish' ? 'countryFlagRes borderFlagRes' : 'countryFlagRes'} />
+              </div>
             </Navbar>
             </Col>
           </Row>

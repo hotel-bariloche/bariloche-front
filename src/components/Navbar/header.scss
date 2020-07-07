@@ -18,6 +18,7 @@
 #logo {
 	margin: 0 auto;
 }
+
 #header_area {
 	width: 100%;
     z-index: 999999;
@@ -26,6 +27,10 @@
 	.borderFlag {
 		outline: 2px solid black;
 	}
+	.borderFlagRes {
+		outline: 1px solid black;
+	}
+
 	.countryContact {
 		line-height: 60px;
 		text-decoration: none;
@@ -39,11 +44,33 @@
 		width: 5%;
 		justify-content: space-around;
 		margin-right: 30px;
-		
 	  }
+
+	  .countryContactResponsive {
+		line-height: 60px;
+		text-decoration: none;
+		font-weight: 500;
+		font-style: normal;
+		font-stretch: normal;
+		letter-spacing: normal;
+		font-size: 18px;
+		display: flex;
+		flex-direction: row;
+		width: 5%;
+		justify-content: space-around;
+		margin-right: 30px;
+		@media (min-width: 600px) {
+			display:none;
+		}
+	  }
+
 	  .countryFlag {
 		height: 15px;
 		margin: auto 0px auto 2px;
+	  }
+
+	  .countryFlagRes {
+		height: 13px;
 	  }
 	  
 	.navbar {
