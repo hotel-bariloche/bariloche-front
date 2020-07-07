@@ -47,7 +47,7 @@ const Contact = () => {
 
                                         <span className="contact-info__icon"><i className="ti-email"><FaRegEnvelope/></i></span>
                                         <div className="media-body">
-                                            <h3><a href="mailto:support@colorlib.com">Email</a></h3>
+                                            <h3><a href="mailto:reservas@grandhotelbariloche.com">Email</a></h3>
                                             <p>reservas@grandhotelbariloche.com</p>
                                         </div>
                                     </div>

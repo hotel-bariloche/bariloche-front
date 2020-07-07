@@ -535,16 +535,16 @@ button {
   .carousel-slide-btn {
     margin-bottom: 25vw;
   }
-  .carousel-caption h1 {
+  .carousel-caption h4 {
     font-size: 27px;
     margin-bottom: 10px; }
     @media (min-width: 600px) {
-      .carousel-caption h1 {
+      .carousel-caption h4 {
         font-size: 37px; } }
    
     @media (min-width: 992px) {
-      .carousel-caption h1 {
-        font-size: 70px;
+      .carousel-caption h4 {
+        font-size: 65px;
         margin-bottom: 20px; } }
 
     @media (max-width: 600px) {

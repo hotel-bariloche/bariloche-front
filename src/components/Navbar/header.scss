@@ -3,11 +3,15 @@
 .top-bar {
 	background-color: rgb(55, 58, 58);
 	height: 50px;
+	padding: 0;
 	.contact-bar {
 		font-family: sans-serif;
 		color: #cca772;
 		padding-top: 12px;
 		padding-left: 5%;
+	}
+	@media(max-width: 800px) {
+		display: none;
 	}
 }
 
