@@ -19,6 +19,8 @@ import { Context } from '../../Context/Provider';
 const NavHome = () => {
   const { state, changeLanguage } = React.useContext(Context);
   
+  const [navExpanded, setNavExpanded] = React.useState(false);
+
   window.onscroll = function() {scrollFunction()};
 
   const scrollFunction= () => {
@@ -30,8 +32,7 @@ const NavHome = () => {
       headerEl.classList.remove("navbar_fixed");
     }
   }
-
-
+  
   return(
 
     <Container fluid id="header_area">
@@ -61,28 +62,31 @@ const NavHome = () => {
       <Container fluid className="main_menu">
           <Row style={{ background: "white", width: "100vw", padding: '0px 52px 0px 52px', marginLeft: '-30px' }}> 
             <Col style={{ border: 'none'}}>
-            <Navbar id="navbar" className="navbar navbar_bi" expand="lg"  style={{ boxShadow: 'none'}}>
-              <Navbar.Toggle className="navbar-toggler" aria-controls="basic-navbar-nav">
-                <span className="icon-bar"></span>
+            <Navbar id="navbar" className="navbar navbar_bi" expand="lg"  style={{ boxShadow: 'none'}}            
+              onToggle={setNavExpanded}
+              expanded={navExpanded}
+            >   
+           <Navbar.Toggle className="navbar-toggler" aria-controls="basic-navbar-nav">
+               <span className="icon-bar"></span>
                 <span className="icon-bar"></span>
                 <span className="icon-bar"></span>
               </Navbar.Toggle>
               <Navbar.Collapse id="basic-navbar-nav" sticky="top">
                 <Nav className="mr-auto nav" activeKey="/" as="ul">
                   <Nav.Item as="li" className="nav-item active" >
-                    <Link eventKey="active" className="nav-link" to="/">{state.texts[state.language].home.navbar.home}</Link>
+                    <Link eventKey="active" onClick={() => setNavExpanded(false)} className="nav-link" to="/">{state.texts[state.language].home.navbar.home}</Link>
                   </Nav.Item>
                   <Nav.Item as="li" className="nav-item" >
-                    <Link className="nav-link" to="/gallery">{state.texts[state.language].home.navbar.gallery}</Link>
+                   <Link className="nav-link" onClick={() => setNavExpanded(false)} to="/gallery">{state.texts[state.language].home.navbar.gallery}</Link>
                   </Nav.Item>
                   <Nav.Item as="li" className="nav-item" >
-                    <Link className="nav-link" to="/blog">{state.texts[state.language].home.navbar.location}</Link>
+                   <Link className="nav-link" onClick={() => setNavExpanded(false)} to="/blog">{state.texts[state.language].home.navbar.location}</Link>
                   </Nav.Item>
                   <Nav.Item as="li" className="nav-item" >
-                    <Link className="nav-link" to="/rooms">{state.texts[state.language].home.navbar.rooms}</Link>
+                   <Link className="nav-link" onClick={() => setNavExpanded(false)} to="/rooms">{state.texts[state.language].home.navbar.rooms}</Link>
                   </Nav.Item>
                   <Nav.Item as="li" className="nav-item" >
-                    <Link className="nav-link" to="/contacto">{state.texts[state.language].home.navbar.contact}</Link>
+                    <Link className="nav-link" onClick={() => setNavExpanded(false)} to="/contacto">{state.texts[state.language].home.navbar.contact}</Link>
                   </Nav.Item>
                 </Nav>
               </Navbar.Collapse>
