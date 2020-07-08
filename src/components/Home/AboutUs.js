@@ -18,17 +18,17 @@ const AboutUs = () => {
                         <Row className="row no-gutters welcome-images">
                             <Col sm="7" className="col-sm-7">
                                 <div className="card">
-                                    <img style={{ height: '290px'}} className="" src={aboutBed} alt="Card image cap"/>
+                                    <img style={{ height: '290px'}} className="aboutUs-img" src={aboutBed} alt="Hotel Bariloche"/>
                                 </div>
                             </Col>
                             <Col sm="5" className="col-sm-5">
                                 <div className="card">
-                                    <img style={{ height: '290px'}} className="" src={breakfast} alt="Card image cap"/>
+                                    <img style={{ height: '290px'}} className="" src={breakfast} alt="Hotel con desayuno Bariloche"/>
                                 </div>
                             </Col>
                             <Col lg="12" className="col-lg-12">
                                 <div className="card">
-                                    <img style={{ height: '210px'}} className="" src={reception} alt="Card image cap"/>
+                                    <img style={{ height: '210px'}} className="" src={reception} alt="Recepción hotel Bariloche"/>
                                 </div>
                             </Col>
                         </Row>
