@@ -1095,6 +1095,10 @@ button {
     border-color: #cca772;
     color: white }
 
+  .location-description {
+    font-size: 17px;
+  }
+
 /*=================== contact banner start ====================*/
 .contact-sites{
   margin-top: 5%;
