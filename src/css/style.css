@@ -451,7 +451,8 @@ button {
 }
 
 .carousel-slide {
-  position: relative; }
+  position: relative;
+  filter: brightness(70%) }
   .carousel-caption h4, .carousel-caption h1, .carousel-caption a {
     text-transform: uppercase;
     color: #fff; }
@@ -462,6 +463,7 @@ button {
   .carousel-slide-btn {
     margin-bottom: 25vw;
   }
+ 
   .carousel-caption h4 {
     font-size: 27px;
     margin-bottom: 10px; }
@@ -491,7 +493,7 @@ button {
         height: 600px; } }
     @media (min-width: 1200px) {
       .carousel-slide {
-        height: 970px; } }
+        height: 850px; } }
     .carousel-slide .carousel-slide {
       position: absolute;
       top: 50%;

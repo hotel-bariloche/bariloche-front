@@ -23,7 +23,6 @@ const BannerHome = () => {
                     src={landing2}
                     alt="Third slide"
                     />
-
                     <Carousel.Caption>
                     <h4>{state.texts[state.language].home.homeBanner}</h4>
                     <a className="button carousel-slide-btn" target="_blank" href={landing2}>{state.texts[state.language].home.book}</a>
