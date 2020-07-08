@@ -32,7 +32,7 @@ const NavHome = () => {
       headerEl.classList.remove("navbar_fixed");
     }
   }
-  
+
   return(
 
     <Container fluid id="header_area">
@@ -45,7 +45,7 @@ const NavHome = () => {
         </div>
         
         <div className="col-1 countryContact">
-            <img onClick={() => changeLanguage('english')} alt="English" src={englishFlag} className={state.language === 'english' ? 'countryFlag borderFlag' : 'countryFlag'} />
+            <img title="english" onClick={() => changeLanguage('english')} alt="English" src={englishFlag} className={state.language === 'english' ? 'countryFlag borderFlag' : 'countryFlag'} />
             <img onClick={() => changeLanguage('spanish')} alt="Spain" src={spainFlag} className={state.language === 'spanish' ? 'countryFlag borderFlag' : 'countryFlag'} />
         </div>
 
