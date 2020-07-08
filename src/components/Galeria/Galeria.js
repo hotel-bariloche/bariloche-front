@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 import { Container, Row, Col } from 'reactstrap'
 import ModalImage from 'react-modal-image'
 import Image from 'react-bootstrap/Image'
@@ -21,7 +21,6 @@ import buffet5 from '../img/gallery/buffet5.jpg'
 import buffet6 from '../img/gallery/buffet6.jpg'
 import buffet7 from '../img/gallery/buffet7.jpg'
 import coffee from '../img/gallery/coffee.jpg'
-import coffee2 from '../img/gallery/coffee2.jpg'
 import { Context } from '../../Context/Provider'
 import Booking from '../Booking/Booking'
 

@@ -27,10 +27,10 @@ const Booking = () => {
     >        
      <input type="hidden" name="LanguageID" value={state.language == 'english'? 1 : 2} />
      <input type="hidden" name="Rooms" value={1} /> 
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-6 gutters-19">
-            <div class="form-group">
+      <div className="container">
+        <div className="row">
+          <div className="col-lg-6 gutters-19">
+            <div className="form-group">
               <label>{state.texts[state.language].booking.date_label}</label>
               <DatePicker
                 name="DateIn"
@@ -42,11 +42,11 @@ const Booking = () => {
               />
             </div>
           </div>
-          <div class="col-lg-6 gutters-19">
-            <div class="row">
-              <div class="col-sm">
-                <div class="form-group">
-                  <div class="form-select-custom">
+          <div className="col-lg-6 gutters-19">
+            <div className="row">
+              <div className="col-sm">
+                <div className="form-group">
+                  <div className="form-select-custom">
                     <label>{state.texts[state.language].booking.nights_label}</label>
                     <Select options={nights} name="Length" defaultValue={nights.filter(option => option.label === 1)} />
                   </div>
@@ -55,26 +55,26 @@ const Booking = () => {
             </div>
           </div>
         </div>
-        <div class="row">
-          <div class="col-sm gutters-19">
-            <div class="form-group">
-              <div class="form-select-custom">
+        <div className="row">
+          <div className="col-sm gutters-19">
+            <div className="form-group">
+              <div className="form-select-custom">
                 <label>{state.texts[state.language].booking.adults_label}</label>
                 <Select options={adults} name="Adults" defaultValue={adults.filter(option => option.label === 1)} />
               </div>
             </div>
           </div>
-          <div class="col-sm gutters-19">
-            <div class="form-group">
+          <div className="col-sm gutters-19">
+            <div className="form-group">
               <label>{state.texts[state.language].booking.children_label}</label>
-              <div class="form-select-custom">
+              <div className="form-select-custom">
                 <Select options={children} name="Children" defaultValue={children.filter(option => option.label === 0)} />
               </div>
             </div>
           </div>
-          <div class="col-lg-4 gutters-19">
-            <div class="form-group" style={{ paddingTop: '2rem' }}>
-              <button class="button button-form" type="submit">
+          <div className="col-lg-4 gutters-19">
+            <div className="form-group" style={{ paddingTop: '2rem' }}>
+              <button className="button button-form" type="submit">
                 {state.texts[state.language].booking.check_button}
               </button>
             </div>

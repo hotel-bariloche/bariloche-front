@@ -1,9 +1,6 @@
-import React, { useState } from 'react';
+import React, {useState} from 'react';
 import '../../css/style.css';
 import Carousel from 'react-bootstrap/Carousel';
-import Sunset from '../img/gallery/sunset.png';
-import Card1 from '../img/home/card-blog1.png';
-import Card2 from '../img/home/card-blog2.png';
 import { Context } from '../../Context/Provider';
 import landing1 from '../img/home/lake.jpg';
 import landing2 from '../img/home/hall2.jpg';
@@ -13,11 +10,15 @@ import landing3 from '../img/home/lake2.jpg';
 
 const BannerHome = () => {
     const { state } = React.useContext(Context);
-      
+    const [index, setIndex] = useState(0);
+
+    const handleSelect = (selectedIndex, e) => {
+        setIndex(selectedIndex);
+      };
 
   return(
         <div>
-          <Carousel interval={3000}>
+          <Carousel interval={3000} activeIndex={index} onSelect={handleSelect} controls={true}>
                 <Carousel.Item>
                     <img
                     className="d-block w-100 carousel-slide"
