@@ -10,6 +10,12 @@ import landing3 from '../img/home/lake2.jpg';
 
 const BannerHome = () => {
     const { state } = React.useContext(Context);
+    const [index, setIndex] = useState(0);
+
+
+    const handleSelect = (selectedIndex, e) => {
+        setIndex(selectedIndex);
+      };
 
   return(
         <div>
@@ -50,9 +56,13 @@ const BannerHome = () => {
                     <a className="button carousel-slide-btn" target="_blank" href={landing3}>{state.texts[state.language].home.book}</a>
                     </Carousel.Caption>
                 </Carousel.Item>
+    
             </Carousel>
+            
         </div>
     )
 }
+
+
 
 export default BannerHome
