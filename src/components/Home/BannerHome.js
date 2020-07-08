@@ -10,13 +10,9 @@ import landing3 from '../img/home/lake2.jpg';
 
 const BannerHome = () => {
     const { state } = React.useContext(Context);
-    const [index, setIndex] = useState(0);
 
-
-    const handleSelect = (selectedIndex, e) => {
-        setIndex(selectedIndex);
-      };
-
+    
+ 
   return(
         <div>
           <Carousel interval={3000}>

@@ -1125,3 +1125,9 @@ button {
 .card-img {
   height: 100%;
 }
+
+@media (max-width: 600px) {
+  .card-img {
+    margin-top: 30px;
+  }
+}
