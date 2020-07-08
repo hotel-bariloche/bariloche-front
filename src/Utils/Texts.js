@@ -20,7 +20,7 @@ export const Texts = {
             },
             video: 'titulo del video',
             guests: {
-                title: 'Nuestros clientes nos quieren',
+                title: 'Que dicen nuestros huéspedes sobre nosotros',
                 cards: {
                     first: {
                         review: 'Estuvimos 3 noches alojados en pareja la pasamos muy bien. La atención del personal del comedor excelente. Habitaciones bien calefaccionadas, la y desayuno muy bueno y variado. Lo recomiendo en un 100%',
@@ -180,7 +180,7 @@ export const Texts = {
             },
             video: 'title video',
             guests: {
-                title: 'Our guests love us',
+                title: 'What our guests say about us',
                 cards: {
                     first: {
                         review: 'Estuvimos 3 noches alojados en pareja la pasamos muy bien. La atención del personal del comedor excelente. Habitaciones bien calefaccionadas, la y desayuno muy bueno y variado. Lo recomiendo en un 100%',

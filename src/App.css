@@ -36,3 +36,6 @@
     transform: rotate(360deg);
   }
 }
+.disable-dbl-tap-zoom {
+  touch-action: manipulation;
+}
