@@ -40,6 +40,7 @@ const Blog = () => {
         {/*categories section*/}
         <section className="blog_categorie_area">        
         <div className="section-intro text-center pb-80px">
+
                     <div className="section-intro__style">
                     <Image src={bed1} alt=""></Image>
                     </div>
@@ -47,6 +48,8 @@ const Blog = () => {
         </div>
             <div className="container">
                 <div className="row">
+                <p className="mt-3 mb-5 location-description">{state.texts[state.language].location.description}</p>
+
                     <div className="col-md-4 col-lg-3 mb-4 mt-4 mb-md-0">
                     <div className="media contact-find">
                         <span className="contact-find__icon"><i className="ti-home"><FaRegBuilding/></i></span>

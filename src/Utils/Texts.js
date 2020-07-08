@@ -20,7 +20,7 @@ export const Texts = {
             },
             video: 'titulo del video',
             guests: {
-                title: 'Nuestros clientes nos quieren',
+                title: 'Que dicen nuestros huéspedes sobre nosotros',
                 cards: {
                     first: {
                         review: 'Estuvimos 3 noches alojados en pareja la pasamos muy bien. La atención del personal del comedor excelente. Habitaciones bien calefaccionadas, la y desayuno muy bueno y variado. Lo recomiendo en un 100%',
@@ -106,6 +106,7 @@ export const Texts = {
             banner: 'ubicación',
             map: 'Encuéntranos',
             attractions: 'Lugares de interés',
+            description: 'Nuestro hotel posee una ubicación preferencial en la capital del chocolate, a tan solo metros del deslumbrante lago Nahuel Huapi, y a la vez enmarcado por el Centro Cívico de San Carlos de Bariloche. Allí, cerca, en donde ocurre la magia, asi no te pierdas de nada. Nuestro establecimiento es lo que estás buscando!',
             cards: {
                 first: {
                     restaurant: 'restaurant',
@@ -179,7 +180,7 @@ export const Texts = {
             },
             video: 'title video',
             guests: {
-                title: 'Our guests love us',
+                title: 'What our guests say about us',
                 cards: {
                     first: {
                         review: 'Estuvimos 3 noches alojados en pareja la pasamos muy bien. La atención del personal del comedor excelente. Habitaciones bien calefaccionadas, la y desayuno muy bueno y variado. Lo recomiendo en un 100%',
@@ -268,6 +269,7 @@ export const Texts = {
             banner: 'location',
             map: 'Find Us',
             attractions: 'Attractions',
+            description: 'Our hotel has a preferent location in the chocolate capital, just meters from the stunning Nahuel Huapi lake, and at the same time framed by the San Carlos de Bariloche Civic Center. There, near, where the magic happens, so you don´t miss a thing. Our establishment is what you are looking for!',
             cards: {
                 first: {
                     restaurant: 'restaurant',
