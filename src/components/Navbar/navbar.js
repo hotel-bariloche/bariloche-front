@@ -15,7 +15,6 @@ import { Context } from '../../Context/Provider';
 
 
 
-
 const NavHome = () => {
   const { state, changeLanguage } = React.useContext(Context);
   
@@ -25,8 +24,8 @@ const NavHome = () => {
 
   const scrollFunction= () => {
     let headerEl = document.getElementById("header_area") 
-
-    if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+    setNavExpanded(false)
+    if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {      
       headerEl.classList.add("navbar_fixed");
     } else {
       headerEl.classList.remove("navbar_fixed");
