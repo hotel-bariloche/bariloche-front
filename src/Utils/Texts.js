@@ -183,22 +183,22 @@ export const Texts = {
                 title: 'What our guests say about us',
                 cards: {
                     first: {
-                        review: 'Estuvimos 3 noches alojados en pareja la pasamos muy bien. La atención del personal del comedor excelente. Habitaciones bien calefaccionadas, la y desayuno muy bueno y variado. Lo recomiendo en un 100%',
+                        review: 'We stayed 3 nights as a couple we had a very good time. The attention of the dining room staff excellent. Well-heated rooms, and a very good and varied breakfast. I recommend it 100%',
                         name: 'Pablo Gomez Sanchez',
                         country: 'Medellín, Colombia'
                     },
                     second: {
-                        review: 'El hotel está súper bien ubicado, el desayuno súper completo y la gente muy amable. Los chicos de la recepción todos muy amables ,unos genios , Matias en particular nos ayudo con todo ! Volvemos seguro!',
+                        review: 'The hotel has a great location, the breakfast is super complete, and the people are amiable. The guys at the reception all very friendly, some geniuses, Matias, in particular, helped us with everything! We come back for sure!',
                         name: 'Luciana Capri',
                         country: 'Buenos Aires, Argentina'
                     },
                     third: {
-                        review: 'Pasamos diez días maravillosos, recomendado bajo todo punto de vista, atención esmerada, y nuestra habitación (705) con dos ventanales y una terraza que permitía ver los amaneceres y atardeceres en todo su esplendor, vista al lago, la Cordillera y el Centro de la Ciudad.',
+                        review: 'We spent ten beautiful days, recommendable from every point of view, careful attention, and our room (705) with two windows and a terrace that allowed us to see the sunrises and sunsets in all their splendour, overlooking the lake, the Cordillera and the Center of the City.',
                         name: 'Ernesto Ocar W',
                         country: 'Rosario, Argentina'
                     },
                     four: {
-                        review: 'Hotel amplio en sus habitaciones cuadruples, con frigobar y television LED.... el desayuno es muy abundante y rico, la atencion es buena y amable y el precio es acorde...... es limpio y estan refaccionandolo para que este moderno',
+                        review: 'Spacious hotel in its quadruple rooms, with a minibar and LED television .... the breakfast is very abundant and plentiful, the attention is excellent and friendly, and the price is in line ...... it is clean, and they are renovating it so that it is modern',
                         name: 'Lautaro Rosso',
                         country: 'Mar de Plata, Argentina'
                     },
