@@ -25,7 +25,7 @@ const BannerHome = () => {
                     />
                     <Carousel.Caption>
                     <h4>{state.texts[state.language].home.homeBanner}</h4>
-                    <a className="button carousel-slide-btn" target="_blank" href={landing2}>{state.texts[state.language].home.book}</a>
+                    <a className="button carousel-slide-btn" target="_blank" href="https://reservations.travelclick.com/106660?languageid=2%20#/guestsandrooms">{state.texts[state.language].home.book}</a>
                     </Carousel.Caption>
                 </Carousel.Item>
                 <Carousel.Item>
@@ -36,7 +36,7 @@ const BannerHome = () => {
                     />
                     <Carousel.Caption>
                     <h4>{state.texts[state.language].home.homeBanner}</h4>
-                    <a className="button carousel-slide-btn" target="_blank" href={landing1}>{state.texts[state.language].home.book}</a>
+                    <a className="button carousel-slide-btn" target="_blank" href="https://reservations.travelclick.com/106660?languageid=2%20#/guestsandrooms">{state.texts[state.language].home.book}</a>
                     </Carousel.Caption>
                 </Carousel.Item>
                 <Carousel.Item>
@@ -48,7 +48,7 @@ const BannerHome = () => {
 
                     <Carousel.Caption>
                     <h4>{state.texts[state.language].home.homeBanner}</h4>
-                    <a className="button carousel-slide-btn" target="_blank" href={landing3}>{state.texts[state.language].home.book}</a>
+                    <a className="button carousel-slide-btn" target="_blank" href="https://reservations.travelclick.com/106660?languageid=2%20#/guestsandrooms">{state.texts[state.language].home.book}</a>
                     </Carousel.Caption>
                 </Carousel.Item>
     
