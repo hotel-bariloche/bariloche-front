@@ -7,7 +7,7 @@ export const Context = React.createContext();
 const AppContext = (props) => {
     const [state, changeState] = useState({
       texts: Texts,
-      language: 'english', // default language
+      language: 'spanish', // default language
     });
   return (
 

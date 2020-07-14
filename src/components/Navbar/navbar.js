@@ -79,6 +79,10 @@ const NavHome = () => {
                    <Link className="nav-link" onClick={() => setNavExpanded(false)} to="/rooms">{state.texts[state.language].home.navbar.rooms}</Link>
                   </Nav.Item>
                   <Nav.Item as="li" className="nav-item" >
+                   <a className="nav-link" onClick={() => setNavExpanded(false)} href="https://reservations.travelclick.com/106660?languageid=2%20#/guestsandrooms">{state.texts[state.language].home.navbar.book}</a>
+                  </Nav.Item>
+                  
+                  <Nav.Item as="li" className="nav-item" >
                    <Link className="nav-link" onClick={() => setNavExpanded(false)} to="/gallery">{state.texts[state.language].home.navbar.gallery}</Link>
                   </Nav.Item>
                   <Nav.Item as="li" className="nav-item" >

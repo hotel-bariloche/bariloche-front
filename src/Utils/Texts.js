@@ -9,6 +9,7 @@ export const Texts = {
                 rooms: 'habitaciones',
                 location: 'ubicación',
                 contact: 'contacto',
+                book: 'reservar'
             },
             homeBanner: 'Conocé un hotel diferente en el corazon de Bariloche.',
             about: {
@@ -168,7 +169,8 @@ export const Texts = {
                 gallery: 'gallery',
                 rooms: 'rooms',
                 location: 'location',
-                contact: 'contact'
+                contact: 'contact',
+                book: 'book'
             },
             homeBanner: 'Meet a different hotel in the heart of Bariloche',
             about: {
