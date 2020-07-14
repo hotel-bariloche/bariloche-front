@@ -13,11 +13,11 @@ const SendEmail = () => {
                 <div className="container h-100">
                     <div className="contact-banner">
                         <div className="text-center">
-                            <h1>Contact Us</h1>
+                            <h1>{state.texts[state.language].home.contact.title}</h1>
                             <div className="row">
                                 <div className="col">
                                 <button className="button-contact">
-                                    Send Email
+                                {state.texts[state.language].home.contact.button}
                                 </button>
                                 </div>
                             </div>

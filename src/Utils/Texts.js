@@ -52,6 +52,7 @@ export const Texts = {
             },
             contact: {
                 title: 'Contacta con nosotros',
+                button: 'Enviar Email',
                 phone: 'Teléfono',
                 placeholder: {
                     name: 'Introduce tu nombre',
@@ -214,6 +215,7 @@ export const Texts = {
             contact: {
                 title: 'Contact us',
                 phone: 'Phone',
+                button: 'Send Email',
                 placeholder: {
                     name: 'Enter your name',
                     email: 'Enter email address',
