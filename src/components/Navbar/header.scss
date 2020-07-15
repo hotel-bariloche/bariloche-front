@@ -99,6 +99,9 @@
 					&:after {
 						display: none;
 					}
+					&.active {
+						color: $primary-color;	
+					}
 					@media (max-width: 991px) {
 						color: $title-color;
 						padding: 12px 4px 12px 0;

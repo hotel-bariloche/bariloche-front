@@ -798,7 +798,8 @@ button {
       .contact-banner h1 {
         font-size: 48px; } }
   .contact-banner-area {
-    height: 380px;
+    height: 580px;
+    overflow:hidden;
     background: url("./mountain2.jpg") center center no-repeat;
     background-size: cover;
     position: relative;
