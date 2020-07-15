@@ -1,5 +1,19 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+
+### HOW TO DEPLOY (TODO - implement DeployHQ for CI to BlueHost if needed)
+
+```
+git checkout dev
+git tag -a v{version.number} -m "release v{version.number}"
+npm run deploy
+```
+
+> npm run deploy will push the /build folder content into branch 'gh-pages'
+> after that go to github project, select 'gh-pages' and
+> download ZIP to update to hosting (/public_html folder)
+
+
 ## Available Scripts
 
 In the project directory, you can run:

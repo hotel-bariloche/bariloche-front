@@ -1,5 +1,4 @@
-{
-  "homepage": "git@github.com:hotel-bariloche/bariloche-front.git",
+{  
   "name": "front",
   "version": "0.1.0",
   "private": true,
