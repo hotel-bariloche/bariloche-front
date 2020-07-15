@@ -9,9 +9,10 @@ export const Texts = {
                 rooms: 'habitaciones',
                 location: 'ubicación',
                 contact: 'contacto',
-                book: 'reservar'
+                book: 'reservar',
+                games: 'juegos'
             },
-            homeBanner: 'Conocé un hotel diferente en el corazon de Bariloche.',
+            homeBanner: 'Conocé un hotel diferente en el corazón de Bariloche.',
             about: {
                 titleHotel: 'Bienvenidos',
                 titleHotel2:'a Grand Hotel Bariloche',
@@ -171,7 +172,8 @@ export const Texts = {
                 rooms: 'rooms',
                 location: 'location',
                 contact: 'contact',
-                book: 'book'
+                book: 'book',
+                games: 'juegos'
             },
             homeBanner: 'Meet a different hotel in the heart of Bariloche',
             about: {

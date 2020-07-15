@@ -9,6 +9,7 @@ import Contact from './components/Contact/Contact';
 import Footer from './components/Footer/footer';
 import AppContext from './Context/Provider';
 import Galeria from './components/Galeria/Galeria';
+import GamesSection from './components/Games/GamesSection';
 import ScrollTop from './Utils/ScrollTop';
 
 class App extends React.Component {
@@ -30,6 +31,9 @@ class App extends React.Component {
             </Route>
             <Route path="/gallery" component= {Galeria}>
               <Galeria/>
+            </Route>
+            <Route path="/games" component= {GamesSection}>
+              <GamesSection/>
             </Route>
           </Switch>
         <Footer/>

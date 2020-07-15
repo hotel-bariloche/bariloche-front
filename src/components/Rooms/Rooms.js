@@ -96,7 +96,7 @@ const Rooms = () => {
                                 <div className="conected-rooms">
                                     <div className="box-destacada">
                                         <div className="content-destacado">
-                                            <h5>{state.texts[state.language].rooms.destacada1}</h5> 
+                                            <h5>{state.texts[state.language].rooms.destacada1} <br/><br/></h5> 
                                         </div>
                                     </div>
                                     <GiExitDoor/>
@@ -172,7 +172,7 @@ const Rooms = () => {
                                 <div className="conected-rooms">
                                     <div className="box-destacada">
                                         <div className="content-destacado">
-                                            <h5>{state.texts[state.language].rooms.destacada1}</h5> 
+                                            <h5>{state.texts[state.language].rooms.destacada1}<br/><br/></h5> 
                                         </div>
                                     </div>
                                     <GiExitDoor/>
