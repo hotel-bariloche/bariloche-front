@@ -23,7 +23,7 @@ class App extends React.Component {
             <Page exact path="/" title='home'>
               <Home/>  
             </Page>            
-            <Page path="/blog" title='location  '>
+            <Page path="/blog" title='location'>
               <Blog/>
             </Page>
             <Page path="/rooms" title='rooms'>
