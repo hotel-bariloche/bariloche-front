@@ -1,0 +1,49 @@
+.gameSectionContainer {
+    margin: 3% 10% 10% 10%;
+  }
+
+.headerText h2 {
+    width: 100%;
+    text-align: left;
+    font-family: 'Neuton', serif;
+    letter-spacing: 0.2px;
+}
+
+.titleFeatured {
+    width: 100%;
+    text-align: left;
+    font-family: 'Neuton', serif;
+    letter-spacing: 0.4px;
+    margin-top: 4%;
+}
+
+.featuredGames {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 2%;
+}
+
+.cardFeatured {
+    width: 416px;
+    box-sizing: border-box;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+  
+.cardFeatured p {
+    text-align: left;
+    letter-spacing: 0.5px;
+    line-height: 1.4;
+    color: black;
+}
+  
+.imgFeatured {
+    width: 416px;
+    height: 248px;
+    margin-bottom: 2%;
+    -webkit-box-shadow: 10px 10px 34px -17px rgba(102,96,102,1);
+    -moz-box-shadow: 10px 10px 34px -17px rgba(102,96,102,1);
+    box-shadow: 10px 10px 34px -17px rgba(102,96,102,1);
+}

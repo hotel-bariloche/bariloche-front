@@ -1,6 +1,10 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
 import { Context } from '../../Context/Provider';
+import snake from '../img/snake.png';
+import OneToFifty from '../img/iframeOneToFifty.png';
+import memory from '../img/cardMemoryGame.png';
+import './GamesSection.css';
 
 const GamesSection = () => {
     const { state } = React.useContext(Context);
@@ -12,7 +16,7 @@ const GamesSection = () => {
                     <hr/>
                     </div>
                 </div>
-               {/*<div>
+               <div>
                     <h3 className="titleFeatured">Destacados de la semana</h3>
                     <hr></hr>
                     <div className="featuredGames">
@@ -57,7 +61,7 @@ const GamesSection = () => {
                         <button className="buttonFeatured"> JUGAR AHORA </button>
                     </Link>
                     </div>
-                </div>*/} 
+                </div>
         </div>
     
     )
