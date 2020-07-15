@@ -10,6 +10,7 @@ import Footer from './components/Footer/footer';
 import AppContext from './Context/Provider';
 import Galeria from './components/Galeria/Galeria';
 import ScrollTop from './Utils/ScrollTop';
+import Page from './components/Page/Page'
 
 class App extends React.Component {
   render() {
@@ -18,19 +19,21 @@ class App extends React.Component {
         <ScrollTop>
         <NavHome/>
           <Switch>
-            <Route exact path="/" component= {Home}/>
-            <Route path="/blog" component= {Blog}>
+            <Page exact path="/" title='home'>
+              <Home/>  
+            </Page>            
+            <Page path="/blog" title='location  '>
               <Blog/>
-            </Route>
-            <Route path="/rooms" component= {Rooms}>
+            </Page>
+            <Page path="/rooms" title='rooms'>
               <Rooms/>
-            </Route>
-            <Route path="/contacto" component= {Contact}>
+            </Page>
+            <Page path="/contacto" title='contact'>
               <Contact/>
-            </Route>
-            <Route path="/gallery" component= {Galeria}>
+            </Page>
+            <Page path="/gallery" title='gallery'>
               <Galeria/>
-            </Route>
+            </Page>
           </Switch>
         <Footer/>
         </ScrollTop>
