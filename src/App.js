@@ -9,6 +9,7 @@ import Contact from './components/Contact/Contact';
 import Footer from './components/Footer/footer';
 import AppContext from './Context/Provider';
 import Galeria from './components/Galeria/Galeria';
+import GamesSection from './components/Games/GamesSection';
 import ScrollTop from './Utils/ScrollTop';
 import Page from './components/Page/Page'
 
@@ -33,6 +34,9 @@ class App extends React.Component {
             </Page>
             <Page path="/gallery" title='gallery'>
               <Galeria/>
+            </Page>
+            <Page path="/games" title='games'>
+              <GamesSection/>
             </Page>
           </Switch>
         <Footer/>

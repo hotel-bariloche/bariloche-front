@@ -15,7 +15,7 @@ const BannerHome = () => {
  
   return(
         <div>
-          <Carousel interval={3000}>
+          <Carousel interval={3000} fade={true}>
                
                 <Carousel.Item>
                     <img

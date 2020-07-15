@@ -91,6 +91,9 @@ const NavHome = () => {
                   <Nav.Item as="li">
                     <NavLink className="nav-link" onClick={() => setNavExpanded(false)} to="/contacto">{state.texts[state.language].home.navbar.contact}</NavLink>
                   </Nav.Item>
+                  <Nav.Item as="li" className="nav-item" >
+                    <NavLink className="nav-link" onClick={() => setNavExpanded(false)} to="/games">{state.texts[state.language].home.navbar.games}</NavLink>
+                  </Nav.Item>
                 </Nav>
               </Navbar.Collapse>
               <div>
