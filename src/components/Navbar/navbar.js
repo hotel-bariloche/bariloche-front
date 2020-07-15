@@ -1,5 +1,5 @@
 import React from 'react';
-import {Link, NavLink} from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Container, Row, Col } from 'reactstrap';
 import './header.scss';
@@ -19,7 +19,6 @@ const NavHome = () => {
   const { state, changeLanguage } = React.useContext(Context);
   
   const [navExpanded, setNavExpanded] = React.useState(false);
-  const [navActive, setNavActive] = React.useState(0)
   window.onscroll = function() {scrollFunction()};
 
   const scrollFunction= () => {
