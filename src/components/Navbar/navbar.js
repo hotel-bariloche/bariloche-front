@@ -11,7 +11,7 @@ import Image from 'react-bootstrap/Image';
 import spainFlag from './spainFlag.svg';
 import englishFlag from './englishFlag.svg';
 import { Context } from '../../Context/Provider';
-
+import Logo from '../img/Logo.png'
 
 
 
@@ -52,7 +52,7 @@ const NavHome = () => {
         <Container>
           <div className="d-flex align-items-center">
             <div id="logo">
-                <a href="/">< Image style={{height: '140px', width: '150px', backgroundColor: '#cca772', padding: '30px'}}src="https://grandhotelbariloche.com/wp-content/uploads/2019/01/LOGO_original-300x300.png" alt="" title="" /></a>
+                <a href="/">< Image style={{height: '140px', width: '150px', backgroundColor: '#cca772', padding: '30px'}} src={Logo} alt="" title="" /></a>
             </div>
           </div>
         </Container>
