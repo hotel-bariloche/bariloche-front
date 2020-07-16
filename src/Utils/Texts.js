@@ -158,6 +158,9 @@ export const Texts = {
             adults_label: 'Adultos',
             children_label: 'Chicos',
             check_button: 'Ver disponibilidad',
+        },
+        games: {
+            play: 'Jugar ahora'
         }
         
     },
@@ -325,6 +328,9 @@ export const Texts = {
             adults_label: 'Adults',
             children_label: 'Children',
             check_button: 'Check Availability',
+        },
+        games: {
+            play: 'Play'
         }
 
     },

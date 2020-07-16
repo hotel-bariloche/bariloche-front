@@ -15,11 +15,11 @@ const BannerHome = () => {
  
   return(
         <div>
-          <Carousel interval={3000} fade={true}>
+          <Carousel interval={3000} fade={true} >
                
                 <Carousel.Item>
                     <img
-                    className="d-block w-100 carousel-slide"
+                    className="d-block w-100 carousel-slide-home"
                     src={landing2}
                     alt="Third slide"
                     />
@@ -30,7 +30,7 @@ const BannerHome = () => {
                 </Carousel.Item>
                 <Carousel.Item>
                     <img
-                    className="d-block w-100 carousel-slide"
+                    className="d-block w-100 carousel-slide-home"
                     src={landing1}
                     alt="First slide"
                     />
@@ -41,7 +41,7 @@ const BannerHome = () => {
                 </Carousel.Item>
                 <Carousel.Item>
                     <img
-                    className="d-block w-100 carousel-slide"
+                    className="d-block w-100 carousel-slide-home"
                     src={landing3}
                     alt="Third slide"
                     />
