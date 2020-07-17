@@ -12,6 +12,9 @@ import Galeria from './components/Galeria/Galeria';
 import GamesSection from './components/Games/GamesSection';
 import ScrollTop from './Utils/ScrollTop';
 import Page from './components/Page/Page'
+import IndexSnake from './components/Games/Snake/indexSnake';
+import OneToFifty from './components/Games/OneToFifty/OneToFifty';
+import MemoryGame from './components/Games/MemoryGame/MemoryGame';
 
 class App extends React.Component {
   render() {
@@ -37,6 +40,15 @@ class App extends React.Component {
             </Page>
             <Page path="/games" title='games'>
               <GamesSection/>
+            </Page>
+            <Page path='/snake'>
+              <IndexSnake />
+            </Page>
+            <Page path='/OneToFifty'>
+              <OneToFifty />
+            </Page>
+            <Page path='/MemoryGame'>
+              <MemoryGame />
             </Page>
           </Switch>
         <Footer/>
