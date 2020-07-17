@@ -1,5 +1,5 @@
 .OneToFifty {
-    background-color: #1e162e;
+    background-color: #d28721;
 
     & .rowIcons{
         display: flex;
@@ -51,7 +51,7 @@
         }
 
         & .numbersGrid {
-            width: 320px;
+            width: 365px;
             margin: auto;
 
             @media screen and (max-width: 400px) {
@@ -63,11 +63,13 @@
             }
 
             & .cellNumber_0 {
-                background-color: #DB8A74;
+                background-image: url('./door.png');
+                background-repeat: no-repeat;
+                background-size: 65px 85px;
                 color: white;
-                margin: 2px;
-                height: 60px;
-                width: 60px;
+                margin: 4px;
+                height: 85px;
+                width: 65px;
                 font-size: 28px;
                 font-weight: 600;
                 cursor: pointer;
@@ -88,9 +90,9 @@
                 background-color: white;
                 color: #DB8A74;
                 // border-radius: 10px;
-                margin: 2px;
-                height: 60px;
-                width: 60px;
+                margin: 4px;
+                height: 85px;
+                width: 65px;
                 font-size: 28px;
                 font-weight: 600;
                 animation: bounceIn 0.5s ease-in-out;
@@ -123,9 +125,9 @@
             & .cellNumber_2 {
                 background-color: #DB8A74;
                 opacity: 0.5;
-                margin: 2px;
-                height: 60px;
-                width: 60px;
+                margin: 4px;
+                height: 85px;
+                width: 65px;
 
                 @media screen and (max-width: 400px) {
                     height: 50px;
