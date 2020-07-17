@@ -37,8 +37,8 @@ export default function OneToFifty() {
 
     //Fill the first half array and the second half array
     useEffect(() => {
-        setFirstHalf(allNumbers.filter(numero => numero <= 25).sort(() => Math.random() - 0.5))
-        setSecondHalf(allNumbers.slice(25, 51).sort(() => Math.random() - 0.5))
+        setFirstHalf(allNumbers.filter(numero => numero <= 24).sort(() => Math.random() - 0.5))
+        setSecondHalf(allNumbers.slice(24, 48).sort(() => Math.random() - 0.5))
     }, [allNumbers])
 
     //Start the counter when you click on "1". And remove and replaced the clicked number
@@ -55,7 +55,7 @@ export default function OneToFifty() {
                 style[i] = 2;
             }
             setCurrentNumber(currentNumber + 1);
-            if (number === 50) {
+            if (number === 48) {
                 setCurrentNumber('DONE!')
                 confetti.start()
                 setTimeout(() => {
@@ -88,13 +88,15 @@ export default function OneToFifty() {
                     </div>
                 </div>
                 {/* GAME */}
-                <div className="row numbersGrid">
-                    {
-                        firstHalf.map((number, i) =>
-                            <div className={`cellNumber_${style[i]} alignCenter justifyCenter`} key={i} onClick={() => checkNumber(number, i)}>
-                                {number}
-                            </div>)
-                    }
+                <div className="numbersGridContainer">
+                    <div className="row numbersGrid">
+                        {
+                            firstHalf.map((number, i) =>
+                                <div className={`cellNumber_${style[i]} alignCenter justifyCenter`} key={i} onClick={() => checkNumber(number, i)}>
+                                    {number}
+                                </div>)
+                        }
+                    </div>
                 </div>
                 <button className="restartButton" onClick={() => startGame()}>RESTART</button>
                 <div>
