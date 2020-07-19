@@ -4,6 +4,7 @@ import InstructionOneToFifty from './InstructionOneToFifty';
 import CloseButtonOneToFifty from './CloseButtonOneToFifty';
 import Chrono from './Chrono';
 import confetti from '../../../confetti';
+import Popup from './Popup';
 
 export default function OneToFifty() {
 
@@ -67,6 +68,7 @@ export default function OneToFifty() {
 
     return (
         <div className="OneToFifty container-fluid">
+            <Popup/>
             <div className="row rowIcons">
                 <div><InstructionOneToFifty /></div>
                 <div><CloseButtonOneToFifty /></div>
