@@ -14,6 +14,10 @@
         width: 827px;
         height: 468px;
         padding: 20px 65px 62px 80px;
+        @media screen and (max-width: 600px) {
+            width: 100%;
+            padding: 10px 0px 0px 20px;
+        }
     }
 
     & .OneToFiftyContent {
@@ -61,8 +65,8 @@
             width: 535px;
             margin: auto;
 
-            @media screen and (max-width: 400px) {
-                width: 270px;
+            @media screen and (max-width: 600px) {
+                width: 290px;
             }
 
             @media screen and (max-width: 335px) {
@@ -81,9 +85,10 @@
                 font-weight: 600;
                 cursor: pointer;
 
-                @media screen and (max-width: 400px) {
-                    height: 50px;
-                    width: 50px;
+                @media screen and (max-width: 600px) {
+                    height: 65px;
+                    width: 60px;
+                    background-size: 64px 65px;
                 }
 
                 @media screen and (max-width: 335px) {
