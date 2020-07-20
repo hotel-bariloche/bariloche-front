@@ -2,12 +2,13 @@
     display: flex;
     flex-direction: column;
     align-content: center;
+    margin: auto 5%;
 }
 
 .title {
     font-size: 30px;
     padding: 10px;
-    color: #fff;
+    color: #0c0e0e;
 }
 
 .tryesAndReinit{
@@ -17,25 +18,26 @@
 
 
 .memoryResult {
-    color: white;
-    border: 2px solid #57b9b7;
-    background-color: #003f3f;
+    color: #0c0e0e;
+    border: 2px solid #cca772;
+    background-color: #fff;
     border-radius: 8px;
     width: 100px;
+    text-align: center;  
     padding: 5px 0 5px 0;
-    margin-right: 5px;
     font-weight: bolder;
 }
 
 .reinit-button {
-    color: white;
+    color: #0c0e0e;
     cursor: pointer;
     padding: 5px 0 5px 0 ;
     max-width: 100px;
-    border: 2px solid #57b9b7;
+    border: 2px solid #cca772;
+    background-color: #fff;
     border-radius: 8px;
     width: 100px;
-    margin-left: 5px;
+    text-align: center; 
 }
 
 .reinit-button:active {
@@ -51,7 +53,7 @@
     margin:5% auto 5% auto; /* Will not center vertically and won't work in IE6/7. */
     left: 0;
     right: 0;
-    border: 3px solid #26928e;
+    border: 3px solid #cca772;
     border-radius: 20px;
     background-color: rgba(0, 0, 0, 0.8);
     color: white;
@@ -61,18 +63,17 @@
 .winner-reinit-button {
     position: fixed;
     width: 50%;
+    padding: 11px;
     max-width: 200px;
-    height: 200px;
-    margin: 12% auto; /* Will not center vertically and won't work in IE6/7. */
+    /* height: 200px; */
+    margin: 12% auto;
     left: 0;
     right: 0;
-    border: 3px solid #26928e;
+    border: 3px solid #cca772;
     border-radius: 20px;
-    background-color: black;
-    color: white;
+    background-color: white;
+    color: black;
     z-index: 2;
-    -webkit-box-shadow: -2px 2px 57px 20px rgba(3,21,23,1);
-    -moz-box-shadow: -2px 2px 57px 20px rgba(3,21,23,1);
     box-shadow: -2px 2px 57px 20px rgba(3,21,23,1);
 }
 
@@ -97,6 +98,18 @@
     display: none
 }
 
+@media (max-width: 472px) {
+    .title{
+        text-align: center;
+    }
+    .gameButtons {
+        display: flex;
+    }
+    .memoryResult,
+    .reinit-button {
+        margin: auto;
+    }
+}
 @media (max-width: 400px) {
     .winner-reinit-button {
         margin: 25% auto;

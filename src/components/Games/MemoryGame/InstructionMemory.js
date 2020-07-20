@@ -29,7 +29,7 @@ export class InstructionMemory extends React.Component {
       return (
         <div>
             {/* INSTRUCTIONS */}
-                <span className="bigInstructions" style={{ color: "#00ECFD", fontSize: "2em"}} onClick={this.toggle}>{instructions}</span>
+                <span className="bigInstructions" style={{ color: "#cca772", fontSize: "2em"}} onClick={this.toggle}>{instructions}</span>
                 <span className="smallInstructions" style={{ color: "#A2A2A2", fontSize: "1.5em"}} onClick={this.toggle}>{instructions}</span>
                 <Modal isOpen={this.state.modal} toggle={this.toggle} style={{ marginTop:"10%"}}>
                     <ModalBody>

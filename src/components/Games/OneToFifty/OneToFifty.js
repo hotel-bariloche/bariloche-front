@@ -4,9 +4,13 @@ import InstructionOneToFifty from './InstructionOneToFifty';
 import CloseButtonOneToFifty from './CloseButtonOneToFifty';
 import Chrono from './Chrono';
 import confetti from '../../../confetti';
-import Popup from './Popup';
+import Popup from '../Modal/Popup';
 
 export default function OneToFifty() {
+    // ---POPUP---
+    const titlePopup = 'Modal title';
+    const descriptionPopup = 'Se va el autobus y quedan dormidos todos los pasajeros. Despertalos en orden de habitación del 1 al 48 en tiempo record para conseguir descuentos en tu reserva!.';
+    // ---end popup---
 
     // ---STATES---
     let [allNumbers, setallNumbers] = useState([]);
@@ -68,7 +72,7 @@ export default function OneToFifty() {
 
     return (
         <div className="OneToFifty container-fluid">
-            <Popup/>
+            <Popup title={titlePopup} description={descriptionPopup} />
             <div className="row rowIcons">
                 <div><InstructionOneToFifty /></div>
                 <div><CloseButtonOneToFifty /></div>

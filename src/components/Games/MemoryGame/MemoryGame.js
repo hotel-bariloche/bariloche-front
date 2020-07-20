@@ -5,6 +5,7 @@ import Header from './Header';
 import construirBaraja from './utils/construirBaraja';
 import InstructionMemory from './InstructionMemory';
 import CloseButtonMemory from './CloseButtonMemory';
+import Popup from '../Modal/Popup';
 
 
 //import useWindowDimensions from './windowHandler'
@@ -33,11 +34,14 @@ class MemoryGame extends React.Component {
   }
 
   render() {
+    const titlePopup = 'Modal title';
+    const descriptionPopup = 'Encuentra las parejas de cartas iguales.En cuanto menos intentos lo logres, más puntos acumularás.';
+
     return(
       <div className="memory-body">
+        <Popup title={titlePopup} description={descriptionPopup} />
         <div className="memoryIcons">
             <div><InstructionMemory /></div>
-            <div><CloseButtonMemory /></div>
           </div>
         <Header
         tryes={this.state.tryes}
@@ -102,9 +106,6 @@ class MemoryGame extends React.Component {
 //method to verify if there is a winner
   verifyIfWinner(deck) {
     if (deck.filter((card) => !card.wasGuessed).length === 0) {
-      if(this.context.state.user.results !== undefined){
-        //SaveScore(this.state.correctAnswers, this.context.state.user.results[0].user_id, "memory_score")
-    }
       this.setState({
           winner: true
       });
