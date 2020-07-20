@@ -15,12 +15,13 @@ const Popup = () => {
           onHide={handleClose}
           backdrop="static"
           keyboard={false}
+          centered={true}
         >
           <Modal.Header closeButton>
             <Modal.Title>Modal title</Modal.Title>
           </Modal.Header>
           <Modal.Body>
-          Se va el autobus y quedan dormidos todos los pasajeros. Despertalos en orden de habitación del 1 al 48 en tiempo record para conseguir descuentos en tu reserva!.
+          Se va el autobus y se quedan dormidos todos los pasajeros. Despertalos en orden de habitación del 1 al 48 en tiempo record para conseguir descuentos en tu reserva!.
           </Modal.Body>
           <Modal.Footer>
             <Button variant="secondary" onClick={handleClose}>

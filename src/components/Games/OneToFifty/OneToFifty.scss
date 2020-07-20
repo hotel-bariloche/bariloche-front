@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&display=swap');
+
 .OneToFifty {
     background-color: #d9dad5;
 
@@ -78,11 +80,12 @@
                 background-repeat: no-repeat;
                 background-size: 76px 100px;
                 color: white;
+                font-family: 'Merriweather', serif;
                 margin: 4px;
                 height: 100px;
                 width: 77px;
                 font-size: 28px;
-                font-weight: 600;
+                font-weight: 400;
                 cursor: pointer;
 
                 @media screen and (max-width: 600px) {
@@ -99,9 +102,12 @@
             }
 
             & .cellNumber_1 {
-                background-color: white;
+                background-image: url('./bluedoor.png');
+                background-repeat: no-repeat;
+                background-size: 76px 100px;
                 color: #DB8A74;
                 // border-radius: 10px;
+                font-family: 'Merriweather', serif;
                 margin: 4px;
                 height: 100px;
                 width: 77px;
@@ -140,6 +146,7 @@
                 margin: 4px;
                 height: 100px;
                 width: 77px;
+                font-family: 'Merriweather', serif;
 
                 @media screen and (max-width: 400px) {
                     height: 50px;

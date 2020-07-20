@@ -16,17 +16,15 @@ const ModalGame = (props) => {
   const toggle = () => setModal(!modal);
 
   let ranking = () => {
-    if (timeInSeconds >= 100) {
-      return `Vete a por un cafe y vuelve...${score} PTS`
-    } else if (timeInSeconds >= 60) {
-      return `¡¡Normalillo!!...${score} PTS`
-    } else if (timeInSeconds >= 50) {
-      return `¡Por encima de la media!...${score} PTS`
+    if (timeInSeconds >= 50) {
+      return `10% ${score} `
     } else if (timeInSeconds >= 40) {
-      return `Nivel Experto...${score} PTS`
+      return `20% ${score} `
+    } else if (timeInSeconds >= 30) {
+      return `30% ${score} `
     } else {
-      return `Nivel DIOS...${score} PTS`
-    }
+      return `50% ${score} `
+    } 
   }
 
   return (
@@ -34,7 +32,7 @@ const ModalGame = (props) => {
       <Modal isOpen={modal} style={{ marginTop: '20vh' }}>
         <ModalHeader >{ranking()}</ModalHeader>
         <ModalBody>
-          <p>Tu tiempo es de &nbsp; &nbsp;<span style={{ fontWeight: "bold", fontSize: "x-large" }}>{props.actualTime}</span></p>
+          <p>Felicitaciones! Tu tiempo fue &nbsp; &nbsp;  y tu descuento es de {ranking()}. puedes utilizarlo pegando el código de descuento al hacer la reserva online desde nuestro sitio<span style={{ fontWeight: "bold", fontSize: "x-large" }}>{props.actualTime}</span></p>
         </ModalBody>
         <ModalFooter>
             <Button color="primary" onClick={()=> setModal(!modal)}>Cerrar</Button>{' '}
