@@ -453,11 +453,22 @@ button {
 .carousel-slide-home {
   position: relative;
   filter: brightness(70%) }
-  .carousel-caption h4, .carousel-caption h1, .carousel-caption a {
+  .carousel-caption{
+    bottom:0;
+    top: 30%;    
+  }
+  .carousel-caption h4, .carousel-caption h1 {
     text-transform: uppercase;
-    color: #fff; }
+    color: #fff; 
+    font-size: 5vh;
+  }
+  .carousel-caption a{
+    text-transform: uppercase;
+    color: #fff; 
+    font-size: 2vh;
+  }
   .carousel-caption h4 {
-    font-size: 60px;
+    /*font-size: 60px;*/
     font-weight: lighter;
     margin-bottom: 15px; }
   .carousel-slide-btn {
@@ -465,20 +476,23 @@ button {
   }
  
   .carousel-caption h4 {
-    font-size: 27px;
+    /*font-size: 27px;*/
     margin-bottom: 10px; }
     @media (min-width: 600px) {
       .carousel-caption h4 {
-        font-size: 37px; } }
+        font-size: 3vh;   
+        /*font-size: 37px;*/ } }
    
     @media (min-width: 992px) {
       .carousel-caption h4 {
-        font-size: 65px;
+        /*font-size: 65px;*/
+        font-size: 4vh;
         margin-bottom: 20px; } }
 
     @media (max-width: 600px) {
-      .carousel-caption h4 {
-        font-size: 45px; }
+      .carousel-caption h4 {   
+        font-size: 3vh;     
+        /*font-size: 45px;*/ }
         .carousel-slide-btn {
           margin-bottom: 15vw;
         } }
