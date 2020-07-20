@@ -1,19 +1,18 @@
-
-.carousel-slide-games {
-    height: 500px;
+.btn-games {
+    background-color: #cca772;
     position: relative;
-    z-index: 1;
-    margin-bottom: 100px;
-    margin-top: 50px;
-    left: 50%;
-    width: 60%!important;
-    transform: translateX(-50%);
 }
 
-.btn-games {
-    margin-bottom: 100px;
+.carousel-slide-btn{
+    padding: 10px;
+    margin-bottom: 25px;
 }
 
 .games-title {
     text-align: center;
+}
+.carousel-caption{
+    position: absolute;
+    right: 0;
+    left: 0;
 }

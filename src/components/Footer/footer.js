@@ -4,7 +4,7 @@ import { Context } from '../../Context/Provider';
 import Image from 'react-bootstrap/Image';
 import { FaPhoneVolume, FaRegEnvelope, FaFacebookF, FaTripadvisor, FaInstagram } from "react-icons/fa";
 import {Link} from 'react-router-dom';
-
+import Logo from '../img/Logo.png'
 
 
 
@@ -19,7 +19,7 @@ const Footer = () => {
                     <Row>
                     <div className="col-xl-8 col-md-8 mb-4 mb-xl-0 single-footer-widget">
                         <div id="logo">
-                                <a href="/">< Image style={{height: '200px', width: '200px', color: 'white', position: 'relative', float: 'right'}}src="https://grandhotelbariloche.com/wp-content/uploads/2019/01/LOGO_original-300x300.png" alt="" title="" /></a>
+                                <a href="/">< Image style={{height: '200px', width: '200px', color: 'white', position: 'relative', float: 'right'}} src={Logo} alt="" title="" /></a>
                             </div>
                         </div>
                         <div className="text-lg-right col-xl-2 col-sm-6 mb-4 mb-xl-0 single-footer-widget">
