@@ -15,4 +15,10 @@
     position: absolute;
     right: 0;
     left: 0;
+    top: auto;
+    bottom: 0;
+}
+
+.carousel-control-next, .carousel-control-prev {
+    z-index: 9999;
 }
