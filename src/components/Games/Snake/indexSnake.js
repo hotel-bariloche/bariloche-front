@@ -142,7 +142,7 @@ class IndexSnake extends Component {
         console.log(this.state.speed, this.state.interval)
         clearInterval(this.state.interval)
         this.setState({
-          speed: this.state.speed - 10,
+          speed: this.state.speed - 50,
           food: getRandomCoordinates(),
           interval: intervalFunction(this.moveSnake, this.state.speed),
           points: this.state.points +10
@@ -185,12 +185,12 @@ class IndexSnake extends Component {
   render() {
     return (
       <div id="snakePageContainer">
-        <img className="backgroundBigLeft" src={backgroundBig} />
-        <img className="backgroundBigRight" src={backgroundBig} />
+        {/* <img className="backgroundBigLeft" src={backgroundBig} />
+        <img className="backgroundBigRight" src={backgroundBig} /> */}
 
         <InstructionGames  instructionText="Selecciona el pin correspondiente con la bandera que aparece, si encadenas aciertos, tus puntuaciones se van acumulando (50,100,150…) , si fallas restas 25 y empiezas desde 50 puntos otra vez." />
         <CloseButton />
-        <h1 style={{ color: 'lightgrey', paddingTop: '15px', marginBottom: '15px' }}>Juega al SNAKE</h1>
+        <h1 style={{ color: 'lightgrey', paddingTop: '15px', marginBottom: '15px'}}>Juega al SNAKE</h1>
           <p className="">Points: {this.state.points}</p>
           <div className="snakeGameContainer">
           {this.state.ranking &&
@@ -221,8 +221,8 @@ class IndexSnake extends Component {
             </div>
 
           </div>
-          <img className="backgroundSmallLeft" src={backgroundSmall} />
-          <img className="backgroundSmallRight" src={backgroundSmall} />
+          {/* <img className="backgroundSmallLeft" src={backgroundSmall} />
+          <img className="backgroundSmallRight" src={backgroundSmall} /> */}
 
         </div>
 
