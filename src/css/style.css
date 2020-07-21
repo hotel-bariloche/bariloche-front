@@ -472,6 +472,7 @@ button {
     font-weight: lighter;
     margin-bottom: 15px; }
   .carousel-slide-btn {
+    background-color: #cca772;
     margin-bottom: 25vw;
   }
  
@@ -480,7 +481,7 @@ button {
     margin-bottom: 10px; }
     @media (min-width: 600px) {
       .carousel-caption h4 {
-        font-size: 3vh;   
+        font-size: 5vw;   
         /*font-size: 37px;*/ } }
    
     @media (min-width: 992px) {
@@ -491,7 +492,7 @@ button {
 
     @media (max-width: 600px) {
       .carousel-caption h4 {   
-        font-size: 3vh;     
+        font-size: 6vw;     
         /*font-size: 45px;*/ }
         .carousel-slide-btn {
           margin-bottom: 15vw;

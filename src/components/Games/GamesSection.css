@@ -1,17 +1,17 @@
-.btn-games {
+.gameSectionContainer .btn-games {
     background-color: #cca772;
     position: relative;
 }
 
-.carousel-slide-btn{
+.gameSectionContainer .carousel-slide-btn{
     padding: 10px;
     margin-bottom: 25px;
 }
 
-.games-title {
+.gameSectionContainer .games-title {
     text-align: center;
 }
-.carousel-caption{
+.gameSectionContainer .carousel-caption{
     position: absolute;
     right: 0;
     left: 0;
@@ -19,6 +19,6 @@
     bottom: 0;
 }
 
-.carousel-control-next, .carousel-control-prev {
+.gameSectionContainer .carousel-control-next, .gameSectionContainer .carousel-control-prev {
     z-index: 9999;
 }
