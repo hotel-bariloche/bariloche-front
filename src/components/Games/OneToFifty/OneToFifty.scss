@@ -17,6 +17,7 @@
         width: 827px;
         height: 468px;
         padding: 20px 65px 62px 80px;
+        cursor: url(knocknock.png), pointer;
         @media screen and (max-width: 600px) {
             width: 100%;
             padding: 10px 0px 0px 20px;
@@ -67,7 +68,7 @@
         & .numbersGrid {
             width: 535px;
             margin: auto;
-
+            
             @media screen and (max-width: 600px) {
                 width: 290px;
             }
@@ -75,7 +76,7 @@
             @media screen and (max-width: 335px) {
                 width: 200px;
             }
-
+         
             & .cellNumber_0 {
                 background-image: url('./door.png');
                 background-repeat: no-repeat;
@@ -87,7 +88,8 @@
                 width: 77px;
                 font-size: 28px;
                 font-weight: 400;
-                cursor: pointer;
+                
+               
 
                 @media screen and (max-width: 600px) {
                     height: 65px;
@@ -103,10 +105,10 @@
             }
 
             & .cellNumber_1 {
-                background-image: url('./bluedoor.png');
+                background-image: url('./cleardoor.png');
                 background-repeat: no-repeat;
                 background-size: 76px 100px;
-                color: #DB8A74;
+                color: #f5f5f5;
                 // border-radius: 10px;
                 font-family: 'Merriweather', serif;
                 margin: 4px;
@@ -115,7 +117,7 @@
                 font-size: 28px;
                 font-weight: 600;
                 animation: bounceIn 0.5s ease-in-out;
-                cursor: pointer;
+                cursor: url("./knocknock.png");
 
                 @keyframes bounceIn {
                     0% {
