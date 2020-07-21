@@ -4,7 +4,7 @@
         letter-spacing: 0.2em;
         font-family: "Roboto", sans-serif;
         font-weight: 400;
-        padding: 30px 90px 25px 113px;
+        padding: 30px 30px 25px 30px;
     }
 
     .modal-content {
@@ -14,3 +14,10 @@
 .popup-button {
     margin: 0 auto;
 }
+
+
+@media (max-width: 600px) {
+    .popup-title {
+        font-size: 5vw;
+    }
+  }
