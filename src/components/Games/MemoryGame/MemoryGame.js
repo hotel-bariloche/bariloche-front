@@ -3,8 +3,7 @@ import './MemoryGame.css';
 import Table from './Table';
 import Header from './Header';
 import construirBaraja from './utils/construirBaraja';
-import InstructionMemory from './InstructionMemory';
-import CloseButtonMemory from './CloseButtonMemory';
+import confetti from '../../../confetti';
 import Popup from '../Modal/Popup';
 
 
@@ -40,9 +39,6 @@ class MemoryGame extends React.Component {
     return(
       <div className="memory-body">
         <Popup title={titlePopup} description={descriptionPopup} />
-        <div className="memoryIcons">
-            <div><InstructionMemory /></div>
-          </div>
         <Header
         tryes={this.state.tryes}
         gameFinished={this.state.winner}
@@ -109,6 +105,10 @@ class MemoryGame extends React.Component {
       this.setState({
           winner: true
       });
+      confetti.start()
+      setTimeout(() => {
+          confetti.stop()
+      }, 2000)
     }
   }
 

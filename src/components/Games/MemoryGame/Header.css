@@ -9,6 +9,12 @@
     font-size: 30px;
     padding: 10px;
     color: #0c0e0e;
+    display: flex;
+    justify-content: center;
+}
+.title .bigInstructions{
+    font-size: 1em !important;
+    margin: 10px;
 }
 
 .tryesAndReinit{

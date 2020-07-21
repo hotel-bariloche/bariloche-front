@@ -1,20 +1,22 @@
 import React from 'react';
 import './Header.css';
 import Popup from '../Modal/Popup'
-
+import InstructionMemory from './InstructionMemory';
 
 class Header extends React.Component {
     render() {
         let ranking = () => {
             if (this.props.tryes >= 21) {
                 return '10%'
-            } else if (this.props.tryes >= 11 && this.props.tryes <= 15) {
-                return '20%'
             } else if (this.props.tryes >= 16 && this.props.tryes <= 20) {
+                return '20%'
+            } else if (this.props.tryes >= 11 && this.props.tryes <= 15) {
                 return '30%'
-            } else {
+            } else if (this.props.tryes == 10) {
                 return '50%'
-            } 
+            } else {
+                return '0%'
+            }
         }
 
         const descriptionText = `Felicitaciones! Tu puntuacion fue de ${this.props.tryes} intentos y tu descuento es de ${ranking()} , puedes utilizarlo pegando el código de descuento al hacer la reserva online desde nuestro sitio`;
@@ -22,9 +24,9 @@ class Header extends React.Component {
         return(
             <header className="memory-header">
                 <div className="title">
-                     Juego de memoria
+                        Juego de memoria                                                                                         
+                        <InstructionMemory />
                 </div>
-
                 <div>
                 {this.props.gameFinished
                     ?
