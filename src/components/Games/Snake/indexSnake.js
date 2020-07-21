@@ -156,7 +156,7 @@ class IndexSnake extends Component {
           speed: this.state.speed - 20,
           food: getRandomCoordinates(),
           interval: intervalFunction(this.moveSnake, this.state.speed),
-          points: this.state.points +10
+          points: this.state.points +1
         })
       }
       this.enlargeSnake();
@@ -201,10 +201,9 @@ class IndexSnake extends Component {
         {/* <img className="backgroundBigLeft" src={backgroundBig} />
         <img className="backgroundBigRight" src={backgroundBig} /> */}
 
-        <InstructionGames  instructionText="Selecciona el pin correspondiente con la bandera que aparece, si encadenas aciertos, tus puntuaciones se van acumulando (50,100,150…) , si fallas restas 25 y empiezas desde 50 puntos otra vez." />
-        <CloseButton />
-        <h1 style={{ color: 'lightgrey', paddingTop: '15px', marginBottom: '15px'}}>Juega al SNAKE</h1>
-          <p className="">Points: {this.state.points}</p>
+        <InstructionGames instructionText="Selecciona el pin correspondiente con la bandera que aparece, si encadenas aciertos, tus puntuaciones se van acumulando (50,100,150…) , si fallas restas 25 y empiezas desde 50 puntos otra vez." />
+        <h1 style={{ color: 'black', paddingTop: '15px', marginBottom: '15px'}}>Juega al SNAKE</h1>
+          <p className="">Puntos: {this.state.points}</p>
           <div className="snakeGameContainer">
           {this.state.ranking &&
             <Ranking gameName="snake_score" scoreState={this.state.points}/>
