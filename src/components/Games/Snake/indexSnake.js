@@ -6,8 +6,12 @@ import InstructionGames from '../../SharedButtons/InstructionGames';
 import CloseButton from '../../SharedButtons/CloseButton';
 import backgroundBig from './images/backgroundBig.png';
 import backgroundSmall from './images/backgroundSmall.png';
-import Ranking from '../../Ranking/Ranking'
+import Ranking from '../../Ranking/Ranking';
+import Popup from '../Modal/Popup';
 
+
+const titlePopup = 'Snake';
+const descriptionPopup = 'descripción del juego premios y';
 
 
 const getRandomCoordinates = () => {
@@ -34,7 +38,9 @@ const intervalFunction = (move, speed) => {
   return (setInterval(move, speed))
 }
 class IndexSnake extends Component {
+
   state = initialState;
+  
   onClickStart = (e) => {
     //If everything is false do the set Interval + count + 1. Else stop the game + alert with counter
     this.setState({
@@ -53,7 +59,9 @@ class IndexSnake extends Component {
     this.checkIfEat();
   }
   checkButtonsDirections = (e) => {
+
     if (e.target.value) {
+      
       switch (e.target.value) {
         case 'UP':
           this.setState({ direction: 'UP' });
@@ -69,6 +77,7 @@ class IndexSnake extends Component {
           break;
       }
     }
+ 
 
   }
   onKeyDown = (e) => {
@@ -87,6 +96,8 @@ class IndexSnake extends Component {
         this.setState({ direction: 'RIGHT' });
         break;
     }
+    e.preventDefault()
+    e.stopPropagation()
   }
   moveSnake = () => {
     if (this.state.gameStarted) {
@@ -142,7 +153,7 @@ class IndexSnake extends Component {
         console.log(this.state.speed, this.state.interval)
         clearInterval(this.state.interval)
         this.setState({
-          speed: this.state.speed - 50,
+          speed: this.state.speed - 20,
           food: getRandomCoordinates(),
           interval: intervalFunction(this.moveSnake, this.state.speed),
           points: this.state.points +10
@@ -185,6 +196,8 @@ class IndexSnake extends Component {
   render() {
     return (
       <div id="snakePageContainer">
+       <Popup title={titlePopup} description={descriptionPopup} />
+
         {/* <img className="backgroundBigLeft" src={backgroundBig} />
         <img className="backgroundBigRight" src={backgroundBig} /> */}
 
