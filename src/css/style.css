@@ -487,7 +487,7 @@ button {
     @media (min-width: 992px) {
       .carousel-caption h4 {
         /*font-size: 65px;*/
-        font-size: 4vh;
+        font-size: 10vh;
         margin-bottom: 20px; } }
 
     @media (max-width: 600px) {
