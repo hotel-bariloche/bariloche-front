@@ -160,7 +160,15 @@ export const Texts = {
             check_button: 'Ver disponibilidad',
         },
         games: {
-            play: 'Jugar ahora'
+            play: 'Jugar ahora',
+        },
+        oneToFifty: {
+            popup_description: 'Se va el autobus y quedan dormidos todos los pasajeros. Despertalos en orden de habitación del 1 al 48 en tiempo record para conseguir descuentos en tu reserva!.',
+            next_number: 'Siguiente numero',
+            instruction1: 'De 0 a 30 segundos: 50% de descuento.',
+            instruction2: 'De 30 a 40 segundos: 30% de descuento.',
+            instruction3: 'De 40 a 50 segundos: 20% de descuento.',
+            instruction4: 'En 50 segundos o más: 10% de descuento'
         }
         
     },
@@ -176,7 +184,7 @@ export const Texts = {
                 location: 'location',
                 contact: 'contact',
                 book: 'book',
-                games: 'juegos'
+                games: 'games'
             },
             homeBanner: 'Meet a different hotel in the heart of Bariloche',
             about: {
@@ -331,6 +339,14 @@ export const Texts = {
         },
         games: {
             play: 'Play'
+        },
+        oneToFifty: {
+            popup_description: 'The bus leaves and all the passengers fall asleep. Wake them up in room order from 1 to 48 in record time to get discounts on your reservation!.',
+            next_number: 'Next number',
+            instruction1: 'From 0 to 30 seconds: 50% of discount.',
+            instruction2: 'From 30 to 40 seconds: 30% of discount.',
+            instruction3: 'From 40 to 50 seconds: 20% of discount.',
+            instruction4: 'In 50 seconds or more: 10% of discount'
         }
 
     },

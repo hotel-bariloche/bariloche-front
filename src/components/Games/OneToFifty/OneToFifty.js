@@ -6,6 +6,7 @@ import Chrono from './Chrono';
 import confetti from '../../../confetti';
 import Popup from '../Modal/Popup';
 
+
 export default function OneToFifty() {
     // ---POPUP---
     const titlePopup = 'Modal title';
