@@ -8,11 +8,14 @@ import backgroundBig from './images/backgroundBig.png';
 import backgroundSmall from './images/backgroundSmall.png';
 import Ranking from '../../Ranking/Ranking';
 import Popup from '../Modal/Popup';
+import FinalPopup from './finalPopUp';
 
 
-const titlePopup = 'Snake';
-const descriptionPopup = 'descripción del juego premios y';
+const titlePopup = 'Junta la Nieve';
+const descriptionPopup = 'Junta la Nieve y consigue descuentos para tu estancia en el Grand Hotel Bariloche, juntando de 1 a 5 puntos conseguirás un 10% de descuento, de 6 a 10 copos un 20%, de 11 a 15 copos un 25% y con más de 16 un 30%!';
 
+const titleFinal = "Puntos";
+const descriptionFinal = "hola"
 
 const getRandomCoordinates = () => {
   let min = 1;
@@ -34,12 +37,18 @@ const initialState = {
     [2, 0]
   ],
 }
+
+
+
+
 const intervalFunction = (move, speed) => {
   return (setInterval(move, speed))
 }
 class IndexSnake extends Component {
 
   state = initialState;
+
+  
   
   onClickStart = (e) => {
     //If everything is false do the set Interval + count + 1. Else stop the game + alert with counter
@@ -202,15 +211,15 @@ class IndexSnake extends Component {
         <img className="backgroundBigRight" src={backgroundBig} /> */}
 
         <h1 style={{ color: 'black', paddingTop: '15px', marginBottom: '15px'}}>
-          Juega al SNAKE
-          <SnakeInstructionGames instructionText="Selecciona el pin correspondiente con la bandera que aparece, si encadenas aciertos, tus puntuaciones se van acumulando (50,100,150…) , si fallas restas 25 y empiezas desde 50 puntos otra vez." />
+          Junta La Nieve
+          <SnakeInstructionGames instructionText='Junta la Nieve y consigue descuentos para tu estancia en el Grand Hotel Bariloche, juntando de 1 a 5 puntos conseguirás un 10% de descuento, de 6 a 10 copos un 20%, de 11 a 15 copos un 25% y con más de 16 un 30%!' />
 
           </h1>
 
           <p className="">Puntos: {this.state.points}</p>
           <div className="snakeGameContainer">
           {this.state.ranking &&
-            <Ranking gameName="snake_score" scoreState={this.state.points}/>
+            <FinalPopup title={titleFinal} points={this.state.points} description={descriptionFinal}/>
           }
           {this.state.gameStarted != true
           ?
