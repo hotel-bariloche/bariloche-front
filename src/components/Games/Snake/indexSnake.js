@@ -14,7 +14,7 @@ import FinalPopup from './finalPopUp';
 const titlePopup = 'Junta la Nieve';
 const descriptionPopup = 'Junta la Nieve y consigue descuentos para tu estancia en el Grand Hotel Bariloche, juntando de 1 a 5 puntos conseguirás un 10% de descuento, de 6 a 10 copos un 20%, de 11 a 15 copos un 25% y con más de 16 un 30%!';
 
-const titleFinal = "Puntos";
+const titleFinal = "Tu puntuación es de  ";
 const descriptionFinal = "hola"
 
 const getRandomCoordinates = () => {
@@ -32,6 +32,8 @@ const initialState = {
   points: 0,
   speed: 200,
   direction: 'RIGHT',
+  code: "",
+  description: "",
   snakeDots: [
     [0, 0],
     [2, 0]
@@ -44,11 +46,12 @@ const initialState = {
 const intervalFunction = (move, speed) => {
   return (setInterval(move, speed))
 }
+
+
+
 class IndexSnake extends Component {
 
   state = initialState;
-
-  
   
   onClickStart = (e) => {
     //If everything is false do the set Interval + count + 1. Else stop the game + alert with counter
@@ -172,6 +175,8 @@ class IndexSnake extends Component {
       //this.increaseSpeed();
     }
   }
+
+
   enlargeSnake() {
     let newSnake = [...this.state.snakeDots];
     newSnake.unshift([])
@@ -186,8 +191,36 @@ class IndexSnake extends Component {
        })
      }
    }  */
+  
+   ranking() {
+    if (this.state.points >= 16) {
+      this.setState ({
+        description: "dfadsa",
+        code: "dfasdfsd",
+      }) 
+    } else if (this.state.points >= 10) {
+      this.setState ({
+        description: "dfadsa",
+        code: "dfasdfsd",
+      }) 
+    } else if (this.state.points >= 5) {
+      this.setState ({
+        description: "dfadsa",
+        code: "dfasdfsd",
+      }) 
+    } else {
+      console.log("Hola")
+      this.setState ({
+        description: "dfadsa",
+        code: "dfasdfsd",
+      }) 
+    } 
+  }
+
+  
   onGameOver() {
     clearInterval(this.state.interval)
+    this.ranking()
     this.setState({
       gameStarted: false,
       gameEnded: true,
@@ -202,6 +235,10 @@ class IndexSnake extends Component {
     })
 
   }
+
+
+
+  
   render() {
     return (
       <div id="snakePageContainer">
@@ -219,7 +256,7 @@ class IndexSnake extends Component {
           <p className="">Puntos: {this.state.points}</p>
           <div className="snakeGameContainer">
           {this.state.ranking &&
-            <FinalPopup title={titleFinal} points={this.state.points} description={descriptionFinal}/>
+            <FinalPopup title={titleFinal} points={this.state.points} description={this.state.description} code={this.state.code} />
           }
           {this.state.gameStarted != true
           ?

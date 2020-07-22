@@ -20,8 +20,10 @@ const FinalPopup = (props) => {
           className="popup-container"
         >
           <Modal.Body className="popup-content">
-            <h1 className="popup-points">{props.points}</h1>
-            <h3 className="popup-title">{props.description}</h3>      
+            <h3 className="popup-title">{props.title}</h3>
+            <h5 className="popup-title">{props.points}</h5>
+            <p className="popup-title">{props.code}</p>
+            <p className="popup-title">{props.description}</p>      
           </Modal.Body>
           <Modal.Footer>
             <Button variant="secondary" onClick={handleClose} className="popup-button">
