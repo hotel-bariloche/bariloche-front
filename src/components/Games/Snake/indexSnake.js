@@ -2,7 +2,7 @@ import React, { Component, Fragment } from 'react';
 import Snake from './snake';
 import Food from './food';
 import './snake.css'
-import InstructionGames from '../../SharedButtons/InstructionGames';
+import SnakeInstructionGames from './SnakeInstructionGames';
 import CloseButton from '../../SharedButtons/CloseButton';
 import backgroundBig from './images/backgroundBig.png';
 import backgroundSmall from './images/backgroundSmall.png';
@@ -201,8 +201,12 @@ class IndexSnake extends Component {
         {/* <img className="backgroundBigLeft" src={backgroundBig} />
         <img className="backgroundBigRight" src={backgroundBig} /> */}
 
-        <InstructionGames instructionText="Selecciona el pin correspondiente con la bandera que aparece, si encadenas aciertos, tus puntuaciones se van acumulando (50,100,150…) , si fallas restas 25 y empiezas desde 50 puntos otra vez." />
-        <h1 style={{ color: 'black', paddingTop: '15px', marginBottom: '15px'}}>Juega al SNAKE</h1>
+        <h1 style={{ color: 'black', paddingTop: '15px', marginBottom: '15px'}}>
+          Juega al SNAKE
+          <SnakeInstructionGames instructionText="Selecciona el pin correspondiente con la bandera que aparece, si encadenas aciertos, tus puntuaciones se van acumulando (50,100,150…) , si fallas restas 25 y empiezas desde 50 puntos otra vez." />
+
+          </h1>
+
           <p className="">Puntos: {this.state.points}</p>
           <div className="snakeGameContainer">
           {this.state.ranking &&
