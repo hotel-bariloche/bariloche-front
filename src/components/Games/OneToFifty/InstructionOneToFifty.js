@@ -5,6 +5,7 @@ import {
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faQuestionCircle } from '@fortawesome/free-solid-svg-icons';
 import './InstructionOneToFifty.scss';
+import { Context } from '../../../Context/Provider';
 
 export class InstructionOneToFifty extends React.Component {
     constructor(props) {
@@ -13,6 +14,7 @@ export class InstructionOneToFifty extends React.Component {
             modal: false
         }
     }
+    static contextType = Context
 
     toggle = () => this.setState({
             modal: !this.state.modal
@@ -20,6 +22,8 @@ export class InstructionOneToFifty extends React.Component {
     
    
   render(){
+    const context = this.context;
+    const language = context.state.language;
        //Instructions Icon
        const instructions = <FontAwesomeIcon icon = {
            faQuestionCircle
@@ -33,12 +37,12 @@ export class InstructionOneToFifty extends React.Component {
                 <Modal isOpen={this.state.modal} toggle={this.toggle} style={{ marginTop:"10%"}}>
                     <ModalBody>
                     <div><p>
-                    Se va el autobus y quedan dormidos todos los pasajeros. Despertalos en orden de habitación del 1 al 48 en tiempo record para conseguir descuentos en tu reserva!. </p></div>
+                    {context.state.texts[language].oneToFifty.popup_description} </p></div>
                         <ul>
-                            <li>De 0 a 30 segundos: 50% de descuento </li>
-                            <li>De 30 a 40 segundos: 30% de descuento </li>
-                            <li>De 40 a 50 segundos: 20% de descuento </li>
-                            <li>En 50 segundos o más: 10% de descuento</li>
+                            <li>{context.state.texts[language].oneToFifty.instruction1} </li>
+                            <li>{context.state.texts[language].oneToFifty.instruction2}</li>
+                            <li>{context.state.texts[language].oneToFifty.instruction3} </li>
+                            <li>{context.state.texts[language].oneToFifty.instruction4}</li>
                         </ul>
                     </ModalBody>
                     <ModalFooter>

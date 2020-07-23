@@ -5,7 +5,7 @@ import CloseButtonOneToFifty from './CloseButtonOneToFifty';
 import Chrono from './Chrono';
 import confetti from '../../../confetti';
 import Popup from '../Modal/Popup';
-
+import { Context } from '../../../Context/Provider';
 
 export default function OneToFifty() {
     // ---POPUP---
@@ -14,6 +14,7 @@ export default function OneToFifty() {
     // ---end popup---
 
     // ---STATES---
+    const { state } = React.useContext(Context);
     let [allNumbers, setallNumbers] = useState([]);
     let [firstHalf, setFirstHalf] = useState([]);
     let [secondHalf, setSecondHalf] = useState([]);
@@ -91,7 +92,7 @@ export default function OneToFifty() {
                         </p>
                     </div>
                     <div className="col-12 col-md-6 justifyCenter">
-                        <p>Siguiente numero: &nbsp;&nbsp;&nbsp; <span style={{ fontWeight: "bold", fontSize: "x-large" }}>{currentNumber}</span></p>
+                        <p>{state.texts[state.language].oneToFifty.next_number}: &nbsp;&nbsp;&nbsp; <span style={{ fontWeight: "bold", fontSize: "x-large" }}>{currentNumber}</span></p>
                     </div>
                 </div>
                 {/* GAME */}
