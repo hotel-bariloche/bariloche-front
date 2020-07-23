@@ -10,7 +10,6 @@ import { Context } from '../../../Context/Provider';
 export default function OneToFifty() {
     // ---POPUP---
     const titlePopup = 'Modal title';
-    const descriptionPopup = 'Se va el autobus y quedan dormidos todos los pasajeros. Despertalos en orden de habitación del 1 al 48 en tiempo record para conseguir descuentos en tu reserva!.';
     // ---end popup---
 
     // ---STATES---
@@ -74,7 +73,7 @@ export default function OneToFifty() {
 
     return (
         <div className="OneToFifty container-fluid">
-            <Popup title={titlePopup} description={descriptionPopup} />
+            <Popup title={titlePopup} description={state.texts[state.language].oneToFifty.popup_description} />
             <div className="row rowIcons">
                 <div><InstructionOneToFifty /></div>
                 <div><CloseButtonOneToFifty /></div>
