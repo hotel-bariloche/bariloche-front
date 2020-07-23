@@ -1,45 +1,26 @@
-import AlbertoFernandez from './alberto-fernandez.jpg';
-import Bolsonaro from './bolsonaro.jpg';
-import BorisJhonson from './boris-jhonson.jpg';
-import Bukele from './bukele.jpg';
-import EmmanuelMacron from './emmanuel-macron.jpg';
-import FrankWalter from './frank-walter.jpg';
-import IgorDodon from './igor-dodon.jpg';
-import IvanDuque from './ivan-duque.jpg';
-import JeanineAñez from './jeanine-añez.png';
-import LeninMoreno from './lenin-moreno.jpg';
-import Maduro from './maduro.jpg';
-import MarceloRebelo from './marcelo-rebelo.jpg';
-import Mattarella from './mattarella.jpg';
-import Mohamed from './mohamed.jpg';
-import Paraguay from './paraguay.jpg';
-import Putin from './putin.png';
-import ShinzoAbe from './shinzo-abe.jpg';
-import Torra from './torra.png';
-import Trump from './trump.jpg';
-import Xi from './xi.jpg';
+import picture1 from './1.jpg';
+import picture2 from './2.jpg';
+import picture3 from './3.jpg';
+import picture4 from './4.jpg';
+import picture5 from './5.jpg';
+import picture6 from './6.jpg';
+import picture7 from './7.jpg';
+import picture8 from './8.jpg';
+import picture9 from './9.jpg';
+import picture10 from './10.jpg';
+
 
 const imageTable = [
-    AlbertoFernandez,
-    Bolsonaro,
-    BorisJhonson,
-    Bukele,
-    EmmanuelMacron,
-    FrankWalter,
-    IgorDodon,
-    IvanDuque,
-    JeanineAñez,
-    LeninMoreno,
-    Maduro,
-    MarceloRebelo,
-    Mattarella,
-    Mohamed,
-    Paraguay,
-    Putin,
-    ShinzoAbe,
-    Torra,
-    Trump,
-    Xi
+    picture1,
+    picture2,
+    picture3,
+    picture4,
+    picture5,
+    picture6,
+    picture7,
+    picture8,
+    picture9,
+    picture10
 ];
 
 export default imageTable
