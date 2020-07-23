@@ -13,7 +13,7 @@ const GamesSection = () => {
         <div className="gameSectionContainer">
                 <div>
                     <div className="games-title">
-                    <h2>Jugá, divertite, y ganá descuentos increíbles para tu estadía</h2>
+                    <h2>{state.texts[state.language].games.description}</h2>
                     <hr/>
                     </div>
                 </div>
@@ -26,7 +26,7 @@ const GamesSection = () => {
                     alt="Third slide"
                     />
                     <Carousel.Caption>
-                    <a className="button carousel-slide-btn btn-games" target="_blank" href="/snake">{state.texts[state.language].games.play}</a>
+                    <Link className="button carousel-slide-btn btn-games" to="/snake">{state.texts[state.language].games.play}</Link>
                     </Carousel.Caption>
                 </Carousel.Item>
                 <Carousel.Item>
@@ -36,7 +36,7 @@ const GamesSection = () => {
                     alt="First slide"
                     />
                     <Carousel.Caption>
-                    <a className="button carousel-slide-btn btn-games" target="_blank" href="/OneToFifty">{state.texts[state.language].games.play}</a>
+                    <Link className="button carousel-slide-btn btn-games" to="/OneToFifty">{state.texts[state.language].games.play}</Link>
                     </Carousel.Caption>
                 </Carousel.Item>
                 <Carousel.Item>
@@ -48,7 +48,7 @@ const GamesSection = () => {
 
                     <Carousel.Caption>
 
-                    <a className="button carousel-slide-btn btn-games" target="_blank" href="/MemoryGame">{state.texts[state.language].games.play}</a>
+                    <Link className="button carousel-slide-btn btn-games"  to="/MemoryGame">{state.texts[state.language].games.play}</Link>
                     </Carousel.Caption>
                 </Carousel.Item>
     

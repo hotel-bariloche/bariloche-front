@@ -2,8 +2,11 @@ import React, { useState, useEffect } from 'react';
 import Modal from 'react-bootstrap/Modal';
 import Button from 'react-bootstrap/Button';
 import './Popup.scss';
+import { Context } from '../../../Context/Provider';
 
 const Popup = (props) => {
+    const { state } = React.useContext(Context);
+
     const [show, setShow] = useState(true);
   
     const handleClose = () => setShow(false);
@@ -24,7 +27,7 @@ const Popup = (props) => {
           </Modal.Body>
           <Modal.Footer>
             <Button variant="secondary" onClick={handleClose} className="popup-button">
-              Entendido
+              {state.texts[state.language].memoryGame.close_button}
             </Button>
           </Modal.Footer>
         </Modal>

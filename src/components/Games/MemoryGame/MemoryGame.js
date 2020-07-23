@@ -5,6 +5,7 @@ import Header from './Header';
 import construirBaraja from './utils/construirBaraja';
 import confetti from '../../../confetti';
 import Popup from '../Modal/Popup';
+import { Context } from '../../../Context/Provider';
 
 
 //import useWindowDimensions from './windowHandler'
@@ -29,16 +30,16 @@ class MemoryGame extends React.Component {
   constructor(props) {
     super(props);
     this.state = initialState()
-    console.log(construirBaraja)
   }
+  static contextType = Context
 
-  render() {
-    const titlePopup = 'Modal title';
-    const descriptionPopup = 'Encuentra las parejas de cartas iguales.En cuanto menos intentos lo logres, más puntos acumularás.';
-
+  render() {   
+    const context = this.context;
+    const language = context.state.language;
+    
     return(
       <div className="memory-body">
-        <Popup title={titlePopup} description={descriptionPopup} />
+        <Popup description={context.state.texts[language].memoryGame.popup_description} />
         <Header
         tryes={this.state.tryes}
         gameFinished={this.state.winner}

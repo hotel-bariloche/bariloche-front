@@ -161,6 +161,7 @@ export const Texts = {
         },
         games: {
             play: 'Jugar ahora',
+            description: 'Jugá, divertite, y ganá descuentos increíbles para tu estadía'
         },
         oneToFifty: {
             popup_description: 'Se va el autobus y quedan dormidos todos los pasajeros. Despertalos en orden de habitación del 1 al 48 en tiempo record para conseguir descuentos en tu reserva!.',
@@ -169,8 +170,22 @@ export const Texts = {
             instruction2: 'De 30 a 40 segundos: 30% de descuento.',
             instruction3: 'De 40 a 50 segundos: 20% de descuento.',
             instruction4: 'En 50 segundos o más: 10% de descuento'
+        },
+        memoryGame: {
+            game_title: 'Juego de Memoria',
+            popup_description: 'Encuentra las parejas de cartas iguales.En cuanto menos intentos lo logres, más puntos acumularás.',
+            counter: 'Intentos',
+            reset: 'Reiniciar',
+            try_again: 'Intentalo Otra Vez',
+            instruction1: '10 intentos: 50% de descuento.',
+            instruction2: '11 a 15 intentos: 30% de descuento.',
+            instruction3: '16 a 20 intentos: 20% de descuento.',
+            instruction4: '21 intentos o más: 10% de descuento.',
+            close_button: 'Cerrar',
+            congrats_msg1: 'Felicitaciones! Tu puntuacion fue de',
+            congrats_msg2: 'intentos y tu descuento es de',
+            congrats_msg3: ', puedes utilizarlo pegando el código de descuento al hacer la reserva online desde nuestro sitio',
         }
-        
     },
 
     english: {
@@ -338,7 +353,8 @@ export const Texts = {
             check_button: 'Check Availability',
         },
         games: {
-            play: 'Play'
+            play: 'Play',
+            description: 'Play, have fun, and win incredible discounts for your statistics'
         },
         oneToFifty: {
             popup_description: 'The bus leaves and all the passengers fall asleep. Wake them up in room order from 1 to 48 in record time to get discounts on your reservation!.',
@@ -347,8 +363,24 @@ export const Texts = {
             instruction2: 'From 30 to 40 seconds: 30% of discount.',
             instruction3: 'From 40 to 50 seconds: 20% of discount.',
             instruction4: 'In 50 seconds or more: 10% of discount'
+        },
+        memoryGame: {            
+            game_title: 'Memory Game',
+            popup_description: 'Find all matching cards. The fewer attempts you make, the more points you accumulate.',
+            counter: 'Attempts',
+            reset: 'Restart',
+            try_again: 'Try Again',
+            instruction1: '10 attempts: 50% discount.',
+            instruction2: 'from 11 to 15 attempts: 30% discount.',
+            instruction3: 'from 16 to 20 attempts: 20% discount.',
+            instruction4: '21 or more: 10% discount.',
+            close_button: 'Close',
+            congrats_msg1: 'Congratulations! Your score is',
+            congrats_msg2: 'pts, your discount is',
+            congrats_msg3: ', you can use it by pasting the discount code when booking online from our site.'
         }
 
     },
+
 
 }
