@@ -185,6 +185,24 @@ export const Texts = {
             congrats_msg1: 'Felicitaciones! Tu puntuacion fue de',
             congrats_msg2: 'intentos y tu descuento es de',
             congrats_msg3: ', puedes utilizarlo pegando el código de descuento al hacer la reserva online desde nuestro sitio',
+        },
+
+        snake: {
+            title_snake: 'Junta la nieve',
+            instruction: 'Junta la Nieve y consigue descuentos para tu estancia en el Grand Hotel Bariloche, juntando de 1 a 5 puntos conseguirás un 10% de descuento, de 6 a 10 copos un 20%, de 11 a 15 copos un 25% y con más de 16 un 30%!',
+            title_final: 'Tu puntuación es de ...',
+            points: 'Puntos: ',
+            result1: 'Enhorabuena! has hecho más de 16 puntos',
+            code1: '30%',
+            result2: 'Enhorabuena, has hecho más de 11 puntos',
+            code2: '25%',
+            result3: 'Enhorabuena, has hecho más de 5 puntos',
+            code3: '20%',
+            result4: 'Tu puntuación es menos a 5 puntos',
+            code4: '10%'
+
+
+
         }
     },
 
@@ -378,7 +396,22 @@ export const Texts = {
             congrats_msg1: 'Congratulations! Your score is',
             congrats_msg2: 'pts, your discount is',
             congrats_msg3: ', you can use it by pasting the discount code when booking online from our site.'
-        }
+        },
+
+        snake: {
+            title_snake: 'Catch the Snow',
+            instruction: 'Gather the Snow and get discounts for your stay at the Grand Hotel Bariloche, by collecting from 1 to 5 points you will get a 10% discount, from 6 to 10 flakes 20%, from 11 to 15 flakes 25% and with more than 16 30%!',
+            title_final: 'Your Score is...',
+            points: 'Points: ',
+            result1: 'Congrats! You earn more than 16 points',
+            code1: '30%',
+            result2: 'Congrats, You earn more than 11 points',
+            code2: '25%',
+            result3: 'Congrats, You earn more than 5 points',
+            code3: '20%',
+            result4: 'Your score is less of 5 points,',
+            code4: '10%'
+        },
 
     },
 

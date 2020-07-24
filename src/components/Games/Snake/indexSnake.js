@@ -3,19 +3,17 @@ import Snake from './snake';
 import Food from './food';
 import './snake.css'
 import SnakeInstructionGames from './SnakeInstructionGames';
-import CloseButton from '../../SharedButtons/CloseButton';
-import backgroundBig from './images/backgroundBig.png';
-import backgroundSmall from './images/backgroundSmall.png';
-import Ranking from '../../Ranking/Ranking';
 import Popup from '../Modal/Popup';
 import FinalPopup from './finalPopUp';
+import { Context } from '../../../Context/Provider';
+import { faAddressCard } from '@fortawesome/free-solid-svg-icons';
+
 
 
 const titlePopup = 'Junta la Nieve';
 const descriptionPopup = 'Junta la Nieve y consigue descuentos para tu estancia en el Grand Hotel Bariloche, juntando de 1 a 5 puntos conseguirás un 10% de descuento, de 6 a 10 copos un 20%, de 11 a 15 copos un 25% y con más de 16 un 30%!';
 
 const titleFinal = "Tu puntuación es de  ";
-const descriptionFinal = "hola"
 
 const getRandomCoordinates = () => {
   let min = 1;
@@ -50,6 +48,8 @@ const intervalFunction = (move, speed) => {
 
 
 class IndexSnake extends Component {
+  static contextType = Context
+
 
   state = initialState;
   
@@ -193,26 +193,38 @@ class IndexSnake extends Component {
    }  */
   
    ranking() {
+    const context = this.context;
+    const language = context.state.language;
+
+     let result1 = this.context.state.texts[language].snake.result1;
+     let code1 = this.context.state.texts[language].snake.code1;
+     let result2 = this.context.state.texts[language].snake.result2;
+     let code2 = this.context.state.texts[language].snake.code2;
+     let result3 = this.context.state.texts[language].snake.result3;
+     let code3 = this.context.state.texts[language].snake.code3;
+     let result4 = this.context.state.texts[language].snake.result4;
+     let code4 = this.context.state.texts[language].snake.code4;
+
     if (this.state.points >= 16) {
-      this.setState ({
-        description: "dfadsa",
-        code: "dfasdfsd",
+      this.setState ({ 
+        description: result1,
+        code: code1,
       }) 
     } else if (this.state.points >= 10) {
       this.setState ({
-        description: "dfadsa",
-        code: "dfasdfsd",
+        description: result2,
+        code: code2,
       }) 
     } else if (this.state.points >= 5) {
       this.setState ({
-        description: "dfadsa",
-        code: "dfasdfsd",
+        description: result3,
+        code: code3,
       }) 
     } else {
       console.log("Hola")
       this.setState ({
-        description: "dfadsa",
-        code: "dfasdfsd",
+        description: result4,
+        code: code4,
       }) 
     } 
   }
@@ -236,27 +248,28 @@ class IndexSnake extends Component {
 
   }
 
-
-
   
   render() {
+    const context = this.context;
+    const language = context.state.language;
+    
     return (
       <div id="snakePageContainer">
-       <Popup title={titlePopup} description={descriptionPopup} />
+       <Popup title={context.state.texts[language].snake.title_snake} description={context.state.texts[language].snake.instruction} />
 
         {/* <img className="backgroundBigLeft" src={backgroundBig} />
         <img className="backgroundBigRight" src={backgroundBig} /> */}
 
         <h1 style={{ color: 'black', paddingTop: '15px', marginBottom: '15px'}}>
-          Junta La Nieve
-          <SnakeInstructionGames instructionText='Junta la Nieve y consigue descuentos para tu estancia en el Grand Hotel Bariloche, juntando de 1 a 5 puntos conseguirás un 10% de descuento, de 6 a 10 copos un 20%, de 11 a 15 copos un 25% y con más de 16 un 30%!' />
+           {context.state.texts[language].snake.title_snake}
+          <SnakeInstructionGames instructionText={context.state.texts[language].snake.instruction} />
 
           </h1>
 
-          <p className="">Puntos: {this.state.points}</p>
+          <p className="">{context.state.texts[language].snake.points}{this.state.points}</p>
           <div className="snakeGameContainer">
           {this.state.ranking &&
-            <FinalPopup title={titleFinal} points={this.state.points} description={this.state.description} code={this.state.code} />
+            <FinalPopup title={context.state.texts[language].snake.title_final} points={this.state.points} description={this.state.description} code={this.state.code} />
           }
           {this.state.gameStarted != true
           ?
@@ -283,9 +296,6 @@ class IndexSnake extends Component {
             </div>
 
           </div>
-          {/* <img className="backgroundSmallLeft" src={backgroundSmall} />
-          <img className="backgroundSmallRight" src={backgroundSmall} /> */}
-
         </div>
 
 

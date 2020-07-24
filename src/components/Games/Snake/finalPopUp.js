@@ -21,9 +21,9 @@ const FinalPopup = (props) => {
         >
           <Modal.Body className="popup-content">
             <h3 className="popup-title">{props.title}</h3>
-            <h5 className="popup-title">{props.points}</h5>
-            <p className="popup-title">{props.code}</p>
-            <p className="popup-title">{props.description}</p>      
+            <h1 className="popup-title">{props.points}</h1>
+            <h4 className="popup-title">{props.description}</h4>      
+            <h2 className="popup-title">{props.code}</h2>
           </Modal.Body>
           <Modal.Footer>
             <Button variant="secondary" onClick={handleClose} className="popup-button">
