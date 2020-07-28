@@ -188,7 +188,7 @@ export const Texts = {
         },
 
         snake: {
-            title_snake: 'Junta la nieve',
+            title_snake: 'Cazanieves',
             instruction: 'Junta la Nieve y consigue descuentos para tu estancia en el Grand Hotel Bariloche, juntando de 1 a 5 puntos conseguirás un 10% de descuento, de 6 a 10 copos un 20%, de 11 a 15 copos un 25% y con más de 16 un 30%!',
             title_final: 'Tu puntuación es de ...',
             points: 'Puntos: ',
@@ -399,7 +399,7 @@ export const Texts = {
         },
 
         snake: {
-            title_snake: 'Catch the Snow',
+            title_snake: 'Snow Hunter',
             instruction: 'Gather the Snow and get discounts for your stay at the Grand Hotel Bariloche, by collecting from 1 to 5 points you will get a 10% discount, from 6 to 10 flakes 20%, from 11 to 15 flakes 25% and with more than 16 30%!',
             title_final: 'Your Score is...',
             points: 'Points: ',

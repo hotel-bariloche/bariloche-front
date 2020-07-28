@@ -2,7 +2,7 @@ import React from 'react';
 import {Link} from 'react-router-dom';
 import Carousel from 'react-bootstrap/Carousel';
 import { Context } from '../../Context/Provider';
-import snake from '../img/snake.png';
+import snake from '../img/cardSnake.png';
 import OneToFifty from '../img/iframeOneToFifty.png';
 import memory from '../img/cardMemoryGame.png';
 import './GamesSection.css';
