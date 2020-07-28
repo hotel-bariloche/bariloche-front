@@ -266,7 +266,7 @@ class IndexSnake extends Component {
 
           </h1>
 
-          <p className="">{context.state.texts[language].snake.points}{this.state.points}</p>
+          <p className="points">{context.state.texts[language].snake.points}{this.state.points}</p>
           <div className="snakeGameContainer">
           {this.state.ranking &&
             <FinalPopup title={context.state.texts[language].snake.title_final} points={this.state.points} description={this.state.description} code={this.state.code} />

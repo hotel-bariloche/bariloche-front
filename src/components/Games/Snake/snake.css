@@ -1,9 +1,13 @@
 #snakePageContainer {
   background: url('./images/bkgdGameSnake.png') no-repeat;
-  background-size: 100% 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   object-fit: cover;
   color : lightgrey;
   position: relative;
+  z-index: 1;
+  height: 100vh;
 }
 
 .backgroundBigLeft {
@@ -44,16 +48,15 @@ body {
 
 
 #snakePageContainer > h1 {
-  font-family: 'Sans-serif', cursive;
-  padding-top: 5%;
-  margin-bottom: 5%;
+  padding: 10px 20px 10px 20px;
   font-size: 3em;
   color: black;
+
 
 }
 
 #snakePageContainer > p {
-  font-family: 'Press Start 2P', cursive;
+  
   font-size: 1em;
   color: black;
 
@@ -69,22 +72,22 @@ body {
 }
 
 #startSnakeButton {
-  background-color: lightblue; /* Orange */
+  background-color: #29ABE2; /* Orange */
   /* -webkit-box-shadow: -191px -48px 0px 1500px rgba(0,0,0,0.69);
   -moz-box-shadow: -191px -48px 0px 1500px rgba(0,0,0,0.69);
   box-shadow: 0px -48px 0px 1500px rgba(0,0,0,0.69); */
-  border: 4px solid white;
-  border-radius: 100%;
-  color: black;
-  padding: 50px;
+  border: 2px solid black;
+  border-radius: 8px;
+  color: white;
+  font-weight: 600;
+  padding: 10px 20px 10px 20px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
   cursor: pointer;
-  font-family: 'Press Start 2P', cursive;
-  height: 160px;
   margin: auto;
+  z-index: 3;
 
 }
 
@@ -101,11 +104,12 @@ body {
   height: 50vh  !important;
   width: 100%;
   justify-content: space-around;
+  
 
 }
 
 .game-area {
-  background-color:rgba(0, 0, 0, 0.8);
+  background-color:rgba(63, 62, 61, 0.72);
   position: relative;
   margin: 0 auto 10px auto;
   width: 40%;
@@ -158,7 +162,7 @@ body {
   width: 60px;
   height: 60px;
   border: 3px solid white;
-  border-radius: 15px;
+  border-radius: 8px;
 }
 
 .padButton:active {
@@ -173,10 +177,25 @@ body {
   justify-content: space-between;
 }
 
+.points {
+  position: relative;
+  float: right;
+  right: 20%;
+  top: 150px;
+  padding: 10px 20px 10px 20px;
+  border-radius: 8px;
+  background-color: white;
+  color: black;
+  border: 2px solid black;
+
+}
+
 @media screen and (min-width: 1025px) {
   .SnakeDirectionsMobilePad {
     display: none;
   }
+
+  
 }
 
 @media screen and (max-width: 1025px) {
@@ -186,6 +205,19 @@ body {
     height: 30vh;
 
   }
+
+  .SnakeDirectionsMobilePad {
+    margin-top: 90px;
+  }
+
+  .points {
+    position: relative;
+    float:auto;
+    right: 45vw;
+    top: 42vh;
+
+  }
+
 
 }
 
@@ -203,6 +235,13 @@ body {
   
   }
 
+  .points {
+    position: relative;
+    float:auto;
+    right: 44vw;
+    top: 52vh;
+  }
+
 }
 @media screen and (max-width: 450px) {
 
@@ -217,6 +256,13 @@ body {
   .game-area {
     width: 80%;
     height: 40vh;
+  }
+
+  .points {
+    position: relative;
+    float:auto;
+    right: 37vw;
+    top: 53vh;
   }
 
 }
