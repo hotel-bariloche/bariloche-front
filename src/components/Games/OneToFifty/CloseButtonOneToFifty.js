@@ -14,10 +14,10 @@ class CloseButtonOneToFifty extends React.Component {
         <div>
             {/* CLOSE BUTTON */}
             <div className="bigCloseButton">
-               <Link to = "/games" ><span style={{color: "rgb(245, 123, 75)", fontSize: "2em"}}>{closeButton}</span></Link> 
+               <Link to = "/games" ><span style={{color: "#E5423A", fontSize: "2em"}}>{closeButton}</span></Link> 
             </div>
             <div div className = "iframeCloseButton" >
-               <Link to = "carousel"><span style={{color: "#A2A2A2", fontSize: "1.5em"}}>{closeButton}</span></Link> 
+               <Link to = "carousel"><span style={{color: "#E5423A", fontSize: "1.5em"}}>{closeButton}</span></Link> 
             </div>
         </div>
     )}

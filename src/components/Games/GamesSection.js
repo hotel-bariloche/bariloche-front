@@ -4,7 +4,7 @@ import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 import { Context } from '../../Context/Provider';
 import snake from '../img/cardSnake.png';
-import OneToFifty from '../img/iframeOneToFifty.png';
+import despiertapasajeros from '../Games/OneToFifty/despiertapasajeros.png';
 import memory from '../img/cardMemoryGame.png';
 import './GamesSection.css';
 
@@ -19,7 +19,7 @@ const GamesSection = () => {
                     </div>
                 </div>
                 <div className="games-cards">
-                    <Card style={{ width: '18rem' }}>
+                    <Card style={{ width: '22rem' }}>
                     <Card.Img variant="top" src={snake} />
                         <Card.Body>
                             <Card.Title>Card Title</Card.Title>
@@ -31,8 +31,8 @@ const GamesSection = () => {
                         </Card.Body>
                     </Card>
 
-                    <Card style={{ width: '18rem' }}>
-                    <Card.Img variant="top"  src={OneToFifty} />
+                    <Card style={{ width: '22rem' }}>
+                    <Card.Img variant="top"  src={despiertapasajeros} />
                         <Card.Body>
                             <Card.Title>Card Title</Card.Title>
                             <Card.Text>
@@ -43,7 +43,7 @@ const GamesSection = () => {
                         </Card.Body>
                     </Card>
 
-                    <Card style={{ width: '18rem' }}>
+                    <Card style={{ width: '22rem' }}>
                     <Card.Img variant="top" src={memory} />
                         <Card.Body>
                             <Card.Title>Card Title</Card.Title>
