@@ -22,3 +22,8 @@
 .gameSectionContainer .carousel-control-next, .gameSectionContainer .carousel-control-prev {
     z-index: 9999;
 }
+
+.games-cards {
+    display: flex;
+    justify-content: space-around;
+}
