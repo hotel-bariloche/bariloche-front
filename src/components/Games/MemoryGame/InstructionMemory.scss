@@ -1,3 +1,9 @@
+
+.instructions{
+    right: 32px;
+    margin: 20px auto;
+    position: absolute;
+}
 .smallInstructions{
     position: fixed;
     top: 10px;
@@ -7,10 +13,18 @@
     display: flex
 }
 
-.bigInstructions{
+.bigInstructions{  
    margin-right: 5px;
    cursor: pointer;
 }
+
+@media screen and (max-width: 500px) {
+    .instructions {
+        right: 0;
+        margin: auto;
+        font-size: 8px;
+    } 
+ }
 
 @media screen and (min-width: 350px) {
    .smallInstructions {

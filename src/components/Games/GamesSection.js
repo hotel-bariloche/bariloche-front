@@ -5,7 +5,7 @@ import Card from 'react-bootstrap/Card';
 import { Context } from '../../Context/Provider';
 import snake from '../img/cardSnake.png';
 import despiertapasajeros from '../Games/OneToFifty/despiertapasajeros.png';
-import memory from '../img/cardMemoryGame.png';
+import memory from '../Games/MemoryGame/cardMemoryGame.png';
 import './GamesSection.css';
 
 const GamesSection = () => {

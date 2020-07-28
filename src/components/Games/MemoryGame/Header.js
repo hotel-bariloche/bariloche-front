@@ -37,8 +37,8 @@ class Header extends React.Component {
             <header className="memory-header">
                 <div className="title">                  
                         {context().state.texts[language()].memoryGame.game_title} 
-                        <InstructionMemory />
-                </div>
+                </div>    
+                <InstructionMemory />
                 <div>
                 {this.props.gameFinished
                     ?

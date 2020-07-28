@@ -1,18 +1,26 @@
 @import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@500&display=swap');
 
 .memory-body {
-    background-color: #d9dad5 ;
-    /*background-size: cover;*/
+    background-image: url(memoryGamefondo.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
     display : flex;
     flex-direction: column;
 }
 
   .title {
-
-    font-size: 45px;
+    font-size: 30px;
+    background: #FFFFFF;
+    border: 4px solid #371B00;
+    box-sizing: border-box;
+    border-radius: 16px;
     padding: 10px;
-    color: #fff;
-    font-family: 'Inconsolata', monospace;
+    color: #0c0e0e;
+    max-width: 350px;
+    display: flex;
+    justify-content: center;
+    margin: 32px auto;
 }
 
 
