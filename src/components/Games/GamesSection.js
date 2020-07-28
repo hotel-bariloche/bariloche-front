@@ -3,9 +3,12 @@ import {Link} from 'react-router-dom';
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 import { Context } from '../../Context/Provider';
-import snake from '../img/cardSnake.png';
-import despiertapasajeros from '../Games/OneToFifty/despiertapasajeros.png';
-import memory from '../Games/MemoryGame/cardMemoryGame.png';
+import snakeEs from '../img/cardSnake-es.png';
+import snakeEn from '../img/cardSnake-en.png';
+import despiertapasajerosEs from '../img/cardDespiertapasajeros-es.png';
+import despiertapasajerosEn from '../img/cardDespiertapasajeros-en.png';
+import memoryEs from '../img/cardMemoryGame-es.png';
+import memoryEn from '../img/cardMemoryGame-en.png';
 import './GamesSection.css';
 
 const GamesSection = () => {
@@ -20,7 +23,7 @@ const GamesSection = () => {
                 </div>
                 <div className="games-cards">
                     <Card style={{ width: '22rem' }}>
-                    <Card.Img variant="top" src={snake} />
+                    <Card.Img variant="top" src={state.language === 'spanish' ? snakeEs : snakeEn} />
                         <Card.Body>
                             <Card.Title>Card Title</Card.Title>
                             <Card.Text>
@@ -32,7 +35,7 @@ const GamesSection = () => {
                     </Card>
 
                     <Card style={{ width: '22rem' }}>
-                    <Card.Img variant="top"  src={despiertapasajeros} />
+                    <Card.Img variant="top"  src={state.language === 'spanish' ? despiertapasajerosEs : despiertapasajerosEn} />
                         <Card.Body>
                             <Card.Title>Card Title</Card.Title>
                             <Card.Text>
@@ -44,7 +47,7 @@ const GamesSection = () => {
                     </Card>
 
                     <Card style={{ width: '22rem' }}>
-                    <Card.Img variant="top" src={memory} />
+                    <Card.Img variant="top" src={state.language === 'spanish' ? memoryEs : memoryEn} />
                         <Card.Body>
                             <Card.Title>Card Title</Card.Title>
                             <Card.Text>
