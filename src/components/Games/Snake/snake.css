@@ -1,5 +1,5 @@
 #snakePageContainer {
-  background: url('./images/mountains.png') no-repeat;
+  background: url('./images/bkgdGameSnake.png') no-repeat;
   background-size: 100% 100vh;
   object-fit: cover;
   color : lightgrey;
