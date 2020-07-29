@@ -7,6 +7,8 @@ import Popup from '../Modal/Popup';
 import FinalPopup from './finalPopUp';
 import { Context } from '../../../Context/Provider';
 import { faAddressCard } from '@fortawesome/free-solid-svg-icons';
+import confetti from '../../../confetti';
+
 
 
 
@@ -232,6 +234,7 @@ class IndexSnake extends Component {
   
   onGameOver() {
     clearInterval(this.state.interval)
+    
     this.ranking()
     this.setState({
       gameStarted: false,
@@ -245,6 +248,11 @@ class IndexSnake extends Component {
         [2, 0]
       ],
     })
+
+    confetti.start()
+      setTimeout(() => {
+          confetti.stop()
+      }, 2000)
 
   }
 

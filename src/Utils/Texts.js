@@ -161,7 +161,10 @@ export const Texts = {
         },
         games: {
             play: 'Jugar ahora',
-            description: 'Jugá, divertité y ganá'
+            description: 'Jugá, divertité y ganá',
+            card_title1: 'Cazanieves',
+            card_title2: 'Despierta a los pasajeros',
+            card_title3: 'Memotest de la ciudad',
         },
         oneToFifty: {
             popup_description: 'Se va el autobus y quedan dormidos todos los pasajeros. Despertalos en orden de habitación del 1 al 48 en tiempo record para conseguir descuentos en tu reserva!.',
@@ -374,7 +377,10 @@ export const Texts = {
         },
         games: {
             play: 'Play',
-            description: 'Play, win, have fun!'
+            description: 'Play, win, have fun!',
+            card_title1: 'Snowhunter',
+            card_title2: 'Wakeup all passengers',
+            card_title3: 'Memotest of our city',
         },
         oneToFifty: {
             popup_description: 'The bus leaves and all the passengers fall asleep. Wake them up in room order from 1 to 48 in record time to get discounts on your reservation!.',

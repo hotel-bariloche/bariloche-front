@@ -25,7 +25,7 @@ const GamesSection = () => {
                     <Card style={{ width: '22rem'}}>
                     <Card.Img variant="top" src={state.language === 'spanish' ? snakeEs : snakeEn} />
                         <Card.Body bsPrefix="card-body">
-                            <Card.Title>Card Title</Card.Title>
+                            <Card.Title>{state.texts[state.language].games.card_title1}</Card.Title>
                             <Card.Text>
                             Some quick example text to build on the card title and make up the bulk of
                             the card's content.
@@ -37,7 +37,7 @@ const GamesSection = () => {
                     <Card style={{ width: '22rem' }}>
                     <Card.Img variant="top"  src={state.language === 'spanish' ? despiertapasajerosEs : despiertapasajerosEn} />
                         <Card.Body>
-                            <Card.Title>Card Title</Card.Title>
+                            <Card.Title>{state.texts[state.language].games.card_title2}</Card.Title>
                             <Card.Text>
                             Some quick example text to build on the card title and make up the bulk of
                             the card's content.
@@ -49,7 +49,7 @@ const GamesSection = () => {
                     <Card style={{ width: '22rem' }}>
                     <Card.Img variant="top" src={state.language === 'spanish' ? memoryEs : memoryEn} />
                         <Card.Body>
-                            <Card.Title>Card Title</Card.Title>
+                            <Card.Title>{state.texts[state.language].games.card_title3}</Card.Title>
                             <Card.Text>
                             Some quick example text to build on the card title and make up the bulk of
                             the card's content.
