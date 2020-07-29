@@ -199,7 +199,9 @@ export const Texts = {
             result3: 'Enhorabuena, has hecho más de 5 puntos',
             code3: '20%',
             result4: 'Tu puntuación es menos a 5 puntos',
-            code4: '10%'
+            code4: '10%',
+            button_book: 'Reservar',
+            button_close: 'Entenido',
 
 
 
@@ -410,7 +412,9 @@ export const Texts = {
             result3: 'Congrats, You earn more than 5 points',
             code3: '20%',
             result4: 'Your score is less of 5 points,',
-            code4: '10%'
+            code4: '10%',
+            button_book: 'Book',
+            button_close: 'Close',
         },
 
     },
