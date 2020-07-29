@@ -22,7 +22,7 @@ const GamesSection = () => {
                     </div>
                 </div>
                 <div className="games-cards">
-                    <Card style={{ width: '22rem'}}>
+                    <Card style={{ width: '22rem'}} className="game-card">
                     <Card.Img variant="top" src={state.language === 'spanish' ? snakeEs : snakeEn} />
                         <Card.Body bsPrefix="card-body">
                             <Card.Title>{state.texts[state.language].games.card_title1}</Card.Title>
@@ -34,7 +34,7 @@ const GamesSection = () => {
                         </Card.Body>
                     </Card>
 
-                    <Card style={{ width: '22rem' }}>
+                    <Card style={{ width: '22rem' }} className="game-card">
                     <Card.Img variant="top"  src={state.language === 'spanish' ? despiertapasajerosEs : despiertapasajerosEn} />
                         <Card.Body>
                             <Card.Title>{state.texts[state.language].games.card_title2}</Card.Title>
@@ -46,7 +46,7 @@ const GamesSection = () => {
                         </Card.Body>
                     </Card>
 
-                    <Card style={{ width: '22rem' }}>
+                    <Card style={{ width: '22rem' }} className="game-card">
                     <Card.Img variant="top" src={state.language === 'spanish' ? memoryEs : memoryEn} />
                         <Card.Body>
                             <Card.Title>{state.texts[state.language].games.card_title3}</Card.Title>
