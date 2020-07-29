@@ -74,12 +74,17 @@ const NavHome = () => {
                   <Nav.Item as="li">
                     <NavLink exact activeClassName="active" className="nav-link"  onClick={() => setNavExpanded(false)} to="/">{state.texts[state.language].home.navbar.home}</NavLink>
                   </Nav.Item>
+                  <Nav.Item as="li" className="nav-item" >
+                    <NavLink className="nav-link" onClick={() => setNavExpanded(false)} to="/games">{state.texts[state.language].home.navbar.games}</NavLink>
+                  </Nav.Item>
                   <Nav.Item as="li">
                   <NavLink exact activeClassName="active" className="nav-link" onClick={() => setNavExpanded(false)} to="/rooms">{state.texts[state.language].home.navbar.rooms}</NavLink>
                   </Nav.Item>
+
                   <Nav.Item as="li">
                    <a className="nav-link" onClick={() => setNavExpanded(false)} href="https://reservations.travelclick.com/106660?languageid=2%20#/guestsandrooms">{state.texts[state.language].home.navbar.book}</a>
                   </Nav.Item>
+                 
                   
                   <Nav.Item as="li">
                    <NavLink exact className="nav-link" onClick={() => setNavExpanded(false)} to="/gallery">{state.texts[state.language].home.navbar.gallery}</NavLink>
@@ -91,9 +96,7 @@ const NavHome = () => {
                   <Nav.Item as="li">
                     <NavLink className="nav-link" onClick={() => setNavExpanded(false)} to="/contacto">{state.texts[state.language].home.navbar.contact}</NavLink>
                   </Nav.Item>
-                  <Nav.Item as="li" className="nav-item" >
-                    <NavLink className="nav-link" onClick={() => setNavExpanded(false)} to="/games">{state.texts[state.language].home.navbar.games}</NavLink>
-                  </Nav.Item>
+                  
                 </Nav>
               </Navbar.Collapse>
               <div>
