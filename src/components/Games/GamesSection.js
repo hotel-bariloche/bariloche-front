@@ -22,9 +22,9 @@ const GamesSection = () => {
                     </div>
                 </div>
                 <div className="games-cards">
-                    <Card style={{ width: '22rem' }}>
+                    <Card style={{ width: '22rem'}}>
                     <Card.Img variant="top" src={state.language === 'spanish' ? snakeEs : snakeEn} />
-                        <Card.Body>
+                        <Card.Body bsPrefix="card-body">
                             <Card.Title>Card Title</Card.Title>
                             <Card.Text>
                             Some quick example text to build on the card title and make up the bulk of

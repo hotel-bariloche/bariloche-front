@@ -8,30 +8,19 @@
     position: relative;
 }
 
-.gameSectionContainer .carousel-slide-btn{
-    padding: 10px;
-    margin-bottom: 25px;
-}
 
-.gameSectionContainer .games-title {
-    text-align: center;
-}
-.gameSectionContainer .carousel-caption{
-    position: absolute;
-    right: 0;
-    left: 0;
-    top: auto;
-    bottom: 0;
-}
-
-.gameSectionContainer .carousel-control-next, .gameSectionContainer .carousel-control-prev {
-    z-index: 9999;
-}
 
 .games-cards {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    height: 10%;
+    padding-bottom: 3%;
+
+}
+
+.card-body {
+    height: 240px;
 }
 
 
