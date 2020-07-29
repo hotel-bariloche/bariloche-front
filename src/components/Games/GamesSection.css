@@ -1,3 +1,8 @@
+.gameSectionContainer {
+    padding: 3%;
+}
+
+
 .gameSectionContainer .btn-games {
     background-color: #cca772;
     position: relative;
