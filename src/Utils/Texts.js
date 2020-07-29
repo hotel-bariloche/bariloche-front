@@ -161,7 +161,7 @@ export const Texts = {
         },
         games: {
             play: 'Jugar ahora',
-            description: 'Jugá, divertite, y ganá descuentos increíbles para tu estadía'
+            description: 'Jugá, divertité y ganá'
         },
         oneToFifty: {
             popup_description: 'Se va el autobus y quedan dormidos todos los pasajeros. Despertalos en orden de habitación del 1 al 48 en tiempo record para conseguir descuentos en tu reserva!.',
@@ -372,7 +372,7 @@ export const Texts = {
         },
         games: {
             play: 'Play',
-            description: 'Play, have fun, and win incredible discounts for your statistics'
+            description: 'Play, win, have fun!'
         },
         oneToFifty: {
             popup_description: 'The bus leaves and all the passengers fall asleep. Wake them up in room order from 1 to 48 in record time to get discounts on your reservation!.',
