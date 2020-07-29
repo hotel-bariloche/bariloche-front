@@ -23,13 +23,11 @@ const Popup = (props) => {
           className="popup-container"
         >
           <Modal.Body className="popup-content">
-            <h3 className="popup-title">{props.description}</h3>      
-          </Modal.Body>
-          <Modal.Footer>
+            <h3 className="popup-title">{props.description}</h3>     
             <Button variant="secondary" onClick={handleClose} className="popup-button">
               {state.texts[state.language].memoryGame.close_button}
-            </Button>
-          </Modal.Footer>
+            </Button> 
+          </Modal.Body>
         </Modal>
       </>
     );

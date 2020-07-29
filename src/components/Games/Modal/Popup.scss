@@ -8,16 +8,19 @@
         text-transform: uppercase;
         color: #fff;
         border-radius: 0;
-        background: #e2525c;
-        padding: 95px 100px 80px 109px!important;
+        padding: 95px 100px 80px 109px !important;
     }
 
-    .modal-content {
-        background-color: rgb(255, 255, 255);
+    .popup-content {
+        background-image: url(./modal.png);
+        background-repeat: center no-repeat;
+        background-size: contain;
     }
 
 .popup-button {
     margin: 0 auto;
+    background-color: #e39b14;
+    color:#3b231b;
 }
 
 
