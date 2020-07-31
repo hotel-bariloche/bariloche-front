@@ -1,21 +1,17 @@
-import React, { Component, Fragment } from 'react';
+import React, { Component } from 'react';
 import Snake from './snake';
 import Food from './food';
+import {Link} from 'react-router-dom';
 import './snake.css'
 import SnakeInstructionGames from './SnakeInstructionGames';
 import Popup from '../Modal/Popup';
 import FinalPopup from './finalPopUp';
 import { Context } from '../../../Context/Provider';
-import { faAddressCard } from '@fortawesome/free-solid-svg-icons';
 import confetti from '../../../confetti';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faTimesCircle } from '@fortawesome/free-solid-svg-icons';
 
 
-
-
-const titlePopup = 'Junta la Nieve';
-const descriptionPopup = 'Junta la Nieve y consigue descuentos para tu estancia en el Grand Hotel Bariloche, juntando de 1 a 5 puntos conseguirás un 10% de descuento, de 6 a 10 copos un 20%, de 11 a 15 copos un 25% y con más de 16 un 30%!';
-
-const titleFinal = "Tu puntuación es de  ";
 
 const getRandomCoordinates = () => {
   let min = 1;
@@ -260,6 +256,10 @@ class IndexSnake extends Component {
   render() {
     const context = this.context;
     const language = context.state.language;
+    const closeButton = < FontAwesomeIcon icon = {
+      faTimesCircle
+  }
+  />
     
     return (
       <div id="snakePageContainer">
@@ -271,7 +271,9 @@ class IndexSnake extends Component {
         <h1 style={{ color: 'black', paddingTop: '15px', marginBottom: '15px'}}>
            {context.state.texts[language].snake.title_snake}
           <SnakeInstructionGames instructionText={context.state.texts[language].snake.instruction} />
-
+          <div className="bigCloseButton">
+               <Link to = "/games" ><span style={{color: "#29ABE2", fontSize: "2em"}}>{closeButton}</span></Link> 
+            </div>
           </h1>
 
           <p className="points">{context.state.texts[language].snake.points}{this.state.points}</p>

@@ -6,6 +6,16 @@
    top: 2%;
    
 }
+
+.bigCloseButton {
+    cursor: pointer;
+    font-size: 15px;
+
+    position: absolute;
+    right: 6%;
+    top: 2%;
+
+}
 @media screen and (max-width: 425px) {
     .instructionGames {
         top: 5px;
