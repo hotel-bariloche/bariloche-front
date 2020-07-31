@@ -12,14 +12,28 @@
     font-size: 15px;
 
     position: absolute;
-    right: 6%;
+    right: 6.5%;
     top: 2%;
+
+}
+
+@media screen and (max-width: 900px) {
+    .bigCloseButton {
+
+    right: 10%;
+    }
 
 }
 @media screen and (max-width: 425px) {
     .instructionGames {
         top: 5px;
     }
+
+    .bigCloseButton {
+
+    right: 10%;
+    }
+
 }
 @media screen and (max-width: 350px) {
     .instructionGames {
