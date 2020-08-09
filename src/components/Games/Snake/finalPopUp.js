@@ -2,6 +2,8 @@ import React, { useState, useEffect } from 'react';
 import Modal from 'react-bootstrap/Modal';
 import Button from 'react-bootstrap/Button';
 import { Context } from '../../../Context/Provider';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
 
 import './finalPopup.scss';
 
@@ -22,14 +24,20 @@ const FinalPopup = (props) => {
           keyboard={false}
           centered={true}
           size="xl"
-          className="popup-container"
         >
-          <Modal.Body className="popup-content">
-            <h3 className="popup-title">{props.title}</h3>
-            <h1 className="popup-title">{props.points}</h1>
-            <h4 className="popup-title">{props.description}</h4>      
-            <h2 className="popup-title">{props.code}</h2>
+          <Modal.Body>
+            <Row xs={1}>
+              <Col>
+                <p>{state.texts[state.language].memoryGame.congrats_msg1} {state.texts[state.language].memoryGame.congrats_msg2}{state.texts[state.language].memoryGame.congrats_msg3}<span style={{ fontWeight: "bold", fontSize: "x-large" }}>{props.actualTime}</span></p>
+              </Col>
+            </Row>
+            <Row xs={1}>
+            <Col>
+              <p>{state.texts[state.language].memoryGame.conditions}</p>
+            </Col>
+            </Row>
           </Modal.Body>
+
           <Modal.Footer>
             <Button variant="secondary" onClick={handleClose} className="popup-button">
             {state.texts[state.language].snake.button_close}

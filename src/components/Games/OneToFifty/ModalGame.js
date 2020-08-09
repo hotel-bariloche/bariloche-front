@@ -1,9 +1,12 @@
 import React, { useState } from 'react';
 import { Button, Modal, ModalHeader, ModalBody, ModalFooter } from 'reactstrap';
+import { Context } from '../../../Context/Provider';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
 
 const ModalGame = (props) => {  
 
-
+  const { state } = React.useContext(Context);
   const [modal, setModal] = useState(true);
   const [score, setScore] = useState(0);
 
@@ -32,10 +35,19 @@ const ModalGame = (props) => {
       <Modal isOpen={modal} style={{ marginTop: '20vh' }}>
         <ModalHeader >{ranking()}</ModalHeader>
         <ModalBody>
-          <p>Felicitaciones! Tu tiempo fue &nbsp; &nbsp;  y tu descuento es de {ranking()}. puedes utilizarlo pegando el código de descuento al hacer la reserva online desde nuestro sitio<span style={{ fontWeight: "bold", fontSize: "x-large" }}>{props.actualTime}</span></p>
+          <Row xs={1}>
+            <Col>
+              <p>{state.texts[state.language].memoryGame.congrats_msg1} {ranking()}{state.texts[state.language].memoryGame.congrats_msg2}{state.texts[state.language].memoryGame.congrats_msg3}<span style={{ fontWeight: "bold", fontSize: "x-large" }}>{props.actualTime}</span></p>
+            </Col>
+          </Row>
+          <Row xs={1}>
+          <Col>
+            <p>{state.texts[state.language].memoryGame.conditions}</p>
+          </Col>
+          </Row>
         </ModalBody>
         <ModalFooter>
-            <Button color="primary" onClick={()=> setModal(!modal)}>Cerrar</Button>{' '}
+        <a className="button" target="_blank" href="https://reservations.travelclick.com/106660?languageid=2%20#/guestsandrooms">{state.texts[state.language].home.book}</a>
         </ModalFooter>
       </Modal>
     </div>

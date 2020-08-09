@@ -185,9 +185,10 @@ export const Texts = {
             instruction3: '16 a 20 intentos: 20% de descuento.',
             instruction4: '21 intentos o más: 10% de descuento.',
             close_button: 'Cerrar',
-            congrats_msg1: 'Felicitaciones! Tu puntuacion fue de',
-            congrats_msg2: 'intentos y tu descuento es de',
-            congrats_msg3: ', puedes utilizarlo pegando el código de descuento al hacer la reserva online desde nuestro sitio',
+            congrats_msg1: 'Felicidades! Ganaste un ',
+            congrats_msg2: 'of discount for your next stay with us. Redeem the code ',
+            congrats_msg3: 'in the following link to claim your prize. Thank you for participating and we hope to see you soon!',
+            conditions: 'Terms and Conditions: Thank you for participating in our games. We want to tell you that your discount code is valid until X / X / X. They will not be valid on special dates and high season (the month of July). After you have your code, you must enter it on our website when you are making the reservation. The final price will have the discount incorporated. For more information you can contact us at the following email '
         },
 
         snake: {
@@ -401,7 +402,7 @@ export const Texts = {
             instruction3: 'from 16 to 20 attempts: 20% discount.',
             instruction4: '21 or more: 10% discount.',
             close_button: 'Close',
-            congrats_msg1: 'Congratulations! Your score is',
+            congrats_msg1: 'Congratulations! You won',
             congrats_msg2: 'pts, your discount is',
             congrats_msg3: ', you can use it by pasting the discount code when booking online from our site.'
         },
