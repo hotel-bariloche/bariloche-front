@@ -9,11 +9,25 @@ import './finalPopup.scss';
 
 const FinalPopup = (props) => {
     const [show, setShow] = useState(true);
-  
+    const [score, setScore] = useState(0);
     const handleClose = () => setShow(false);
-
     const { state } = React.useContext(Context);
 
+    let points = (props.points);
+
+    let ranking = () => {
+      if (points >= 1 || points <= 5) {
+        return `10%`
+      } else if (points >= 10) {
+        return `20%`
+      } else if (points >= 15) {
+        return `25%`
+      } else {
+        return `30%`
+      } 
+  
+    }
+  
   
     return (
       <>
@@ -28,7 +42,7 @@ const FinalPopup = (props) => {
           <Modal.Body>
             <Row xs={1}>
               <Col>
-                <p className="modal-snake">{state.texts[state.language].memoryGame.congrats_msg1} {state.texts[state.language].memoryGame.congrats_msg2}{state.texts[state.language].memoryGame.congrats_msg3}<span style={{ fontWeight: "bold", fontSize: "x-large" }}>{props.actualTime}</span></p>
+                <p className="modal-snake">{state.texts[state.language].memoryGame.congrats_msg1}{ranking()} {state.texts[state.language].memoryGame.congrats_msg2}{state.texts[state.language].memoryGame.congrats_msg3}<span style={{ fontWeight: "bold", fontSize: "x-large" }}>{props.actualTime}</span></p>
               </Col>
             </Row>
             <Row xs={1}>

@@ -20,14 +20,16 @@ const ModalGame = (props) => {
 
   let ranking = () => {
     if (timeInSeconds >= 50) {
-      return `10% ${score} `
+      return `10%`
     } else if (timeInSeconds >= 40) {
-      return `20% ${score} `
+      return `20%`
     } else if (timeInSeconds >= 30) {
-      return `30% ${score} `
+      return `30%`
     } else {
-      return `50% ${score} `
+      return `50%`
     } 
+    console.log(ranking());
+    
   }
 
   return (
