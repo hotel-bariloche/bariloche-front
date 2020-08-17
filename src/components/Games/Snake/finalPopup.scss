@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Roboto:100);
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
 
 .popup-title {
         letter-spacing: 0.2em;
@@ -7,14 +7,19 @@
         padding: 30px 30px 25px 30px;
     }
 
-    .modal-content {
-        background-color: #eede96;
-    }
-
 .popup-button {
     margin: 0 auto;
 }
 
+.modal-snake {
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    border-radius: 0;
+    font-size: 22px;
+    background-color: #3b231b;
+    text-transform: uppercase;
+    color: #fff;
+    padding: 40px 10px;
+}
 
 @media (max-width: 600px) {
     .popup-title {

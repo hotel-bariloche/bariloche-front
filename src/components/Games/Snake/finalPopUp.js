@@ -28,7 +28,7 @@ const FinalPopup = (props) => {
           <Modal.Body>
             <Row xs={1}>
               <Col>
-                <p>{state.texts[state.language].memoryGame.congrats_msg1} {state.texts[state.language].memoryGame.congrats_msg2}{state.texts[state.language].memoryGame.congrats_msg3}<span style={{ fontWeight: "bold", fontSize: "x-large" }}>{props.actualTime}</span></p>
+                <p className="modal-snake">{state.texts[state.language].memoryGame.congrats_msg1} {state.texts[state.language].memoryGame.congrats_msg2}{state.texts[state.language].memoryGame.congrats_msg3}<span style={{ fontWeight: "bold", fontSize: "x-large" }}>{props.actualTime}</span></p>
               </Col>
             </Row>
             <Row xs={1}>
