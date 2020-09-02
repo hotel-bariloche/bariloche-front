@@ -206,7 +206,7 @@ export const Texts = {
             code4: '10%',
             button_book: 'Reservar',
             button_close: 'Entenido',
-
+            buttonStart: 'JUGÁ!'
 
 
         }
@@ -422,6 +422,7 @@ export const Texts = {
             code4: '10%',
             button_book: 'Book',
             button_close: 'Close',
+            buttonStart: 'PLAY!'
         },
 
     },
