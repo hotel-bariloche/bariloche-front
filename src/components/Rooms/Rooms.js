@@ -34,7 +34,82 @@ const Rooms = () => {
             </div>
         </section>
         <Booking/>
-
+        <Card>
+                <Row className="room-container" id="standard">
+                        <div className="room-article-container">
+                            <div className="room-title">
+                                <h2>{state.texts[state.language].rooms.room.standard.title}</h2>
+                            </div>
+                            <Card.Body>
+                                <Row pb={3} mt={4}>
+                                        <Col md={6} xl={4} mb={5}>
+                                            <Card className="card card-explore" style={{ marginTop: '40px'}}>
+                                                <div className="card-explore__img">
+                                                    <Card.Img className="card-img" src={standardDoble} alt="1 matrimonial bed or 2 beds"/>
+                                                </div>
+                                                <Card.Body className="card-body">
+                                                    <h3 className="card-explore__title"><a href="#">{state.texts[state.language].rooms.room.doble.standard}</a></h3>
+                                                    <p>{state.texts[state.language].rooms.room.doble.description}</p>
+                                                    <a className="card-explore__link" target="_blank" href="https://reservations.travelclick.com/106660?languageid=2%20#/guestsandrooms">{state.texts[state.language].home.book} <i className="ti-arrow-right"></i></a>
+                                                </Card.Body>
+                                            </Card>
+                                        </Col>
+                                        <Col md={6} xl={4} mb={5}>
+                                            <Card className="card card-explore" style={{ marginTop: '40px'}}>
+                                                <div className="card-explore__img">
+                                                    <Card.Img className="card-img" src={standardTriple} alt="3 beds"/>
+                                                </div>
+                                                <Card.Body className="card-body">
+                                                    <h3 className="card-explore__title"><a href="#">{state.texts[state.language].rooms.room.triple.standard}</a></h3>
+                                                    <p>{state.texts[state.language].rooms.room.triple.description}</p>
+                                                    <a className="card-explore__link" target="_blank" href="https://reservations.travelclick.com/106660?languageid=2%20#/guestsandrooms">{state.texts[state.language].home.book} <i className="ti-arrow-right"></i></a>
+                                                </Card.Body>
+                                            </Card>
+                                        </Col>
+                                        <Col md={6} xl={4} mb={5}>
+                                            <Card className="card card-explore" style={{ marginTop: '40px'}}>
+                                                <div className="card-explore__img">
+                                                    <Card.Img className="card-img" src={standardTriple} alt=""/>
+                                                </div>
+                                                <Card.Body className="card-body">
+                                                    <h3 className="card-explore__title"><a href="#">{state.texts[state.language].rooms.room.cuadruple.standard}</a></h3>
+                                                    <p>{state.texts[state.language].rooms.room.cuadruple.description}</p>
+                                                    <a className="card-explore__link" target="_blank" href="https://reservations.travelclick.com/106660?languageid=2%20#/guestsandrooms">{state.texts[state.language].home.book} <i className="ti-arrow-right"></i></a>
+                                                </Card.Body>
+                                            </Card>
+                                        </Col>
+                                    </Row>
+                            </Card.Body>
+                            <hr/>
+                                <p className="room-description">{state.texts[state.language].rooms.room.standard.description}</p>
+                                <header>{state.texts[state.language].rooms.service}</header>
+                                <div className="services-room">
+                                   <ul className="services-room">
+                                       <li><p><AiOutlineCoffee/>{state.texts[state.language].rooms.services.teaCoffee}</p></li>
+                                       <li><p><FaRegSmile/>{state.texts[state.language].rooms.services.space}</p></li>
+                                       <li><p><AiOutlineStar/>Amenities</p></li>
+                                       <li><p><GiTwirlyFlower/>{state.texts[state.language].rooms.services.decorated}</p></li>
+                                    </ul> 
+                                </div>
+                                <div className="conected-rooms">
+                                    <div className="box-destacada">
+                                        <div className="content-destacado">
+                                            <h5>{state.texts[state.language].rooms.destacada1}<br/><br/></h5> 
+                                        </div>
+                                    </div>
+                                    <GiExitDoor/>
+                                    <div className="box-destacada">
+                                        <div className="content-destacado">
+                                            <h5>{state.texts[state.language].rooms.destacada2}</h5> 
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                        </div>
+                    </Row>
+                    <hr/>
+                   
+            </Card>  
             <Card>
                     <Row className="room-container" id="economy">
                         <div className="room-article-container">
@@ -112,82 +187,7 @@ const Rooms = () => {
                    
             </Card>
             {/*seccion standard rooms*/}
-            <Card>
-                <Row className="room-container" id="standard">
-                        <div className="room-article-container">
-                            <div className="room-title">
-                                <h2>{state.texts[state.language].rooms.room.standard.title}</h2>
-                            </div>
-                            <Card.Body>
-                                <Row pb={3} mt={4}>
-                                        <Col md={6} xl={4} mb={5}>
-                                            <Card className="card card-explore" style={{ marginTop: '40px'}}>
-                                                <div className="card-explore__img">
-                                                    <Card.Img className="card-img" src={standardDoble} alt="1 matrimonial bed or 2 beds"/>
-                                                </div>
-                                                <Card.Body className="card-body">
-                                                    <h3 className="card-explore__title"><a href="#">{state.texts[state.language].rooms.room.doble.standard}</a></h3>
-                                                    <p>{state.texts[state.language].rooms.room.doble.description}</p>
-                                                    <a className="card-explore__link" target="_blank" href="https://reservations.travelclick.com/106660?languageid=2%20#/guestsandrooms">{state.texts[state.language].home.book} <i className="ti-arrow-right"></i></a>
-                                                </Card.Body>
-                                            </Card>
-                                        </Col>
-                                        <Col md={6} xl={4} mb={5}>
-                                            <Card className="card card-explore" style={{ marginTop: '40px'}}>
-                                                <div className="card-explore__img">
-                                                    <Card.Img className="card-img" src={standardTriple} alt="3 beds"/>
-                                                </div>
-                                                <Card.Body className="card-body">
-                                                    <h3 className="card-explore__title"><a href="#">{state.texts[state.language].rooms.room.triple.standard}</a></h3>
-                                                    <p>{state.texts[state.language].rooms.room.triple.description}</p>
-                                                    <a className="card-explore__link" target="_blank" href="https://reservations.travelclick.com/106660?languageid=2%20#/guestsandrooms">{state.texts[state.language].home.book} <i className="ti-arrow-right"></i></a>
-                                                </Card.Body>
-                                            </Card>
-                                        </Col>
-                                        <Col md={6} xl={4} mb={5}>
-                                            <Card className="card card-explore" style={{ marginTop: '40px'}}>
-                                                <div className="card-explore__img">
-                                                    <Card.Img className="card-img" src={standardTriple} alt=""/>
-                                                </div>
-                                                <Card.Body className="card-body">
-                                                    <h3 className="card-explore__title"><a href="#">{state.texts[state.language].rooms.room.cuadruple.standard}</a></h3>
-                                                    <p>{state.texts[state.language].rooms.room.cuadruple.description}</p>
-                                                    <a className="card-explore__link" target="_blank" href="https://reservations.travelclick.com/106660?languageid=2%20#/guestsandrooms">{state.texts[state.language].home.book} <i className="ti-arrow-right"></i></a>
-                                                </Card.Body>
-                                            </Card>
-                                        </Col>
-                                    </Row>
-                            </Card.Body>
-                            <hr/>
-                                <p className="room-description">{state.texts[state.language].rooms.room.standard.description}</p>
-                                <header>{state.texts[state.language].rooms.service}</header>
-                                <div className="services-room">
-                                   <ul className="services-room">
-                                       <li><p><AiOutlineCoffee/>{state.texts[state.language].rooms.services.teaCoffee}</p></li>
-                                       <li><p><FaRegSmile/>{state.texts[state.language].rooms.services.space}</p></li>
-                                       <li><p><AiOutlineStar/>Amenities</p></li>
-                                       <li><p><GiTwirlyFlower/>{state.texts[state.language].rooms.services.decorated}</p></li>
-                                    </ul> 
-                                </div>
-                                <div className="conected-rooms">
-                                    <div className="box-destacada">
-                                        <div className="content-destacado">
-                                            <h5>{state.texts[state.language].rooms.destacada1}<br/><br/></h5> 
-                                        </div>
-                                    </div>
-                                    <GiExitDoor/>
-                                    <div className="box-destacada">
-                                        <div className="content-destacado">
-                                            <h5>{state.texts[state.language].rooms.destacada2}</h5> 
-                                        </div>
-                                    </div>
-                                </div>
-                                
-                        </div>
-                    </Row>
-                    <hr/>
-                   
-            </Card>              
+                        
     </div>
     )
 }
