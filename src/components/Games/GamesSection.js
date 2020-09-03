@@ -27,8 +27,7 @@ const GamesSection = () => {
                         <Card.Body bsPrefix="card-body">
                             <Card.Title>{state.texts[state.language].games.card_title1}</Card.Title>
                             <Card.Text>
-                            Some quick example text to build on the card title and make up the bulk of
-                            the card's content.
+                                {state.texts[state.language].games.cardShortDescription1}
                             </Card.Text>
                             <Link  to="/snake"><Button className="button carousel-slide-btn btn-games" variant="primary">{state.texts[state.language].games.play}</Button></Link>
                         </Card.Body>
@@ -39,8 +38,7 @@ const GamesSection = () => {
                         <Card.Body>
                             <Card.Title>{state.texts[state.language].games.card_title2}</Card.Title>
                             <Card.Text>
-                            Some quick example text to build on the card title and make up the bulk of
-                            the card's content.
+                                {state.texts[state.language].games.cardShortDescription2}
                             </Card.Text>
                             <Link to="/OneToFifty"><Button className="button carousel-slide-btn btn-games" variant="primary">{state.texts[state.language].games.play}</Button></Link>
                         </Card.Body>
@@ -51,8 +49,7 @@ const GamesSection = () => {
                         <Card.Body>
                             <Card.Title>{state.texts[state.language].games.card_title3}</Card.Title>
                             <Card.Text>
-                            Some quick example text to build on the card title and make up the bulk of
-                            the card's content.
+                                {state.texts[state.language].games.cardShortDescription3}
                             </Card.Text>
                             <Link to="/MemoryGame"><Button className="button carousel-slide-btn btn-games" variant="primary">{state.texts[state.language].games.play}</Button></Link>
                         </Card.Body>

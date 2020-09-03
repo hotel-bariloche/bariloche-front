@@ -165,6 +165,9 @@ export const Texts = {
             card_title1: 'Cazanieves',
             card_title2: 'Despierta a los pasajeros',
             card_title3: 'Memotest de la ciudad',
+            cardShortDescription1: 'Descuento y nieve? Si! Atrapa todos los copos de nieve que puedas y consigue armar una barra gigante. Cuantos más copos atrapes, más grande será tu descuento',
+            cardShortDescription2: 'Un juego para trabar, divertirte y ganar! Debes llamar a la puerta de las habitaciones en orden, para despertar a los pasajeros y que no pierdan el avión! Cuanto más rápido.. más descuento ganas!',
+            cardShortDescription3: 'Hora de poner a prueba tu memoria! El Memory Game de Bariloche donde serás recompensado por jugar con las fotos de nuestra hermosa ciudad',
         },
         oneToFifty: {
             popup_description: 'Se va el autobus y quedan dormidos todos los pasajeros. Despertalos en orden de habitación del 1 al 48 en tiempo record para conseguir descuentos en tu reserva!.',
