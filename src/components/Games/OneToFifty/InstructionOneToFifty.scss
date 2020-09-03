@@ -1,7 +1,11 @@
 
-@media screen and (max-width: 350px) {
-    .bigInstructions {
-        display: none
+@media screen and (max-width: 400px) {
+    .bigInstructionsOne {
+        position: absolute;
+        top: 10%;
+        right: 2%;
+        
+        
     }
 }
  .modal-content {

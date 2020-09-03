@@ -2,6 +2,7 @@ import React from 'react';
 import './Header.css';
 import Popup from '../Modal/Popup'
 import InstructionMemory from './InstructionMemory';
+import CloseButtonMemory from './CloseButtonMemory';
 import { Context } from '../../../Context/Provider';
 
 class Header extends React.Component {        
@@ -39,6 +40,8 @@ class Header extends React.Component {
                         {context().state.texts[language()].memoryGame.game_title} 
                 </div>    
                 <InstructionMemory />
+                <CloseButtonMemory />
+
                 <div>
                 {this.props.gameFinished
                     ?
