@@ -180,6 +180,8 @@ export const Texts = {
         memoryGame: {
             game_title: 'Juego de Memoria',
             popup_description: 'Encuentra las parejas de cartas iguales.En cuanto menos intentos lo logres, más puntos acumularás.',
+            popupTitle: 'Instrucciones',
+            popupConditions: '*bases y condociones',
             counter: 'Intentos',
             reset: 'Reiniciar',
             try_again: 'Intentalo Otra Vez',
@@ -397,6 +399,8 @@ export const Texts = {
         memoryGame: {            
             game_title: 'Memory Game',
             popup_description: 'Find all matching cards. The fewer attempts you make, the more points you accumulate.',
+            popupTitle: 'Instructions',
+            popupConditions: '*bases and conditions',
             counter: 'Attempts',
             reset: 'Restart',
             try_again: 'Try Again',
