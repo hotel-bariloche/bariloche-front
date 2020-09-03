@@ -13,11 +13,11 @@ class CloseButtonMemory extends React.Component {
       return (
         <div>
             {/* CLOSE BUTTON */}
-            <div className="bigCloseButton">
-               <Link to = "/games" ><span style={{color: "#00ECFD", fontSize: "2em"}}>{closeButton}</span></Link> 
+            <div className="bigCloseButtonMemory">
+               <Link to = "/games" ><span style={{color: "#29ABE2", fontSize: "2em"}}>{closeButton}</span></Link> 
             </div>
-            <div div className = "iframeCloseButton" >
-               <Link to = "carousel"><span style={{color: "#A2A2A2", fontSize: "1.5em"}}>{closeButton}</span></Link> 
+            <div div className = "iframeCloseButtonMemory" >
+               <Link to = "/games"><span style={{color: "#29ABE2", fontSize: "2em"}}>{closeButton}</span></Link> 
             </div>
         </div>
     )}

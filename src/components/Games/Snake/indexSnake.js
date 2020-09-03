@@ -271,7 +271,7 @@ class IndexSnake extends Component {
         <h1 style={{ color: 'black', paddingTop: '15px', marginBottom: '15px'}}>
            {context.state.texts[language].snake.title_snake}
           <SnakeInstructionGames instructionText={context.state.texts[language].snake.instruction} />
-          <div className="bigCloseButton">
+          <div className="bigCloseButtonSnake">
                <Link to = "/games" ><span style={{color: "#29ABE2", fontSize: "2em"}}>{closeButton}</span></Link> 
             </div>
           </h1>

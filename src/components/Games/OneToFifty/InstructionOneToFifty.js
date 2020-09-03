@@ -33,7 +33,7 @@ export class InstructionOneToFifty extends React.Component {
       return (
         <div>
             {/* INSTRUCTIONS */}
-                <span className="bigInstructions" style={{ color: "#E5423A", fontSize: "2em"}} onClick={this.toggle}>{instructions}</span>
+                <span className="bigInstructionsOne" style={{ color: "#E5423A", fontSize: "2em"}} onClick={this.toggle}>{instructions}</span>
                 <Modal isOpen={this.state.modal} toggle={this.toggle} style={{ marginTop:"10%"}}>
                     <ModalBody>
                     <div><p>

@@ -27,7 +27,7 @@ export class SnakeInstructionGames extends React.Component {
        />
 
       return (
-        < div className = "instructionGames" >
+        < div className = "instructionGamesSnake" >
             {/* INSTRUCTIONS */}
                 <span style={{ color: "#29ABE2", fontSize: "2em" }} onClick={this.toggle}>{instructions}</span>
                 <Modal isOpen={this.state.modal} toggle={this.toggle} style={{ marginTop:"10%"}}>
