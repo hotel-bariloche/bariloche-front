@@ -2,23 +2,27 @@
 
 .bigCloseButtonMemory{
     cursor: pointer;
-    position: absolute;
+    position: fixed;
     right: 8%;
-    top: 58.5%;
+    top: 32.3%;
     @media (max-width: 800px) {
         top: 28%;
         right: 9%;
     }
 }
 
-@media (min-width: 400px) {
+@media (min-width: 800px) {
     .iframeCloseButtonMemory {
         display: none;
     }
 }
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 800px) {
     .iframeCloseButtonMemory {
         position: absolute;
-        top: 9%;
+        top: 7%;
+    }
+
+    .bigCloseButtonMemory {
+        display: none;
     }
 }
