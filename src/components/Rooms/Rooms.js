@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import { Row, Col } from 'reactstrap';
 import Card from 'react-bootstrap/Card'
 import economyDoble from '../img/hotel/economy-doble.jpg';
@@ -12,12 +12,23 @@ import { AiOutlineCoffee, AiOutlineStar } from "react-icons/ai";
 import './Rooms.css';
 import { Context } from '../../Context/Provider';
 import Booking from '../Booking/Booking';
-
+import { ModalCarousel } from '../Modal'
+import { standardDobleList, standardTripleList, standardCuadrupleList, economyDobleList, economyTripleList, economyCuadrupleList } from './data'
 
 const Rooms = () => {
     const { state } = React.useContext(Context);
+    const [show, setShow] = useState(false);    
+    const [list, setList] = useState([]);
+    const handleClose = () => setShow(false);
+
+    const handleShowModal = (newList) => {      
+        setList(newList);  
+        setShow(true);
+    }
+
     return(
     <div> 
+        <ModalCarousel list={list} show={show} handleClose={handleClose}/>
         <section className="rooms-banner-area">
             <div className="container h-100">
                 <div className="blog-banner">
@@ -45,10 +56,10 @@ const Rooms = () => {
                                         <Col md={6} xl={4} mb={5}>
                                             <Card className="card card-explore" style={{ marginTop: '40px'}}>
                                                 <div className="card-explore__img">
-                                                    <Card.Img className="card-img" src={standardDoble} alt="1 matrimonial bed or 2 beds"/>
+                                                    <Card.Img className="card-img" src={standardDoble} alt="1 matrimonial bed or 2 beds" onClick={() => handleShowModal(standardDobleList)} />
                                                 </div>
                                                 <Card.Body className="card-body">
-                                                    <h3 className="card-explore__title"><a href="#">{state.texts[state.language].rooms.room.doble.standard}</a></h3>
+                                                    <h3 className="card-explore__title">{state.texts[state.language].rooms.room.doble.standard}</h3>
                                                     <p>{state.texts[state.language].rooms.room.doble.description}</p>
                                                     <a className="card-explore__link" target="_blank" href="https://reservations.travelclick.com/106660?languageid=2%20#/guestsandrooms">{state.texts[state.language].home.book} <i className="ti-arrow-right"></i></a>
                                                 </Card.Body>
@@ -57,10 +68,10 @@ const Rooms = () => {
                                         <Col md={6} xl={4} mb={5}>
                                             <Card className="card card-explore" style={{ marginTop: '40px'}}>
                                                 <div className="card-explore__img">
-                                                    <Card.Img className="card-img" src={standardTriple} alt="3 beds"/>
+                                                    <Card.Img className="card-img" src={standardTriple} alt="3 beds" onClick={() => handleShowModal(standardTripleList)}/>
                                                 </div>
                                                 <Card.Body className="card-body">
-                                                    <h3 className="card-explore__title"><a href="#">{state.texts[state.language].rooms.room.triple.standard}</a></h3>
+                                                    <h3 className="card-explore__title">{state.texts[state.language].rooms.room.triple.standard}</h3>
                                                     <p>{state.texts[state.language].rooms.room.triple.description}</p>
                                                     <a className="card-explore__link" target="_blank" href="https://reservations.travelclick.com/106660?languageid=2%20#/guestsandrooms">{state.texts[state.language].home.book} <i className="ti-arrow-right"></i></a>
                                                 </Card.Body>
@@ -69,10 +80,10 @@ const Rooms = () => {
                                         <Col md={6} xl={4} mb={5}>
                                             <Card className="card card-explore" style={{ marginTop: '40px'}}>
                                                 <div className="card-explore__img">
-                                                    <Card.Img className="card-img" src={standardTriple} alt=""/>
+                                                    <Card.Img className="card-img" src={standardTriple} alt="" onClick={() => handleShowModal(standardCuadrupleList)}/>
                                                 </div>
                                                 <Card.Body className="card-body">
-                                                    <h3 className="card-explore__title"><a href="#">{state.texts[state.language].rooms.room.cuadruple.standard}</a></h3>
+                                                    <h3 className="card-explore__title">{state.texts[state.language].rooms.room.cuadruple.standard}</h3>
                                                     <p>{state.texts[state.language].rooms.room.cuadruple.description}</p>
                                                     <a className="card-explore__link" target="_blank" href="https://reservations.travelclick.com/106660?languageid=2%20#/guestsandrooms">{state.texts[state.language].home.book} <i className="ti-arrow-right"></i></a>
                                                 </Card.Body>
@@ -121,10 +132,10 @@ const Rooms = () => {
                                     <Col md={6} xl={4} mb={5}>
                                         <Card className="card card-explore" style={{ marginTop: '40px'}}>
                                             <div className="card-explore__img">
-                                                <Card.Img className="card-img" src={economyDoble} alt="2 beds or 1 matrimonial bed"/>
+                                                <Card.Img className="card-img" src={economyDoble} alt="2 beds or 1 matrimonial bed"  onClick={() => handleShowModal(economyDobleList)}/>
                                             </div>
                                             <Card.Body className="card-body">
-                                                <h3 className="card-explore__title"><a href="#">{state.texts[state.language].rooms.room.doble.economy}</a></h3>
+                                                <h3 className="card-explore__title">{state.texts[state.language].rooms.room.doble.economy}</h3>
                                                 <p>{state.texts[state.language].rooms.room.doble.description}</p>
                                                 <a className="card-explore__link" target="_blank" href="https://reservations.travelclick.com/106660?languageid=2%20#/guestsandrooms">{state.texts[state.language].home.book} <i className="ti-arrow-right"></i></a>
                                             </Card.Body>
@@ -133,10 +144,10 @@ const Rooms = () => {
                                     <Col md={6} xl={4} mb={5}>
                                         <Card className="card card-explore" style={{ marginTop: '40px'}}>
                                             <div className="card-explore__img">
-                                                <Card.Img className="card-img" src={economyTriple} alt="3 beds"/>
+                                                <Card.Img className="card-img" src={economyTriple} alt="3 beds" onClick={() => handleShowModal(economyTripleList)}/>
                                             </div>
                                             <Card.Body className="card-body">
-                                                <h3 className="card-explore__title"><a href="#">{state.texts[state.language].rooms.room.triple.economy}</a></h3>
+                                                <h3 className="card-explore__title">{state.texts[state.language].rooms.room.triple.economy}</h3>
                                                 <p>{state.texts[state.language].rooms.room.triple.description}</p>
                                                 <a className="card-explore__link" target="_blank" href="https://reservations.travelclick.com/106660?languageid=2%20#/guestsandrooms">{state.texts[state.language].home.book} <i className="ti-arrow-right"></i></a>
                                             </Card.Body>
@@ -145,10 +156,10 @@ const Rooms = () => {
                                     <Col md={6} xl={4} mb={5}>
                                         <Card className="card card-explore" style={{ marginTop: '40px'}}>
                                             <div className="card-explore__img">
-                                                <Card.Img className="card-img" src={economyCuadruple} alt="4 beds"/>
+                                                <Card.Img className="card-img" src={economyCuadruple} alt="4 beds" onClick={() => handleShowModal(economyCuadrupleList)}/>
                                             </div>
                                             <Card.Body className="card-body">
-                                                <h3 className="card-explore__title"><a href="#">{state.texts[state.language].rooms.room.cuadruple.economy}</a></h3>
+                                                <h3 className="card-explore__title">{state.texts[state.language].rooms.room.cuadruple.economy}</h3>
                                                 <p>{state.texts[state.language].rooms.room.cuadruple.description}</p>
                                                 <a className="card-explore__link" target="_blank" href="https://reservations.travelclick.com/106660?languageid=2%20#/guestsandrooms">{state.texts[state.language].home.book} <i class="ti-arrow-right"></i></a>
                                             </Card.Body>

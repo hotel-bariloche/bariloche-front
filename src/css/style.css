@@ -1142,6 +1142,7 @@ button {
 /*=================== Room Section ===============*/
 .card-img {
   height: 100%;
+  cursor: pointer;
 }
 
 @media (max-width: 600px) {
