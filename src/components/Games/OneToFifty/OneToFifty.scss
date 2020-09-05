@@ -5,8 +5,27 @@
     background-image: url(../OneToFifty/despiertapasajerosfondo.png);
     background-repeat: no-repeat;
     background-size: 100%;
+    position: relative;
     
 
+    & .header-buttons{
+        position: absolute;
+          display: flex;
+          top: 0;
+          right: 10px;
+          
+        > div{
+            margin: 5px; 
+        }
+      }
+      
+
+    > img{
+        margin: 40px 0;
+        max-width: 400px;
+        width: 100%;
+        height: auto;
+    }
     & .rowIcons{
         display: flex;
         justify-content: flex-end;

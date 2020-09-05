@@ -1,23 +1,5 @@
-
-.instructions{
-    right: 32px;
-    margin: 20px auto;
-    position: absolute;
-}
-.smallInstructions{
-    position: fixed;
-    top: 10px;
-    right: 7px;
-    display: block;
-    z-index: 2;
-    display: flex
-}
-
 .bigInstructions{  
     cursor: pointer;
-    position: absolute;
-    right: 7%;
-    top: 2%;
 }
 
 .bodyModalMemory{
@@ -53,45 +35,4 @@
 .memoryDespription{
     text-align: left;
     margin-bottom: 0px!important;
-}
-
-@media screen and (max-width: 500px) {
-    .instructions {
-        right: 0;
-        margin: auto;
-    } 
-
-    .memoryModalTitle{
-        font-size: 2rem!important;
-    }
- }
-
-@media screen and (min-width: 350px) {
-   .smallInstructions {
-       display: none
-   }
-
-}
-
-@media screen and (max-width: 350px) {
-   .bigInstructions {
-       display: none
-   }
-
-   .modal-content{
-       margin-top: -27px!important;
-
-       & p {
-           margin-bottom: 0px!important;
-       }
-   }
-
-   .modal-footer{
-       padding: 0.5px!important;
-   }
-   
-   .modal-body{
-       font-size: small!important;
-       padding: 9px!important;
-   }
 }

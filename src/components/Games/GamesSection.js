@@ -3,12 +3,12 @@ import {Link} from 'react-router-dom';
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 import { Context } from '../../Context/Provider';
-import snakeEs from '../img/cardSnake-es.png';
-import snakeEn from '../img/cardSnake-en.png';
-import despiertapasajerosEs from '../img/cardDespiertapasajeros-es.png';
-import despiertapasajerosEn from '../img/cardDespiertapasajeros-en.png';
-import memoryEs from '../img/cardMemoryGame-es.png';
-import memoryEn from '../img/cardMemoryGame-en.png';
+import snakeEs from '../img/games/cardSnake-es.png';
+import snakeEn from '../img/games/cardSnake-en.png';
+import despiertapasajerosEs from '../img/games/cardDespiertapasajeros-es.png';
+import despiertapasajerosEn from '../img/games/cardDespiertapasajeros-en.png';
+import memoryEs from '../img/games/cardMemoryGame-es.png';
+import memoryEn from '../img/games/cardMemoryGame-en.png';
 import './GamesSection.css';
 
 const GamesSection = () => {

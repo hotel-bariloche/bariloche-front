@@ -1,40 +1,4 @@
 .instructionGamesSnake {
    cursor: pointer;
    font-size: 15px;
-   position: absolute;
-   right: 3%;
-   top: 2%;
-   
-}
-
-.bigCloseButtonSnake {
-    cursor: pointer;
-    font-size: 15px;
-    position: absolute;
-    top: 1%;
-
-}
-
-@media screen and (max-width: 900px) {
-    .bigCloseButtonSnake {
-    top: 2%;
-    right: 10%;
-    }
-
-}
-@media screen and (max-width: 425px) {
-    .instructionGamesSnake {
-        
-    }
-
-    .bigCloseButtonSnake {
-
-        right: 90%;
-    }
-
-}
-@media screen and (max-width: 350px) {
-    .instructionGames {
-        display: none;
-    }
 }

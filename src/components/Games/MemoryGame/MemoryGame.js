@@ -7,7 +7,6 @@ import confetti from '../../../confetti';
 import Popup from '../Modal/Popup';
 import { Context } from '../../../Context/Provider';
 
-
 //import useWindowDimensions from './windowHandler'
 
 // TESTING TO AVOID DOING ALL THE GAME UNTIL HAVING FINISHED :

@@ -1,9 +1,11 @@
 import React from 'react';
-import './Header.css';
+import './Header.scss';
 import Popup from '../Modal/Popup'
 import InstructionMemory from './InstructionMemory';
 import CloseButtonMemory from './CloseButtonMemory';
 import { Context } from '../../../Context/Provider';
+import memoryTestTitleEs from "../../img/games/memoryTestTitle-es_10.png";
+import memoryTestTitleEn from "../../img/games/memoryTestTitle-es_10.png";
 
 class Header extends React.Component {        
     static contextType = Context
@@ -35,13 +37,14 @@ class Header extends React.Component {
         const descriptionText = `${context().state.texts[language()].memoryGame.congrats_msg1} ${this.props.tryes} ${context().state.texts[language()].memoryGame.congrats_msg2} ${ranking()} ${context().state.texts[language()].memoryGame.congrats_msg3}`;
         
         return(
+            <React.Fragment>
             <header className="memory-header">
-                <div className="title">                  
-                        {context().state.texts[language()].memoryGame.game_title} 
-                </div>    
-                <InstructionMemory />
-                <CloseButtonMemory />
-
+                <img src={language === 'spanish' ? memoryTestTitleEs : memoryTestTitleEn} />    
+                <div className="memory-header-buttons">
+                    <InstructionMemory />
+                    <CloseButtonMemory />              
+                </div>            
+            </header>
                 <div>
                 {this.props.gameFinished
                     ?
@@ -63,7 +66,7 @@ class Header extends React.Component {
                     </div>
                 }
                 </div>
-            </header>
+                </React.Fragment>
         )
     }
 }
