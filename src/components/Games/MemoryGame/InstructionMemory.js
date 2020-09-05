@@ -6,6 +6,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faQuestionCircle } from '@fortawesome/free-solid-svg-icons';
 import './InstructionMemory.scss';
 import { Context } from '../../../Context/Provider';
+import ToolTipConditions from '../ToolTipConditions';
 
 export class InstructionMemory extends React.Component {      
     static contextType = Context
@@ -62,9 +63,9 @@ export class InstructionMemory extends React.Component {
                         </ul>
                     </ModalBody>
                     <ModalFooter>
-                        <div><p>
-                            {context().state.texts[language()].memoryGame.popupConditions}
-                        </p></div>
+                        <div>
+                            <ToolTipConditions/>
+                        </div>
                         {/* <Button color="secondary" onClick={this.toggle}>{context().state.texts[language()].memoryGame.close_button}</Button> */}
                     </ModalFooter>
                  </div>
