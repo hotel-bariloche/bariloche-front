@@ -1,12 +1,5 @@
-
-@media screen and (max-width: 400px) {
-    .bigInstructionsOne {
-        position: absolute;
-        top: 10%;
-        right: 2%;
-        
-        
-    }
+.bigInstructionsOne{
+    cursor: pointer;
 }
  .modal-content {
      margin: 0 auto;

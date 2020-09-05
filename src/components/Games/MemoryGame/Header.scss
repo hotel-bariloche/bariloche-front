@@ -1,8 +1,23 @@
 .memory-header {
+    position: relative;
+    > img{
+        margin-bottom: 40px;
+        margin-top: 40px;
+        max-width: 400px;
+        width: 100%;
+        height: auto;
+    }
+}
+
+.memory-header-buttons{
+    position: absolute;
+    top: 0;
+    right: 10px;
     display: flex;
-    flex-direction: column;
-    align-content: center;
-    margin: auto 5%;
+
+    > div{
+        margin: 5px; 
+    }
 }
 
 .title .bigInstructions{
@@ -102,6 +117,7 @@
 }
 .gameButtons{
     position: absolute;
+    margin-left: 6%;
 }
 
 @media (max-width: 1150px) {
@@ -109,6 +125,7 @@
         display: flex;
         position: relative;
         margin-bottom: 32px;    
+        margin-left: 0;
     }
     .memoryResult,
     .reinit-button {

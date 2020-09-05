@@ -6,6 +6,8 @@ import Chrono from './Chrono';
 import confetti from '../../../confetti';
 import Popup from '../Modal/Popup';
 import { Context } from '../../../Context/Provider';
+import despertarPasajerosTitleEs from "../../img/games/despertarPasajerosTitle-es_10.png";
+import despertarPasajerosTitleEn from "../../img/games/despertarPasajerosTitle-en_10.png";
 
 export default function OneToFifty() {
     // ---POPUP---
@@ -73,8 +75,9 @@ export default function OneToFifty() {
 
     return (
         <div className="OneToFifty container-fluid">
-            <Popup title={titlePopup} description={state.texts[state.language].oneToFifty.popup_description} />
-            <div className="row rowIcons">
+            <Popup title={titlePopup} description={state.texts[state.language].oneToFifty.popup_description} />               
+            <img src={state.language === 'spanish' ? despertarPasajerosTitleEs : despertarPasajerosTitleEn} /> 
+            <div className="header-buttons">                
                 <div><InstructionOneToFifty /></div>
                 <div><CloseButtonOneToFifty /></div>
             </div>

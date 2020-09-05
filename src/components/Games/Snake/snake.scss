@@ -8,6 +8,13 @@
   position: relative;
   z-index: 1;
   height: 100vh;
+  > img{
+      margin-bottom: -40px;
+      margin-top: 40px;
+      max-width: 400px;
+      width: 100%;
+      height: auto;
+  }
 }
 
 .backgroundBigLeft {
@@ -15,6 +22,17 @@
   top:5px;
   left: 0;
   height: 50vh;
+}
+
+.header-buttons{
+  position: absolute;
+    display: flex;
+    top: 0;
+    right: 10px;
+    
+  > div{
+      margin: 5px; 
+  }
 }
 
 /* .backgroundBigRight {
