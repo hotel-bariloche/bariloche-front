@@ -23,14 +23,14 @@ const FinalPopup = (props) => {
     let points = (props.points);
 
     let ranking = () => {
-      if (points >= 1 || points <= 5) {
-        return `10%`
-      } else if (points >= 10) {
-        return `20%`
-      } else if (points >= 15) {
-        return `25%`
-      } else {
+      if (points >= 16) {
         return `30%`
+      } else if (points >= 10) {
+        return `25%`
+      } else if (points >= 5) {
+        return `20%`
+      } else {
+        return `10%`
       } 
   
     }
@@ -59,7 +59,7 @@ const FinalPopup = (props) => {
             </Row>
             <Row xs={1}>
             <Col className="discountText">
-              <p>{state.texts[state.language].memoryGame.congrats_msg2} <span>{ranking()} {state.texts[state.language].memoryGame.congrats_msg3}</span> {state.texts[state.language].memoryGame.congrats_msg4}<span style={{ fontWeight: "bold", fontSize: "x-large" }}>{props.actualTime}</span></p>
+              <p>{state.texts[state.language].memoryGame.congrats_msg2} <span> {ranking()} {state.texts[state.language].memoryGame.congrats_msg3}</span> {state.texts[state.language].memoryGame.congrats_msg4}<span style={{ fontWeight: "bold", fontSize: "x-large" }}></span></p>
               <p>{state.texts[state.language].memoryGame.congrats_msg5}</p>
             </Col>
             </Row>
