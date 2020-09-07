@@ -1,28 +1,70 @@
 @import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
 
+.bigInstructionsPopUp {
+    cursor: pointer;
+    float: right;
+    margin-right: 15px;
+    color: black;
+    transform: rotate(165deg);
+}
+
+.modalBody {
+    outline: 4px solid black;
+    outline-offset: -15px;
+}
+
 .popup-title {
-        letter-spacing: 0.2em;
         font-family: "Roboto", sans-serif;
-        font-weight: 400;
+        font-weight: 600;
         padding: 30px 30px 25px 30px;
     }
 
-.popup-button {
+.popupButton {
     margin: 0 auto;
-}
-
-.modal-snake {
-    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    margin-bottom: 40px;  
+    background-color: #FD005C;
+    color: black;
     border-radius: 0;
-    font-size: 22px;
-    background-color: #3b231b;
-    text-transform: uppercase;
-    color: #fff;
-    padding: 40px 10px;
+    outline: 4px solid black;
+    outline-offset: 5px;
+    
 }
 
+.popupButton:hover {
+    background-color: white;
+    color: black;
+}
+
+.modalPopUpTitle {
+    margin-top: 0;
+    color: black;
+    padding: 0.5rem;
+    padding-left: 50px;
+    font-weight: 500!important;
+    font-size: 3rem!important;
+    font-family: "Roboto", sans-serif!important;
+}
+
+
+.discountText {
+    text-align: left;
+    padding: 2rem;
+    padding-top: 5rem;
+    color: black;
+    margin-top: -50px;
+    font-size: 20px;
+    line-height: 20px;
+}
+
+.termsAndConditions {
+    cursor: pointer;
+    float: right;
+    margin-right: 25px;
+}
 @media (max-width: 600px) {
-    .popup-title {
-        font-size: 5vw;
+    .modalPopUpTitle {
+        font-size: 1vw;
+        padding: 0;
+        margin-top: 30px;
     }
   }
