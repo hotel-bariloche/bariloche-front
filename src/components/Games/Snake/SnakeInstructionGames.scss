@@ -2,3 +2,35 @@
    cursor: pointer;
    font-size: 15px;
 }
+.bodyModalSnake{
+   margin: 1rem;
+   border: solid 2px black;
+}
+
+.modal-footer{
+border-top:none!important;
+}
+
+.modal-header {
+border-bottom: none!important;
+flex-direction: column-reverse;
+justify-content: none!important;
+align-items: center;
+}
+.snakeModalTitle{
+   background:#29ABE2;
+   padding: 1rem;
+   font-weight: 500!important;
+   font-size: 3rem!important;
+   font-family: "Roboto", sans-serif!important;
+}
+.snakeListDiscount{
+   text-align: left;
+   padding: 1rem;
+   list-style-type: disc;
+}
+
+.snakeDespription{
+   text-align: left;
+   margin-bottom: 0px!important;
+}
