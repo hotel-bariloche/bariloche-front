@@ -114,20 +114,8 @@ export default function OneToFifty() {
                         }
                     </div>
                 </div>
-                <button className="restartButton" onClick={() => startGame()}>RESTART</button>
-                <div>
-                    {/* JUST TO IFRAME */}
-                    <div className="iframeOneToFifty">
-                        <div className="row timeAndActualNumberIframe alignCenter">
-                            <div className="col-6 justifyCenter">
-                                <p className="chronoText ">{timeStart === false ? '00:00:00' : <Chrono currentNumber={currentNumber} />}</p>
-                            </div>
-                            <div className="col-6 justifyCenter">
-                                <button className="restartButtonIframe" onClick={() => startGame()}>RESTART</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                    <button className="restartButton" onClick={() => startGame()}>{state.texts[state.language].oneToFifty.start.toUpperCase()}</button>
+             
             </div>
         </div >
     )

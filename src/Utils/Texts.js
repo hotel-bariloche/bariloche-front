@@ -177,7 +177,8 @@ export const Texts = {
             instruction1: 'De 0 a 30 segundos: 50% de descuento.',
             instruction2: 'De 30 a 40 segundos: 30% de descuento.',
             instruction3: 'De 40 a 50 segundos: 20% de descuento.',
-            instruction4: 'En 50 segundos o más: 10% de descuento'
+            instruction4: 'En 50 segundos o más: 10% de descuento',
+            start: 'Comenzar',
         },
         memoryGame: {
             game_title: 'Juego de Memoria',
@@ -406,7 +407,8 @@ export const Texts = {
             instruction1: 'From 0 to 30 seconds: 50% of discount.',
             instruction2: 'From 30 to 40 seconds: 30% of discount.',
             instruction3: 'From 40 to 50 seconds: 20% of discount.',
-            instruction4: 'In 50 seconds or more: 10% of discount'
+            instruction4: 'In 50 seconds or more: 10% of discount',
+            start: 'Start',
         },
         memoryGame: {            
             game_title: 'Memory Game',
