@@ -5,7 +5,7 @@ import InstructionMemory from './InstructionMemory';
 import CloseButtonMemory from './CloseButtonMemory';
 import { Context } from '../../../Context/Provider';
 import memoryTestTitleEs from "../../img/games/memoryTestTitle-es_10.png";
-import memoryTestTitleEn from "../../img/games/memoryTestTitle-es_10.png";
+import memoryTestTitleEn from "../../img/games/memoryTestTitle-en_10.png";
 
 class Header extends React.Component {        
     static contextType = Context
@@ -39,7 +39,7 @@ class Header extends React.Component {
         return(
             <React.Fragment>
             <header className="memory-header">
-                <img src={language === 'spanish' ? memoryTestTitleEs : memoryTestTitleEn} />    
+                <img src={language() === 'spanish' ? memoryTestTitleEs : memoryTestTitleEn} />    
                 <div className="memory-header-buttons">
                     <InstructionMemory />
                     <CloseButtonMemory />              
