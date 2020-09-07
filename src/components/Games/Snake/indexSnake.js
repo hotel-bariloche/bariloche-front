@@ -244,8 +244,11 @@ class IndexSnake extends Component {
     return (
       <div id="snakePageContainer">
         <Popup
-          title={context.state.texts[language].snake.title_snake}
-          description={context.state.texts[language].snake.instruction}
+          description={context.state.texts[language].snake.popup_description}
+          instruction1={context.state.texts[language].snake.instruction1}
+          instruction2={context.state.texts[language].snake.instruction2}
+          instruction3={context.state.texts[language].snake.instruction3}
+          instruction4={context.state.texts[language].snake.instruction4}
         />
         <img src={language === 'spanish' ? cazanievesTitleEs : cazanievesTitleEn} />
         <div className="header-buttons">

@@ -38,7 +38,13 @@ class MemoryGame extends React.Component {
     
     return(
       <div className="memory-body">
-        <Popup description={context.state.texts[language].memoryGame.popup_description} />
+        <Popup 
+          description={context.state.texts[language].memoryGame.popup_description} 
+          instruction1={context.state.texts[language].memoryGame.instruction1}
+          instruction2={context.state.texts[language].memoryGame.instruction2}
+          instruction3={context.state.texts[language].memoryGame.instruction3}
+          instruction4={context.state.texts[language].memoryGame.instruction4}
+        />
         <Header
         tryes={this.state.tryes}
         gameFinished={this.state.winner}

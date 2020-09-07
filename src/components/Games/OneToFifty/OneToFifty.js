@@ -75,7 +75,13 @@ export default function OneToFifty() {
 
     return (
         <div className="OneToFifty container-fluid">
-            <Popup title={titlePopup} description={state.texts[state.language].oneToFifty.popup_description} />               
+            <Popup
+                description={state.texts[state.language].oneToFifty.popup_description} 
+                instruction1={state.texts[state.language].oneToFifty.instruction1}
+                instruction2={state.texts[state.language].oneToFifty.instruction2}
+                instruction3={state.texts[state.language].oneToFifty.instruction3}
+                instruction4={state.texts[state.language].oneToFifty.instruction4}
+            />               
             <img src={state.language === 'spanish' ? despertarPasajerosTitleEs : despertarPasajerosTitleEn} /> 
             <div className="header-buttons">                
                 <div><InstructionOneToFifty /></div>

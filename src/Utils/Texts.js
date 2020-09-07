@@ -199,7 +199,11 @@ export const Texts = {
 
         snake: {
             title_snake: 'Cazanieves',
-            instruction: 'Junta la Nieve y consigue descuentos para tu estancia en el Grand Hotel Bariloche, juntando de 1 a 5 puntos conseguirás un 10% de descuento, de 6 a 10 copos un 20%, de 11 a 15 copos un 25% y con más de 16 un 30%!',
+            popup_description: 'Junta la Nieve y consigue descuentos para tu estancia en el Grand Hotel Bariloche, juntando de ',
+            instruction1: '1 a 5 puntos conseguirás un 10% de descuento.',
+            instruction2: '6 a 10 copos un 20% de descuento.',
+            instruction3: '11 a 15 copos un 25% de descuento.',
+            instruction4: '16 copos o más: 30% de descuento.',
             title_final: 'Tu puntuación es de ...',
             points: 'Puntos: ',
             result1: 'Enhorabuena! has hecho más de 16 puntos',
@@ -421,7 +425,11 @@ export const Texts = {
 
         snake: {
             title_snake: 'Snow Hunter',
-            instruction: 'Gather the Snow and get discounts for your stay at the Grand Hotel Bariloche, by collecting from 1 to 5 points you will get a 10% discount, from 6 to 10 flakes 20%, from 11 to 15 flakes 25% and with more than 16 30%!',
+            popup_description: 'Gather the Snow and get discounts for your stay at the Grand Hotel Bariloche, by collecting from 1 to 5 points you will get a 10% discount, from 6 to 10 flakes 20%, from 11 to 15 flakes 25% and with more than 16 30%!',       
+            instruction1: '1 to 5 points will get a 10% discount.',
+            instruction2: '6 to 10 flakes 20% off.',
+            instruction3: '11 to 15 flakes 25% off. ',
+            instruction4: '16 flakes or more - 30% off. ',
             title_final: 'Your Score is...',
             points: 'Points: ',
             result1: 'Congrats! You earn more than 16 points',
