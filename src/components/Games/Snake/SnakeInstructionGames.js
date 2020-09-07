@@ -31,17 +31,17 @@ export class SnakeInstructionGames extends React.Component {
        let context = () => {            
         const context = this.context;
         return context;
-    }
+        }
 
-    let language = () => {            
+        let language = () => {            
         const language = context().state.language;
         return language;
-    } 
+        } 
       return (
         < div className = "instructionGamesSnake" >
             {/* INSTRUCTIONS */}
-                <span style={{ color: "#29ABE2", fontSize: "2em" }} onClick={this.toggle}>{instructions}</span>
-                            <Modal isOpen={this.state.modal} toggle={this.toggle} style={{ marginTop:"10%"}}>
+            <span style={{ color: "#29ABE2", fontSize: "2em" }} onClick={this.toggle}>{instructions}</span>
+            <Modal isOpen={this.state.modal} toggle={this.toggle} style={{ marginTop:"10%"}}>
                 <div className='bodyModalSnake'>
                     <ModalHeader toggle={this.toggle}>
                         <div className="snakeModalTitle">
