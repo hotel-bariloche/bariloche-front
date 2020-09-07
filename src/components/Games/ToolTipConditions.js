@@ -11,7 +11,7 @@ const ToolTipConditions = (props) => {
 
   return (
     <div>
-      <p><span style={{textDecoration: "underline", color:"black"}} href="#" id="DisabledAutoHideExample">
+      <p><span style={{textDecoration: "none", color:"black"}} href="#" id="DisabledAutoHideExample">
         {state.texts[state.language].games.popupConditions}
       </span></p>
       <Tooltip style={{fontFamily: "Roboto, sans-serif" }}

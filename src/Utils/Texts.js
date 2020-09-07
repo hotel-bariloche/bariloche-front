@@ -168,7 +168,7 @@ export const Texts = {
             cardShortDescription1: 'Descuento y nieve? Si! Atrapa todos los copos de nieve que puedas y consigue armar una barra gigante. Cuantos más copos atrapes, más grande será tu descuento',
             cardShortDescription2: 'Un juego para trabar, divertirte y ganar! Debes llamar a la puerta de las habitaciones en orden, para despertar a los pasajeros y que no pierdan el avión! Cuanto más rápido.. más descuento ganas!',
             cardShortDescription3: 'Hora de poner a prueba tu memoria! El Memory Game de Bariloche donde serás recompensado por jugar con las fotos de nuestra hermosa ciudad',
-            popupConditions: '*bases y condiciones',
+            popupConditions: 'Bases y condiciones',
             popupConditionsText: 'Valido para los meses de Enero a Abril y de Agosto a Diciembre',
         },
         oneToFifty: {
@@ -191,9 +191,11 @@ export const Texts = {
             instruction3: '16 a 20 intentos: 20% de descuento.',
             instruction4: '21 intentos o más: 10% de descuento.',
             close_button: 'Cerrar',
-            congrats_msg1: 'Felicidades! Ganaste un ',
-            congrats_msg2: 'of discount for your next stay with us. Redeem the code ',
-            congrats_msg3: 'in the following link to claim your prize. Thank you for participating and we hope to see you soon!',
+            congrats_msg1: 'Felicitaciones!',
+            congrats_msg2: 'Has ganado un ',
+            congrats_msg3: 'de descuento!',
+            congrats_msg4: 'para utilizar',
+            congrats_msg5: 'Como más te guste en nuestro hotel...',
             conditions: 'Terms and Conditions: Thank you for participating in our games. We want to tell you that your discount code is valid until X / X / X. They will not be valid on special dates and high season (the month of July). After you have your code, you must enter it on our website when you are making the reservation. The final price will have the discount incorporated. For more information you can contact us at the following email '
         },
 
@@ -214,7 +216,7 @@ export const Texts = {
             code3: '20%',
             result4: 'Tu puntuación es menos a 5 puntos',
             code4: '10%',
-            button_book: 'Reservar',
+            button_book: 'Reservar con descuento',
             button_close: 'Entenido',
             buttonStart: 'JUGÁ!'
 
@@ -395,7 +397,7 @@ export const Texts = {
             cardShortDescription1: 'Discount and snow? Yes! Catch all the snowflakes you can and manage to build a giant bar. The more flakes you catch, the bigger your discount ',
             cardShortDescription2: 'A game to lock, have fun and win! You must knock on the door of the rooms in order, to wake up the passengers and not miss the plane! The faster .. more discount you win! ',
             cardShortDescription3: 'Time to test your memory! The Memory Game of Bariloche where you will be rewarded for playing with the photos of our beautiful city ',
-            popupConditions: '*bases and conditions',
+            popupConditions: 'Bases and conditions',
             popupConditionsText: 'Valid for the months of January to April and from August to December',
         },
         oneToFifty: {
@@ -418,9 +420,12 @@ export const Texts = {
             instruction3: 'from 16 to 20 attempts: 20% discount.',
             instruction4: '21 or more: 10% discount.',
             close_button: 'Close',
-            congrats_msg1: 'Congratulations! You won',
-            congrats_msg2: 'pts, your discount is',
-            congrats_msg3: ', you can use it by pasting the discount code when booking online from our site.'
+            congrats_msg1: 'Congratulations!',
+            congrats_msg2: 'You won a ',
+            congrats_msg3: 'of discount!',
+            congrats_msg4: 'to use it ',
+            congrats_msg5: 'How you prefer in our hotel...',
+
         },
 
         snake: {
@@ -440,7 +445,7 @@ export const Texts = {
             code3: '20%',
             result4: 'Your score is less of 5 points,',
             code4: '10%',
-            button_book: 'Book',
+            button_book: 'Book with discount',
             button_close: 'Close',
             buttonStart: 'PLAY!'
         },
