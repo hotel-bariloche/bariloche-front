@@ -240,10 +240,11 @@ class IndexSnake extends Component {
     const context = this.context;
     const language = context.state.language;
     const closeButton = <FontAwesomeIcon icon={faTimesCircle} />;
-
+    
     return (
       <div id="snakePageContainer">
         <Popup
+          className="generalModalTitle generalModalTitle-blue"
           description={context.state.texts[language].snake.popup_description}
           instruction1={context.state.texts[language].snake.instruction1}
           instruction2={context.state.texts[language].snake.instruction2}

@@ -76,6 +76,7 @@ export default function OneToFifty() {
     return (
         <div className="OneToFifty container-fluid">
             <Popup
+                className="generalModalTitle generalModalTitle-red"
                 description={state.texts[state.language].oneToFifty.popup_description} 
                 instruction1={state.texts[state.language].oneToFifty.instruction1}
                 instruction2={state.texts[state.language].oneToFifty.instruction2}

@@ -39,6 +39,7 @@ class MemoryGame extends React.Component {
     return(
       <div className="memory-body">
         <Popup 
+          className="generalModalTitle generalModalTitle-orange"
           description={context.state.texts[language].memoryGame.popup_description} 
           instruction1={context.state.texts[language].memoryGame.instruction1}
           instruction2={context.state.texts[language].memoryGame.instruction2}
