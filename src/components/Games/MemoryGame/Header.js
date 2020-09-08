@@ -1,6 +1,7 @@
 import React from 'react';
 import './Header.scss';
 import Popup from '../Modal/Popup'
+import MemoryFinalPopup from './MemoryFinalPopUp'
 import InstructionMemory from './InstructionMemory';
 import CloseButtonMemory from './CloseButtonMemory';
 import { Context } from '../../../Context/Provider';
@@ -36,6 +37,8 @@ class Header extends React.Component {
 
         const descriptionText = `${context().state.texts[language()].memoryGame.congrats_msg1} ${this.props.tryes} ${context().state.texts[language()].memoryGame.congrats_msg2} ${ranking()} ${context().state.texts[language()].memoryGame.congrats_msg3}`;
         
+
+
         return(
             <React.Fragment>
             <header className="memory-header">
@@ -55,7 +58,7 @@ class Header extends React.Component {
                           {context().state.texts[language()].memoryGame.try_again} 
                         </button>
                         <button className="winner-reinit-button-iframe" onClick={this.props.resetGame}>{`${ Math.round(10 / this.props.tryes * 10) }/ 6 pts`} <br/> {context().state.texts[language()].memoryGame.reset} </button>
-                        <Popup description={descriptionText} />
+                        <MemoryFinalPopup description={descriptionText} tryes={this.props.tryes} />
                         </div>
 
                     :  <div className="gameButtons">
