@@ -21,6 +21,7 @@ const FinalPopup = (props) => {
 
   
     let points = (props.points);
+    let code = (props.code)
 
     let ranking = () => {
       if (points >= 16) {
@@ -34,6 +35,8 @@ const FinalPopup = (props) => {
       } 
   
     }
+  
+    
 
     const close = <FontAwesomeIcon icon = {
       faTimes
@@ -61,6 +64,8 @@ const FinalPopup = (props) => {
             <Col className="discountText">
               <p>{state.texts[state.language].memoryGame.congrats_msg2} <span> {ranking()} {state.texts[state.language].memoryGame.congrats_msg3}</span> {state.texts[state.language].memoryGame.congrats_msg4}<span style={{ fontWeight: "bold", fontSize: "x-large" }}></span></p>
               <p>{state.texts[state.language].memoryGame.congrats_msg5}</p>
+              <p>{code}</p>
+
             </Col>
             </Row>
           </Modal.Body>

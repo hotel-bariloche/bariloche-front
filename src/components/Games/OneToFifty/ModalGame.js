@@ -1,14 +1,21 @@
-import React, { useState } from 'react';
-import { Button, Modal, ModalHeader, ModalBody, ModalFooter } from 'reactstrap';
+import React, { useState, useEffect } from 'react';
+import Modal from 'react-bootstrap/Modal';
+import Button from 'react-bootstrap/Button';
 import { Context } from '../../../Context/Provider';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faTimes } from '@fortawesome/free-solid-svg-icons';
+import ToolTipConditions from '../ToolTipConditions';
 
 const ModalGame = (props) => {  
 
   const { state } = React.useContext(Context);
-  const [modal, setModal] = useState(true);
   const [score, setScore] = useState(0);
+  const handleClose = () => setShow(false);
+  const [show, setShow] = useState(true);
+
+
 
   let time = (props.actualTime);
   let timeSplit = time.split(':');
@@ -16,7 +23,11 @@ const ModalGame = (props) => {
   let segundos = (timeSplit[1])
   let timeInSeconds = (Number(minutos) * 60) + Number(segundos);
 
-  const toggle = () => setModal(!modal);
+
+  const close = <FontAwesomeIcon icon = {
+    faTimes
+  }
+  />
 
   let ranking = () => {
     if (timeInSeconds >= 50) {
@@ -33,26 +44,44 @@ const ModalGame = (props) => {
   }
 
   return (
-    <div>
-      <Modal isOpen={modal} style={{ marginTop: '20vh' }}>
-        <ModalHeader >{ranking()}</ModalHeader>
-        <ModalBody>
-          <Row xs={1}>
-            <Col>
-              <p>{state.texts[state.language].memoryGame.congrats_msg1} {ranking()}{state.texts[state.language].memoryGame.congrats_msg2}{state.texts[state.language].memoryGame.congrats_msg3}<span style={{ fontWeight: "bold", fontSize: "x-large" }}>{props.actualTime}</span></p>
-            </Col>
-          </Row>
-          <Row xs={1}>
+    <>
+    <Modal
+      show={show}
+      onHide={handleClose}
+      backdrop="static"
+      keyboard={false}
+    >
+      <div className="modalBody">
+      
+      <Modal.Body >
+            <span className="bigInstructionsPopUp" style={{ fontSize: "2em"}} onClick={handleClose}>{close}</span>
+        <Row xs={1}>
           <Col>
-            <p>{state.texts[state.language].memoryGame.conditions}</p>
+            <p className="modalPopUpTitle">{state.texts[state.language].memoryGame.congrats_msg1}</p>
           </Col>
-          </Row>
-        </ModalBody>
-        <ModalFooter>
-        <a className="button" target="_blank" href="https://reservations.travelclick.com/106660?languageid=2%20#/guestsandrooms">{state.texts[state.language].home.book}</a>
-        </ModalFooter>
-      </Modal>
-    </div>
+        </Row>
+        <Row xs={1}>
+        <Col className="discountText">
+          <p>{state.texts[state.language].memoryGame.congrats_msg2} <span> {ranking()} {state.texts[state.language].memoryGame.congrats_msg3}</span> {state.texts[state.language].memoryGame.congrats_msg4}<span style={{ fontWeight: "bold", fontSize: "x-large" }}></span></p>
+          <p>{state.texts[state.language].memoryGame.congrats_msg5}</p>
+
+        </Col>
+        </Row>
+      </Modal.Body>
+
+      <Modal.Footer>
+        <Button variant="secondary" href="https://reservations.travelclick.com/106660?languageid=2%20#/guestsandrooms" className="popupButton">
+         {state.texts[state.language].home.book}
+        </Button>
+
+      </Modal.Footer>
+        <div className="termsAndConditions">
+           <ToolTipConditions/>
+        </div>
+      </div>
+    </Modal>
+    
+  </>
   );
 }
 
