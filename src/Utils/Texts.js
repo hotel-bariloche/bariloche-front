@@ -172,7 +172,7 @@ export const Texts = {
             popupConditionsText: 'Valido para los meses de Enero a Abril y de Agosto a Diciembre',
         },
         oneToFifty: {
-            popup_description: 'Se va el autobus y quedan dormidos todos los pasajeros. Despertalos en orden de habitación del 1 al 48 en tiempo record para conseguir descuentos en tu reserva!.',
+            popup_description: 'Golpeá las puertas de las habitaciones en orden del 1 al 24. Cuánto más rápido lo hagas más grande será el descuento.',
             next_number: 'Siguiente numero',
             instruction1: 'De 0 a 30 segundos: 50% de descuento.',
             instruction2: 'De 30 a 40 segundos: 30% de descuento.',
@@ -182,7 +182,7 @@ export const Texts = {
         },
         memoryGame: {
             game_title: 'Juego de Memoria',
-            popup_description: 'Encuentra las parejas de cartas iguales.En cuanto menos intentos lo logres, más puntos acumularás.',
+            popup_description: 'Encuentra la pareja de cartas iguales. Cuánto más rápido lo encuentres más grande será el descuento.',
             popupTitle: 'Instrucciones',
             counter: 'Intentos',
             reset: 'Reiniciar',
@@ -202,7 +202,7 @@ export const Texts = {
 
         snake: {
             title_snake: 'Cazanieves',
-            popup_description: 'Junta la Nieve y consigue descuentos para tu estancia en el Grand Hotel Bariloche, juntando de ',
+            popup_description: 'Atrapa todos los copos de nieve que puedas y consigue armar una barra gigante. Cuantos más copos atrapes, más grande será tu descuento',
             instruction1: '1 a 5 puntos conseguirás un 10% de descuento.',
             instruction2: '6 a 10 copos un 20% de descuento.',
             instruction3: '11 a 15 copos un 25% de descuento.',
@@ -402,7 +402,7 @@ export const Texts = {
             popupConditionsText: 'Valid for the months of January to April and from August to December',
         },
         oneToFifty: {
-            popup_description: 'The bus leaves and all the passengers fall asleep. Wake them up in room order from 1 to 48 in record time to get discounts on your reservation!.',
+            popup_description: 'Knock on the doors of the rooms in order from 1 to 24. The faster you do it, the bigger discounts you get .',
             next_number: 'Next number',
             instruction1: 'From 0 to 30 seconds: 50% of discount.',
             instruction2: 'From 30 to 40 seconds: 30% of discount.',
@@ -412,7 +412,7 @@ export const Texts = {
         },
         memoryGame: {            
             game_title: 'Memory Game',
-            popup_description: 'Find all matching cards. The fewer attempts you make, the more points you accumulate.',
+            popup_description: 'Find the pairs of matching cards. The faster you find them, the bigger discounts you get.',
             popupTitle: 'Instructions',
             counter: 'Attempts',
             reset: 'Restart',
@@ -432,7 +432,7 @@ export const Texts = {
 
         snake: {
             title_snake: 'Snow Hunter',
-            popup_description: 'Gather the Snow and get discounts for your stay at the Grand Hotel Bariloche, by collecting from 1 to 5 points you will get a 10% discount, from 6 to 10 flakes 20%, from 11 to 15 flakes 25% and with more than 16 30%!',       
+            popup_description: 'Catch all the snowflakes you can and manage to build a giant snow bar. The more flakes you catch, bigger discounts you get.',       
             instruction1: '1 to 5 points will get a 10% discount.',
             instruction2: '6 to 10 flakes 20% off.',
             instruction3: '11 to 15 flakes 25% off. ',
