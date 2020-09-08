@@ -38,9 +38,19 @@ const ModalGame = (props) => {
       return `30%`
     } else {
       return `50%`
+    }     
+  }
+
+  let code = () => {
+    if (timeInSeconds >= 50) {
+      return `code 10%`
+    } else if (timeInSeconds >= 40) {
+      return `code 20%`
+    } else if (timeInSeconds >= 30) {
+      return `code 30%`
+    } else {
+      return `code 50%`
     } 
-    console.log(ranking());
-    
   }
 
   return (
@@ -64,6 +74,7 @@ const ModalGame = (props) => {
         <Col className="discountText">
           <p>{state.texts[state.language].memoryGame.congrats_msg2} <span> {ranking()} {state.texts[state.language].memoryGame.congrats_msg3}</span> {state.texts[state.language].memoryGame.congrats_msg4}<span style={{ fontWeight: "bold", fontSize: "x-large" }}></span></p>
           <p>{state.texts[state.language].memoryGame.congrats_msg5}</p>
+          <p>{code()}</p>
 
         </Col>
         </Row>

@@ -36,6 +36,20 @@ const MemoryFinalPopup = (props) => {
         }
     }
 
+    const code = () => {
+        if (tryes >= 21) {
+            return 'code 10%'
+        } else if (tryes >= 16 && tryes <= 20) {
+            return 'code 20%'
+        } else if (tryes >= 11 && tryes <= 15) {
+            return 'code 30%'
+        } else if (tryes == 10) {
+            return 'code 50%'
+        } else {
+            return '0%'
+        }
+    }
+
   
    
     
@@ -66,6 +80,7 @@ const MemoryFinalPopup = (props) => {
             <Col className="discountText">
               <p>{state.texts[state.language].memoryGame.congrats_msg2} <span> {ranking()} {state.texts[state.language].memoryGame.congrats_msg3}</span> {state.texts[state.language].memoryGame.congrats_msg4}<span style={{ fontWeight: "bold", fontSize: "x-large" }}></span></p>
               <p>{state.texts[state.language].memoryGame.congrats_msg5}</p>
+              <p>{code()}</p>
 
             </Col>
             </Row>
