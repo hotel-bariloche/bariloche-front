@@ -22,13 +22,36 @@
 .popupButton {
     margin: 0 auto;
     margin-bottom: 40px;  
-    background-color: #FD005C;
+    background-color: #29ABE2;
     color: black;
     border-radius: 0;
     outline: 4px solid black;
     outline-offset: 5px;
     
 }
+
+.popupButtonMemory {
+    margin: 0 auto;
+    margin-bottom: 40px;  
+    background-color: #29ABE2;
+    color: black;
+    border-radius: 0;
+    outline: 4px solid black;
+    outline-offset: 5px;
+    
+}
+
+.popupButton50 {
+    margin: 0 auto;
+    margin-bottom: 40px;  
+    background-color: #E5423A;
+    color: black;
+    border-radius: 0;
+    outline: 4px solid black;
+    outline-offset: 5px;
+    
+}
+
 
 .popupButton:hover {
     background-color: white;
