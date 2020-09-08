@@ -29,7 +29,7 @@ const Blog = () => {
                     <nav aria-label="breadcrumb" className="banner-breadcrumb">
                         <ol className="breadcrumb">
                         <li className="breadcrumb-item"><a href="#">Home</a></li>
-                        <li className="breadcrumb-item active" aria-current="page">Blog</li>
+                        <li className="breadcrumb-item active" aria-current="page">{state.texts[state.language].location.banner}</li>
                     </ol>
                     </nav>
                     </div>

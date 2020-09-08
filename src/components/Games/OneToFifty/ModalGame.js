@@ -71,7 +71,7 @@ const ModalGame = (props) => {
 
       <Modal.Footer>
         <Button variant="secondary" href="https://reservations.travelclick.com/106660?languageid=2%20#/guestsandrooms" className="popupButton">
-         {state.texts[state.language].home.book}
+         {state.texts[state.language].snake.button_book}
         </Button>
 
       </Modal.Footer>
