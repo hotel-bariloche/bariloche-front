@@ -276,8 +276,39 @@ class IndexSnake extends Component {
             <Snake snakeDots={this.state.snakeDots} />
             <Food dot={this.state.food} />
           </div>
-
-       
+          <div className="SnakeDirectionsMobilePad">
+            <button
+              className="padButton"
+              value="UP"
+              onClick={this.checkButtonsDirections}
+            >
+              U
+            </button>
+            <div id="sidesArrowsRow">
+              <button
+                className="padButton"
+                value="LEFT"
+                onClick={this.checkButtonsDirections}
+              >
+                L
+              </button>
+              <button
+                className="padButton"
+                value="RIGHT"
+                onClick={this.checkButtonsDirections}
+              >
+                R
+              </button>
+            </div>
+            <button
+              id="downButton"
+              className="padButton"
+              value="DOWN"
+              onClick={this.checkButtonsDirections}
+            >
+              D
+            </button>
+          </div>       
         </div>
       </div>
     );
