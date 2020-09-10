@@ -29,8 +29,6 @@ const MemoryFinalPopup = (props) => {
             return '20%'
         } else if (tryes >= 11 && tryes <= 15) {
             return '30%'
-        } else if (tryes == 10) {
-            return '50%'
         } else {
             return '0%'
         }
@@ -38,14 +36,12 @@ const MemoryFinalPopup = (props) => {
 
     const code = () => {
         if (tryes >= 21) {
-            return 'code 10%'
+            return 'GANOCONGBH1'            
         } else if (tryes >= 16 && tryes <= 20) {
-            return 'code 20%'
+            return 'GANOCONCGH2'
         } else if (tryes >= 11 && tryes <= 15) {
-            return 'code 30%'
-        } else if (tryes == 10) {
-            return 'code 50%'
-        } else {
+            return 'GANOCONGBH3'
+        }  else {
             return '0%'
         }
     }

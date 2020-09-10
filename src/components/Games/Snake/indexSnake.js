@@ -180,35 +180,23 @@ class IndexSnake extends Component {
     const context = this.context;
     const language = context.state.language;
 
-    let result1 = this.context.state.texts[language].snake.result1;
-    let code1 = this.context.state.texts[language].snake.code1;
-    let result2 = this.context.state.texts[language].snake.result2;
-    let code2 = this.context.state.texts[language].snake.code2;
-    let result3 = this.context.state.texts[language].snake.result3;
-    let code3 = this.context.state.texts[language].snake.code3;
-    let result4 = this.context.state.texts[language].snake.result4;
-    let code4 = this.context.state.texts[language].snake.code4;
 
     if (this.state.points >= 16) {
       this.setState({
-        description: result1,
-        code: code1,
+        code: 'GANOCONGBH3',
       });
     } else if (this.state.points >= 10) {
       this.setState({
-        description: result2,
-        code: code2,
+        code: 'GANOCONCGH2',
       });
     } else if (this.state.points >= 5) {
       this.setState({
-        description: result3,
-        code: code3,
+        code: 'GANOCONGBH1',
       });
     } else {
       console.log("Hola");
       this.setState({
-        description: result4,
-        code: code4,
+        code: 'GANOCONGBH1',
       });
     }
   }
