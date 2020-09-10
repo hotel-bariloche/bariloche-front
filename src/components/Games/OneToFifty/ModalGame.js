@@ -44,14 +44,14 @@ const ModalGame = (props) => {
   }
 
   let code = () => {
-    if (timeInSeconds >= 50) {
-      return `code 10%`
-    } else if (timeInSeconds >= 40) {
-      return `code 20%`
-    } else if (timeInSeconds >= 30) {
-      return `code 30%`
+    if (timeInSeconds <= 30) {
+      return `GANOCONGBH3`
+    } else if (timeInSeconds <= 40) {
+      return `GANOCONCGH2`
+    } else if (timeInSeconds <= 50) {
+      return `GANOCONGBH1`
     } else {
-      return `code 50%`
+      return `GANOCONGBH1`
     } 
   }
 
