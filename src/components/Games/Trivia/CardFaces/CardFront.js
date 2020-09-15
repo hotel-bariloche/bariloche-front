@@ -1,9 +1,11 @@
 import React from 'react';
-import CardBack from './CardBack'
+import CardBack from './CardBack';
+import { Context } from '../../../../Context/Provider'
 
 const CardFront =()=>{
   const [flip, setFlip] = React.useState(false);
   const [count, setCount] = React.useState(0);
+  const { state } = React.useContext(Context);
 
  const Flipped=()=>{
   setFlip(!flip)
@@ -15,7 +17,7 @@ const CardFront =()=>{
       {flip===false && count===0 &&
         <div className= "back-card"
           onClick={Flipped}>
-            <p>200</p>
+            <p>{state.triviaQuestions[state.language].questions.category}</p>
             </div>
       }
           {flip===true && count === 1 &&

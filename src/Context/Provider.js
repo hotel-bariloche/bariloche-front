@@ -1,12 +1,13 @@
 import React, { useState } from 'react';
 import { Texts } from '../Utils/Texts';
-
+import { TriviaQuestions } from '../Utils/TriviaQuestions';
 
 export const Context = React.createContext();
 
 const AppContext = (props) => {
     const [state, changeState] = useState({
       texts: Texts,
+      triviaQuestions: TriviaQuestions,
       language: 'spanish', // default language
     });
   return (

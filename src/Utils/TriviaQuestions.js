@@ -1,4 +1,5 @@
-var data = [
+export const TriviaQuestions={
+spanish: [
     {
       "category": "React 101",
       "questions": [
@@ -99,4 +100,5 @@ var data = [
         }
       ]
     }
-  ];
+  ]
+};
