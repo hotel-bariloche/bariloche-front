@@ -15,6 +15,7 @@ import Page from './components/Page/Page'
 import IndexSnake from './components/Games/Snake/indexSnake';
 import OneToFifty from './components/Games/OneToFifty/OneToFifty';
 import MemoryGame from './components/Games/MemoryGame/MemoryGame';
+import Trivia from './components/Games/Trivia/Trivia';
 
 class App extends React.Component {
   render() {
@@ -49,6 +50,9 @@ class App extends React.Component {
             </Page>
             <Page path='/MemoryGame'>
               <MemoryGame />
+            </Page>
+            <Page path='/Trivia'>
+              <Trivia />
             </Page>
           </Switch>
         <Footer/>

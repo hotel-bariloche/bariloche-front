@@ -54,6 +54,16 @@ const GamesSection = () => {
                             <Link to="/MemoryGame"><Button className="button carousel-slide-btn btn-games" variant="primary">{state.texts[state.language].games.play}</Button></Link>
                         </Card.Body>
                     </Card>
+                    <Card style={{ width: '22rem' }} className="game-card">
+                    <Card.Img variant="top" src={state.language === 'spanish' ? memoryEs : memoryEn} />
+                        <Card.Body>
+                            <Card.Title>Trivia</Card.Title>
+                            <Card.Text>
+                                {state.texts[state.language].games.cardShortDescription3}
+                            </Card.Text>
+                            <Link to="/Trivia"><Button className="button carousel-slide-btn btn-games" variant="primary">{state.texts[state.language].games.play}</Button></Link>
+                        </Card.Body>
+                    </Card>
                 </div>
         </div>
     
