@@ -12,26 +12,30 @@ const CardFront =()=>{
   setCount(count+1)
   }
 
+  let cards = [...state.triviaQuestions[state.language].questions.dificulty1]
+  let answer = [...state.triviaQuestions[state.language].questions.dificulty1]
+  
     return(
       <div>
-      {flip===false && count===0 &&
-        <div className= "back-card"
-          onClick={Flipped}>
-            <p>{state.triviaQuestions[state.language].questions.category}</p>
-            </div>
-      }
-          {flip===true && count === 1 &&
-          <div className='card-open'
-          onClick={Flipped}>  
-          pregunta</div>
-          }
-          {count >=2 &&
-          <div className='logo-card'
-          onClick={Flipped}>  
+        {cards.map(( card, i) => (
+          
+             <div className= "back-card">
+              <p>{card.question}</p>
+             <div>
+              {answer.map(( answer, i) => (
+                <button value={answer.incorrect} key={i}>
+                  {answer.incorrect}
+                </button>
+                )
+              )}
+              </div>
+           
+              </div>
+          ) 
+        )}
+     
           </div>
-          }
-        </div>
-
     )
+    
   }
 export default CardFront
