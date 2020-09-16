@@ -1,6 +1,6 @@
 .back-card{
-    width: 20rem;
-    height: 20rem;
+    width: 25%;
+    height: 15rem;
     border: solid 2px black;
     align-items: center;
     margin: 0 auto;
@@ -13,13 +13,19 @@
     margin: 0 auto;
 }
 
-.logo-card {
-        width: 20rem;
-        height: 20rem;
-        border: solid 2px blue;
-        align-items: center;
-        margin: 0 auto;
+.logo-back {   
         background-color: rgb(204, 167, 114);
         background-image: url("../../img/Logo.png");
         padding: 30px; 
+}
+
+
+.trivial-grid {
+    padding: 50px;
+}
+
+.card-row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
