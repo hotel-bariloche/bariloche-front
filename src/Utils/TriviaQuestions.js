@@ -4,7 +4,7 @@ export const TriviaQuestions={
       dificulty1: [
         {
           "level": "primer nivel de dificultad",
-          "points": 100,
+          "points": 200,
           "question": "<p>W1hat part of your application does React focus on?</p><ol><li>The Model</li><li>The View</li><li>The Controller</li><li>All of the above</li></ol>",
             incorrect: [
               '1no es la buena',
@@ -16,7 +16,7 @@ export const TriviaQuestions={
         },
         {
           "level": "primer nivel de dificultad",
-          "points": 100,
+          "points": 200,
           "question": "<p>2What part of your application does React focus on?</p><ol><li>The Model</li><li>The View</li><li>The Controller</li><li>All of the above</li></ol>",
             incorrect: [
               '2no es la buena',
@@ -29,7 +29,7 @@ export const TriviaQuestions={
         
         {
           "level": "primer nivel de dificultad",
-          "points": 100,
+          "points": 200,
           "question": "<p>3What part of your application does React focus on?</p><ol><li>The Model</li><li>The View</li><li>The Controller</li><li>All of the above</li></ol>",
             incorrect: [
               '3no es la buena',
@@ -41,7 +41,7 @@ export const TriviaQuestions={
         },
         {
           "level": "primer nivel de dificultad",
-          "points": 100,
+          "points": 200,
           "question": "<p>4What part of your application does React focus on?</p><ol><li>The Model</li><li>The View</li><li>The Controller</li><li>All of the above</li></ol>",
             incorrect: [
               '4no es la buena',
@@ -52,7 +52,7 @@ export const TriviaQuestions={
         },
         {
           "level": "primer nivel de dificultad",
-          "points": 100,
+          "points": 200,
           "question": "<p>W1hat part of your application does React focus on?</p><ol><li>The Model</li><li>The View</li><li>The Controller</li><li>All of the above</li></ol>",
             incorrect: [
               '1no es la buena',
@@ -64,7 +64,7 @@ export const TriviaQuestions={
         },
         {
           "level": "primer nivel de dificultad",
-          "points": 100,
+          "points": 300,
           "question": "<p>W1hat part of your application does React focus on?</p><ol><li>The Model</li><li>The View</li><li>The Controller</li><li>All of the above</li></ol>",
             incorrect: [
               '1no es la buena',
@@ -76,7 +76,7 @@ export const TriviaQuestions={
         },
         {
           "level": "primer nivel de dificultad",
-          "points": 100,
+          "points": 300,
           "question": "<p>W1hat part of your application does React focus on?</p><ol><li>The Model</li><li>The View</li><li>The Controller</li><li>All of the above</li></ol>",
             incorrect: [
               '1no es la buena',
@@ -88,7 +88,7 @@ export const TriviaQuestions={
         },
         {
           "level": "primer nivel de dificultad",
-          "points": 100,
+          "points": 300,
           "question": "<p>W1hat part of your application does React focus on?</p><ol><li>The Model</li><li>The View</li><li>The Controller</li><li>All of the above</li></ol>",
             incorrect: [
               '1no es la buena',
@@ -100,7 +100,7 @@ export const TriviaQuestions={
         },
         {
           "level": "primer nivel de dificultad",
-          "points": 100,
+          "points": 300,
           "question": "<p>W1hat part of your application does React focus on?</p><ol><li>The Model</li><li>The View</li><li>The Controller</li><li>All of the above</li></ol>",
             incorrect: [
               '1no es la buena',
@@ -112,7 +112,7 @@ export const TriviaQuestions={
         },
         {
           "level": "primer nivel de dificultad",
-          "points": 100,
+          "points": 300,
           "question": "<p>W1hat part of your application does React focus on?</p><ol><li>The Model</li><li>The View</li><li>The Controller</li><li>All of the above</li></ol>",
             incorrect: [
               '1no es la buena',
@@ -124,7 +124,7 @@ export const TriviaQuestions={
         },
         {
           "level": "primer nivel de dificultad",
-          "points": 100,
+          "points": 300,
           "question": "<p>W1hat part of your application does React focus on?</p><ol><li>The Model</li><li>The View</li><li>The Controller</li><li>All of the above</li></ol>",
             incorrect: [
               '1no es la buena',

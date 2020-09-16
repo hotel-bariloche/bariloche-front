@@ -2,9 +2,10 @@ import React from 'react';
 import AnswersButtons from './AnwersButtons'
 
 const CardQuestion =(props)=>{
+  console.log(props)
     return(
       <div>
-          <p>{props.question}</p>
+          <p>{props.question}{props.points}</p>
                 <AnswersButtons
                 correct={props.correct} 
                 incorrect={props.incorrect}
