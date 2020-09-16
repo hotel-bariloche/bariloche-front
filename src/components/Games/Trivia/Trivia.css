@@ -22,13 +22,12 @@
 
 .trivial-grid {
     padding: 50px;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 
-.card-row {
-    display: flex;
-}
 
-.grid-trivia {
+.card-trivia {
     display:flex;
     flex-direction: row;
     flex-wrap: wrap;
