@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Button, Modal, ModalHeader, ModalBody, ModalFooter } from 'reactstrap';
-import CardFront from '../CardFaces/CardFront';
+import CardQuestion from '../CardFaces/CardQuestion';
 
 const CardModal = (props) => {
     
@@ -19,7 +19,7 @@ const CardModal = (props) => {
       <Modal isOpen={modal} toggle={handleClose} style={{ marginTop:"10%"}}>
         <span style={{ fontSize: "2em"}} onClick={handleClose}>X</span>
         <ModalBody>
-            <CardFront/>
+            <CardQuestion/>
         </ModalBody>
         
         </Modal>

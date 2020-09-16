@@ -1,6 +1,6 @@
 import React from 'react';
 import './Trivia.css';
-import CardFront from './CardFaces/CardFront';
+import CardQuestion from './CardFaces/CardQuestion';
 import CardInitial from './Card/CardTrivia';
 import Row from 'react-bootstrap/Row';
 import Container from 'react-bootstrap/Row';

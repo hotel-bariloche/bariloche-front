@@ -26,6 +26,10 @@
 
 .card-row {
     display: flex;
+}
+
+.grid-trivia {
+    display:flex;
     flex-direction: row;
     flex-wrap: wrap;
 }

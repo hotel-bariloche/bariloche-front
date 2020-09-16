@@ -6,7 +6,7 @@ export const TriviaQuestions={
           "level": "primer nivel de dificultad",
           "points": 100,
           "question": "<p>What part of your application does React focus on?</p><ol><li>The Model</li><li>The View</li><li>The Controller</li><li>All of the above</li></ol>",
-            "incorrect": [
+            incorrect: [
               'no es la buena',
               'tampoco es la buena',
               'menos aún'
@@ -18,42 +18,38 @@ export const TriviaQuestions={
           "level": "primer nivel de dificultad",
           "points": 100,
           "question": "<p>What part of your application does React focus on?</p><ol><li>The Model</li><li>The View</li><li>The Controller</li><li>All of the above</li></ol>",
-          "answer": {
-            "incorrect": {
-              "one": "no es la buena",
-              "two": "tampoco es la buena",
-              "tree": "menos aún"
-            },
+            incorrect: [
+              'no es la buena',
+              'tampoco es la buena',
+              'menos aún'
+            ],
             "correct": "Esta si!"
-          }
+          
         },
         
         {
           "level": "primer nivel de dificultad",
           "points": 100,
           "question": "<p>What part of your application does React focus on?</p><ol><li>The Model</li><li>The View</li><li>The Controller</li><li>All of the above</li></ol>",
-          "answer": {
-            "incorrect": {
-              "one": "no es la buena",
-              "two": "tampoco es la buena",
-              "tree": "menos aún"
-            },
+            incorrect: [
+              'no es la buena',
+              'tampoco es la buena',
+              'menos aún'
+            ],
             "correct": "Esta si!"
-          }
+          
         },
         
         {
           "level": "primer nivel de dificultad",
           "points": 100,
           "question": "<p>What part of your application does React focus on?</p><ol><li>The Model</li><li>The View</li><li>The Controller</li><li>All of the above</li></ol>",
-          "answer": {
-            "incorrect": {
-              "one": "no es la buena",
-              "two": "tampoco es la buena",
-              "tree": "menos aún"
-            },
+            incorrect: [
+              'no es la buena',
+              'tampoco es la buena',
+              'menos aún'
+            ],
             "correct": "Esta si!"
-          }
         
         },
       ]
