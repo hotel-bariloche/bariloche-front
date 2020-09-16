@@ -28,7 +28,7 @@ const CardInitial = (props) => {
         <div>
             <Card>
             <Card.Body>Suma</Card.Body>
-            <Card.Title>100 puntos</Card.Title>
+            <Card.Title>{props.points}</Card.Title>
             </Card>
         </div>
          }
@@ -37,6 +37,7 @@ const CardInitial = (props) => {
             question={props.question}
             correct={props.correct} 
             incorrect={props.incorrect}
+            points={props.points}
             />
         }
         {flip===true && count >=1 &&

@@ -23,6 +23,7 @@ const CardModal = (props) => {
                   question={props.question}
                   correct={props.correct} 
                   incorrect={props.incorrect}
+                  points={props.points}
                 />
             </ModalBody>
           
