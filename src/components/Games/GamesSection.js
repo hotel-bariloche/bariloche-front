@@ -10,6 +10,8 @@ import despiertapasajerosEn from '../img/games/cardDespiertapasajeros-en.png';
 import memoryEs from '../img/games/cardMemoryGame-es.png';
 import memoryEn from '../img/games/cardMemoryGame-en.png';
 import './GamesSection.css';
+import triviaEs from '../img/games/trivia/card_trivia_es.png';
+import triviaEn from '../img/games/trivia/card_trivia_en.png';
 
 const GamesSection = () => {
     const { state } = React.useContext(Context);
@@ -25,9 +27,9 @@ const GamesSection = () => {
                     <Card style={{ width: '22rem'}} className="game-card">
                     <Card.Img variant="top" src={state.language === 'spanish' ? snakeEs : snakeEn} />
                         <Card.Body bsPrefix="card-body">
-                            <Card.Title>{state.texts[state.language].games.card_title1}</Card.Title>
+                            <Card.Title>{state.texts[state.language].games.card_titleCazanieves}</Card.Title>
                             <Card.Text>
-                                {state.texts[state.language].games.cardShortDescription1}
+                                {state.texts[state.language].games.cardShortDescriptionCazanieves}
                             </Card.Text>
                             <Link  to="/snake"><Button className="button carousel-slide-btn btn-games" variant="primary">{state.texts[state.language].games.play}</Button></Link>
                         </Card.Body>
@@ -36,9 +38,9 @@ const GamesSection = () => {
                     <Card style={{ width: '22rem' }} className="game-card">
                     <Card.Img variant="top"  src={state.language === 'spanish' ? despiertapasajerosEs : despiertapasajerosEn} />
                         <Card.Body>
-                            <Card.Title>{state.texts[state.language].games.card_title2}</Card.Title>
+                            <Card.Title>{state.texts[state.language].games.card_titleDespierta}</Card.Title>
                             <Card.Text>
-                                {state.texts[state.language].games.cardShortDescription2}
+                                {state.texts[state.language].games.cardShortDescriptionDespierta}
                             </Card.Text>
                             <Link to="/OneToFifty"><Button className="button carousel-slide-btn btn-games" variant="primary">{state.texts[state.language].games.play}</Button></Link>
                         </Card.Body>
@@ -47,19 +49,19 @@ const GamesSection = () => {
                     <Card style={{ width: '22rem' }} className="game-card">
                     <Card.Img variant="top" src={state.language === 'spanish' ? memoryEs : memoryEn} />
                         <Card.Body>
-                            <Card.Title>{state.texts[state.language].games.card_title3}</Card.Title>
+                            <Card.Title>{state.texts[state.language].games.card_titleMemotest}</Card.Title>
                             <Card.Text>
-                                {state.texts[state.language].games.cardShortDescription3}
+                                {state.texts[state.language].games.cardShortDescriptionMemotest}
                             </Card.Text>
                             <Link to="/MemoryGame"><Button className="button carousel-slide-btn btn-games" variant="primary">{state.texts[state.language].games.play}</Button></Link>
                         </Card.Body>
                     </Card>
                     <Card style={{ width: '22rem' }} className="game-card">
-                    <Card.Img variant="top" src={state.language === 'spanish' ? memoryEs : memoryEn} />
+                    <Card.Img variant="top" src={state.language === 'spanish' ? triviaEs : triviaEn} />
                         <Card.Body>
-                            <Card.Title>Trivia</Card.Title>
+                            <Card.Title>{state.texts[state.language].games.card_titleTrivia}</Card.Title>
                             <Card.Text>
-                                {state.texts[state.language].games.cardShortDescription3}
+                                {state.texts[state.language].games.cardShortDescriptionTrivia}
                             </Card.Text>
                             <Link to="/Trivia"><Button className="button carousel-slide-btn btn-games" variant="primary">{state.texts[state.language].games.play}</Button></Link>
                         </Card.Body>
