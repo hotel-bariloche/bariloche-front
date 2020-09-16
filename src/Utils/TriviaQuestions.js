@@ -5,51 +5,51 @@ export const TriviaQuestions={
         {
           "level": "primer nivel de dificultad",
           "points": 100,
-          "question": "<p>What part of your application does React focus on?</p><ol><li>The Model</li><li>The View</li><li>The Controller</li><li>All of the above</li></ol>",
+          "question": "<p>W1hat part of your application does React focus on?</p><ol><li>The Model</li><li>The View</li><li>The Controller</li><li>All of the above</li></ol>",
             incorrect: [
-              'no es la buena',
-              'tampoco es la buena',
-              'menos aún'
+              '1no es la buena',
+              '1tampoco es la buena',
+              '1menos aún'
             ],
-            "correct": "Esta si!"
+            "correct": "1Esta si!"
           
         },
         {
           "level": "primer nivel de dificultad",
           "points": 100,
-          "question": "<p>What part of your application does React focus on?</p><ol><li>The Model</li><li>The View</li><li>The Controller</li><li>All of the above</li></ol>",
+          "question": "<p>2What part of your application does React focus on?</p><ol><li>The Model</li><li>The View</li><li>The Controller</li><li>All of the above</li></ol>",
             incorrect: [
-              'no es la buena',
-              'tampoco es la buena',
-              'menos aún'
+              '2no es la buena',
+              '2tampoco es la buena',
+              '2menos aún'
             ],
-            "correct": "Esta si!"
-          
-        },
-        
-        {
-          "level": "primer nivel de dificultad",
-          "points": 100,
-          "question": "<p>What part of your application does React focus on?</p><ol><li>The Model</li><li>The View</li><li>The Controller</li><li>All of the above</li></ol>",
-            incorrect: [
-              'no es la buena',
-              'tampoco es la buena',
-              'menos aún'
-            ],
-            "correct": "Esta si!"
+            "correct": "2Esta si!"
           
         },
         
         {
           "level": "primer nivel de dificultad",
           "points": 100,
-          "question": "<p>What part of your application does React focus on?</p><ol><li>The Model</li><li>The View</li><li>The Controller</li><li>All of the above</li></ol>",
+          "question": "<p>3What part of your application does React focus on?</p><ol><li>The Model</li><li>The View</li><li>The Controller</li><li>All of the above</li></ol>",
             incorrect: [
-              'no es la buena',
-              'tampoco es la buena',
-              'menos aún'
+              '3no es la buena',
+              '3tampoco es la buena',
+              '3menos aún'
             ],
-            "correct": "Esta si!"
+            "correct": "3Esta si!"
+          
+        },
+        
+        {
+          "level": "primer nivel de dificultad",
+          "points": 100,
+          "question": "<p>4What part of your application does React focus on?</p><ol><li>The Model</li><li>The View</li><li>The Controller</li><li>All of the above</li></ol>",
+            incorrect: [
+              '4no es la buena',
+              '4tampoco es la buena',
+              '4menos aún'
+            ],
+            "correct": "4Esta si!"
         
         },
       ]

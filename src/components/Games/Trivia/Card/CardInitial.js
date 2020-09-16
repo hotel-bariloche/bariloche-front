@@ -1,16 +1,13 @@
 import React from 'react';
-import Button from 'react-bootstrap/Button';
 import Card  from 'react-bootstrap/Card';
-import CardQuestion from '../CardFaces/CardQuestion';
 import CardModal from './CardModal';
-import ReactCardFlip from 'react-card-flip';
 import Logo from '../../../img/Logo.png'
 
 
 
 
 
-const CardInitial = () => {
+const CardInitial = (props) => {
     
     const [flip, setFlip] = React.useState(false);
     const [count, setCount] = React.useState(0);
@@ -21,6 +18,7 @@ const CardInitial = () => {
         }
 
         console.log(count)
+        console.log(props)
 
     return(
 
@@ -35,7 +33,11 @@ const CardInitial = () => {
         </div>
          }
         {flip===true && count === 1 &&
-            <CardModal count={count}/>
+            <CardModal count={count} 
+            question={props.question}
+            correct={props.correct} 
+            incorrect={props.incorrect}
+            />
         }
         {flip===true && count >=1 &&
         <Card onClick={Flipped}>

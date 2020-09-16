@@ -1,9 +1,10 @@
 import React from 'react';
 import { Shuffle } from '../../../../Utils/common'
 
-const AnswersButton = ({ correct, incorrects }) => {
+const AnswersButton = ({ correct, incorrect }) => {
+    console.log(correct,incorrect)
     const mixanswers = []
-        incorrects.map((answer) => (
+        incorrect.map((answer) => (
         mixanswers.push(answer)
         ))
     mixanswers.push(correct)
@@ -19,7 +20,7 @@ const AnswersButton = ({ correct, incorrects }) => {
     return(
         <div>
             {mixanswers.map((answer,i) => (
-                <button onClick={(e) => {checkTheAnswer(e)}}>
+                <button>
                     {answer}
                 </button>
                 ))
