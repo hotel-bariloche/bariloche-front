@@ -1,11 +1,11 @@
 import React from 'react';
 import './Trivia.css';
-import CardFront from './CardFaces/CardFront'
+import CardQuestion from './CardFaces/CardQuestion'
 
 const Trivia =()=>{
     return(
         <div>
-            <CardFront />
+            <CardQuestion />
         </div>
     )
 }

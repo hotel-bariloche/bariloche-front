@@ -23,3 +23,8 @@
         background-image: url("../../img/Logo.png");
         padding: 30px; 
 }
+.grid-trivia {
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
