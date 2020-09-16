@@ -39,7 +39,6 @@ export const TriviaQuestions={
             "correct": "3Esta si!"
           
         },
-        
         {
           "level": "primer nivel de dificultad",
           "points": 100,
@@ -50,8 +49,343 @@ export const TriviaQuestions={
               '4menos aún'
             ],
             "correct": "4Esta si!"
-        
         },
+        {
+          "level": "primer nivel de dificultad",
+          "points": 100,
+          "question": "<p>W1hat part of your application does React focus on?</p><ol><li>The Model</li><li>The View</li><li>The Controller</li><li>All of the above</li></ol>",
+            incorrect: [
+              '1no es la buena',
+              '1tampoco es la buena',
+              '1menos aún'
+            ],
+            "correct": "1Esta si!"
+          
+        },
+        {
+          "level": "primer nivel de dificultad",
+          "points": 100,
+          "question": "<p>W1hat part of your application does React focus on?</p><ol><li>The Model</li><li>The View</li><li>The Controller</li><li>All of the above</li></ol>",
+            incorrect: [
+              '1no es la buena',
+              '1tampoco es la buena',
+              '1menos aún'
+            ],
+            "correct": "1Esta si!"
+          
+        },
+        {
+          "level": "primer nivel de dificultad",
+          "points": 100,
+          "question": "<p>W1hat part of your application does React focus on?</p><ol><li>The Model</li><li>The View</li><li>The Controller</li><li>All of the above</li></ol>",
+            incorrect: [
+              '1no es la buena',
+              '1tampoco es la buena',
+              '1menos aún'
+            ],
+            "correct": "1Esta si!"
+          
+        },
+        {
+          "level": "primer nivel de dificultad",
+          "points": 100,
+          "question": "<p>W1hat part of your application does React focus on?</p><ol><li>The Model</li><li>The View</li><li>The Controller</li><li>All of the above</li></ol>",
+            incorrect: [
+              '1no es la buena',
+              '1tampoco es la buena',
+              '1menos aún'
+            ],
+            "correct": "1Esta si!"
+          
+        },
+        {
+          "level": "primer nivel de dificultad",
+          "points": 100,
+          "question": "<p>W1hat part of your application does React focus on?</p><ol><li>The Model</li><li>The View</li><li>The Controller</li><li>All of the above</li></ol>",
+            incorrect: [
+              '1no es la buena',
+              '1tampoco es la buena',
+              '1menos aún'
+            ],
+            "correct": "1Esta si!"
+          
+        },
+        {
+          "level": "primer nivel de dificultad",
+          "points": 100,
+          "question": "<p>W1hat part of your application does React focus on?</p><ol><li>The Model</li><li>The View</li><li>The Controller</li><li>All of the above</li></ol>",
+            incorrect: [
+              '1no es la buena',
+              '1tampoco es la buena',
+              '1menos aún'
+            ],
+            "correct": "1Esta si!"
+          
+        },
+        {
+          "level": "primer nivel de dificultad",
+          "points": 100,
+          "question": "<p>W1hat part of your application does React focus on?</p><ol><li>The Model</li><li>The View</li><li>The Controller</li><li>All of the above</li></ol>",
+            incorrect: [
+              '1no es la buena',
+              '1tampoco es la buena',
+              '1menos aún'
+            ],
+            "correct": "1Esta si!"
+          
+        },
+        {
+          "level": "primer nivel de dificultad",
+          "points": 100,
+          "question": "<p>W1hat part of your application does React focus on?</p><ol><li>The Model</li><li>The View</li><li>The Controller</li><li>All of the above</li></ol>",
+            incorrect: [
+              '1no es la buena',
+              '1tampoco es la buena',
+              '1menos aún'
+            ],
+            "correct": "1Esta si!"
+          
+        },
+        {
+          "level": "primer nivel de dificultad",
+          "points": 100,
+          "question": "<p>W1hat part of your application does React focus on?</p><ol><li>The Model</li><li>The View</li><li>The Controller</li><li>All of the above</li></ol>",
+            incorrect: [
+              '1no es la buena',
+              '1tampoco es la buena',
+              '1menos aún'
+            ],
+            "correct": "1Esta si!"
+          
+        },
+        {
+          "level": "primer nivel de dificultad",
+          "points": 100,
+          "question": "<p>W1hat part of your application does React focus on?</p><ol><li>The Model</li><li>The View</li><li>The Controller</li><li>All of the above</li></ol>",
+            incorrect: [
+              '1no es la buena',
+              '1tampoco es la buena',
+              '1menos aún'
+            ],
+            "correct": "1Esta si!"
+          
+        },
+        {
+          "level": "primer nivel de dificultad",
+          "points": 100,
+          "question": "<p>W1hat part of your application does React focus on?</p><ol><li>The Model</li><li>The View</li><li>The Controller</li><li>All of the above</li></ol>",
+            incorrect: [
+              '1no es la buena',
+              '1tampoco es la buena',
+              '1menos aún'
+            ],
+            "correct": "1Esta si!"
+          
+        },
+        {
+          "level": "primer nivel de dificultad",
+          "points": 100,
+          "question": "<p>W1hat part of your application does React focus on?</p><ol><li>The Model</li><li>The View</li><li>The Controller</li><li>All of the above</li></ol>",
+            incorrect: [
+              '1no es la buena',
+              '1tampoco es la buena',
+              '1menos aún'
+            ],
+            "correct": "1Esta si!"
+          
+        },
+        {
+          "level": "primer nivel de dificultad",
+          "points": 100,
+          "question": "<p>W1hat part of your application does React focus on?</p><ol><li>The Model</li><li>The View</li><li>The Controller</li><li>All of the above</li></ol>",
+            incorrect: [
+              '1no es la buena',
+              '1tampoco es la buena',
+              '1menos aún'
+            ],
+            "correct": "1Esta si!"
+          
+        },
+        {
+          "level": "primer nivel de dificultad",
+          "points": 100,
+          "question": "<p>W1hat part of your application does React focus on?</p><ol><li>The Model</li><li>The View</li><li>The Controller</li><li>All of the above</li></ol>",
+            incorrect: [
+              '1no es la buena',
+              '1tampoco es la buena',
+              '1menos aún'
+            ],
+            "correct": "1Esta si!"
+          
+        },
+        {
+          "level": "primer nivel de dificultad",
+          "points": 100,
+          "question": "<p>W1hat part of your application does React focus on?</p><ol><li>The Model</li><li>The View</li><li>The Controller</li><li>All of the above</li></ol>",
+            incorrect: [
+              '1no es la buena',
+              '1tampoco es la buena',
+              '1menos aún'
+            ],
+            "correct": "1Esta si!"
+          
+        },
+        {
+          "level": "primer nivel de dificultad",
+          "points": 100,
+          "question": "<p>W1hat part of your application does React focus on?</p><ol><li>The Model</li><li>The View</li><li>The Controller</li><li>All of the above</li></ol>",
+            incorrect: [
+              '1no es la buena',
+              '1tampoco es la buena',
+              '1menos aún'
+            ],
+            "correct": "1Esta si!"
+          
+        },
+        {
+          "level": "primer nivel de dificultad",
+          "points": 100,
+          "question": "<p>W1hat part of your application does React focus on?</p><ol><li>The Model</li><li>The View</li><li>The Controller</li><li>All of the above</li></ol>",
+            incorrect: [
+              '1no es la buena',
+              '1tampoco es la buena',
+              '1menos aún'
+            ],
+            "correct": "1Esta si!"
+          
+        },
+        {
+          "level": "primer nivel de dificultad",
+          "points": 100,
+          "question": "<p>W1hat part of your application does React focus on?</p><ol><li>The Model</li><li>The View</li><li>The Controller</li><li>All of the above</li></ol>",
+            incorrect: [
+              '1no es la buena',
+              '1tampoco es la buena',
+              '1menos aún'
+            ],
+            "correct": "1Esta si!"
+          
+        },
+        {
+          "level": "primer nivel de dificultad",
+          "points": 100,
+          "question": "<p>W1hat part of your application does React focus on?</p><ol><li>The Model</li><li>The View</li><li>The Controller</li><li>All of the above</li></ol>",
+            incorrect: [
+              '1no es la buena',
+              '1tampoco es la buena',
+              '1menos aún'
+            ],
+            "correct": "1Esta si!"
+          
+        },
+        {
+          "level": "primer nivel de dificultad",
+          "points": 100,
+          "question": "<p>W1hat part of your application does React focus on?</p><ol><li>The Model</li><li>The View</li><li>The Controller</li><li>All of the above</li></ol>",
+            incorrect: [
+              '1no es la buena',
+              '1tampoco es la buena',
+              '1menos aún'
+            ],
+            "correct": "1Esta si!"
+          
+        },
+        {
+          "level": "primer nivel de dificultad",
+          "points": 100,
+          "question": "<p>W1hat part of your application does React focus on?</p><ol><li>The Model</li><li>The View</li><li>The Controller</li><li>All of the above</li></ol>",
+            incorrect: [
+              '1no es la buena',
+              '1tampoco es la buena',
+              '1menos aún'
+            ],
+            "correct": "1Esta si!"
+          
+        },
+        {
+          "level": "primer nivel de dificultad",
+          "points": 100,
+          "question": "<p>W1hat part of your application does React focus on?</p><ol><li>The Model</li><li>The View</li><li>The Controller</li><li>All of the above</li></ol>",
+            incorrect: [
+              '1no es la buena',
+              '1tampoco es la buena',
+              '1menos aún'
+            ],
+            "correct": "1Esta si!"
+          
+        },
+        {
+          "level": "primer nivel de dificultad",
+          "points": 100,
+          "question": "<p>W1hat part of your application does React focus on?</p><ol><li>The Model</li><li>The View</li><li>The Controller</li><li>All of the above</li></ol>",
+            incorrect: [
+              '1no es la buena',
+              '1tampoco es la buena',
+              '1menos aún'
+            ],
+            "correct": "1Esta si!"
+          
+        },
+        {
+          "level": "primer nivel de dificultad",
+          "points": 100,
+          "question": "<p>W1hat part of your application does React focus on?</p><ol><li>The Model</li><li>The View</li><li>The Controller</li><li>All of the above</li></ol>",
+            incorrect: [
+              '1no es la buena',
+              '1tampoco es la buena',
+              '1menos aún'
+            ],
+            "correct": "1Esta si!"
+          
+        },
+        {
+          "level": "primer nivel de dificultad",
+          "points": 100,
+          "question": "<p>W1hat part of your application does React focus on?</p><ol><li>The Model</li><li>The View</li><li>The Controller</li><li>All of the above</li></ol>",
+            incorrect: [
+              '1no es la buena',
+              '1tampoco es la buena',
+              '1menos aún'
+            ],
+            "correct": "1Esta si!"
+          
+        },
+        {
+          "level": "primer nivel de dificultad",
+          "points": 100,
+          "question": "<p>W1hat part of your application does React focus on?</p><ol><li>The Model</li><li>The View</li><li>The Controller</li><li>All of the above</li></ol>",
+            incorrect: [
+              '1no es la buena',
+              '1tampoco es la buena',
+              '1menos aún'
+            ],
+            "correct": "1Esta si!"
+          
+        },
+        {
+          "level": "primer nivel de dificultad",
+          "points": 100,
+          "question": "<p>W1hat part of your application does React focus on?</p><ol><li>The Model</li><li>The View</li><li>The Controller</li><li>All of the above</li></ol>",
+            incorrect: [
+              '1no es la buena',
+              '1tampoco es la buena',
+              '1menos aún'
+            ],
+            "correct": "1Esta si!"
+          
+        },
+        {
+          "level": "primer nivel de dificultad",
+          "points": 100,
+          "question": "<p>W1hat part of your application does React focus on?</p><ol><li>The Model</li><li>The View</li><li>The Controller</li><li>All of the above</li></ol>",
+            incorrect: [
+              '1no es la buena',
+              '1tampoco es la buena',
+              '1menos aún'
+            ],
+            "correct": "1Esta si!"
+          
+        }
       ]
     }
   },

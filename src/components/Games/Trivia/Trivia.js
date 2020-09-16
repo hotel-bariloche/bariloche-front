@@ -9,11 +9,10 @@ const Trivia =()=>{
 
     const { state } = React.useContext(Context);
     let cards = Shuffle ([...state.triviaQuestions[state.language].questions.dificulty1])
-    
+    console.log(cards.length)
     return(
         <div className="trivial-grid">
             {cards.map(( card, i) => (
-                <div className= "back-card">
                     <Row bsPrefix="card-row">
                         <CardInitial 
                         question={card.question} 
@@ -21,7 +20,6 @@ const Trivia =()=>{
                         incorrect={card.incorrect} 
                         />                           
                     </Row>
-                </div>
                 ) 
             )} 
         </div>
