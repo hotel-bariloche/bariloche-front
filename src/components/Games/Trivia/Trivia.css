@@ -21,14 +21,15 @@
 
 
 .trivial-grid {
-    padding: 50px;
-    flex-direction: row;
-    flex-wrap: wrap;
-}
-
-
-.card-trivia {
     display:flex;
     flex-direction: row;
     flex-wrap: wrap;
+    padding: 50px;
+
+}
+
+
+.card-row {
+
+    width: 25%;
 }

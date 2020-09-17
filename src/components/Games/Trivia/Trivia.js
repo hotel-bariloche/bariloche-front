@@ -23,7 +23,7 @@ const Trivia =()=>{
         <div className="trivial-grid">
             {cards.map(( card, i) => (
                     <Row bsPrefix="card-row">
-                        <CardInitial 
+                        <CardInitial style={{ width: '25vw' }}
                         points= {card.points}
                         question={card.question} 
                         correct={card.correct} 

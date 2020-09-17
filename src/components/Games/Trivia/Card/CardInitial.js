@@ -22,7 +22,7 @@ const CardInitial = (props) => {
 
     return(
 
-    <div style={{ width: '25%'}} onClick={Flipped}>
+    <div onClick={Flipped}>
         {flip===false && count===0 &&
 
         <div>
