@@ -4,6 +4,8 @@ import CardInitial from './Card/CardInitial';
 import Row from 'react-bootstrap/Row';
 import { Context } from '../../../Context/Provider';
 import { Shuffle } from '../../../Utils/common';
+import memoryTestTitleEs from "../../img/games/trivia/title_trivia_es.png";
+import memoryTestTitleEn from "../../img/games/trivia/title_trivia_en.png";
 
 const Trivia =()=>{
     
@@ -20,8 +22,21 @@ const Trivia =()=>{
     cards.push(...cards4)
     console.log(cards)
 
+    const context = () => {            
+        const context = Context;
+        return context;
+    }
+
+    const language = () => {            
+        const language = context().language;
+        return language;
+    }
+
     return(
         <div className="trivial-grid">
+            <div className="trivia-header">
+                 <img className="trivia-logo"src={language() === 'spanish' ? memoryTestTitleEs : memoryTestTitleEn} />    
+            </div>
             {cards.map(( card, i) => (
                     <Row bsPrefix="card-row">
                         <CardInitial style={{ width: '25vw' }}
