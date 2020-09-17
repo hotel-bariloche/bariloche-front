@@ -161,7 +161,7 @@ export const Texts = {
         },
         games: {
             play: 'Jugar ahora',
-            description: 'Jugá, divertité y ganá',
+            description: 'Jugá, divertite y ganá',
             card_title1: 'Cazanieves',
             card_title2: 'Despierta a los pasajeros',
             card_title3: 'Memotest de la ciudad',
