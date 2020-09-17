@@ -22,17 +22,11 @@ const Trivia =()=>{
     cards.push(...cards4)
     console.log(cards)
 
-   
-
-    const language = () => {            
-        const language = Context.language;
-        return language;
-    }
 
     return(
         <div className="trivial-grid">
             <div className="trivia-header">
-                 <img className="trivia-logo" src={language() === 'spanish' ? triviaTitleEs : triviaTitleEn} />    
+                 <img className="trivia-logo" src={state.language === 'spanish' ? triviaTitleEs : triviaTitleEn} />    
             </div>
             {cards.map(( card, i) => (
                     <Row bsPrefix="card-row">
