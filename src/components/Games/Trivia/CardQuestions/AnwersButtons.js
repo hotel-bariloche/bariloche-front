@@ -3,6 +3,8 @@ import { Shuffle } from '../../../../Utils/common';
 import Button from 'react-bootstrap/Button'
 
 const AnswersButton = ({ correct, incorrect }) => {
+
+    // const [colorClass, setColorClass] = React.useState('blue');
     console.log(correct,incorrect)
     const mixanswers = []
         incorrect.map((answer) => (
@@ -11,6 +13,7 @@ const AnswersButton = ({ correct, incorrect }) => {
     mixanswers.push(correct)
     const shuffleAnswers = Shuffle(mixanswers)
     console.log(mixanswers)
+
     const checkTheAnswer = (e) => {
         const displayedAnswer = e.target.value;
         const correctAnswer = correct
@@ -20,8 +23,11 @@ const AnswersButton = ({ correct, incorrect }) => {
       }
     return(
         <div>
-            {mixanswers.map((answer,i) => (
-                <Button>
+            {shuffleAnswers.map((answer,i) => (
+                <Button 
+                    value={answer}
+                    onClick={(e) =>{checkTheAnswer(e)}}
+                >
                     {answer}
                 </Button>
                 ))
