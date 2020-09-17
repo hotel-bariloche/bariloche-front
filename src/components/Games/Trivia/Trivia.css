@@ -16,8 +16,11 @@
 .logo-back {   
         background-color: rgb(204, 167, 114);
         background-image: url("../../img/Logo.png");
-        padding: 30px; 
+        height: 140px;
+        width: 150px;
+        padding: 30px;
 }
+
 
 
 .trivial-grid {

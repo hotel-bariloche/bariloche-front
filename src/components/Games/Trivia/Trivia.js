@@ -22,13 +22,10 @@ const Trivia =()=>{
     cards.push(...cards4)
     console.log(cards)
 
-    const context = () => {            
-        const context = Context;
-        return context;
-    }
+   
 
     const language = () => {            
-        const language = context().language;
+        const language = Context.language;
         return language;
     }
 

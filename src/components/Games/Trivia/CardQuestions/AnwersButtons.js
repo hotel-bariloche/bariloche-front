@@ -1,5 +1,6 @@
 import React from 'react';
-import { Shuffle } from '../../../../Utils/common'
+import { Shuffle } from '../../../../Utils/common';
+import Button from 'react-bootstrap/Button'
 
 const AnswersButton = ({ correct, incorrect }) => {
     console.log(correct,incorrect)
@@ -20,9 +21,9 @@ const AnswersButton = ({ correct, incorrect }) => {
     return(
         <div>
             {mixanswers.map((answer,i) => (
-                <button>
+                <Button>
                     {answer}
-                </button>
+                </Button>
                 ))
             }
         </div>
