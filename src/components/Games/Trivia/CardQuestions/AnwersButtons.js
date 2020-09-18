@@ -7,7 +7,7 @@ const AnswersButton = ({ correct, incorrect, points, handle }) => {
 
     const [colorClass, setColorClass] = React.useState('');
     const [disabled, setDisabled] = React.useState(false);
-    
+    const [shuffleAnswers, setShuffleAnswers] = React.useState([]);
     const { state, addScore, addClicks } =React.useContext(Context)
 
 
@@ -19,7 +19,7 @@ const AnswersButton = ({ correct, incorrect, points, handle }) => {
     mixanswers.push(correct)
 
     useEffect(() => {
-        const shuffleAnswers = Shuffle(mixanswers)
+         setShuffleAnswers(Shuffle(mixanswers))
     }, [])
 
     const checkTheAnswer = (e) => {
@@ -48,7 +48,7 @@ const AnswersButton = ({ correct, incorrect, points, handle }) => {
 
     return(
         <div>
-            {mixanswers.map((answer,i) => (
+            {shuffleAnswers.map((answer,i) => (
 
                 <button 
                      type="button"
