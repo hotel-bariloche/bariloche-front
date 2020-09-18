@@ -16,10 +16,10 @@ const Trivia =()=>{
     useEffect(() => {
         let cardsShuffle = Shuffle ([...state.triviaQuestions[state.language].questions.dificulty1])
     
-        const cards = cardsShuffle.filter(card => card.points === 100)
-        const cards2 = cardsShuffle.filter(card => card.points === 200)
-        const cards3 = cardsShuffle.filter(card => card.points === 300)
-        const cards4 = cardsShuffle.filter(card => card.points === 400)
+        const cards = cardsShuffle.filter(card => card.points === 100).slice(0,4)
+        const cards2 = cardsShuffle.filter(card => card.points === 200).slice(0,4)
+        const cards3 = cardsShuffle.filter(card => card.points === 300).slice(0,4)
+        const cards4 = cardsShuffle.filter(card => card.points === 400).slice(0,4)
         cards.push(...cards2)
         cards.push(...cards3)
         cards.push(...cards4)
