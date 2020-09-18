@@ -6,8 +6,8 @@ import { Context } from '../../../../Context/Provider';
 const AnswersButton = ({ correct, incorrect, points, handle }) => {
 
     const [colorClass, setColorClass] = React.useState('');
-    const [click, setClick] = React.useState(false);
-    const [point, setPoint] = React.useState(points);
+    const [disabled, setDisabled] = React.useState(false);
+    
     const { state, addScore, addClicks } =React.useContext(Context)
 
 
@@ -33,11 +33,19 @@ const AnswersButton = ({ correct, incorrect, points, handle }) => {
         } else if (displayedAnswer !== correctAnswer) {
             setColorClass('red')
         }
+        
+        if(disabled) {
+            return;
+        }
+        setDisabled(true)
+
         setTimeout(() => {
             handle()
           }, 2000);
         
       }
+    
+
     return(
         <div>
             {mixanswers.map((answer,i) => (
@@ -47,6 +55,7 @@ const AnswersButton = ({ correct, incorrect, points, handle }) => {
                     className={`${colorClass}`}
                     value={answer}
                     key={i}
+                    disabled={disabled}
                     onClick={(e) =>{checkTheAnswer(e); addClicks()}}
                 >
                     {answer}
