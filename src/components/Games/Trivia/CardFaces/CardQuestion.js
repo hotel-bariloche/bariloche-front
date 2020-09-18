@@ -45,15 +45,9 @@ const CardQuestion =()=>{
             <div className= "back-card">
               <p>{card.question}</p>
                 <div>
-                  <AnswersButtons correct={card.correct} incorrects={card.incorrect}  />
-                {/* <button id={i}>
-                  {card.correct}
-                </button>
-                {card.incorrect.map(( answer, i) => (
-                <button>
-                  {answer}
-                </button>
-                ))} */}
+                  <AnswersButtons 
+                  correct={card.correct} 
+                  incorrects={card.incorrect}  />
                 </div>
             </div>
           ) 
