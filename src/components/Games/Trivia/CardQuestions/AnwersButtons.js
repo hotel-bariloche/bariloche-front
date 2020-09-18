@@ -23,20 +23,26 @@ const AnswersButton = ({ correct, incorrect, points }) => {
     }, [])
 
     const checkTheAnswer = (e) => {
-        // setClick('true')
-    const correctAnswer = correct === e.target.value
-    correctAnswer ? setColorClass('green') : setColorClass('red');
-    // addScore(points)
-   
-    }
+        
+        const displayedAnswer = e.target.value;
+        const correctAnswer = correct
+        if (displayedAnswer === correctAnswer) {
+            addScore(points)
+            setColorClass('green')
 
+        } else if (displayedAnswer !== correctAnswer) {
+            setColorClass('red')
+        }
+        e.preventDefault()
+      }
+console.log(state.score)
     return(
         <div>
             {mixanswers.map((answer,i) => (
 
                 <button 
                      type="button"
-                    className={colorClass}
+                    className={`${colorClass}`}
                     value={answer}
                     key={i}
                     onClick={(e) =>{checkTheAnswer(e)}}

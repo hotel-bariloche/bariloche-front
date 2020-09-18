@@ -34,9 +34,6 @@ const Trivia =()=>{
             <div className="trivia-header">
                  <img className="trivia-logo" src={state.language === 'spanish' ? triviaTitleEs : triviaTitleEn} />    
             </div>
-            <div>
-               <p>{score}</p>
-               </div>
             {cards.map(( card, i) => (
                     <Row bsPrefix="card-row">
                         <CardInitial style={{ width: '25vw' }}
