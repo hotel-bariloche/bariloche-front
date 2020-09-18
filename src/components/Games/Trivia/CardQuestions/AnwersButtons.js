@@ -8,7 +8,7 @@ const AnswersButton = ({ correct, incorrect, points }) => {
     const [colorClass, setColorClass] = React.useState('');
     const [click, setClick] = React.useState(false);
     const [point, setPoint] = React.useState(points);
-    const { state, addScore } =React.useContext(Context)
+    const { state, addScore, addClicks } =React.useContext(Context)
 
 
     console.log(correct,incorrect,points)
@@ -35,7 +35,7 @@ const AnswersButton = ({ correct, incorrect, points }) => {
         }
         e.preventDefault()
       }
-console.log(state.score)
+console.log(state.countClicks)
     return(
         <div>
             {mixanswers.map((answer,i) => (
@@ -45,7 +45,7 @@ console.log(state.score)
                     className={`${colorClass}`}
                     value={answer}
                     key={i}
-                    onClick={(e) =>{checkTheAnswer(e)}}
+                    onClick={(e) =>{checkTheAnswer(e); addClicks()}}
                 >
                     {answer}
                 </button>

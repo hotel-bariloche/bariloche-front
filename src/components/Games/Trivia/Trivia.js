@@ -6,11 +6,11 @@ import { Context } from '../../../Context/Provider';
 import { Shuffle } from '../../../Utils/common';
 import triviaTitleEs from "../../img/games/trivia/title_trivia_es.png";
 import triviaTitleEn from "../../img/games/trivia/title_trivia_en.png";
+import TriviaFinalPopUp from './TriviaFinalPopUp';
 
 const Trivia =()=>{
     
     const { state } = React.useContext(Context);
-    const [score, setScore] = React.useState(0)
     const [cards, setCards] = React.useState([])
 
     useEffect(() => {
@@ -34,18 +34,23 @@ const Trivia =()=>{
             <div className="trivia-header">
                  <img className="trivia-logo" src={state.language === 'spanish' ? triviaTitleEs : triviaTitleEn} />    
             </div>
-            {cards.map(( card, i) => (
-                    <Row bsPrefix="card-row">
-                        <CardInitial style={{ width: '25vw' }}
-                        points= {card.points}
-                        question={card.question} 
-                        correct={card.correct} 
-                        incorrect={card.incorrect} 
-                        score={score}
-                        />                           
-                    </Row>
-                ) 
-            )} 
+            {state.countClicks === 5 
+            ? 
+                <TriviaFinalPopUp /> 
+            :
+                cards.map(( card, i) => (
+                        <Row bsPrefix="card-row">
+                            <CardInitial style={{ width: '25vw' }}
+                            points= {card.points}
+                            question={card.question} 
+                            correct={card.correct} 
+                            incorrect={card.incorrect} 
+                            />                           
+                        </Row>
+                    ) 
+                )
+            }
+            
         </div>
     )
 }
