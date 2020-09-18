@@ -1,26 +1,11 @@
 import React from 'react';
-import CardBack from './CardBack';
 import { Context } from '../../../../Context/Provider';
 import AnswersButtons from './AnwersButtons'
 
 const CardQuestion =()=>{
 
-  // const [flip, setFlip] = React.useState(false);
   const [count, setCount] = React.useState(0);
   const { state } = React.useContext(Context);
-
-  // const checkTheAnswer = (e) => {
-  //   const displayedAnswer = e.target.value;
-  //   const correct = correctAnswer
-  //   if (displayedAnswer === correct) {
-  //     alert('corecto')
-  //   } 
-  // }
-
-  // const Flipped=()=>{
-  //   setFlip(!flip)
-  //   setCount(count+1)
-  //   }
 
   let cards = [...state.triviaQuestions[state.language].questions.dificulty1]
   let correctAnswer = []

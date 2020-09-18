@@ -4,13 +4,11 @@ import CardModal from './CardModal';
 import Logo from '../../../img/Logo.png'
 
 
-
-
-
 const CardInitial = (props) => {
     
     const [flip, setFlip] = React.useState(false);
     const [count, setCount] = React.useState(0);
+
     
     const Flipped=()=>{
         setFlip(!flip)
@@ -38,6 +36,7 @@ const CardInitial = (props) => {
             correct={props.correct} 
             incorrect={props.incorrect}
             points={props.points}
+            score={props.score}
             />
         }
         {flip===true && count >=1 &&
@@ -46,7 +45,6 @@ const CardInitial = (props) => {
         </Card>
          
         }
-    
 
     </div>
 

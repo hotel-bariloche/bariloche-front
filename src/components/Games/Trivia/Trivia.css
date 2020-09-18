@@ -49,3 +49,15 @@
     width: 35%;
     margin-bottom: 50px;
 }
+
+.red {
+    background-color: red;
+}
+
+.green {
+    background-color: green;
+}
+
+.blue {
+    background-color: blue;
+}

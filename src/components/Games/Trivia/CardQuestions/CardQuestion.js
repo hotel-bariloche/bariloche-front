@@ -9,6 +9,8 @@ const CardQuestion =(props)=>{
                 <AnswersButtons
                 correct={props.correct} 
                 incorrect={props.incorrect}
+                points={props.points}
+                score={props.score}
                 />
       </div>
    
