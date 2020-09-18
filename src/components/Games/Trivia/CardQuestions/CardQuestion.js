@@ -10,7 +10,6 @@ const CardQuestion =(props)=>{
                 correct={props.correct} 
                 incorrect={props.incorrect}
                 points={props.points}
-                score={props.score}
                 handle={props.handle}
                 />
       </div>

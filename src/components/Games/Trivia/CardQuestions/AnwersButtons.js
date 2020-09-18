@@ -9,6 +9,7 @@ const AnswersButton = ({ correct, incorrect, points, handle }) => {
     const [disabled, setDisabled] = React.useState(false);
     const [shuffleAnswers, setShuffleAnswers] = React.useState([]);
     const { state, addScore, addClicks } =React.useContext(Context)
+    console.log(state)
 
 
     console.log(correct,incorrect,points)
@@ -23,7 +24,7 @@ const AnswersButton = ({ correct, incorrect, points, handle }) => {
     }, [])
 
     const checkTheAnswer = (e) => {
-        
+
         const displayedAnswer = e.target.value;
         const correctAnswer = correct
         if (displayedAnswer === correctAnswer) {
@@ -39,13 +40,13 @@ const AnswersButton = ({ correct, incorrect, points, handle }) => {
         }
         setDisabled(true)
 
-        setTimeout(() => {
-            handle()
-          }, 2000);
         
       }
     
+      console.log(state.score)
 
+    
+    
     return(
         <div>
             {shuffleAnswers.map((answer,i) => (

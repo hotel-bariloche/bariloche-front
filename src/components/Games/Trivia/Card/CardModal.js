@@ -16,14 +16,13 @@ const CardModal = (props) => {
   
     return(
         <div>
-          <Modal backdrop='static' isOpen={modal} toggle={handleClose} style={{ marginTop:"10%"}}>
+          <Modal isOpen={modal} toggle={handleClose} style={{ marginTop:"10%"}}>
             <ModalBody>
                 <CardQuestion 
                   question={props.question}
                   correct={props.correct} 
                   incorrect={props.incorrect}
                   points={props.points}
-                  score={props.score}
                   handle={handleClose}
                 />
             </ModalBody>

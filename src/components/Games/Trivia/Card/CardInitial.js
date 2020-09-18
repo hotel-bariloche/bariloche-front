@@ -35,7 +35,6 @@ const CardInitial = (props) => {
             correct={props.correct} 
             incorrect={props.incorrect}
             points={props.points}
-            score={props.score}
             />
         }
         {count >=1 &&

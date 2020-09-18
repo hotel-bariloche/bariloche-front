@@ -32,7 +32,7 @@ const AppContext = (props) => {
       changeFinish: () => changeState({
         ...state,
         start: false,
-        countClicks: 0
+        countClicks: 0,
       })
       
     }}
