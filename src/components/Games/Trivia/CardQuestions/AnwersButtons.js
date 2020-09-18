@@ -25,8 +25,8 @@ const AnswersButton = ({ correct, incorrect, points, handle }) => {
         const displayedAnswer = e.target.value;
         const correctAnswer = correct
             if (displayedAnswer === correctAnswer) {
-                addScore(points)
                 setColorClass('green')
+                addScore(points)
             } else if (displayedAnswer !== correctAnswer) {
                 setColorClass('red')
             }

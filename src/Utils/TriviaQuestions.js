@@ -3,386 +3,385 @@ export const TriviaQuestions={
     questions: {
       dificulty1: [
         {
+          "id":1,
           "level": "primer nivel de dificultad",
           "points": 100,
-          "question": "<p>W1hat part of your application does React focus on?</p><ol><li>The Model</li><li>The View</li><li>The Controller</li><li>All of the above</li></ol>",
+          "question": "¿Cómo se llama el monstruo prehistorico que los habitantes dicen que vive en el Nahuel Huapi? ",
             incorrect: [
-              '1no es la buena',
-              '1tampoco es la buena',
-              '1menos aún'
+              'Huapito',
+              'Nahu'
             ],
-            "correct": "1Esta si!"
+            "correct": "Nahuelito"
           
         },
         {
+          "id":2,
           "level": "primer nivel de dificultad",
           "points": 100,
-          "question": "<p>2What part of your application does React focus on?</p><ol><li>The Model</li><li>The View</li><li>The Controller</li><li>All of the above</li></ol>",
+          "question": "¿Entre que años llegaron miles de Nazis a bariloche?",
             incorrect: [
-              '2no es la buena',
-              '2tampoco es la buena',
-              '2menos aún'
+              '1938 - 1946',
+              '1930 - 1938',
             ],
-            "correct": "2Esta si!"
+            "correct": "1946 - 1955"
           
         },        
         {
+          "id":3,
           "level": "primer nivel de dificultad",
           "points": 100,
-          "question": "<p>3What part of your application does React focus on?</p><ol><li>The Model</li><li>The View</li><li>The Controller</li><li>All of the above</li></ol>",
+          "question": "¿Cual es el deporte predilecto para practicar en Bariloche? ",
             incorrect: [
-              '3no es la buena',
-              '3tampoco es la buena',
-              '3menos aún'
+              'Snowboard',
+              'Paintball en nieve',
             ],
-            "correct": "3Esta si!"
+            "correct": "Esquí"
           
         },
         {
+          "id":4,
           "level": "primer nivel de dificultad",
           "points": 100,
-          "question": "<p>4What part of your application does React focus on?</p><ol><li>The Model</li><li>The View</li><li>The Controller</li><li>All of the above</li></ol>",
+          "question": "¿Por qué no hay tormentas eléctricas en Bariloche? ",
             incorrect: [
-              '4no es la buena',
-              '4tampoco es la buena',
-              '4menos aún'
+              'Porque tiene un microclima que no lo permite ',
+              'Porque el frío congela las nubes',
             ],
-            "correct": "4Esta si!"
+            "correct": "Porque las tormentas no tienen la energía suficiente para generar electricidad"
         },
         {
+          "id":5,
           "level": "primer nivel de dificultad",
           "points": 100,
-          "question": "<p>W1hat part of your application does React focus on?</p><ol><li>The Model</li><li>The View</li><li>The Controller</li><li>All of the above</li></ol>",
+          "question": "Bariloche es la capital de..",
             incorrect: [
-              '1no es la buena',
-              '1tampoco es la buena',
-              '1menos aún'
+              'La nieve ',
+              'Las fiestas de egresados',
             ],
-            "correct": "1Esta si!"
+            "correct": "El chocolate"
           
         },
         {
+          "id":6,
           "level": "primer nivel de dificultad",
           "points": 100,
-          "question": "<p>W1hat part of your application does React focus on?</p><ol><li>The Model</li><li>The View</li><li>The Controller</li><li>All of the above</li></ol>",
+          "question": "¿Cual es la fiesta mas grande de Bariloche?",
             incorrect: [
-              '1no es la buena',
-              '1tampoco es la buena',
-              '1menos aún'
+              'La fiesta de Nahuel Huapi',
+              'La fiesta de la nieve',
             ],
-            "correct": "1Esta si!"
+            "correct": "La fiesta del chocolate"
           
         },
         {
+          "id":7,
           "level": "primer nivel de dificultad",
           "points": 100,
-          "question": "<p>W1hat part of your application does React focus on?</p><ol><li>The Model</li><li>The View</li><li>The Controller</li><li>All of the above</li></ol>",
+          "question": "¿Que es lo peor que se puede ingerir cuando se está sufriendo de hiporermia? ",
             incorrect: [
-              '1no es la buena',
-              '1tampoco es la buena',
-              '1menos aún'
+              'Fruta ',
+              'Barra de cereal',
             ],
-            "correct": "1Esta si!"
+            "correct": "Alcohol"
           
         },
         {
+          "id":8,
           "level": "primer nivel de dificultad",
           "points": 100,
-          "question": "<p>W1hat part of your application does React focus on?</p><ol><li>The Model</li><li>The View</li><li>The Controller</li><li>All of the above</li></ol>",
+          "question": "¿Que raza de perro es la que popularmente sale en las fotos de los egresados? ",
             incorrect: [
-              '1no es la buena',
-              '1tampoco es la buena',
-              '1menos aún'
+              'Labrador',
+              'Siberiano',
             ],
-            "correct": "1Esta si!"
+            "correct": "San Bernardo"
           
         },
         {
+          "id":9,
+          "level": "segundo nivel de dificultad",
+          "points": 200,
+          "question": "¿Que famosa personalidad fue al parque nacional Los Arrayanes en Bariloche?",
+            incorrect: [
+              'Steven Spielberg',
+              'George Lucas ',
+            ],
+            "correct": "Walt Disney"
+          
+        },
+        {
+          "id":10,
+          "level": "segundo nivel de dificultad",
+          "points": 200,
+          "question": "Que famosa película de Walt Disney se basó en el parque nacional Los Arrayanes de Bariloche? ",
+            incorrect: [
+              'La bella y la bestia',
+              'Tierra de osos',
+            ],
+            "correct": "Bambi"
+          
+        },
+        {
+          "id":11,
           "level": "primer nivel de dificultad",
           "points": 200,
-          "question": "<p>W1hat part of your application does React focus on?</p><ol><li>The Model</li><li>The View</li><li>The Controller</li><li>All of the above</li></ol>",
+          "question": "¿Qué es más extraño escuchar en Bariloche?",
             incorrect: [
-              '1no es la buena',
-              '1tampoco es la buena',
-              '1menos aún'
+              'Abalanchas',
+              'Música alta',
             ],
-            "correct": "1Esta si!"
+            "correct": "Truenos"
           
         },
         {
+          "id":12,
           "level": "primer nivel de dificultad",
           "points": 200,
-          "question": "<p>W1hat part of your application does React focus on?</p><ol><li>The Model</li><li>The View</li><li>The Controller</li><li>All of the above</li></ol>",
+          "question": "¿Por qué el invierno puede traer días tristes?",
             incorrect: [
-              '1no es la buena',
-              '1tampoco es la buena',
-              '1menos aún'
+              'Asociar días grises a días tristes',
+              'El frío frena un poco la producción de endorfina en el cuerpo',
             ],
-            "correct": "1Esta si!"
+            "correct": "Falta de rayos solares en el cuerpo"
           
         },
         {
+          "id":13,
           "level": "primer nivel de dificultad",
           "points": 200,
-          "question": "<p>W1hat part of your application does React focus on?</p><ol><li>The Model</li><li>The View</li><li>The Controller</li><li>All of the above</li></ol>",
+          "question": "¿Cual es el principal atractivo del centro de bariloche? ",
             incorrect: [
-              '1no es la buena',
-              '1tampoco es la buena',
-              '1menos aún'
+              'Los perros San Bernardo',
+              'Los boliches',
             ],
-            "correct": "1Esta si!"
+            "correct": "Los edificios en forma de U"
           
         },
         {
-          "level": "primer nivel de dificultad",
-          "points": 100,
-          "question": "<p>W1hat part of your application does React focus on?</p><ol><li>The Model</li><li>The View</li><li>The Controller</li><li>All of the above</li></ol>",
-            incorrect: [
-              '1no es la buena',
-              '1tampoco es la buena',
-              '1menos aún'
-            ],
-            "correct": "1Esta si!"
-          
-        },
-        {
+          "id":14,
           "level": "primer nivel de dificultad",
           "points": 200,
-          "question": "<p>W1hat part of your application does React focus on?</p><ol><li>The Model</li><li>The View</li><li>The Controller</li><li>All of the above</li></ol>",
+          "question": "Dada la afirmación que la formación de copos de nieves es tremendamente complejas, ¿Es verdad que dos copos de nieves son iguales? ",
             incorrect: [
-              '1no es la buena',
-              '1tampoco es la buena',
-              '1menos aún'
+              'Verdad',
+              'Falso',
             ],
-            "correct": "1Esta si!"
+            "correct": "Es muy probable"
           
         },
         {
+          "id":15,
           "level": "primer nivel de dificultad",
           "points": 200,
-          "question": "<p>W1hat part of your application does React focus on?</p><ol><li>The Model</li><li>The View</li><li>The Controller</li><li>All of the above</li></ol>",
+          "question": "A que somos más propensos en invierno? ",
             incorrect: [
-              '1no es la buena',
-              '1tampoco es la buena',
-              '1menos aún'
+              'Mal humor',
+              'Pereza Excesiva',
             ],
-            "correct": "1Esta si!"
-          
+            "correct": "Migrañas"
         },
         {
+          "id":16,
           "level": "primer nivel de dificultad",
           "points": 200,
-          "question": "<p>W1hat part of your application does React focus on?</p><ol><li>The Model</li><li>The View</li><li>The Controller</li><li>All of the above</li></ol>",
+          "question": "¿Cuál es el boliche con mayor capacidad de personas en Bariloche? ",
             incorrect: [
-              '1no es la buena',
-              '1tampoco es la buena',
-              '1menos aún'
+              'Grisú',
+              'By Pass',
             ],
-            "correct": "1Esta si!"
+            "correct": "Rocket"
           
         },
         {
-          "level": "primer nivel de dificultad",
-          "points": 200,
-          "question": "<p>W1hat part of your application does React focus on?</p><ol><li>The Model</li><li>The View</li><li>The Controller</li><li>All of the above</li></ol>",
-            incorrect: [
-              '1no es la buena',
-              '1tampoco es la buena',
-              '1menos aún'
-            ],
-            "correct": "1Esta si!"
-          
-        },
-        {
+          "id":17,
           "level": "primer nivel de dificultad",
           "points": 300,
-          "question": "<p>W1hat part of your application does React focus on?</p><ol><li>The Model</li><li>The View</li><li>The Controller</li><li>All of the above</li></ol>",
+          "question": "¿Cuantos visitantes recibe al año Bariloche?",
             incorrect: [
-              '1no es la buena',
-              '1tampoco es la buena',
-              '1menos aún'
+              '500.000 personas',
+              '2.5 Millones de personas',
             ],
-            "correct": "1Esta si!"
+            "correct": "1 Millon de personas"
           
         },
         {
+          "id":18,
           "level": "primer nivel de dificultad",
           "points": 300,
-          "question": "<p>W1hat part of your application does React focus on?</p><ol><li>The Model</li><li>The View</li><li>The Controller</li><li>All of the above</li></ol>",
+          "question": "Donde se produjo la temperatura más baja de la historia (-80°C)? ",
             incorrect: [
-              '1no es la buena',
-              '1tampoco es la buena',
-              '1menos aún'
+              'La Antártida',
+              'Bariloche',
             ],
-            "correct": "1Esta si!"
+            "correct": "Alaska"
           
         },
         {
+          "id":19,
           "level": "primer nivel de dificultad",
           "points": 300,
-          "question": "<p>W1hat part of your application does React focus on?</p><ol><li>The Model</li><li>The View</li><li>The Controller</li><li>All of the above</li></ol>",
+          "question": "Si hay nieve en la entrada de tu puerta, ¿Cuál de estas maravillas puede evitar que te resbales? ",
             incorrect: [
-              '1no es la buena',
-              '1tampoco es la buena',
-              '1menos aún'
+              'Aserrin',
+              'Maizena',
             ],
-            "correct": "1Esta si!"
+            "correct": "Arena para gatos"
           
         },
         {
+          "id":20,
           "level": "primer nivel de dificultad",
           "points": 300,
-          "question": "<p>W1hat part of your application does React focus on?</p><ol><li>The Model</li><li>The View</li><li>The Controller</li><li>All of the above</li></ol>",
+          "question": "¿Qué sucede en invierno?",
             incorrect: [
-              '1no es la buena',
-              '1tampoco es la buena',
-              '1menos aún'
+              'Los días son mas largos ',
+              'El sol sale antes',
             ],
-            "correct": "1Esta si!"
+            "correct": "Las noches son mas largas"
           
         },
         {
+          "id":21,
           "level": "primer nivel de dificultad",
           "points": 300,
-          "question": "<p>W1hat part of your application does React focus on?</p><ol><li>The Model</li><li>The View</li><li>The Controller</li><li>All of the above</li></ol>",
+          "question": "¿Cuanto puede llegar a pesar un perro San Bernardo?",
             incorrect: [
-              '1no es la buena',
-              '1tampoco es la buena',
-              '1menos aún'
+              'Más de 80kg',
+              'Más de 60kg',
             ],
-            "correct": "1Esta si!"
+            "correct": "Más de 100kg "
           
         },
         {
+          "id":22,
           "level": "primer nivel de dificultad",
           "points": 300,
-          "question": "<p>W1hat part of your application does React focus on?</p><ol><li>The Model</li><li>The View</li><li>The Controller</li><li>All of the above</li></ol>",
+          "question": "¿Para qué son entrenados los perros San Bernardo (llamados perros niñeras) en Bariloche?",
             incorrect: [
-              '1no es la buena',
-              '1tampoco es la buena',
-              '1menos aún'
+              'Para salir en la típica foto',
+              'Cuidar a los niños',
             ],
-            "correct": "1Esta si!"
+            "correct": "Perros de rescate"
           
         },
         {
+          "id":23,
           "level": "primer nivel de dificultad",
           "points": 300,
-          "question": "<p>W1hat part of your application does React focus on?</p><ol><li>The Model</li><li>The View</li><li>The Controller</li><li>All of the above</li></ol>",
+          "question": "¿Cuál es el cerro más alto de Bariloche?",
             incorrect: [
-              '1no es la buena',
-              '1tampoco es la buena',
-              '1menos aún'
+              'Catedral',
+              'Otto',
             ],
-            "correct": "1Esta si!"
+            "correct": "Tronador"
           
         },
         {
+          "id":24,
           "level": "primer nivel de dificultad",
           "points": 300,
-          "question": "<p>W1hat part of your application does React focus on?</p><ol><li>The Model</li><li>The View</li><li>The Controller</li><li>All of the above</li></ol>",
+          "question": "¿Cuál de estos factores es peor para la piel?",
             incorrect: [
-              '1no es la buena',
-              '1tampoco es la buena',
-              '1menos aún'
+              'El frío',
+              'El viento',
             ],
-            "correct": "1Esta si!"
+            "correct": "Ambos"
           
         },
         {
+          "id":25,
           "level": "primer nivel de dificultad",
           "points": 400,
-          "question": "<p>W1hat part of your application does React focus on?</p><ol><li>The Model</li><li>The View</li><li>The Controller</li><li>All of the above</li></ol>",
+          "question": "¿Cuantos metros tiene la fosa más profunda del Nahuel Huapi? ",
             incorrect: [
-              '1no es la buena',
-              '1tampoco es la buena',
-              '1menos aún'
+              '300 metros',
+              '200 metros',
             ],
-            "correct": "1Esta si!"
+            "correct": "400 metros"
           
         },
         {
+          "id":26,
           "level": "primer nivel de dificultad",
           "points": 400,
-          "question": "<p>W1hat part of your application does React focus on?</p><ol><li>The Model</li><li>The View</li><li>The Controller</li><li>All of the above</li></ol>",
+          "question": "¿Cuál es la mejor herramienta del San Berardo para valerse en la nieve? ",
             incorrect: [
-              '1no es la buena',
-              '1tampoco es la buena',
-              '1menos aún'
+              'Su peso',
+              'Ambas ',
             ],
-            "correct": "1Esta si!"
+            "correct": "Su sentido de la orientación"
           
         },
         {
-          "level": "primer nivel de dificultad",
-          "points": 100,
-          "question": "<p>W1hat part of your application does React focus on?</p><ol><li>The Model</li><li>The View</li><li>The Controller</li><li>All of the above</li></ol>",
-            incorrect: [
-              '1no es la buena',
-              '1tampoco es la buena',
-              '1menos aún'
-            ],
-            "correct": "1Esta si!"
-          
-        },
-        {
+          "id":27,
           "level": "primer nivel de dificultad",
           "points": 400,
-          "question": "<p>W1hat part of your application does React focus on?</p><ol><li>The Model</li><li>The View</li><li>The Controller</li><li>All of the above</li></ol>",
+          "question": "A muy bajas temperaturas, ¿Que hay que hacer para que no se congele el tanque de combustible de un auto?",
             incorrect: [
-              '1no es la buena',
-              '1tampoco es la buena',
-              '1menos aún'
+              'Mantenerlo Medio lleno',
+              'Evitar usar el auto',
             ],
-            "correct": "1Esta si!"
+            "correct": "Mantenerlo lleno"
           
         },
         {
+          "id":28,
           "level": "primer nivel de dificultad",
           "points": 400,
-          "question": "<p>W1hat part of your application does React focus on?</p><ol><li>The Model</li><li>The View</li><li>The Controller</li><li>All of the above</li></ol>",
+          "question": "¿A qué temperatura debe descender el cuerpo humano para llegar a tener hipotermia?",
             incorrect: [
-              '1no es la buena',
-              '1tampoco es la buena',
-              '1menos aún'
+              'Por debajo de los 25° C',
+              'Por Debajo de los 27°C',
             ],
-            "correct": "1Esta si!"
+            "correct": "Por debajo de los 35°C"
           
         },
         {
+          "id":29,
           "level": "primer nivel de dificultad",
           "points": 400,
-          "question": "<p>W1hat part of your application does React focus on?</p><ol><li>The Model</li><li>The View</li><li>The Controller</li><li>All of the above</li></ol>",
+          "question": "¿En que fecha la tierra se encuentra más alejada del sol por lo cual hace más frío?",
             incorrect: [
-              '1no es la buena',
-              '1tampoco es la buena',
-              '1menos aún'
+              '25 de junio',
+              '10 de julio',
             ],
-            "correct": "1Esta si!"
+            "correct": "5 de julio"
           
         },
         {
+          "id":30,
           "level": "primer nivel de dificultad",
           "points": 400,
-          "question": "<p>W1hat part of your application does React focus on?</p><ol><li>The Model</li><li>The View</li><li>The Controller</li><li>All of the above</li></ol>",
+          "question": "¿Que efecto sucede cuando nieva?",
             incorrect: [
-              '1no es la buena',
-              '1tampoco es la buena',
-              '1menos aún'
+              'Tenemos más hambre ',
+              'Genera neblina',
             ],
-            "correct": "1Esta si!"
+            "correct": "Tenemos la sensación de que no hace tanto frío"
           
         },
         {
+          "id":31,
           "level": "primer nivel de dificultad",
-          "points": 100,
-          "question": "<p>W1hat part of your application does React focus on?</p><ol><li>The Model</li><li>The View</li><li>The Controller</li><li>All of the above</li></ol>",
+          "points": 400,
+          "question": "La leyenda del monstruo del lago nahuel huapi fue transmitida por..",
             incorrect: [
-              '1no es la buena',
-              '1tampoco es la buena',
-              '1menos aún'
+              'Diaguitas',
+              'Mapuches',
             ],
-            "correct": "1Esta si!"
+            "correct": "Tehuelches"
+          
+        },
+        {
+          "id":32,
+          "level": "primer nivel de dificultad",
+          "points": 400,
+          "question": "¿En qué año del sigo XX tomó fuerza la historia del monstruo del lago nahuel huapi?",
+            incorrect: [
+              'Años 30',
+              'Años 50',
+            ],
+            "correct": "Años 20"
           
         }
       ]

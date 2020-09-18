@@ -24,7 +24,7 @@ const Trivia =()=>{
         cards.push(...cards3)
         cards.push(...cards4)
         setCards(cards)
-
+        
     }, [])
 
 
