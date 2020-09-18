@@ -42,6 +42,7 @@ const Trivia =()=>{
                 cards.map(( card, i) => (
                         <Row bsPrefix="card-row">
                             <CardInitial style={{ width: '25vw' }}
+                            key={i}
                             points= {card.points}
                             question={card.question} 
                             correct={card.correct} 

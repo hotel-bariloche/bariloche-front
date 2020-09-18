@@ -33,6 +33,7 @@ const AppContext = (props) => {
         ...state,
         start: false,
         countClicks: 0,
+        score:0
       })
       
     }}
