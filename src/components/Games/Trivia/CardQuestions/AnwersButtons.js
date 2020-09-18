@@ -3,7 +3,7 @@ import { Shuffle } from '../../../../Utils/common';
 import Button from 'react-bootstrap/Button';
 import { Context } from '../../../../Context/Provider';
 
-const AnswersButton = ({ correct, incorrect, points }) => {
+const AnswersButton = ({ correct, incorrect, points, handle }) => {
 
     const [colorClass, setColorClass] = React.useState('');
     const [click, setClick] = React.useState(false);
@@ -33,9 +33,11 @@ const AnswersButton = ({ correct, incorrect, points }) => {
         } else if (displayedAnswer !== correctAnswer) {
             setColorClass('red')
         }
-        e.preventDefault()
+        setTimeout(() => {
+            handle()
+          }, 2000);
+        
       }
-console.log(state.countClicks)
     return(
         <div>
             {mixanswers.map((answer,i) => (
