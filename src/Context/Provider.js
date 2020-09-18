@@ -10,7 +10,8 @@ const AppContext = (props) => {
       triviaQuestions: TriviaQuestions,
       language: 'spanish', // default language
       score: 0,
-      countClicks:0
+      countClicks:0,
+      start: true
     });
   return (
 
@@ -27,7 +28,13 @@ const AppContext = (props) => {
       addClicks: () => changeState({
         ...state,
         countClicks: state.countClicks + 1
+      }),
+      changeFinish: () => changeState({
+        ...state,
+        start: false,
+        countClicks: 0
       })
+      
     }}
 
     >

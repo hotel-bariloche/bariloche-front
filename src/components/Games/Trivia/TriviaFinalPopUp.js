@@ -11,10 +11,14 @@ import ToolTipConditions from '../ToolTipConditions';
 
 const TriviaFinalPopUp = (props) => {
     const [show, setShow] = useState(true);
-    const handleClose = () => setShow(false);
-    const { state } = React.useContext(Context);
+    const { state, changeFinish } = React.useContext(Context);
 
-  
+    const handleClose = () => {
+      setShow(false);
+      changeFinish()
+    }
+
+
     let points = (props.points);
     let code = (props.code)
 

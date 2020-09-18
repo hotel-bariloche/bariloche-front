@@ -34,7 +34,7 @@ const Trivia =()=>{
             <div className="trivia-header">
                  <img className="trivia-logo" src={state.language === 'spanish' ? triviaTitleEs : triviaTitleEn} />    
             </div>
-            {state.countClicks === 5 
+            {state.countClicks === 5  
             ? 
                 <TriviaFinalPopUp /> 
             :
