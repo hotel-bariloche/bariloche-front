@@ -8,6 +8,7 @@ const CardModal = (props) => {
   let [count, setCount] = useState(props.count);
   const [show, setShow] = useState(true);
 
+
   const handleClose = (props) => {
       setShow(false);
       setModal(false);
@@ -24,6 +25,7 @@ const CardModal = (props) => {
                   correct={props.correct} 
                   incorrect={props.incorrect}
                   points={props.points}
+                  score={props.score}
                 />
             </ModalBody>
           

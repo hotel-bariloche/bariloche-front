@@ -49,15 +49,15 @@
     width: 35%;
     margin-bottom: 50px;
 }
-.blue{
-    background-color:blue;
+
+.red {
+    background-color: red;
 }
-.red{
-    background-color:red;
+
+.green {
+    background-color: green;
 }
-.green{
-    background-color:green;
-}
-.solutionGreen {
-    background-color: green !important;
+
+.blue {
+    background-color: blue;
 }
