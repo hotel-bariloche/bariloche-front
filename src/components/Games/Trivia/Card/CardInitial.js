@@ -8,12 +8,13 @@ const CardInitial = (props) => {
     
     const [flip, setFlip] = React.useState(false);
     const [count, setCount] = React.useState(0);
+    
 
     
     const Flipped=()=>{
         setFlip(!flip)
         setCount(count+1)
-        }
+     }
 
 
     return(
@@ -37,10 +38,10 @@ const CardInitial = (props) => {
             score={props.score}
             />
         }
-        {flip===true && count >=1 &&
-        <Card onClick={Flipped}>
-            <Card.Img style={{ backgroundColor: 'rgb(204, 167, 114)', height: '140px', width: '150px', padding: '30px'}}src={Logo}/>
-        </Card>
+        {count >=1 &&
+            <Card disabled={true} onClick={Flipped}>
+                <Card.Img style={{ backgroundColor: 'rgb(204, 167, 114)', height: '140px', width: '150px', padding: '30px'}}src={Logo}/>
+            </Card>
          
         }
 
