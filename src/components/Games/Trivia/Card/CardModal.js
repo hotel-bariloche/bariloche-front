@@ -16,8 +16,7 @@ const CardModal = (props) => {
   
     return(
         <div>
-          <Modal isOpen={modal} toggle={handleClose} style={{ marginTop:"10%"}}>
-          <span style={{ fontSize: "2em"}} onClick={handleClose}>X</span>
+          <Modal backdrop='static' isOpen={modal} toggle={handleClose} style={{ marginTop:"10%"}}>
             <ModalBody>
                 <CardQuestion 
                   question={props.question}
