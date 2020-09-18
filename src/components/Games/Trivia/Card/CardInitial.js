@@ -17,8 +17,6 @@ const CardInitial = (props) => {
         setCount(count+1)
         }
 
-        console.log(count)
-        console.log(props)
 
     return(
 

@@ -1,9 +1,12 @@
 import React, {useEffect} from 'react';
 import { Shuffle } from '../../../../Utils/common';
-import Button from 'react-bootstrap/Button'
+import Button from 'react-bootstrap/Button';
+import { Context } from '../../../../Context/Provider';
 
-const AnswersButton = ({ correct, incorrect }) => {
-
+const AnswersButton = ({ correct, incorrect, points }) => {
+    // const [point, setPoint] = React.useState(points);
+    console.log(points)
+    const { state, addScore } = React.useContext(Context);
     const [colorClass, setColorClass] = React.useState('blue');
     const [click, setClick] = React.useState('false');
     const [index, setIndex] =React.useState(null)
@@ -16,14 +19,14 @@ const AnswersButton = ({ correct, incorrect }) => {
         mixanswers.push(answer)
         ))
     mixanswers.push(correct)
-    console.log(mixanswers)
 
 
     const checkTheAnswer = (e) => {
         // setClick('true')
     const correctAnswer = correct === e.target.value
     correctAnswer ? setColorClass('green') : setColorClass('red');
-    console.log(e.target)
+    // addScore(points)
+   
     }
 
     return(

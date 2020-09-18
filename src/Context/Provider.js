@@ -9,6 +9,7 @@ const AppContext = (props) => {
       texts: Texts,
       triviaQuestions: TriviaQuestions,
       language: 'spanish', // default language
+      score: 0
     });
   return (
 
@@ -18,7 +19,12 @@ const AppContext = (props) => {
         ...state,
         language,
       }),
+      addScore: (points) => changeState({
+        ...state,
+        score: state.score + points
+      })
     }}
+
     >
       {props.children}
     </Context.Provider>
