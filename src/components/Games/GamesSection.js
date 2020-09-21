@@ -9,6 +9,8 @@ import despiertapasajerosEs from '../img/games/cardDespiertapasajeros-es.png';
 import despiertapasajerosEn from '../img/games/cardDespiertapasajeros-en.png';
 import memoryEs from '../img/games/cardMemoryGame-es.png';
 import memoryEn from '../img/games/cardMemoryGame-en.png';
+import helpJuanEs from '../img/games/cardMemoryGame-es.png';
+import helpJuanEn from '../img/games/cardMemoryGame-en.png';
 import './GamesSection.css';
 
 const GamesSection = () => {
@@ -52,6 +54,16 @@ const GamesSection = () => {
                                 {state.texts[state.language].games.cardShortDescription3}
                             </Card.Text>
                             <Link to="/MemoryGame"><Button className="button carousel-slide-btn btn-games" variant="primary">{state.texts[state.language].games.play}</Button></Link>
+                        </Card.Body>
+                    </Card>
+                    <Card style={{ width: '22rem' }} className="game-card">
+                    <Card.Img variant="top" src={state.language === 'spanish' ? helpJuanEs : helpJuanEn} />
+                        <Card.Body>
+                            <Card.Title>{state.texts[state.language].games.card_title4}</Card.Title>
+                            <Card.Text>
+                                {state.texts[state.language].games.cardShortDescription4}
+                            </Card.Text>
+                            <Link to="/HelpJuan"><Button className="button carousel-slide-btn btn-games" variant="primary">{state.texts[state.language].games.play}</Button></Link>
                         </Card.Body>
                     </Card>
                 </div>
