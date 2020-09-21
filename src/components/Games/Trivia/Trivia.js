@@ -8,6 +8,8 @@ import triviaTitleEs from "../../img/games/trivia/title_trivia_es.png";
 import triviaTitleEn from "../../img/games/trivia/title_trivia_en.png";
 import TriviaFinalPopUp from './TriviaFinalPopUp';
 import CloseButtonTrivia from './CloseButtonTrivia';
+import InstructionTrivia from './InstructionTrivia';
+import Popup from '../Modal/Popup';
 
 
 const Trivia =()=>{
@@ -29,10 +31,20 @@ const Trivia =()=>{
     }, [])
 
 
-
     return(
         <div className="trivial-grid">
-              <div className="triviaButtons">
+        <div>
+         <Popup 
+          className="generalModalTitle generalModalTitle-orange"
+          description={state.texts[state.language].memoryGame.popup_description} 
+          instruction1={state.texts[state.language].memoryGame.instruction1}
+          instruction2={state.texts[state.language].memoryGame.instruction2}
+          instruction3={state.texts[state.language].memoryGame.instruction3}
+          instruction4={state.texts[state.language].memoryGame.instruction4}
+        />
+        </div>
+            <div className="triviaButtons">
+              <InstructionTrivia />
               <CloseButtonTrivia />              
             </div>
             <div className="trivia-header">
@@ -60,5 +72,6 @@ const Trivia =()=>{
         </div>
     )
 }
+
 
 export default Trivia
