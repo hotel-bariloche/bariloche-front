@@ -35,12 +35,12 @@ const Trivia =()=>{
         <div className="trivial-grid">
         <div>
          <Popup 
-          className="generalModalTitle generalModalTitle-orange"
-          description={state.texts[state.language].memoryGame.popup_description} 
-          instruction1={state.texts[state.language].memoryGame.instruction1}
-          instruction2={state.texts[state.language].memoryGame.instruction2}
-          instruction3={state.texts[state.language].memoryGame.instruction3}
-          instruction4={state.texts[state.language].memoryGame.instruction4}
+          className="generalModalTitle generalModalTitle-brown"
+          description={state.texts[state.language].trivia.popup_description} 
+          instruction1={state.texts[state.language].trivia.instruction1}
+          instruction2={state.texts[state.language].trivia.instruction2}
+          instruction3={state.texts[state.language].trivia.instruction3}
+          instruction4={state.texts[state.language].trivia.instruction4}
         />
         </div>
             <div className="triviaButtons">

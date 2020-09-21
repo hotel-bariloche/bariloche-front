@@ -52,13 +52,13 @@ export class InstructionMemory extends React.Component {
                     </ModalHeader>
                     <ModalBody>
                         <div className='memoryDespription'><p>                
-                            {context().state.texts[language()].memoryGame.popup_description} 
+                            {context().state.texts[language()].trivia.popup_description} 
                         </p></div>
                         <ul className='memoryListDiscount'>
-                            <li>{context().state.texts[language()].memoryGame.instruction1}</li>
-                            <li>{context().state.texts[language()].memoryGame.instruction2}</li>
-                            <li>{context().state.texts[language()].memoryGame.instruction3}</li>
-                            <li>{context().state.texts[language()].memoryGame.instruction4}</li>
+                            <li>{context().state.texts[language()].trivia.instruction1}</li>
+                            <li>{context().state.texts[language()].trivia.instruction2}</li>
+                            <li>{context().state.texts[language()].trivia.instruction3}</li>
+                            <li>{context().state.texts[language()].trivia.instruction4}</li>
                         </ul>
                     </ModalBody>
                     <ModalFooter>
