@@ -7,6 +7,8 @@ import { Shuffle } from '../../../Utils/common';
 import triviaTitleEs from "../../img/games/trivia/title_trivia_es.png";
 import triviaTitleEn from "../../img/games/trivia/title_trivia_en.png";
 import TriviaFinalPopUp from './TriviaFinalPopUp';
+import CloseButtonTrivia from './CloseButtonTrivia';
+
 
 const Trivia =()=>{
     
@@ -31,9 +33,13 @@ const Trivia =()=>{
 
     return(
         <div className="trivial-grid">
+              <div>
+              <CloseButtonTrivia />              
+            </div>
             <div className="trivia-header">
                  <img className="trivia-logo" src={state.language === 'spanish' ? triviaTitleEs : triviaTitleEn} />    
             </div>
+          
             <div style={{ width: '100vw'}}><h2>{state.score}</h2></div>
             {state.countClicks === 5  
             ? 
