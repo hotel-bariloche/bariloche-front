@@ -15,7 +15,7 @@ class CloseButtonTrivia extends React.Component {
         <div>
             {/* CLOSE BUTTON */}
             <div className="bigCloseButtonMemory">
-               <Link to = "/games" ><span style={{color: "#29ABE2", fontSize: "2em"}}>{closeButton}</span></Link> 
+               <Link to = "/games" ><span style={{color: "rgb(204, 167, 114)", fontSize: "2em"}}>{closeButton}</span></Link> 
             </div>            
         </div>
     )}
