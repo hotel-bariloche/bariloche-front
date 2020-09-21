@@ -16,8 +16,7 @@ const Trivia =()=>{
     const [cards, setCards] = React.useState([])
 
     useEffect(() => {
-        let cardsShuffle = Shuffle ([...state.triviaQuestions[state.language].questions.dificulty1])
-    
+        let cardsShuffle = Shuffle ([...state.triviaQuestions[state.language].questions.dificulty1])    
         const cards = cardsShuffle.filter(card => card.points === 100).slice(0,4)
         const cards2 = cardsShuffle.filter(card => card.points === 200).slice(0,4)
         const cards3 = cardsShuffle.filter(card => card.points === 300).slice(0,4)
@@ -46,9 +45,8 @@ const Trivia =()=>{
                 <TriviaFinalPopUp /> 
             :
                 cards.map(( card, i) => (
-                        <Row bsPrefix="card-row">
+                        <Row bsPrefix="card-row" key={i}                        >
                             <CardInitial style={{ width: '25vw' }}
-                            key={i}
                             points= {card.points}
                             question={card.question} 
                             correct={card.correct} 

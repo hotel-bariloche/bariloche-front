@@ -1,5 +1,5 @@
 import React from 'react';
-import AnswersButtons from './AnwersButtons'
+import AnswersButtons from './AnwersButtons';
 
 const CardQuestion =(props)=>{
   console.log(props)
