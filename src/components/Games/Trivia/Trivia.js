@@ -40,7 +40,7 @@ const Trivia =()=>{
             </div>
           
             <div style={{ width: '100vw'}}><h2>{state.score}</h2></div>
-            {state.countClicks === 5  
+            {state.countClicks >= 5  
             ? 
                 <TriviaFinalPopUp /> 
             :

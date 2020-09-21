@@ -37,7 +37,7 @@ const AnswersButton = ({ correct, incorrect, points, handle }) => {
 
             setTimeout(() => {
                 handle()
-            }, 2000);
+            }, 1500);
     }
 
 

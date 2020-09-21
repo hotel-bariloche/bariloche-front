@@ -1,13 +1,14 @@
 import React, { useState, useEffect } from 'react';
 import { Modal, ModalBody } from 'reactstrap';
 import CardQuestion from '../CardQuestions/CardQuestion';
-
+import { Context } from '../../../../Context/Provider';
 
 
 const CardModal = (props) => {
 
   const [modal, setModal] = useState(true);
   const [timer, setTimer] = useState(10);
+  const { state, addClicks, addScore } =React.useContext(Context);
 
   const handleClose = (props) => {
     setModal(false);
@@ -17,9 +18,11 @@ useEffect(() => {
       setTimeout(() => setTimer(timer - 1), 1000);
     } else {
       setModal(handleClose());
+      addClicks()
     }
   }, [timer]);
 
+  console.log(state.countClicks)
     return(
         <div>
           <Modal backdrop='static' isOpen={modal} toggle={handleClose} style={{ marginTop:"10%"}}>
