@@ -33,7 +33,7 @@ const Trivia =()=>{
 
     return(
         <div className="trivial-grid">
-              <div>
+              <div className="triviaButtons">
               <CloseButtonTrivia />              
             </div>
             <div className="trivia-header">
