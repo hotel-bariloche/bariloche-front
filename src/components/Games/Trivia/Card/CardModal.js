@@ -39,6 +39,7 @@ useEffect(() => {
                   incorrect={props.incorrect}
                   points={props.points}
                   handle={handleClose}
+                  id={props.id}
                 />
             </ModalBody>
           

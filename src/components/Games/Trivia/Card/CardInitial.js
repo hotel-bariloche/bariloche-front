@@ -35,6 +35,7 @@ const CardInitial = (props) => {
             correct={props.correct} 
             incorrect={props.incorrect}
             points={props.points}
+            id={props.id}
             />
         }
         {count >=1 &&

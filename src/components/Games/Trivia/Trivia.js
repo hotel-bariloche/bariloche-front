@@ -57,12 +57,14 @@ const Trivia =()=>{
                 <TriviaFinalPopUp /> 
             :
                 cards.map(( card, i) => (
-                        <Row bsPrefix="card-row" key={i}                        >
+                        <Row bsPrefix="card-row"                         >
                             <CardInitial style={{ width: '25vw' }}
                             points= {card.points}
                             question={card.question} 
                             correct={card.correct} 
                             incorrect={card.incorrect} 
+                            key={i}
+                            id={card.id}
                             />                           
                         </Row>
                     ) 
