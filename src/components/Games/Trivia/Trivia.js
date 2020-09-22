@@ -48,7 +48,7 @@ const Trivia =()=>{
               <CloseButtonTrivia />              
             </div>
             <div className="trivia-header">
-                 <img className="trivia-logo" src={state.language === 'spanish' ? triviaTitleEs : triviaTitleEn} />    
+                 <img className="trivia-logo" alt="logo-trivia" src={state.language === 'spanish' ? triviaTitleEs : triviaTitleEn} />    
             </div>
           
             <div style={{ width: '100vw'}}><h2>{state.score}</h2></div>
