@@ -61,7 +61,7 @@ const HelpJuan = () => {
 
         // Kill the game if needed
         if (guessesLeft === 0) {
-          stateUpdate.gameState = GAME_OVER;
+          onRestartClick(e)
         }
 
         // Update the letters already tried
