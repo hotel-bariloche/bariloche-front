@@ -14,7 +14,7 @@ const GameContainer = ({ timerOn, letters, pastGuesses, gameState, guesses, hits
   const _renderInputPanel = () => {
     const hasAttemptsLeft = guesses > 0;
     const gameWon = gameState === GAME_WON;
-    const content = hasAttemptsLeft && timerOn
+    const content = hasAttemptsLeft && timerOn > 0
         ?  (
             <div className="Game-VirtualKeyboard">
               <VirtualKeyboard
