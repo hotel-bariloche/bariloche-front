@@ -13,12 +13,17 @@ const CardModal = (props) => {
   const handleClose = (props) => {
     setModal(false);
 }
+
+let timerVar
+
 useEffect(() => {
     if (timer > 0) {
-      setTimeout(() => setTimer(timer - 1), 1000);
+      timerVar = setTimeout(() => setTimer(timer - 1), 1000);
+      
     } else {
       setModal(handleClose());
       addClicks()
+      clearTimeout(timerVar)
     }
   }, [timer]);
 
