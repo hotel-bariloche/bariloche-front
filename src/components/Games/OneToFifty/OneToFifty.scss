@@ -152,10 +152,9 @@
                     }
                 }
 
-                @media screen and (max-width: 600px) {
-                    height: 65px;
-                    width: 60px;
-                    background-size: 64px 65px;
+                @media screen and (max-width: 400px) {
+                    height: 50px;
+                    width: 50px;
                 }
 
                 @media screen and (max-width: 335px) {

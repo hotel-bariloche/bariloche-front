@@ -1,15 +1,19 @@
-import React, { useState } from 'react';
-import { Button, Modal, ModalHeader, ModalBody, ModalFooter } from 'reactstrap';
+import React from 'react';
+import {
+    Button, Modal, ModalBody, ModalFooter, ModalHeader
+} from 'reactstrap';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faQuestionCircle } from '@fortawesome/free-solid-svg-icons';
+import './InstructionTrivia.scss';
 import { Context } from '../../../Context/Provider';
 import ToolTipConditions from '../ToolTipConditions';
-import './Popup.scss';
 
-  export class Popup extends React.Component {      
+export class InstructionMemory extends React.Component {      
     static contextType = Context
     constructor(props) {
         super(props);
         this.state = {
-            modal: true
+            modal: false
         }
     }
 
@@ -19,7 +23,11 @@ import './Popup.scss';
     
    
   render(){
-
+       //Instructions Icon
+       const instructions = <FontAwesomeIcon icon = {
+           faQuestionCircle
+       }
+       />
 
         let context = () => {            
             const context = this.context;
@@ -34,22 +42,23 @@ import './Popup.scss';
       return (
         <div>
         {/* INSTRUCTIONS */}
+            <span className="bigInstructions" style={{ color: "#746547", fontSize: "2em"}} onClick={this.toggle}>{instructions}</span>
             <Modal isOpen={this.state.modal} toggle={this.toggle} style={{ marginTop:"10%"}}>
-                <div className='bodyModalGeneral'>
+                <div className='bodyModalMemory'>
                     <ModalHeader toggle={this.toggle}>
-                        <div className={this.props.className}>
+                        <div className="memoryModalTitle">
                             {context().state.texts[language()].memoryGame.popupTitle}
                         </div>
                     </ModalHeader>
                     <ModalBody>
-                        <div className='generalDespription'><p> 
-                         {this.props.description}
+                        <div className='memoryDespription'><p>                
+                            {context().state.texts[language()].trivia.popup_description} 
                         </p></div>
-                        <ul className='generalListDiscount'>
-                            <li>{this.props.instruction1}</li>
-                            <li>{this.props.instruction2}</li>
-                            <li>{this.props.instruction3}</li>
-                            <li>{this.props.instruction4}</li>
+                        <ul className='memoryListDiscount'>
+                            <li>{context().state.texts[language()].trivia.instruction1}</li>
+                            <li>{context().state.texts[language()].trivia.instruction2}</li>
+                            <li>{context().state.texts[language()].trivia.instruction3}</li>
+                            <li>{context().state.texts[language()].trivia.instruction4}</li>
                         </ul>
                     </ModalBody>
                     <ModalFooter>
@@ -64,4 +73,4 @@ import './Popup.scss';
     )}
 }
 
-export default Popup;
+export default InstructionMemory;
