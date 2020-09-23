@@ -1,38 +1,53 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+
+
 .bigInstructions{  
     cursor: pointer;
 }
-
-.bodyModalMemory{
-        margin: 1rem;
-        border: solid 2px black;
+.bigInstructionsClose{  
+    float: right !important;
+    margin-right: 15px;
+    color: black;
 }
-
 .modal-footer{
     border-top:none!important;
 }
 
 .modal-header {
+    display:flex;
     border-bottom: none!important;
     flex-direction: column-reverse;
     justify-content: none!important;
     align-items: center;
+    margin-top: 2rem;
+
 }
 
-.memoryModalTitle{
+.memoryModalTitle1{
     background: #FF7E0B;
-    padding: 1rem;
-    font-weight: 500!important;
-    font-size: 3rem!important;
+    border-radius: 15px;
+    box-shadow:7px 5px 5px #9e4d06;
+    font-weight: 600!important;
+    font-size: 2rem!important;
     font-family: "Roboto", sans-serif!important;
-}
-
-.memoryListDiscount{
-    text-align: left;
     padding: 1rem;
-    list-style-type: disc;
+    text-transform: uppercase !important;
 }
 
-.memoryDespription{
-    text-align: left;
-    margin-bottom: 0px!important;
+.memoryListDiscount1{
+    // list-style-type: disc;
+    text-align: center;
+}
+
+.memoryDespription1{
+    text-align: center;
+    padding: 2rem;
+}
+
+.modal-content {
+    border: solid 10px #FF7E0B !important;
+    box-sizing: border-box;
+    color:black;
+    font-weight: bold;
+    font-family: "Roboto", sans-serif !important;
 }

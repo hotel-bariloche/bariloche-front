@@ -7,6 +7,7 @@ import { faQuestionCircle } from '@fortawesome/free-solid-svg-icons';
 import './InstructionMemory.scss';
 import { Context } from '../../../Context/Provider';
 import ToolTipConditions from '../ToolTipConditions';
+import { faTimes } from '@fortawesome/free-solid-svg-icons';
 
 export class InstructionMemory extends React.Component {      
     static contextType = Context
@@ -28,6 +29,10 @@ export class InstructionMemory extends React.Component {
            faQuestionCircle
        }
        />
+        const close = <FontAwesomeIcon icon = {
+            faTimes
+          }
+          />
 
         let context = () => {            
             const context = this.context;
@@ -44,17 +49,19 @@ export class InstructionMemory extends React.Component {
         {/* INSTRUCTIONS */}
             <span className="bigInstructions" style={{ color: "#29ABE2", fontSize: "2em"}} onClick={this.toggle}>{instructions}</span>
             <Modal isOpen={this.state.modal} toggle={this.toggle} style={{ marginTop:"10%"}}>
-                <div className='bodyModalMemory'>
-                    <ModalHeader toggle={this.toggle}>
-                        <div className="memoryModalTitle">
+                <div>
+                <span className="bigInstructionsClose" style={{ fontSize: "2em" }} onClick={this.toggle}>{close}</span>
+                    <ModalHeader>
+                        <div className="memoryModalTitle1">
                             {context().state.texts[language()].memoryGame.popupTitle}
                         </div>
                     </ModalHeader>
                     <ModalBody>
-                        <div className='memoryDespription'><p>                
+
+                        <div className='memoryDespription1'><p>                
                             {context().state.texts[language()].memoryGame.popup_description} 
                         </p></div>
-                        <ul className='memoryListDiscount'>
+                        <ul className='memoryListDiscount1'>
                             <li>{context().state.texts[language()].memoryGame.instruction1}</li>
                             <li>{context().state.texts[language()].memoryGame.instruction2}</li>
                             <li>{context().state.texts[language()].memoryGame.instruction3}</li>
