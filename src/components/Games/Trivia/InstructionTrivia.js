@@ -7,6 +7,7 @@ import { faQuestionCircle } from '@fortawesome/free-solid-svg-icons';
 import './InstructionTrivia.scss';
 import { Context } from '../../../Context/Provider';
 import ToolTipConditions from '../ToolTipConditions';
+import { faTimes } from '@fortawesome/free-solid-svg-icons';
 
 export class InstructionMemory extends React.Component {      
     static contextType = Context
@@ -28,7 +29,6 @@ export class InstructionMemory extends React.Component {
            faQuestionCircle
        }
        />
-
         let context = () => {            
             const context = this.context;
             return context;
@@ -38,23 +38,27 @@ export class InstructionMemory extends React.Component {
             const language = context().state.language;
             return language;
         }        
-
+        const close = <FontAwesomeIcon icon = {
+            faTimes
+          }
+          />
       return (
         <div>
         {/* INSTRUCTIONS */}
             <span className="bigInstructions" style={{ color: "#746547", fontSize: "2em"}} onClick={this.toggle}>{instructions}</span>
             <Modal isOpen={this.state.modal} toggle={this.toggle} style={{ marginTop:"10%"}}>
-                <div className='bodyModalMemory'>
-                    <ModalHeader toggle={this.toggle}>
-                        <div className="memoryModalTitle">
+                <div className ='all-modal-trivia'>
+                    <ModalBody>
+                        <div>
+                        <span className="bigInstructionsClose" style={{ fontSize: "2em" }} onClick={this.toggle}>{close}</span>
+                        </div>
+                        <div className="triviaModalTitle">
                             {context().state.texts[language()].memoryGame.popupTitle}
                         </div>
-                    </ModalHeader>
-                    <ModalBody>
-                        <div className='memoryDespription'><p>                
+                        <div className='triviaDespription'><p>                
                             {context().state.texts[language()].trivia.popup_description} 
                         </p></div>
-                        <ul className='memoryListDiscount'>
+                        <ul className='triviaListDiscount'>
                             <li>{context().state.texts[language()].trivia.instruction1}</li>
                             <li>{context().state.texts[language()].trivia.instruction2}</li>
                             <li>{context().state.texts[language()].trivia.instruction3}</li>
@@ -65,9 +69,8 @@ export class InstructionMemory extends React.Component {
                         <div>
                             <ToolTipConditions/>
                         </div>
-                        {/* <Button color="secondary" onClick={this.toggle}>{context().state.texts[language()].memoryGame.close_button}</Button> */}
                     </ModalFooter>
-                 </div>
+                </div>
             </Modal>
         </div>
     )}

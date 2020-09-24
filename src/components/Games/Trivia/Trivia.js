@@ -35,6 +35,7 @@ const Trivia =()=>{
         <div className="trivial-grid">
         <div>
          <Popup 
+          className1='all-modal-trivia'
           className="generalModalTitle generalModalTitle-brown"
           description={state.texts[state.language].trivia.popup_description} 
           instruction1={state.texts[state.language].trivia.instruction1}
@@ -48,21 +49,23 @@ const Trivia =()=>{
               <CloseButtonTrivia />              
             </div>
             <div className="trivia-header">
-                 <img className="trivia-logo" src={state.language === 'spanish' ? triviaTitleEs : triviaTitleEn} />    
+                 <img className="trivia-logo" alt="logo-trivia" src={state.language === 'spanish' ? triviaTitleEs : triviaTitleEn} />    
             </div>
           
             <div style={{ width: '100vw'}}><h2>{state.score}</h2></div>
-            {state.countClicks >= 5  
+            {state.countClicks === 5  
             ? 
                 <TriviaFinalPopUp /> 
             :
                 cards.map(( card, i) => (
-                        <Row bsPrefix="card-row" key={i}                        >
+                        <Row bsPrefix="card-row"                         >
                             <CardInitial style={{ width: '25vw' }}
                             points= {card.points}
                             question={card.question} 
                             correct={card.correct} 
                             incorrect={card.incorrect} 
+                            key={i}
+                            id={card.id}
                             />                           
                         </Row>
                     ) 

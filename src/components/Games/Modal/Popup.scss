@@ -1,49 +1,65 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
 
-.bodyModalGeneral{
-    margin: 1rem;
-    border: solid 2px black;
+.bigInstructionsClose{  
+    float: right !important;
+    margin-right: 15px;
+    color: black;
 }
-
 .modal-footer{
-border-top:none!important;
-}
-
-.modal-header {
-border-bottom: none!important;
-flex-direction: column-reverse;
-justify-content: none!important;
-align-items: center;
+    border-top:none!important;
 }
 
 .generalModalTitle{
-    padding: 1rem;
-    font-weight: 500!important;
-    font-size: 3rem!important;
+    border-radius: 15px;
+    font-weight: 600!important;
+    font-size: 2rem!important;
     font-family: "Roboto", sans-serif!important;
+    padding: 1rem;
+    text-transform: uppercase !important;
+    align-items: center;
+    border-bottom: none!important;
+    flex-direction: column-reverse;
+    justify-content: none!important;
+    width:70%;
+    margin: 3rem auto;
     }
 
 .generalListDiscount{
-    text-align: left;
-    padding: 1rem;
-    list-style-type: disc;
-    }
+    text-align: center;
+}
 
 .generalDespription{
-    text-align: left;
-    margin-bottom: 0px!important;
+    text-align: center;
+    padding: 2rem;
 }
 
 .generalModalTitle {
     &-orange {
       background-color:#FF7E0B;
+      box-shadow:7px 5px 5px #371b00;
     } 
     &-red {
       background-color: #E5423A;
+      box-shadow:7px 5px 5px #6a2636;
     }
     &-blue {
-        background-color:#29ABE2;
+        background-color:#29abe2;
+        box-shadow:7px 5px 5px #09103a;
     }
     &-brown {
-        background-color:#75543a;
+        background-color:#f2ab38;
+        box-shadow:7px 5px 5px #cca772;
     }  
+  }
+  @media (max-width: 600px) {
+    .generalModalTitle {
+        font-size: 1.5rem!important;
+    }
+    .generalDespription{
+        padding: 0;
+    }
+    .bigInstructionsClose{  
+        margin-right: 5px;
+        font-size: 1.5em!important;
+    }
   }

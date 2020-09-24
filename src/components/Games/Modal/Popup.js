@@ -3,6 +3,8 @@ import { Button, Modal, ModalHeader, ModalBody, ModalFooter } from 'reactstrap';
 import { Context } from '../../../Context/Provider';
 import ToolTipConditions from '../ToolTipConditions';
 import './Popup.scss';
+import { faTimes } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
   export class Popup extends React.Component {      
     static contextType = Context
@@ -20,6 +22,10 @@ import './Popup.scss';
    
   render(){
 
+        const close = <FontAwesomeIcon icon = {
+          faTimes
+        }
+         />
 
         let context = () => {            
             const context = this.context;
@@ -31,17 +37,19 @@ import './Popup.scss';
             return language;
         }        
 
+
       return (
-        <div>
+        <div classNama='all-modal'>
         {/* INSTRUCTIONS */}
             <Modal isOpen={this.state.modal} toggle={this.toggle} style={{ marginTop:"10%"}}>
-                <div className='bodyModalGeneral'>
-                    <ModalHeader toggle={this.toggle}>
+            <div className ={this.props.className1}>
+                    <ModalBody>
+                        <div>
+                        <span className="bigInstructionsClose" style={{ fontSize: "2em" }} onClick={this.toggle}>{close}</span>
+                        </div>
                         <div className={this.props.className}>
                             {context().state.texts[language()].memoryGame.popupTitle}
                         </div>
-                    </ModalHeader>
-                    <ModalBody>
                         <div className='generalDespription'><p> 
                          {this.props.description}
                         </p></div>
@@ -56,9 +64,8 @@ import './Popup.scss';
                         <div>
                             <ToolTipConditions/>
                         </div>
-                        {/* <Button color="secondary" onClick={this.toggle}>{context().state.texts[language()].memoryGame.close_button}</Button> */}
                     </ModalFooter>
-                 </div>
+                    </div>
             </Modal>
         </div>
     )}
