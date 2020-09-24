@@ -38,7 +38,7 @@ const CardQuestion = (props) => {
   }
 
 
-   console.log(state.score)
+   console.log(state.score, 'holiscore')
 
     return(
       <div>

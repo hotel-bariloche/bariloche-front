@@ -10,13 +10,14 @@ import TriviaFinalPopUp from './TriviaFinalPopUp';
 import CloseButtonTrivia from './CloseButtonTrivia';
 import InstructionTrivia from './InstructionTrivia';
 import Popup from '../Modal/Popup';
+import confetti from "../../../confetti";
 
 
 const Trivia =()=>{
     
     const { state } = React.useContext(Context);
     const [cards, setCards] = React.useState([])
-
+    const [game, setGame] = React.useState(true)
     useEffect(() => {
         let cardsShuffle = Shuffle ([...state.triviaQuestions[state.language].questions.dificulty1])    
         const cards = cardsShuffle.filter(card => card.points === 100).slice(0,4)
@@ -30,7 +31,15 @@ const Trivia =()=>{
         
     }, [])
 
-
+    const endIt = () =>{
+        if (state.countClicks === 5){
+            setGame(true)
+            confetti.start();
+            setTimeout(() => {
+              confetti.stop();
+            }, 2000);
+        }
+    }
     return(
         <div className="trivial-grid">
         <div>
@@ -52,7 +61,7 @@ const Trivia =()=>{
             </div>
           
             <div style={{ width: '100vw'}}><h2>{state.score}</h2></div>
-            {state.countClicks === 5  
+            {state.countClicks === 5  && game === true
             ? 
                 <TriviaFinalPopUp /> 
             :
