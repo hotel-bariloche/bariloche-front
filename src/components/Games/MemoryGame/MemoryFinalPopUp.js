@@ -63,7 +63,7 @@ const MemoryFinalPopup = (props) => {
           backdrop="static"
           keyboard={false}
         >
-          <div className="modalBody">
+          <div className="modalBody" style={{ outline: '4px solid orange'}}>
           
           <Modal.Body >
                 <span className="bigInstructionsPopUp" style={{ fontSize: "2em"}} onClick={handleClose}>{close}</span>
@@ -76,7 +76,7 @@ const MemoryFinalPopup = (props) => {
             <Col className="discountText">
               <p>{state.texts[state.language].memoryGame.congrats_msg2} <span> {ranking()} {state.texts[state.language].memoryGame.congrats_msg3}</span> {state.texts[state.language].memoryGame.congrats_msg4}<span style={{ fontWeight: "bold", fontSize: "x-large" }}></span></p>
               <p>{state.texts[state.language].memoryGame.congrats_msg5}</p>
-              <p>{code()}</p>
+              <p className="discountCode">{code()}</p>
 
             </Col>
             </Row>

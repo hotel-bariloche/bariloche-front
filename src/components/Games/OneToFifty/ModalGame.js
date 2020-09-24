@@ -63,7 +63,7 @@ const ModalGame = (props) => {
       backdrop="static"
       keyboard={false}
     >
-      <div className="modalBody">
+      <div className="modalBody" style={{ outline: '4px solid #E5423A'}}>
       
       <Modal.Body >
             <span className="bigInstructionsPopUp" style={{ fontSize: "2em"}} onClick={handleClose}>{close}</span>
@@ -76,14 +76,14 @@ const ModalGame = (props) => {
         <Col className="discountText">
           <p>{state.texts[state.language].memoryGame.congrats_msg2} <span> {ranking()} {state.texts[state.language].memoryGame.congrats_msg3}</span> {state.texts[state.language].memoryGame.congrats_msg4}<span style={{ fontWeight: "bold", fontSize: "x-large" }}></span></p>
           <p>{state.texts[state.language].memoryGame.congrats_msg5}</p>
-          <p>{code()}</p>
+          <p className="discountCode">{code()}</p>
 
         </Col>
         </Row>
       </Modal.Body>
 
       <Modal.Footer>
-        <Button variant="secondary" href="https://reservations.travelclick.com/106660?languageid=2%20#/guestsandrooms" className="popupButton">
+        <Button variant="secondary" href="https://reservations.travelclick.com/106660?languageid=2%20#/guestsandrooms" className="popupButton50">
          {state.texts[state.language].snake.button_book}
         </Button>
 
