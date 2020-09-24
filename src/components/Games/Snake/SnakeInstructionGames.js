@@ -49,15 +49,13 @@ export class SnakeInstructionGames extends React.Component {
             <span style={{ color: "#29ABE2", fontSize: "2em" }} onClick={this.toggle}>{instructions}</span>
             <Modal isOpen={this.state.modal} toggle={this.toggle} style={{ marginTop:"10%"}}>
             <div className ='all-modal-snake'>
-                <div>
-                    <span className="bigInstructionsClose" style={{ fontSize: "2em" }} onClick={this.toggle}>{close}</span>
-                </div>
-                    <ModalHeader>
+                    <ModalBody>
+                        <div>
+                        <span className="bigInstructionsClose" style={{ fontSize: "2em" }} onClick={this.toggle}>{close}</span>
+                         </div>
                         <div className="snakeModalTitle">
                             {context().state.texts[language()].memoryGame.popupTitle}
                         </div>
-                    </ModalHeader>
-                    <ModalBody>
                         <div className='snakeDespription'><p>                
                             {context().state.texts[language()].snake.popup_description} 
                         </p></div>

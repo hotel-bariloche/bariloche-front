@@ -16,7 +16,14 @@
    font-family: "Roboto", sans-serif!important;
    padding: 1rem;
    text-transform: uppercase !important;
+   align-items: center;
+   border-bottom: none!important;
+   flex-direction: column-reverse;
+   justify-content: none!important;
+   width:70%;
+   margin: 3rem auto;
 }
+
 .snakeListDiscount{
    text-align: center;
 }
@@ -27,3 +34,11 @@
 .all-modal-snake{
    border: solid 10px #29abe2;  
 }
+@media (max-width: 600px) {
+   .snakeModalTitle {
+       font-size: 1.5rem!important;
+   }
+   .snakeDespription{
+       padding: 0;
+   }
+ }

@@ -43,15 +43,13 @@ export class InstructionOneToFifty extends React.Component {
             <span className="bigInstructionsOne" style={{ color: "#E5423A", fontSize: "2em"}} onClick={this.toggle}>{instructions}</span>
             <Modal isOpen={this.state.modal} toggle={this.toggle} style={{ marginTop:"10%"}}>
                 <div className ='all-modal-fifty'>
-                    <div>
-                        <span className="bigInstructionsClose" style={{ fontSize: "2em" }} onClick={this.toggle}>{close}</span>
-                    </div>
-                    <ModalHeader>
+                    <ModalBody>
+                        <div>
+                            <span className="bigInstructionsClose" style={{ fontSize: "2em" }} onClick={this.toggle}>{close}</span>
+                        </div>
                         <div className="oneToFiftyModalTitle">
                             {context.state.texts[language].memoryGame.popupTitle}
                         </div>
-                    </ModalHeader>
-                    <ModalBody>
                         <div className='oneToFiftyDespription'><p>                
                             {context.state.texts[language].oneToFifty.popup_description} 
                         </p></div>

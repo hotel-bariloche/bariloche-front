@@ -43,15 +43,13 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
         {/* INSTRUCTIONS */}
             <Modal isOpen={this.state.modal} toggle={this.toggle} style={{ marginTop:"10%"}}>
             <div className ={this.props.className1}>
-                <div>
-                    <span className="bigInstructionsClose" style={{ fontSize: "2em" }} onClick={this.toggle}>{close}</span>
-                </div>    
-                    <ModalHeader>
+                    <ModalBody>
+                        <div>
+                        <span className="bigInstructionsClose" style={{ fontSize: "2em" }} onClick={this.toggle}>{close}</span>
+                        </div>
                         <div className={this.props.className}>
                             {context().state.texts[language()].memoryGame.popupTitle}
                         </div>
-                    </ModalHeader>
-                    <ModalBody>
                         <div className='generalDespription'><p> 
                          {this.props.description}
                         </p></div>

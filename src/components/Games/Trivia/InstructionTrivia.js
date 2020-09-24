@@ -48,15 +48,13 @@ export class InstructionMemory extends React.Component {
             <span className="bigInstructions" style={{ color: "#746547", fontSize: "2em"}} onClick={this.toggle}>{instructions}</span>
             <Modal isOpen={this.state.modal} toggle={this.toggle} style={{ marginTop:"10%"}}>
                 <div className ='all-modal-trivia'>
-                <div>
-                    <span className="bigInstructionsClose" style={{ fontSize: "2em" }} onClick={this.toggle}>{close}</span>
-                </div>
-                    <ModalHeader>
+                    <ModalBody>
+                        <div>
+                        <span className="bigInstructionsClose" style={{ fontSize: "2em" }} onClick={this.toggle}>{close}</span>
+                        </div>
                         <div className="triviaModalTitle">
                             {context().state.texts[language()].memoryGame.popupTitle}
                         </div>
-                    </ModalHeader>
-                    <ModalBody>
                         <div className='triviaDespription'><p>                
                             {context().state.texts[language()].trivia.popup_description} 
                         </p></div>
