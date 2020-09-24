@@ -32,7 +32,11 @@
     padding: 2rem;
 }
 .all-modal-memory{
-    border: solid 10px #FF7E0B;  
+    border: solid 10px #FF7E0B; 
+    box-sizing: border-box;
+    color:black!important;
+    font-weight: bold;
+    font-family: "Roboto", sans-serif !important; 
 }
 @media (max-width: 600px) {
     .memoryModalTitle1 {

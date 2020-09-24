@@ -29,7 +29,11 @@ border-top:none!important;
     padding: 2rem;
 }
 .all-modal-trivia{
-    border: solid 10px  #cca772;  
+    border: solid 10px  #cca772;
+    box-sizing: border-box;
+    color:black!important;
+    font-weight: bold;
+    font-family: "Roboto", sans-serif !important;  
 }
 @media (max-width: 600px) {
     .triviaModalTitle {

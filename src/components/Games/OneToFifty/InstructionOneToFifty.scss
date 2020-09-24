@@ -31,6 +31,10 @@
  }
  .all-modal-fifty{
   border: solid 10px #6a2636;
+  box-sizing: border-box;
+  color:black!important;
+  font-weight: bold;
+  font-family: "Roboto", sans-serif !important;
 }
 @media (max-width: 600px) {
   .oneToFiftyModalTitle {
