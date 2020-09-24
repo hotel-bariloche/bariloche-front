@@ -7,6 +7,8 @@ import { faQuestionCircle } from '@fortawesome/free-solid-svg-icons';
 import './SnakeInstructionGames.scss'
 import { Context } from '../../../Context/Provider';
 import ToolTipConditions from '../ToolTipConditions';
+import { faTimes } from '@fortawesome/free-solid-svg-icons';
+
 
 export class SnakeInstructionGames extends React.Component {
     static contextType = Context
@@ -28,6 +30,10 @@ export class SnakeInstructionGames extends React.Component {
            faQuestionCircle
        }
        />
+       const close = <FontAwesomeIcon icon = {
+        faTimes
+      }
+      />
        let context = () => {            
         const context = this.context;
         return context;
@@ -38,12 +44,15 @@ export class SnakeInstructionGames extends React.Component {
         return language;
         } 
       return (
-        < div className = "instructionGamesSnake" >
+        <div className = "instructionGamesSnake" >
             {/* INSTRUCTIONS */}
             <span style={{ color: "#29ABE2", fontSize: "2em" }} onClick={this.toggle}>{instructions}</span>
             <Modal isOpen={this.state.modal} toggle={this.toggle} style={{ marginTop:"10%"}}>
-                <div className='bodyModalSnake'>
-                    <ModalHeader toggle={this.toggle}>
+            <div className ='all-modal-snake'>
+                <div>
+                    <span className="bigInstructionsClose" style={{ fontSize: "2em" }} onClick={this.toggle}>{close}</span>
+                </div>
+                    <ModalHeader>
                         <div className="snakeModalTitle">
                             {context().state.texts[language()].memoryGame.popupTitle}
                         </div>

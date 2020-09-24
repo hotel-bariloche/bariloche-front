@@ -4,24 +4,6 @@
 .bigInstructions{  
     cursor: pointer;
 }
-.bigInstructionsClose{  
-    float: right !important;
-    margin-right: 15px;
-    color: black;
-}
-.modal-footer{
-    border-top:none!important;
-}
-
-.modal-header {
-    display:flex;
-    border-bottom: none!important;
-    flex-direction: column-reverse;
-    justify-content: none!important;
-    align-items: center;
-    margin-top: 2rem;
-
-}
 
 .memoryModalTitle1{
     background: #FF7E0B;
@@ -43,11 +25,7 @@
     text-align: center;
     padding: 2rem;
 }
-
-.modal-content {
-    border: solid 10px #FF7E0B !important;
-    box-sizing: border-box;
-    color:black;
-    font-weight: bold;
-    font-family: "Roboto", sans-serif !important;
+.all-modal-memory{
+    border: solid 10px #FF7E0B;  
 }
+

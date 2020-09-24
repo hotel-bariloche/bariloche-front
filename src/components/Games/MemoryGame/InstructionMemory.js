@@ -1,6 +1,6 @@
 import React from 'react';
 import {
-    Button, Modal, ModalBody, ModalFooter, ModalHeader
+         Modal, ModalBody, ModalFooter, ModalHeader
 } from 'reactstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faQuestionCircle } from '@fortawesome/free-solid-svg-icons';
@@ -48,16 +48,19 @@ export class InstructionMemory extends React.Component {
         <div>
         {/* INSTRUCTIONS */}
             <span className="bigInstructions" style={{ color: "#29ABE2", fontSize: "2em"}} onClick={this.toggle}>{instructions}</span>
-            <Modal isOpen={this.state.modal} toggle={this.toggle} style={{ marginTop:"10%"}}>
+            <Modal  isOpen={this.state.modal} toggle={this.toggle} style={{ 
+                marginTop:"10%",
+                }}>
+                <div className ='all-modal-memory'>
                 <div>
-                <span className="bigInstructionsClose" style={{ fontSize: "2em" }} onClick={this.toggle}>{close}</span>
+                    <span className="bigInstructionsClose" style={{ fontSize: "2em" }} onClick={this.toggle}>{close}</span>
+                </div>
                     <ModalHeader>
                         <div className="memoryModalTitle1">
                             {context().state.texts[language()].memoryGame.popupTitle}
                         </div>
                     </ModalHeader>
                     <ModalBody>
-
                         <div className='memoryDespription1'><p>                
                             {context().state.texts[language()].memoryGame.popup_description} 
                         </p></div>
@@ -68,14 +71,15 @@ export class InstructionMemory extends React.Component {
                             <li>{context().state.texts[language()].memoryGame.instruction4}</li>
                         </ul>
                     </ModalBody>
+                    
                     <ModalFooter>
                         <div>
                             <ToolTipConditions/>
                         </div>
-                        {/* <Button color="secondary" onClick={this.toggle}>{context().state.texts[language()].memoryGame.close_button}</Button> */}
                     </ModalFooter>
-                 </div>
+                    </div>
             </Modal>
+           
         </div>
     )}
 }
