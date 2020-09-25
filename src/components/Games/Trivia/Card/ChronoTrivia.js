@@ -4,13 +4,13 @@ import React, {
 } from 'react';
 
 let interval = null;
-const ChronoTrivia = ({ setTimerOn, handle }) => {
+const ChronoTrivia = ({ setTimerOn, handle, clicks }) => {
     const [startTime, setStartTime] = useState(0);
     const [currentTimeMs, setCurrentTimeMs] = useState(0);
 
     useEffect(() => {
         const until = new Date();
-        until.setSeconds(until.getSeconds() + 10);
+        until.setSeconds(until.getSeconds() + 5);
         setStartTime(until);
        interval = setInterval(() => {
             setCurrentTimeMs(new Date());
@@ -22,6 +22,7 @@ const ChronoTrivia = ({ setTimerOn, handle }) => {
         if(startTime < currentTimeMs){
             setTimerOn(false);
             handle()
+            clicks()
         }
     }, [startTime, currentTimeMs])
 

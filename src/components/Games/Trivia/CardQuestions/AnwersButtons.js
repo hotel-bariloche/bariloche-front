@@ -2,16 +2,24 @@ import React, {useEffect} from 'react';
 import { Shuffle } from '../../../../Utils/common';
 import { Context } from '../../../../Context/Provider';
 
-const AnswersButton = ({ value, disabled, checkTheAnswer, correctAnswer }) => {
+const AnswersButton = ({ value, disabled, checkTheAnswer, correctAnswer, }) => {
 
     const [colorClass, setColorClass] = React.useState('');
+    const { state, addScore, addClicks } =React.useContext(Context);
     
     const changeColor = (e) => {
         if (value === correctAnswer) {
             setColorClass('green')
+            
             } else 
                 setColorClass('red')
+              
         }
+     const  onClick =(e) =>{
+            addClicks(e)
+            checkTheAnswer(e);
+            changeColor(e);
+            }
     
     return(
         <div>
@@ -20,10 +28,7 @@ const AnswersButton = ({ value, disabled, checkTheAnswer, correctAnswer }) => {
                     className={`${colorClass}`}
                     value={value}
                     disabled={disabled}
-                    onClick={(e) =>{
-                        checkTheAnswer(e);
-                        changeColor(e)
-                        }}
+                    onClick={onClick}    
                 >
                     {value}
                     </button>

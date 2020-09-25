@@ -7,8 +7,8 @@ const CardQuestion = (props) => {
 
   const [disabled, setDisabled] = React.useState(false);
   const [shuffleAnswers, setShuffleAnswers] = React.useState([]);
-  const { state, addScore } =React.useContext(Context);
-  
+  const { state, addScore, addClicks } =React.useContext(Context);
+
 
   const mixanswers = []
       props.incorrect.map((answer) => (
@@ -26,7 +26,7 @@ const CardQuestion = (props) => {
       const correctAnswer = props.correct
           if (displayedAnswer === correctAnswer) {
               addScore(props.points)
-          } 
+          }
           if(disabled) {
               return;
           }
@@ -35,14 +35,15 @@ const CardQuestion = (props) => {
           setTimeout(() => {
               props.handle()
           }, 1500);
+
   }
 
-
+ 
    console.log(state.score, 'holiscore')
 
     return(
       <div>
-          <p>{props.question}{props.points}</p>
+          <p>{props.question}</p>
           {shuffleAnswers.map((answer,i) => (
                 <AnswersButtons
                 checkTheAnswer={checkTheAnswer}
@@ -50,6 +51,7 @@ const CardQuestion = (props) => {
                 correctAnswer={props.correct}
                 disabled={disabled}
                 index={i}
+                clicks={addClicks}
                 />
                 ))
             }

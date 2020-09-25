@@ -13,7 +13,6 @@ const CardModal = (props) => {
 
   const handleClose = (props) => {
     setModal(false);
-    addClicks()
 }
 
 React.useEffect(() => {
@@ -24,18 +23,6 @@ React.useEffect(() => {
   } 
 }, []);
 
-// let timerVar
-
-// useEffect(() => {
-//     if (timer > 0) {
-//       timerVar = setTimeout(() => setTimer(timer - 1), 1000);
-      
-//     } else {
-//       setModal(handleClose());
-//       addClicks()
-//       clearTimeout(timerVar)
-//     }
-//   }, [timer]);
 
   console.log(state.countClicks, 'holacliks')
     return(
@@ -46,7 +33,11 @@ React.useEffect(() => {
             {timerOn === false ? (
               "00:00:00"
             ) : (
-              <ChronoTrivia setTimerOn={setTimerOn} handle={handleClose}/>
+              <ChronoTrivia 
+                  setTimerOn={setTimerOn} 
+                  handle={handleClose}
+                  clicks={addClicks}
+                  />
             )}</div>
                 <CardQuestion 
                   question={props.question}
