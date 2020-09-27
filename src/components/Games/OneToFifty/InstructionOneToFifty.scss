@@ -1,39 +1,46 @@
 .bigInstructionsOne{
     cursor: pointer;
 }
- .modal-content {
-     margin: 0 auto;
- }
- .bodyModalOneToFifty{
-    margin: 1rem;
-    border: solid 2px black;
- }
- 
  .modal-footer{
  border-top:none!important;
  }
  
- .modal-header {
- border-bottom: none!important;
- flex-direction: column-reverse;
- justify-content: none!important;
- align-items: center;
- }
  .oneToFiftyModalTitle{
-    background: #E5423A;
-    padding: 1rem;
-    font-weight: 500!important;
-    font-size: 3rem!important;
-    font-family: "Roboto", sans-serif!important;
+   background-color: #E5423A;
+   box-shadow:7px 5px 5px #6a2636;
+   border-radius: 15px;
+   font-weight: 600!important;
+   font-size: 2rem!important;
+   font-family: "Roboto", sans-serif!important;
+   padding: 1rem;
+   text-transform: uppercase !important;
+   align-items: center;
+    border-bottom: none!important;
+    flex-direction: column-reverse;
+    justify-content: none!important;
+    width:70%;
+    margin: 3rem auto;
  }
  .oneToFiftyListDiscount{
-    text-align: left;
-    padding: 1rem;
-    list-style-type: disc;
+   text-align: center;
  }
  
  .oneToFiftyDespription{
-    text-align: left;
-    margin-bottom: 0px!important;
+   text-align: center;
+   padding: 2rem;
  }
- 
+ .all-modal-fifty{
+  border: solid 10px #6a2636;
+  box-sizing: border-box;
+  color:black!important;
+  font-weight: bold;
+  font-family: "Roboto", sans-serif !important;
+}
+@media (max-width: 600px) {
+  .oneToFiftyModalTitle {
+      font-size: 1.5rem!important;
+  }
+  .oneToFiftyDespription{
+      padding: 0;
+  }
+}

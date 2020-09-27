@@ -2,35 +2,47 @@
    cursor: pointer;
    font-size: 15px;
 }
-.bodyModalSnake{
-   margin: 1rem;
-   border: solid 2px black;
-}
 
 .modal-footer{
-border-top:none!important;
+   border-top:none!important;
 }
 
-.modal-header {
-border-bottom: none!important;
-flex-direction: column-reverse;
-justify-content: none!important;
-align-items: center;
-}
 .snakeModalTitle{
-   background:#29ABE2;
-   padding: 1rem;
-   font-weight: 500!important;
-   font-size: 3rem!important;
+   background: #29abe2;
+   border-radius: 15px;
+   box-shadow:7px 5px 5px #09103a;
+   font-weight: 600!important;
+   font-size: 2rem!important;
    font-family: "Roboto", sans-serif!important;
-}
-.snakeListDiscount{
-   text-align: left;
    padding: 1rem;
-   list-style-type: disc;
+   text-transform: uppercase !important;
+   align-items: center;
+   border-bottom: none!important;
+   flex-direction: column-reverse;
+   justify-content: none!important;
+   width:70%;
+   margin: 3rem auto;
 }
 
-.snakeDespription{
-   text-align: left;
-   margin-bottom: 0px!important;
+.snakeListDiscount{
+   text-align: center;
 }
+.snakeDespription{
+   text-align: center;
+   padding: 2rem;
+}
+.all-modal-snake{
+   border: solid 10px #29abe2; 
+   box-sizing: border-box;
+   color:black!important;
+   font-weight: bold;
+   font-family: "Roboto", sans-serif !important; 
+}
+@media (max-width: 600px) {
+   .snakeModalTitle {
+       font-size: 1.5rem!important;
+   }
+   .snakeDespription{
+       padding: 0;
+   }
+ }
