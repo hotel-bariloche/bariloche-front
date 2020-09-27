@@ -19,23 +19,31 @@ const TriviaFinalPopUp = (props) => {
     }
 
 
-    let points = (props.points);
-    let code = (props.code)
-
     let ranking = () => {
-      if (points >= 16) {
+      if (state.score >= 1000) {
         return `30%`
-      } else if (points >= 10) {
-        return `25%`
-      } else if (points >= 5) {
+      } else if (state.score >= 800) {
         return `20%`
+      } else if (state.score >= 500) {
+        return `10%`
       } else {
         return `10%`
       } 
   
     }
-  
-    
+
+
+  let code = () => {
+    if (state.score >= 1000) {
+      return `GANOCONGBH3`
+    } else if (state.score >= 800) {
+      return `GANOCONCGH2`
+    } else if (state.score >= 500) {
+      return `GANOCONGBH1`
+    } else {
+      return `GANOCONGBH1`
+    } 
+  }
 
     const close = <FontAwesomeIcon icon = {
       faTimes
@@ -61,9 +69,9 @@ const TriviaFinalPopUp = (props) => {
             </Row>
             <Row xs={1}>
             <Col className="discountText">
-              <p>{state.texts[state.language].memoryGame.congrats_msg2} <span> {state.score} {state.texts[state.language].memoryGame.congrats_msg3}</span> {state.texts[state.language].memoryGame.congrats_msg4}<span style={{ fontWeight: "bold", fontSize: "x-large" }}></span></p>
+              <p>{state.texts[state.language].memoryGame.congrats_msg2} <span> {ranking()} {state.texts[state.language].memoryGame.congrats_msg3}</span> {state.texts[state.language].memoryGame.congrats_msg4}<span style={{ fontWeight: "bold", fontSize: "x-large" }}></span></p>
               <p>{state.texts[state.language].memoryGame.congrats_msg5}</p>
-              <p className="discountCode">{code}</p>
+              <p className="discountCode">{code()}</p>
 
             </Col>
             </Row>

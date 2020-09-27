@@ -27,11 +27,11 @@ const CardQuestion = (props) => {
           if (displayedAnswer === correctAnswer) {
               addScore(props.points)
           }
+
           if(disabled) {
               return;
           }
           setDisabled(true)
-
           setTimeout(() => {
               props.handle()
           }, 1500);
@@ -51,7 +51,6 @@ const CardQuestion = (props) => {
                 correctAnswer={props.correct}
                 disabled={disabled}
                 index={i}
-                clicks={addClicks}
                 />
                 ))
             }

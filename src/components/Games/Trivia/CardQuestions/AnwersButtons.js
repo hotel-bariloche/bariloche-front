@@ -7,6 +7,7 @@ const AnswersButton = ({ value, disabled, checkTheAnswer, correctAnswer, }) => {
     const [colorClass, setColorClass] = React.useState('');
     const { state, addScore, addClicks } =React.useContext(Context);
     
+    
     const changeColor = (e) => {
         if (value === correctAnswer) {
             setColorClass('green')
@@ -15,11 +16,12 @@ const AnswersButton = ({ value, disabled, checkTheAnswer, correctAnswer, }) => {
                 setColorClass('red')
               
         }
-     const  onClick =(e) =>{
+     const onClick =(e) =>{
             addClicks(e)
             checkTheAnswer(e);
             changeColor(e);
-            }
+     }
+
     
     return(
         <div>
