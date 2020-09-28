@@ -29,7 +29,7 @@ const AnswersButton = ({ value, disabled, checkTheAnswer, correctAnswer, }) => {
         <div>
                 <button 
                     type="button"
-                    className={`btn ${colorClass}`}
+                    className={`btnTrivia ${colorClass}`}
                     value={value}
                     disabled={disabled}
                     onClick={onClick}    
