@@ -221,10 +221,16 @@ export const Texts = {
             code4: '10%',
             button_book: 'Reservar con descuento',
             button_close: 'Entenido',
-            buttonStart: 'JUGÁ!'
-
-
-        }
+            buttonStart: 'JUGÁ!',
+        },
+        juan: {
+            popup_description: 'Golpeá las puertas de las habitaciones en orden del 1 al 24. Cuánto más rápido lo hagas más grande será el descuento.',
+            instruction1: 'De 0 a 30 segundos: 50% de descuento.',
+            instruction2: 'De 30 a 40 segundos: 30% de descuento.',
+            instruction3: 'De 40 a 50 segundos: 20% de descuento.',
+            instruction4: 'En 50 segundos o más: 10% de descuento',
+            start: 'Comenzar',
+        },
     },
 
     english: {
@@ -455,7 +461,14 @@ export const Texts = {
             button_close: 'Close',
             buttonStart: 'PLAY!'
         },
-
+        juan: {
+            popup_description: 'ENGGolpeá las puertas de las habitaciones en orden del 1 al 24. Cuánto más rápido lo hagas más grande será el descuento.',
+            instruction1: 'De 0 a 30 segundos: 50% de descuento.',
+            instruction2: 'De 30 a 40 segundos: 30% de descuento.',
+            instruction3: 'De 40 a 50 segundos: 20% de descuento.',
+            instruction4: 'En 50 segundos o más: 10% de descuento',
+            start: 'Comenzar',
+        },
     },
 
 
