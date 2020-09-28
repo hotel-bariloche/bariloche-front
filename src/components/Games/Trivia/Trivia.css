@@ -1,3 +1,18 @@
+.card-row {
+    width: 25%;
+}
+
+
+.trivial-grid {
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 50px;
+    background-image: url("../../img/games/trivia/bg_trivia.png");
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
 
 .cardBody {
     height: 15rem;
@@ -48,8 +63,9 @@
     margin-top: 30%;
     font-weight: 600;
     color: white;
-
 }
+
+
 
 
 .card-open {
@@ -70,21 +86,21 @@
 
 
 
-.trivial-grid {
-    display:flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    padding: 50px;
-    background-image: url("../../img/games/trivia/bg_trivia.png");
-    background-position: center;
-    background-repeat: no-repeat;
+
+
+.modalQuestions {
+    border: 6px solid #cca772;
+    border-radius: 10px;
+    align-items: center;
+    background-color: white;
+        
 }
-
-
-.card-row {
-
-    width: 25%;
+.chronoTrivia {
 }
+/* 
+.modalPoints{
+    
+} */
 
 .trivia-header {
     display: block;

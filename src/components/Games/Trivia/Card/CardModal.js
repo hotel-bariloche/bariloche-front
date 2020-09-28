@@ -27,18 +27,21 @@ React.useEffect(() => {
   console.log(state.countClicks, 'holacliks')
     return(
         <div>
-          <Modal backdrop='static' isOpen={modal} toggle={handleClose} style={{ marginTop:"10%"}}>
+          <Modal className="modalQuestions" backdrop='static' isOpen={modal} toggle={handleClose} style={{ marginTop:"10%"}}>
             <ModalBody>
             <div>            
             {timerOn === false ? (
               "00:00:00"
             ) : (
               <ChronoTrivia 
+                  className="chronoTrivia"
                   setTimerOn={setTimerOn} 
                   handle={handleClose}
                   clicks={addClicks}
                   />
             )}</div>
+              <div>
+                <p className="modalPoints">{props.points}</p>
                 <CardQuestion 
                   question={props.question}
                   correct={props.correct} 
@@ -47,6 +50,7 @@ React.useEffect(() => {
                   handle={handleClose}
                   id={props.id}
                 />
+              </div>
             </ModalBody>
           
           </Modal>
