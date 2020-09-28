@@ -44,8 +44,9 @@ const CardInitial = (props) => {
             />
         }
         {count >=1 &&
-            <Card disabled={true} onClick={Flipped}>
-                <Card.Img style={{ backgroundColor: 'rgb(204, 167, 114)', height: '140px', width: '150px', padding: '30px'}}src={Logo}/>
+            <Card className="cardBack" disabled={true} onClick={Flipped}>
+                <Card.Title className="cardBackPoints">{props.points}</Card.Title>
+
             </Card>
          
         }
