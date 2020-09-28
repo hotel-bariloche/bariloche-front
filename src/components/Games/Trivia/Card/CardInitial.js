@@ -1,13 +1,18 @@
 import React from 'react';
 import Card  from 'react-bootstrap/Card';
 import CardModal from './CardModal';
-import Logo from '../../../img/Logo.png'
+import Logo from '../../../img/Logo.png';
+import { Context } from '../../../../Context/Provider';
+
 
 
 const CardInitial = (props) => {
     
     const [flip, setFlip] = React.useState(false);
     const [count, setCount] = React.useState(0);
+    const { state } =React.useContext(Context);
+
+
     
 
     
@@ -25,6 +30,7 @@ const CardInitial = (props) => {
         <div>
             <Card className="cardBody">
             <Card.Title className="cardTitle">{props.points}</Card.Title>
+            <button className="cardInitialButton" onClick={Flipped}>{state.texts[state.language].trivia.buttonQuestion}</button>
             </Card>
         </div>
          }

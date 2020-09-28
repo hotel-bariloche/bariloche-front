@@ -231,6 +231,7 @@ export const Texts = {
             instruction3: 'De 40 a 50 segundos: 20% de descuento.',
             instruction4: 'En 50 segundos o más: 10% de descuento',
             start: 'Comenzar',
+            buttonQuestion: 'VER PREGUNTA'
         }
     },
 
@@ -470,6 +471,8 @@ export const Texts = {
             instruction3: 'From 40 to 50 seconds: 20% of discount.',
             instruction4: 'In 50 seconds or more: 10% of discount',
             start: 'Start',
+            buttonQuestion: 'SEE QUESTION'
+
         },
 
     },
