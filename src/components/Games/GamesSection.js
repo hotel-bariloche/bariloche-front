@@ -9,8 +9,8 @@ import despiertapasajerosEs from '../img/games/cardDespiertapasajeros-es.png';
 import despiertapasajerosEn from '../img/games/cardDespiertapasajeros-en.png';
 import memoryEs from '../img/games/cardMemoryGame-es.png';
 import memoryEn from '../img/games/cardMemoryGame-en.png';
-import helpJuanEs from '../img/games/cardMemoryGame-es.png';
-import helpJuanEn from '../img/games/cardMemoryGame-en.png';
+import helpJuanEs from '../img/games/helpJuan/Ayuda a Juan-bg-card-es.png';
+import helpJuanEn from '../img/games/helpJuan/Ayuda a Juan-bg-eng-card.png';
 import './GamesSection.css';
 
 const GamesSection = () => {
