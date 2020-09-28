@@ -10,7 +10,7 @@ const ChronoTrivia = ({ setTimerOn, handle, clicks }) => {
 
     useEffect(() => {
         const until = new Date();
-        until.setSeconds(until.getSeconds() + 5);
+        until.setSeconds(until.getSeconds() + 10);
         setStartTime(until);
        interval = setInterval(() => {
             setCurrentTimeMs(new Date());
@@ -39,13 +39,11 @@ const ChronoTrivia = ({ setTimerOn, handle, clicks }) => {
 
     return ( 
         currentTimeMs !== 0 && 
-        <div className="col-12 col-md-6">
-            <div className="row justifyCenter">
-                <p> {
+            <div className='chronoTrivia'>
+                <p className='chronoTriviaText'> {
                 `${convertMS(startTime-currentTimeMs)}`
                 } </p>
             </div>
-        </div>
     );
 };
 

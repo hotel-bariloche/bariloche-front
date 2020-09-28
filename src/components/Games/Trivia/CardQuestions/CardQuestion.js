@@ -42,10 +42,11 @@ const CardQuestion = (props) => {
    console.log(state.score, 'holiscore')
 
     return(
-      <div>
-          <p>{props.question}</p>
+      <div className='card-question-body'>
+          <p className='card-question'>{props.question}</p>
           {shuffleAnswers.map((answer,i) => (
                 <AnswersButtons
+                className='answers-all-buttons'
                 checkTheAnswer={checkTheAnswer}
                 value={answer}
                 correctAnswer={props.correct}

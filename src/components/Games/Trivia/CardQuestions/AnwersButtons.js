@@ -4,7 +4,7 @@ import { Context } from '../../../../Context/Provider';
 
 const AnswersButton = ({ value, disabled, checkTheAnswer, correctAnswer, }) => {
 
-    const [colorClass, setColorClass] = React.useState('');
+    const [colorClass, setColorClass] = React.useState('orange');
     const { state, addScore, addClicks } =React.useContext(Context);
     
     
@@ -29,7 +29,7 @@ const AnswersButton = ({ value, disabled, checkTheAnswer, correctAnswer, }) => {
         <div>
                 <button 
                     type="button"
-                    className={`${colorClass}`}
+                    className={`btn ${colorClass}`}
                     value={value}
                     disabled={disabled}
                     onClick={onClick}    

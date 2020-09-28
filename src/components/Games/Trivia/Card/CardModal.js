@@ -29,19 +29,20 @@ React.useEffect(() => {
         <div>
           <Modal className="modalQuestions" backdrop='static' isOpen={modal} toggle={handleClose} style={{ marginTop:"10%"}}>
             <ModalBody>
+            <div className='question-head'>
+            <p className="modalPoints">{props.points}</p>
             <div>            
             {timerOn === false ? (
               "00:00:00"
             ) : (
               <ChronoTrivia 
-                  className="chronoTrivia"
                   setTimerOn={setTimerOn} 
                   handle={handleClose}
                   clicks={addClicks}
                   />
             )}</div>
+            </div>
               <div>
-                <p className="modalPoints">{props.points}</p>
                 <CardQuestion 
                   question={props.question}
                   correct={props.correct} 

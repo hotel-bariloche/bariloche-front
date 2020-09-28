@@ -96,11 +96,57 @@
         
 }
 .chronoTrivia {
+    font-size: 15px;
+    padding: 3px;
+    border: 5px solid #f2ab38;
+    border-radius: 30px;
+    font-weight: 600;
+    color: black;
 }
-/* 
+.chronoTriviaText{
+    margin-bottom: 0;
+}
+.question-head{
+    width: 100%;
+    display:flex;
+    justify-content: space-around;
+}
+
 .modalPoints{
-    
-} */
+    font-size: 15px;
+    padding: 3px;
+    border: 5px solid #f2ab38;
+    border-radius: 30px;
+    width: 15%;
+    font-weight: 600;
+    color: black;
+}
+
+.card-question{
+    font-weight: bold;
+    color: black;
+    font-size: 17px;
+}
+
+.answers-all-buttons{
+display: flex;
+
+}
+.card-question-body{
+align-items: center;
+}
+
+.btn{
+    box-shadow:7px 5px 5px #cca772;
+    border:none;
+    border-radius: 8px;
+    width:80%;
+    padding: 10px;
+    color: white;
+    font-size: 17px;
+    margin-top: 5%;
+    align-items: center;
+}
 
 .trivia-header {
     display: block;
@@ -120,9 +166,8 @@
 .green {
     background-color: green;
 }
-
-.blue {
-    background-color: blue;
+.orange{
+    background-color:#f2ab38;
 }
 
 .triviaButtons{
