@@ -23,9 +23,8 @@ const CardInitial = (props) => {
         {flip===false && count===0 &&
 
         <div>
-            <Card>
-            <Card.Body>Suma</Card.Body>
-            <Card.Title>{props.points}</Card.Title>
+            <Card className="cardBody">
+            <Card.Title className="cardTitle">{props.points}</Card.Title>
             </Card>
         </div>
          }

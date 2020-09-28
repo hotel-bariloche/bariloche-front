@@ -22,6 +22,8 @@ const AnswersButton = ({ value, disabled, checkTheAnswer, correctAnswer, }) => {
             changeColor(e);
      }
 
+     
+
     
     return(
         <div>
