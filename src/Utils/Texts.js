@@ -409,7 +409,7 @@ export const Texts = {
             cardShortDescriptionCazanieves: 'Is that discount and snow? Yes! Catch all the snowflakes you can and manage to build a giant snow bar. The more flakes you catch, bigger discounts you get ',
             cardShortDescriptionDespierta: 'A game to lock, have fun and win! You must knock on the door of the rooms in order to wake up the passengers and not miss the plane! The faster you do it .. bigger discount you win! ',
             cardShortDescriptionMemotest: 'Time to test your memory! The Memory Game of Bariloche where you will be rewarded for playing with the photos of our beautiful city ',
-            cardShortDescriptionTrivia: 'How much do you know about Bariloche? Answer questions about your favorite city, the more you answer correctly, the higher the discount',
+            cardShortDescriptionTrivia: 'How much do you know about Bariloche? Answer questions about your favorite city and get higher discounts!',
             popupConditions: 'Bases and conditions',
             popupConditionsText: 'Valid for the months of January to April and from August to December',
         },
