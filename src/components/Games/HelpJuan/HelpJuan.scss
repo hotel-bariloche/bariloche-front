@@ -1,6 +1,12 @@
 .HelpJuan{
     padding: 60px 20px 0 20px;
     position: relative;
+    background-image: url("../../img/games/helpJuan/AyudaJuan-bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display : flex;
+    flex-direction: column;
     & .questionMark{
         cursor: pointer;
     }
@@ -41,6 +47,16 @@
         max-width: 400px;
         width: 100%;
         height: auto;
+    }
+    .juan-header {
+        display: block;
+        width: 100%;
+        margin: 0;
+    }
+    
+    .juan-logo {
+        width: 30%;
+        margin-bottom: 50px;
     }
 
 }
