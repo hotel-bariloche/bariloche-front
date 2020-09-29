@@ -118,7 +118,7 @@ const HelpJuan = () => {
         </div>
       </div>
       <div className="juan-header">
-                 <img className="juan-logo" alt="juan-logo" src={state.language === 'spanish' ? juanTitleEs : juanTitleEn} />    
+                 <img className="juan-logo" alt="juan-logo" src={context.state.language === 'spanish' ? juanTitleEs : juanTitleEn} />    
             </div>
       <div className="row timeAndActualNumber">
         <div className="col-12 col-md-6 justifyCenter">
