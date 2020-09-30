@@ -1,5 +1,6 @@
 .card-row {
     width: 25%;
+
 }
 
 
@@ -178,4 +179,72 @@ align-items: center;
     margin: 5px;
 
   
+}
+
+.cardBody {
+    height: 14rem;
+}
+
+.cardBack {
+    height: 14rem;
+}
+
+@media screen and (max-width: 300px) {
+    .card-row {
+        width: 50%;
+    }
+    
+    .trivial-grid {
+        padding: 10px;
+    }
+
+    .cardBody {
+        margin: 2px;
+    }
+
+    .cardBackPoints {
+        font-size: 22px;
+    }
+
+    .cardTitle {
+        font-size: 22px;
+    }
+
+    .cardInitialButton {
+        font-size: 16px;
+        padding: 5px;
+        width: 80%;
+    }
+
+}
+
+
+@media screen and (max-width: 500px) {
+    .card-row {
+        width: 50%;
+    }
+    
+    .trivial-grid {
+        padding: 10px;
+    }
+
+    .cardBody {
+        margin: 2px;
+    }
+
+}
+
+
+@media screen and (max-width: 700px) {
+    .card-row {
+        width: 50%;
+    }
+    
+    .trivial-grid {
+        padding: 10px;
+    }
+
+    .cardBody {
+        margin: 2px;
+    }
 }
