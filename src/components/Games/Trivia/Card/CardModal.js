@@ -38,7 +38,7 @@ React.useEffect(() => {
               <ChronoTrivia 
                   setTimerOn={setTimerOn} 
                   handle={handleClose}
-                  clicks={addClicks}
+                  timerOn={timerOn}
                   />
             )}
             </div>
