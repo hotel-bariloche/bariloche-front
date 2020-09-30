@@ -74,16 +74,7 @@ const HelpJuan = () => {
       });
     }
   });
-  const endIt = () =>{ 
-    if(GAME_OVER){ 
-        confetti.start();
-        setTimeout(() => {
-          confetti.stop();
-        }, 2000);
-       return <MemoryFinalPopUp /> 
-    }
-    return endIt()
-  }
+
    
   React.useEffect(() => {
     console.log(state);
@@ -140,7 +131,6 @@ const HelpJuan = () => {
               "00:00:00"
             ) : (
               <Chrono 
-              GAME_OVER={GAME_OVER}
               setTimerOn={setTimerOn} />
             )}
           </p>

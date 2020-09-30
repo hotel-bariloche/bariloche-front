@@ -7,11 +7,14 @@ import RestartButton from './RestartButton';
 import VirtualKeyboard from './VirtualKeyboard';
 import hangmanAttempts from './HangmanAttempts';
 import { GAME_WON, GAME_OVER } from './game-states';
-import MemoryFinalPopUp from '../MemoryGame/MemoryFinalPopUp'
+import MemoryFinalPopUp from '../MemoryGame/MemoryFinalPopUp';
+import confetti from '../../../confetti';
+
 
 import './GameContainer.scss';
 
 const GameContainer = ({ timerOn, letters, pastGuesses, gameState, guesses, hits, onRestartClick, onLetterClick }) => {
+  
   const _renderInputPanel = () => {
     const hasAttemptsLeft = guesses > 0;
     const gameWon = gameState === GAME_WON;
@@ -37,11 +40,24 @@ const GameContainer = ({ timerOn, letters, pastGuesses, gameState, guesses, hits
     );
   }
 
+      const endIt = () =>{ 
+        if(GAME_OVER){ 
+            confetti.start();
+            setTimeout(() => {
+              confetti.stop();
+            }, 2000);
+            return <MemoryFinalPopUp  />
+        }
+        return endIt()
+      }
+
+
   const _renderGameFinished = (message, cssClass) => {
+    
     return (
       <div className={cssClass}>
         {timerOn===false && hits !== 0 &&
-        <MemoryFinalPopUp  />
+        endIt()
       }
         <RestartButton
           onClick={onRestartClick}

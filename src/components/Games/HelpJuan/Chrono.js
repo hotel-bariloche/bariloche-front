@@ -5,7 +5,7 @@ import React, {
 import confetti from '../../../confetti';
 
 let interval = null;
-const Chrono = ({ setTimerOn, GAME_OVER }) => {
+const Chrono = ({ setTimerOn }) => {
     const [startTime, setStartTime] = useState(0);
     const [currentTimeMs, setCurrentTimeMs] = useState(0);
     useEffect(() => {
@@ -17,19 +17,12 @@ const Chrono = ({ setTimerOn, GAME_OVER }) => {
         }, 1);
         return () => clearInterval(interval);
     }, []);
-    const endIt = () =>{ 
-        if(GAME_OVER){ 
-            confetti.start();
-            setTimeout(() => {
-              confetti.stop();
-            }, 2000);
-        }
-      }
+
 
     useEffect(() => {
         if(startTime < currentTimeMs){
             setTimerOn(false);
-            endIt()
+            // endIt()
         }
     }, [startTime, currentTimeMs])
 
