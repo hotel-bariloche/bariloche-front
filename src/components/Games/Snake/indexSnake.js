@@ -232,7 +232,7 @@ class IndexSnake extends Component {
     return (
       <div id="snakePageContainer">
         <Popup
-          className1='all-modal-snake'
+          className1='all-modal all-modal-blue'
           className="generalModalTitle generalModalTitle-blue"
           description={context.state.texts[language].snake.popup_description}
           instruction1={context.state.texts[language].snake.instruction1}

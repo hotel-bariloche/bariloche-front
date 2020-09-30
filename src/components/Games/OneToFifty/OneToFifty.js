@@ -22,6 +22,7 @@ export default function OneToFifty() {
     let [currentNumber, setCurrentNumber] = useState(1);
     let [timeStart, setTimeStart] = useState(false);
     let [style, setstyle] = useState([]);
+    const [showModal, setShowModal] = useState(false);
     // ---END OF STATES---
 
     //Made an state with an array with all the numbers
@@ -72,18 +73,22 @@ export default function OneToFifty() {
             }
         }
     }
-
+    const toggleModal = () => {
+        setShowModal(!showModal)
+      }
     return (
         <div className="OneToFifty container-fluid">
             <Popup
-                className1='all-modal-fifty'
+                className1='all-modal all-modal-red'
                 className="generalModalTitle generalModalTitle-red"
                 description={state.texts[state.language].oneToFifty.popup_description} 
                 instruction1={state.texts[state.language].oneToFifty.instruction1}
                 instruction2={state.texts[state.language].oneToFifty.instruction2}
                 instruction3={state.texts[state.language].oneToFifty.instruction3}
                 instruction4={state.texts[state.language].oneToFifty.instruction4}
-            />               
+                show={showModal}
+                setShow={setShowModal}
+           />               
             <img src={state.language === 'spanish' ? despertarPasajerosTitleEs : despertarPasajerosTitleEn} /> 
             <div className="header-buttons">                
                 <div><InstructionOneToFifty /></div>

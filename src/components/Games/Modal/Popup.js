@@ -1,63 +1,52 @@
-import React, { useState } from 'react';
-import { Button, Modal, ModalHeader, ModalBody, ModalFooter } from 'reactstrap';
+import React, { useContext, useEffect, useState } from 'react';
+import {  Modal, ModalBody, ModalFooter } from 'reactstrap';
 import { Context } from '../../../Context/Provider';
 import ToolTipConditions from '../ToolTipConditions';
-import './Popup.scss';
 import { faTimes } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import './Popup.scss';
 
-  export class Popup extends React.Component {      
-    static contextType = Context
-    constructor(props) {
-        super(props);
-        this.state = {
-            modal: true
-        }
+  export const Popup = ( props ) => {      
+    const context = useContext(Context);  
+    const { state: { language }} = context;
+    const [modal, setModal] = useState(true);
+
+    const close = <FontAwesomeIcon icon = {
+        faTimes
+      }
+       />
+
+    const toggle = () => {
+        setModal(!modal)
+        if(props.setShow)
+            props.setShow(!modal)
     }
 
-    toggle = () => this.setState({
-            modal: !this.state.modal
-        })
-    
-   
-  render(){
-
-        const close = <FontAwesomeIcon icon = {
-          faTimes
-        }
-         />
-
-        let context = () => {            
-            const context = this.context;
-            return context;
-        }
-
-        let language = () => {            
-            const language = context().state.language;
-            return language;
-        }        
-
+    useEffect(() => {
+        if(props.show)
+            toggle()
+    }, [props.show])
 
       return (
         <div classNama='all-modal'>
         {/* INSTRUCTIONS */}
-            <Modal isOpen={this.state.modal} toggle={this.toggle} style={{ marginTop:"10%"}}>
-            <div className ={this.props.className1}>
+            <Modal isOpen={modal} toggle={toggle} style={{ marginTop:"10%"}}>
+            <div className ={props.className1}>
                     <ModalBody>
                         <div>
-                        <span className="bigInstructionsClose" style={{ fontSize: "2em" }} onClick={this.toggle}>{close}</span>
+                        <span className="bigInstructionsClose" style={{ fontSize: "2em" }} onClick={toggle}>{close}</span>
                         </div>
-                        <div className={this.props.className}>
-                            {context().state.texts[language()].memoryGame.popupTitle}
+                        <div className={props.className}>
+                            {context.state.texts[language].memoryGame.popupTitle}
                         </div>
                         <div className='generalDespription'><p> 
-                         {this.props.description}
+                         {props.description}
                         </p></div>
                         <ul className='generalListDiscount'>
-                            <li>{this.props.instruction1}</li>
-                            <li>{this.props.instruction2}</li>
-                            <li>{this.props.instruction3}</li>
-                            <li>{this.props.instruction4}</li>
+                            <li>{props.instruction1}</li>
+                            <li>{props.instruction2}</li>
+                            <li>{props.instruction3}</li>
+                            <li>{props.instruction4}</li>
                         </ul>
                     </ModalBody>
                     <ModalFooter>
@@ -68,7 +57,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
                     </div>
             </Modal>
         </div>
-    )}
+    )
 }
 
 export default Popup;

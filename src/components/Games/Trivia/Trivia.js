@@ -46,7 +46,7 @@ const Trivia =()=>{
         <div className="trivial-grid">
         <div>
          <Popup 
-          className1='all-modal-trivia'
+          className1='all-modal all-modal-brown'
           className="generalModalTitle generalModalTitle-brown"
           description={state.texts[state.language].trivia.popup_description} 
           instruction1={state.texts[state.language].trivia.instruction1}
