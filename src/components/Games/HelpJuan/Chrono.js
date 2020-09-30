@@ -2,12 +2,12 @@ import React, {
     useState,
     useEffect
 } from 'react';
+import confetti from '../../../confetti';
 
 let interval = null;
-const Chrono = ({ setTimerOn }) => {
+const Chrono = ({ setTimerOn, GAME_OVER }) => {
     const [startTime, setStartTime] = useState(0);
     const [currentTimeMs, setCurrentTimeMs] = useState(0);
-
     useEffect(() => {
         const until = new Date();
         until.setMinutes(until.getMinutes() + 1);
@@ -17,10 +17,19 @@ const Chrono = ({ setTimerOn }) => {
         }, 1);
         return () => clearInterval(interval);
     }, []);
+    const endIt = () =>{ 
+        if(GAME_OVER){ 
+            confetti.start();
+            setTimeout(() => {
+              confetti.stop();
+            }, 2000);
+        }
+      }
 
     useEffect(() => {
         if(startTime < currentTimeMs){
             setTimerOn(false);
+            endIt()
         }
     }, [startTime, currentTimeMs])
 
