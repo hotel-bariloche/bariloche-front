@@ -7,6 +7,7 @@ import RestartButton from './RestartButton';
 import VirtualKeyboard from './VirtualKeyboard';
 import hangmanAttempts from './HangmanAttempts';
 import { GAME_WON, GAME_OVER } from './game-states';
+import MemoryFinalPopUp from '../MemoryGame/MemoryFinalPopUp'
 
 import './GameContainer.scss';
 
@@ -39,6 +40,9 @@ const GameContainer = ({ timerOn, letters, pastGuesses, gameState, guesses, hits
   const _renderGameFinished = (message, cssClass) => {
     return (
       <div className={cssClass}>
+        {timerOn===false && hits !== 0 &&
+        <MemoryFinalPopUp  />
+      }
         <RestartButton
           onClick={onRestartClick}
           gameState={gameState}

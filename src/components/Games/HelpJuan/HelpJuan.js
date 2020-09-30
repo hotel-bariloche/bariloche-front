@@ -12,6 +12,7 @@ import { faTimesCircle } from '@fortawesome/free-solid-svg-icons';
 import { faQuestionCircle } from '@fortawesome/free-solid-svg-icons';
 import juanTitleEs from "../../img/games/helpJuan/Ayuda a Juan-es-title.png";
 import juanTitleEn from "../../img/games/helpJuan/Ayuda a Juan-eng-title.png";
+import MemoryFinalPopUp from '../MemoryGame/MemoryFinalPopUp'
 
 import "./HelpJuan.scss";
 
@@ -73,7 +74,17 @@ const HelpJuan = () => {
       });
     }
   });
-
+  const endIt = () =>{ 
+    if(GAME_OVER){ 
+        confetti.start();
+        setTimeout(() => {
+          confetti.stop();
+        }, 2000);
+       return <MemoryFinalPopUp /> 
+    }
+    return endIt()
+  }
+   
   React.useEffect(() => {
     console.log(state);
     if (state.gameState === GAME_WON) {
@@ -82,6 +93,8 @@ const HelpJuan = () => {
     } else {
       if (!state.guesses) {
         setTimerOn(false);
+        // endIt()
+
       }
     }
   }, [state]);
@@ -126,7 +139,9 @@ const HelpJuan = () => {
             {timerOn === false ? (
               "00:00:00"
             ) : (
-              <Chrono setTimerOn={setTimerOn} />
+              <Chrono 
+              GAME_OVER={GAME_OVER}
+              setTimerOn={setTimerOn} />
             )}
           </p>
         </div>
@@ -144,17 +159,20 @@ const HelpJuan = () => {
         onLetterClick={onLetterClick}
         onRestartClick={onRestartClick}
         {...state}
+        hits={hits}
       />
       <Popup
-        className="generalModalTitle generalModalTitle-orange"
-        description={context.state.texts[language].memoryGame.popup_description}
-        instruction1={context.state.texts[language].memoryGame.instruction1}
-        instruction2={context.state.texts[language].memoryGame.instruction2}
-        instruction3={context.state.texts[language].memoryGame.instruction3}
-        instruction4={context.state.texts[language].memoryGame.instruction4}
+        className1=' all-modal all-modal-green'
+        className="generalModalTitle generalModalTitle-green"
+        description={context.state.texts[language].juan.popup_description}
+        instruction1={context.state.texts[language].juan.instruction1}
+        instruction2={context.state.texts[language].juan.instruction2}
+        instruction3={context.state.texts[language].juan.instruction3}
+        instruction4={context.state.texts[language].juan.instruction4}
         show={showModal}
         setShow={setShowModal}
       />
+     
     </div>
   );
 };

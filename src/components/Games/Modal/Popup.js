@@ -1,13 +1,20 @@
 import React, { useContext, useEffect, useState } from 'react';
-import { Button, Modal, ModalHeader, ModalBody, ModalFooter } from 'reactstrap';
+import {  Modal, ModalBody, ModalFooter } from 'reactstrap';
 import { Context } from '../../../Context/Provider';
 import ToolTipConditions from '../ToolTipConditions';
+import { faTimes } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import './Popup.scss';
 
   export const Popup = ( props ) => {      
     const context = useContext(Context);  
     const { state: { language }} = context;
-    const [modal, setModal] = useState(false);
+    const [modal, setModal] = useState(true);
+
+    const close = <FontAwesomeIcon icon = {
+        faTimes
+      }
+       />
 
     const toggle = () => {
         setModal(!modal)
@@ -21,16 +28,17 @@ import './Popup.scss';
     }, [props.show])
 
       return (
-        <div>
+        <div classNama='all-modal'>
         {/* INSTRUCTIONS */}
-            <Modal isOpen={modal && props.show} toggle={toggle} style={{ marginTop:"10%"}}>
-                <div className='bodyModalGeneral'>
-                    <ModalHeader toggle={toggle}>
+            <Modal isOpen={modal} toggle={toggle} style={{ marginTop:"10%"}}>
+            <div className ={props.className1}>
+                    <ModalBody>
+                        <div>
+                        <span className="bigInstructionsClose" style={{ fontSize: "2em" }} onClick={toggle}>{close}</span>
+                        </div>
                         <div className={props.className}>
                             {context.state.texts[language].memoryGame.popupTitle}
                         </div>
-                    </ModalHeader>
-                    <ModalBody>
                         <div className='generalDespription'><p> 
                          {props.description}
                         </p></div>
@@ -46,7 +54,7 @@ import './Popup.scss';
                             <ToolTipConditions/>
                         </div>
                     </ModalFooter>
-                 </div>
+                    </div>
             </Modal>
         </div>
     )
