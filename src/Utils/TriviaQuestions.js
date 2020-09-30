@@ -389,7 +389,7 @@ export const TriviaQuestions={
   },
   english: {
     questions: {
-      difficulty1: [
+      dificulty1: [
         {
           "id": 1,
           "level": "first level of difficulty",

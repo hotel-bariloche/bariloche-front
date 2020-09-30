@@ -9,7 +9,7 @@ const CardModal = (props) => {
 
   const [modal, setModal] = useState(true);
   const [timerOn, setTimerOn] = useState(true);
-  const { state, addClicks, addScore } =React.useContext(Context);
+  const { state, addClicks, addScore } = React.useContext(Context);
 
   const handleClose = (props) => {
     setModal(false);
@@ -40,7 +40,8 @@ React.useEffect(() => {
                   handle={handleClose}
                   clicks={addClicks}
                   />
-            )}</div>
+            )}
+            </div>
             </div>
               <div>
                 <CardQuestion 

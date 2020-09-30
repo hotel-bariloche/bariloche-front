@@ -28,8 +28,9 @@ const Trivia =()=>{
         cards.push(...cards3)
         cards.push(...cards4)
         setCards(cards)
+        console.log(state.language)
         
-    }, [])
+    }, [state.language])
 
     const endIt = () =>{
         if (state.countClicks === 5){
