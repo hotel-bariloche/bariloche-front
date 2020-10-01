@@ -1,5 +1,6 @@
 .card-row {
     width: 25%;
+
 }
 
 
@@ -26,7 +27,7 @@
 .cardTitle {
     font-size: 30px;
     padding: 5px;
-    border: 5px solid orange;
+    border: 5px solid #f2ab38;
     border-radius: 30px;
     width: 50%;
     margin-top: 20%;
@@ -38,7 +39,7 @@
 
 .cardInitialButton {
     padding: 10px;
-    background-color: orange;
+    background-color: #f2ab38;
     color: white;
     border-radius: 8px;
     border: none;
@@ -122,6 +123,14 @@
     color: black;
 }
 
+.totalScore{
+    padding: 4px;
+    border: 5px solid#90734f;
+    border-radius: 30px;
+    font-weight: 600;
+    color: black;
+    background-color:#ffffff;
+}
 .card-question{
     font-weight: bold;
     color: black;
@@ -136,7 +145,7 @@ display: flex;
 align-items: center;
 }
 
-.btn{
+.btnTrivia{
     box-shadow:7px 5px 5px #cca772;
     border:none;
     border-radius: 8px;
@@ -178,4 +187,72 @@ align-items: center;
     margin: 5px;
 
   
+}
+
+.cardBody {
+    height: 14rem;
+}
+
+.cardBack {
+    height: 14rem;
+}
+
+@media screen and (max-width: 300px) {
+    .card-row {
+        width: 50%;
+    }
+    
+    .trivial-grid {
+        padding: 10px;
+    }
+
+    .cardBody {
+        margin: 2px;
+    }
+
+    .cardBackPoints {
+        font-size: 22px;
+    }
+
+    .cardTitle {
+        font-size: 22px;
+    }
+
+    .cardInitialButton {
+        font-size: 16px;
+        padding: 5px;
+        width: 80%;
+    }
+
+}
+
+
+@media screen and (max-width: 500px) {
+    .card-row {
+        width: 50%;
+    }
+    
+    .trivial-grid {
+        padding: 10px;
+    }
+
+    .cardBody {
+        margin: 2px;
+    }
+
+}
+
+
+@media screen and (max-width: 700px) {
+    .card-row {
+        width: 50%;
+    }
+    
+    .trivial-grid {
+        padding: 10px;
+    }
+
+    .cardBody {
+        margin: 2px;
+    }
 }

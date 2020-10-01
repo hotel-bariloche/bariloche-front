@@ -1,5 +1,7 @@
 import React from 'react';
 import Card  from 'react-bootstrap/Card';
+import Button  from 'react-bootstrap/Button';
+
 import CardModal from './CardModal';
 import Logo from '../../../img/Logo.png';
 import { Context } from '../../../../Context/Provider';
@@ -30,7 +32,7 @@ const CardInitial = (props) => {
         <div>
             <Card className="cardBody">
             <Card.Title className="cardTitle">{props.points}</Card.Title>
-            <button className="cardInitialButton" onClick={Flipped}>{state.texts[state.language].trivia.buttonQuestion}</button>
+            <Button className="cardInitialButton" onClick={Flipped}>{state.texts[state.language].trivia.buttonQuestion}</Button>
             </Card>
         </div>
          }

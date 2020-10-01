@@ -27,7 +27,6 @@ import { faTimes } from '@fortawesome/free-solid-svg-icons';
             toggle()
     }, [props.show])
 
-
       return (
         <div classNama='all-modal'>
         {/* INSTRUCTIONS */}

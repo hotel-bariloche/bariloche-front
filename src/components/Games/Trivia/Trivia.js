@@ -28,8 +28,9 @@ const Trivia =()=>{
         cards.push(...cards3)
         cards.push(...cards4)
         setCards(cards)
+        console.log(state.language)
         
-    }, [])
+    }, [state.language])
 
     const endIt = () =>{
         if (state.countClicks === 5){
@@ -45,7 +46,7 @@ const Trivia =()=>{
         <div className="trivial-grid">
         <div>
          <Popup 
-          className1='all-modal-trivia'
+          className1='all-modal all-modal-brown'
           className="generalModalTitle generalModalTitle-brown"
           description={state.texts[state.language].trivia.popup_description} 
           instruction1={state.texts[state.language].trivia.instruction1}
@@ -62,8 +63,10 @@ const Trivia =()=>{
                  <img className="trivia-logo" alt="logo-trivia" src={state.language === 'spanish' ? triviaTitleEs : triviaTitleEn} />    
             </div>
           
-            <div style={{ width: '100vw'}}><h2>{state.score}</h2></div>
-            {state.countClicks === 5 
+            <div style={{ width: '100vw'}}><h3 className="totalScore">
+            {state.texts[state.language].trivia.score}:{state.score}
+            </h3></div>
+            {state.countClicks >= 5 
             ? 
                 endIt()
             :

@@ -33,7 +33,8 @@ border-top:none!important;
     box-sizing: border-box;
     color:black!important;
     font-weight: bold;
-    font-family: "Roboto", sans-serif !important;  
+    font-family: "Roboto", sans-serif !important;
+    border-radius: 5px;  
 }
 @media (max-width: 600px) {
     .triviaModalTitle {

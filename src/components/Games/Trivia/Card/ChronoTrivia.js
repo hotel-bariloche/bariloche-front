@@ -2,11 +2,13 @@ import React, {
     useState,
     useEffect
 } from 'react';
+import { Context } from '../../../../Context/Provider';
 
 let interval = null;
-const ChronoTrivia = ({ setTimerOn, handle, clicks }) => {
+const ChronoTrivia = ({ setTimerOn, handle, timerOn }) => {
     const [startTime, setStartTime] = useState(0);
     const [currentTimeMs, setCurrentTimeMs] = useState(0);
+    const { state, addClicks } = React.useContext(Context);
 
     useEffect(() => {
         const until = new Date();
@@ -22,7 +24,7 @@ const ChronoTrivia = ({ setTimerOn, handle, clicks }) => {
         if(startTime < currentTimeMs){
             setTimerOn(false);
             handle()
-            clicks()
+            addClicks()
         }
     }, [startTime, currentTimeMs])
 

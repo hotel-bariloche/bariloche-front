@@ -32,14 +32,15 @@ class MemoryGame extends React.Component {
   }
   static contextType = Context
 
-  render() {   
+  render() {  
+
     const context = this.context;
     const language = context.state.language;
     
     return(
       <div className="memory-body">
         <Popup 
-          className1='all-modal-memory'
+          className1='all-modal all-modal-orange'
           className="generalModalTitle generalModalTitle-orange "
           description={context.state.texts[language].memoryGame.popup_description} 
           instruction1={context.state.texts[language].memoryGame.instruction1}

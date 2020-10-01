@@ -5,34 +5,37 @@ import { Context } from '../../../../Context/Provider';
 const AnswersButton = ({ value, disabled, checkTheAnswer, correctAnswer, }) => {
 
     const [colorClass, setColorClass] = React.useState('orange');
-    const { state, addScore, addClicks } =React.useContext(Context);
+    const { state, addClicks } =React.useContext(Context);
     
     
     const changeColor = (e) => {
         if (value === correctAnswer) {
             setColorClass('green')
-            
             } else 
-                setColorClass('red')
-              
+            setColorClass('red')   
         }
+
+useEffect(() => {
+    if (colorClass === 'red') {
+        addClicks()
+    } else if (colorClass === 'green')
+        addClicks()
+}, [colorClass])
+
      const onClick =(e) =>{
-            addClicks(e)
             checkTheAnswer(e);
             changeColor(e);
-     }
-
-     
+     }  
 
     
     return(
         <div>
                 <button 
                     type="button"
-                    className={`btn ${colorClass}`}
+                    className={`btnTrivia ${colorClass}`}
                     value={value}
                     disabled={disabled}
-                    onClick={onClick}    
+                    onClick={(e) => onClick(e)}
                 >
                     {value}
                     </button>

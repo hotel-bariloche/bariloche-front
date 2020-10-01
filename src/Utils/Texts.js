@@ -226,15 +226,16 @@ export const Texts = {
             buttonStart: 'JUGÁ!'
         },
         trivia: {
-            popup_description: 'Golpeá las puertas de las habitaciones en orden del 1 al 24. Cuánto más rápido lo hagas más grande será el descuento.',
+            popup_description: 'Sumá la mayor cantidad de puntos posibles en 5 preguntas, contestándolas correctamente. Cuanto más puntos, más grande será el descuento.',
             next_number: 'Siguiente numero',
-            instruction1: 'De 0 a 30 segundos: 50% de descuento.',
-            instruction2: 'De 30 a 40 segundos: 30% de descuento.',
-            instruction3: 'De 40 a 50 segundos: 20% de descuento.',
-            instruction4: 'En 50 segundos o más: 10% de descuento',
+            instruction1: 'Mas de 1000 puntos: 30% de descuento.',
+            instruction2: 'De 800 a 1000 puntos: 20% de descuento.',
+            instruction3: 'De 0 a 500 puntos: 10% de descuento.',
+            instruction4: '',
             start: 'Comenzar',
             buttonQuestion: 'VER PREGUNTA',
             buttonStart: 'JUGÁ!',
+            score: 'Puntos',
         },
         juan: {
             popup_description: 'Descubrí la palabra adivinando las letras que la componen. Todas las palabras están relacionadas a objetos con los que nuestro amigo Juan tiene que llevar en su maleta.',
@@ -479,13 +480,14 @@ export const Texts = {
             buttonStart: 'PLAY!'
         },
         trivia: {
-            popup_description: 'Knock on the doors of the rooms in order from 1 to 24. The faster you do it, the bigger discounts you get .',
+            popup_description: 'Add as many points as you can in 5 questions, by clicking on the right answer correctly.More points you geather, bigger discounts you get.',
             next_number: 'Next number',
-            instruction1: 'From 0 to 30 seconds: 50% of discount.',
-            instruction2: 'From 30 to 40 seconds: 30% of discount.',
-            instruction3: 'From 40 to 50 seconds: 20% of discount.',
-            instruction4: 'In 50 seconds or more: 10% of discount',
+            instruction1: 'More than 1000 points: 30% of discount.',
+            instruction2: 'From 800 to 1000 points: 20% of discount.',
+            instruction3: 'From 0 to 500 points: 10% of discount.',
+            instruction4: '',
             start: 'Start',
+            score: 'Score',
             buttonQuestion: 'SEE QUESTION'
 
         },
