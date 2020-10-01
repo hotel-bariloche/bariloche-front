@@ -137,7 +137,7 @@ const HelpJuan = () => {
         </div>
         <div className="col-12 col-md-6 justifyCenter">
           <p>
-            Aciertos: &nbsp;&nbsp;&nbsp;{" "}
+          {context.state.texts[language].juan.hits}: &nbsp;&nbsp;&nbsp;{" "}
             <span style={{ fontWeight: "bold", fontSize: "x-large" }}>
               {hits}
             </span>

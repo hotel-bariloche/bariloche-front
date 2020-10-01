@@ -230,6 +230,8 @@ export const Texts = {
             instruction3: 'De 1 a 3 palabras: 10% de descuento',
             instruction4: '',
             start: 'Comenzar',
+            guesses:'Intentos restantes',
+            hits: 'Aciertos'
         },
     },
 
@@ -467,7 +469,9 @@ export const Texts = {
             instruction2: 'From 4 to 10 words: 20% of discount',
             instruction3: 'From 1 to 3 words: 10% of discount',
             instruction4: '',
-            start: 'Comenzar',
+            start: 'Start',
+            guesses:'Attempts left',
+            hits: 'Hits'
         },
     },
 
