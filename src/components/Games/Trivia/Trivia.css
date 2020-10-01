@@ -123,6 +123,14 @@
     color: black;
 }
 
+.totalScore{
+    padding: 4px;
+    border: 5px solid#90734f;
+    border-radius: 30px;
+    font-weight: 600;
+    color: black;
+    background-color:#ffffff;
+}
 .card-question{
     font-weight: bold;
     color: black;

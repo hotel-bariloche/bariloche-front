@@ -231,6 +231,7 @@ export const Texts = {
             instruction3: 'De 0 a 500 puntos: 10% de descuento.',
             instruction4: '',
             start: 'Comenzar',
+            score: 'Puntos',
             buttonQuestion: 'VER PREGUNTA'
         }
     },
@@ -471,6 +472,7 @@ export const Texts = {
             instruction3: 'From 0 to 500 points: 10% of discount.',
             instruction4: '',
             start: 'Start',
+            score: 'Score',
             buttonQuestion: 'SEE QUESTION'
 
         },
