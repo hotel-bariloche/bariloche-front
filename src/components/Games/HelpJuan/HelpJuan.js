@@ -13,18 +13,19 @@ import { faQuestionCircle } from '@fortawesome/free-solid-svg-icons';
 import juanTitleEs from "../../img/games/helpJuan/Ayuda a Juan-es-title.png";
 import juanTitleEn from "../../img/games/helpJuan/Ayuda a Juan-eng-title.png";
 import MemoryFinalPopUp from '../MemoryGame/MemoryFinalPopUp'
+import randomWord from './random-word';
 
 import "./HelpJuan.scss";
 
 const HelpJuan = () => {
-  const [state, setState] = useState(gameFactory.newGame());
-  const [timerOn, setTimerOn] = useState(false);
-  const [hits, setHits] = useState(0);
-  const [showModal, setShowModal] = useState(false);
   const context = useContext(Context);
   const {
     state: { language },
   } = context;
+  const [state, setState] = useState(gameFactory.newGame(language));
+  const [timerOn, setTimerOn] = useState(false);
+  const [hits, setHits] = useState(0);
+  const [showModal, setShowModal] = useState(false);  
 
   const onLetterClick = useCallback((letter, e) => {
     e.preventDefault();
@@ -74,13 +75,13 @@ const HelpJuan = () => {
       });
     }
   });
-
    
   React.useEffect(() => {
     console.log(state);
-    if (state.gameState === GAME_WON) {
+    if (state.gameState === GAME_WON) {      
+      const gameWord = randomWord(language);  
       setHits(hits + 1);
-      setState(gameFactory.newGame());
+      setState(gameFactory.newGame(gameWord));
     } else {
       if (!state.guesses) {
         setTimerOn(false);
@@ -92,7 +93,8 @@ const HelpJuan = () => {
 
   const onRestartClick = (e) => {
     e.preventDefault();
-    setState(gameFactory.newGame());
+    const gameWord = randomWord(language);  
+    setState(gameFactory.newGame(gameWord));
     setTimerOn(true);
     setHits(0);
   };

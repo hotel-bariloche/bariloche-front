@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import { Texts } from '../Utils/Texts';
 import { TriviaQuestions } from '../Utils/TriviaQuestions';
-import { HelpJuanWords } from '../Utils/HelpJuanWords';
 
 
 export const Context = React.createContext();
@@ -10,7 +9,6 @@ const AppContext = (props) => {
     const [state, changeState] = useState({
       texts: Texts,
       triviaQuestions: TriviaQuestions,
-      helpJuanWords: HelpJuanWords,
       language: 'spanish', // default language
       score: 0,
       countClicks:0,
