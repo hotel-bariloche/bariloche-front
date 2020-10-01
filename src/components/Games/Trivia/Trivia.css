@@ -27,7 +27,7 @@
 .cardTitle {
     font-size: 30px;
     padding: 5px;
-    border: 5px solid orange;
+    border: 5px solid #f2ab38;
     border-radius: 30px;
     width: 50%;
     margin-top: 20%;
@@ -39,7 +39,7 @@
 
 .cardInitialButton {
     padding: 10px;
-    background-color: orange;
+    background-color: #f2ab38;
     color: white;
     border-radius: 8px;
     border: none;
@@ -123,6 +123,14 @@
     color: black;
 }
 
+.totalScore{
+    padding: 4px;
+    border: 5px solid#90734f;
+    border-radius: 30px;
+    font-weight: 600;
+    color: black;
+    background-color:#ffffff;
+}
 .card-question{
     font-weight: bold;
     color: black;

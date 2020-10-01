@@ -63,7 +63,9 @@ const Trivia =()=>{
                  <img className="trivia-logo" alt="logo-trivia" src={state.language === 'spanish' ? triviaTitleEs : triviaTitleEn} />    
             </div>
           
-            <div style={{ width: '100vw'}}><h2>{state.score}</h2></div>
+            <div style={{ width: '100vw'}}><h3 className="totalScore">
+            {state.texts[state.language].trivia.score}:{state.score}
+            </h3></div>
             {state.countClicks >= 5 
             ? 
                 endIt()
