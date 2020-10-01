@@ -49,8 +49,35 @@
     &-brown {
         background-color:#f2ab38;
         box-shadow:7px 5px 5px #cca772;
-    }  
+    } 
+    &-green {
+        background-color: #caec58;
+        box-shadow:7px 5px 5px #a38373;
+    } 
   }
+  .all-modal{ 
+    box-sizing: border-box;
+    border-radius: 5px;;
+    color:black!important;
+    font-weight: bold;
+    font-family: "Roboto", sans-serif !important; 
+      &-orange {
+        border: solid 10px #FF7E0B;
+      } 
+      &-red {
+        border: solid 10px #E5423A;
+      }
+      &-blue {
+        border: solid 10px #29abe2;
+      }
+      &-brown {
+        border: solid 10px #f2ab38;
+      } 
+      &-green {
+        border: solid 10px #caec58;
+      } 
+}
+
   @media (max-width: 600px) {
     .generalModalTitle {
         font-size: 1.5rem!important;

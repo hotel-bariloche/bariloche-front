@@ -9,6 +9,8 @@ import despiertapasajerosEs from '../img/games/cardDespiertapasajeros-es.png';
 import despiertapasajerosEn from '../img/games/cardDespiertapasajeros-en.png';
 import memoryEs from '../img/games/cardMemoryGame-es.png';
 import memoryEn from '../img/games/cardMemoryGame-en.png';
+import helpJuanEs from '../img/games/helpJuan/Ayuda a Juan-bg-card-es.png';
+import helpJuanEn from '../img/games/helpJuan/Ayuda a Juan-bg-eng-card.png';
 import './GamesSection.css';
 import triviaEs from '../img/games/trivia/card_trivia_es.png';
 import triviaEn from '../img/games/trivia/card_trivia_en.png';
@@ -66,9 +68,18 @@ const GamesSection = () => {
                             <Link to="/Trivia"><Button className="button carousel-slide-btn btn-games" variant="primary">{state.texts[state.language].games.play}</Button></Link>
                         </Card.Body>
                     </Card>
+                     <Card style={{ width: '22rem' }} className="game-card">
+                        <Card.Img variant="top" src={state.language === 'spanish' ? helpJuanEs : helpJuanEn} />
+                        <Card.Body>
+                            <Card.Title>{state.texts[state.language].games.card_titleJuan}</Card.Title>
+                            <Card.Text>
+                                {state.texts[state.language].games.cardShortDescriptionJuan}
+                            </Card.Text>
+                            <Link to="/HelpJuan"><Button className="button carousel-slide-btn btn-games" variant="primary">{state.texts[state.language].games.play}</Button></Link>
+                        </Card.Body>
+                    </Card>
                 </div>
-        </div>
-    
+    </div>
     )
 }
 

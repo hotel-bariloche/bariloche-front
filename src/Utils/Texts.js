@@ -166,10 +166,12 @@ export const Texts = {
             card_titleDespierta: 'Despierta a los pasajeros',
             card_titleMemotest: 'Memotest de la ciudad',
             card_titleTrivia: 'Trivia turística',
+            card_titleJuan: 'Ayuda a Juan',
             cardShortDescriptionCazanieves: 'Descuento y nieve? Si! Atrapa todos los copos de nieve que puedas y consigue armar una barra gigante. Cuantos más copos atrapes, más grande será tu descuento',
             cardShortDescriptionDespierta: 'Un juego para trabar, divertirte y ganar! Debes llamar a la puerta de las habitaciones en orden, para despertar a los pasajeros y que no pierdan el avión! Cuanto más rápido.. más descuento ganas!',
             cardShortDescriptionMemotest: 'Hora de poner a prueba tu memoria! El Memory Game de Bariloche donde serás recompensado por jugar con las fotos de nuestra hermosa ciudad',
             cardShortDescriptionTrivia: '¿Cuánto sabes sobre Bariloche? Contestá preguntas sobre tu ciudad favorita, cuantas más contestes correctamente, mayor será el descuento',
+            cardShortDescriptionJuan: '¡Juan está por perder el avión y todavía no armó la maleta! Ayudalo a armarla encontrando las palabras de los objetos que debería llevar en ella y ganá un descuento para tu estadía en el hotel.',
             popupConditions: 'Bases y condiciones',
             popupConditionsText: 'Valido para los meses de Enero a Abril y de Agosto a Diciembre',
         },
@@ -231,8 +233,19 @@ export const Texts = {
             instruction3: 'De 40 a 50 segundos: 20% de descuento.',
             instruction4: 'En 50 segundos o más: 10% de descuento',
             start: 'Comenzar',
-            buttonQuestion: 'VER PREGUNTA'
-        }
+            buttonQuestion: 'VER PREGUNTA',
+            buttonStart: 'JUGÁ!',
+        },
+        juan: {
+            popup_description: 'Descubrí la palabra adivinando las letras que la componen. Todas las palabras están relacionadas a objetos con los que nuestro amigo Juan tiene que llevar en su maleta.',
+            instruction1: 'Mas de 10 palabras: 30% de descuento',
+            instruction2: 'De 4 a 10 palabras: 20% de descuento',
+            instruction3: 'De 1 a 3 palabras: 10% de descuento',
+            instruction4: '',
+            start: 'Comenzar',
+            guesses:'Intentos restantes',
+            hits: 'Aciertos'
+        },
     },
 
     english: {
@@ -406,10 +419,12 @@ export const Texts = {
             card_titleDespierta: 'Wakeup all passengers',
             card_titleMemotest: 'Memotest of our city',
             card_titleTrivia: 'Tourist trivia',
+            card_titleJuan: 'Help Juan',
             cardShortDescriptionCazanieves: 'Is that discount and snow? Yes! Catch all the snowflakes you can and manage to build a giant snow bar. The more flakes you catch, bigger discounts you get ',
             cardShortDescriptionDespierta: 'A game to lock, have fun and win! You must knock on the door of the rooms in order to wake up the passengers and not miss the plane! The faster you do it .. bigger discount you win! ',
             cardShortDescriptionMemotest: 'Time to test your memory! The Memory Game of Bariloche where you will be rewarded for playing with the photos of our beautiful city ',
             cardShortDescriptionTrivia: 'How much do you know about Bariloche? Answer questions about your favorite city, the more you answer correctly, the higher the discount',
+            cardShortDescriptionJuan: 'Juan is about to lose the plane and he has not packed yet his suitcase! Help him assemble it by finding the words of the objects he should carry in it and earn a discount for your stay at the hotel.',
             popupConditions: 'Bases and conditions',
             popupConditionsText: 'Valid for the months of January to April and from August to December',
         },
@@ -475,6 +490,16 @@ export const Texts = {
 
         },
 
+        juan: {
+            popup_description: 'Discover the word by guessing the letters that make it up. All the words are related to objects with which our friend Juan has to carry in his suitcase.',
+            instruction1: 'More than 10 words: 30% of discount',
+            instruction2: 'From 4 to 10 words: 20% of discount',
+            instruction3: 'From 1 to 3 words: 10% of discount',
+            instruction4: '',
+            start: 'Start',
+            guesses:'Attempts left',
+            hits: 'Hits'
+        },
     },
 
 
