@@ -7,7 +7,7 @@ import RestartButton from './RestartButton';
 import VirtualKeyboard from './VirtualKeyboard';
 import hangmanAttempts from './HangmanAttempts';
 import { GAME_WON, GAME_OVER } from './game-states';
-import MemoryFinalPopUp from '../MemoryGame/MemoryFinalPopUp';
+import HangmanFinalPopup from './HangmanFinalPopup';
 import confetti from '../../../confetti';
 
 
@@ -46,7 +46,7 @@ const GameContainer = ({ timerOn, letters, pastGuesses, gameState, guesses, hits
             setTimeout(() => {
               confetti.stop();
             }, 2000);
-            return <MemoryFinalPopUp hits={hits} />
+            return <HangmanFinalPopup hits={hits} />
         }
         return endIt()
       }
