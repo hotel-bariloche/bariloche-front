@@ -1,41 +1,41 @@
 export const HelpJuanWords = {
     spanish: {
         words: [
-            'Medias',
-            'Bufanda',
-            'Gorro',
-            'Guantes',
-            'Buzo',
-            'Botas',
-            'Cargador',
-            'Cepillo',
-            'Zapatos',
-            'Pantalón',
-            'Pasaporte',
-            'Brújula',
-            'Camara',
-            'Anteojos',
-            'Mapa'
+            'medias',
+            'bufanda',
+            'gorro',
+            'guantes',
+            'buzo',
+            'botas',
+            'cargador',
+            'cepillo',
+            'zapatos',
+            'pantalón',
+            'pasaporte',
+            'brújula',
+            'camara',
+            'anteojos',
+            'mapa'
 
         ] 
     },  
     english: {
         words: [
-            'Socks',
-            'Scarf',
-            'Hat',
-            'Gloves',
-            'Joggin Suit',
-            'Boots',
-            'Charger',
-            'Brush',
-            'Shoes',
-            'Trousers',
-            'Passport',
-            'Compas',
-            'Camera',
-            'Glasses',
-            'Map'
+            'socks',
+            'scarf',
+            'hat',
+            'gloves',
+            'joggin Suit',
+            'boots',
+            'charger',
+            'brush',
+            'shoes',
+            'trousers',
+            'passport',
+            'compas',
+            'camera',
+            'glasses',
+            'map'
         ]
     } 
 }   
