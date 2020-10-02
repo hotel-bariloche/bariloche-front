@@ -19,27 +19,27 @@ const HangmanFinalPopup = (props) => {
     const { state } = React.useContext(Context);
     
 
-    let tryes = (props.tryes)
+    let hits = (props.hits)
 
     const ranking = () => {
-        if (tryes >= 21) {
-            return '10%'
-        } else if (tryes >= 16 && tryes <= 20) {
-            return '20%'
-        } else if (tryes >= 11 && tryes <= 15) {
+        if (hits >= 10) {
             return '30%'
+        } else if (hits >= 4) {
+            return '20%'
+        } else if (hits >= 1) {
+            return '10%'
         } else {
             return '0%'
         }
     }
 
     const code = () => {
-        if (tryes >= 21) {
-            return 'GANOCONGBH1'            
-        } else if (tryes >= 16 && tryes <= 20) {
+        if (hits >= 10) {
+            return 'GANOCONGBH3'            
+        } else if (hits >= 4) {
             return 'GANOCONCGH2'
-        } else if (tryes >= 11 && tryes <= 15) {
-            return 'GANOCONGBH3'
+        } else if (hits >= 1) {
+            return 'GANOCONGBH1'
         }  else {
             return '0%'
         }
@@ -62,7 +62,7 @@ const HangmanFinalPopup = (props) => {
           backdrop="static"
           keyboard={false}
         >
-          <div className="modalBody">
+          <div className="modalBody" style={{ outline: '4px solid #caec58'}}>
           
           <Modal.Body >
                 <span className="bigInstructionsPopUp" style={{ fontSize: "2em"}} onClick={handleClose}>{close}</span>
@@ -82,7 +82,7 @@ const HangmanFinalPopup = (props) => {
           </Modal.Body>
 
           <Modal.Footer>
-            <Button variant="secondary" href="https://reservations.travelclick.com/106660?languageid=2%20#/guestsandrooms" className="popupButtonMemory">
+            <Button variant="secondary" href="https://reservations.travelclick.com/106660?languageid=2%20#/guestsandrooms" className="popupButtonJuan">
              {state.texts[state.language].snake.button_book}
             </Button>
 

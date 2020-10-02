@@ -46,7 +46,7 @@ const GameContainer = ({ timerOn, letters, pastGuesses, gameState, guesses, hits
             setTimeout(() => {
               confetti.stop();
             }, 2000);
-            return <MemoryFinalPopUp  />
+            return <MemoryFinalPopUp hits={hits} />
         }
         return endIt()
       }
